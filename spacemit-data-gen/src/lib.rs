@@ -3,6 +3,7 @@ use anyhow::{Context, Result, bail, ensure};
 use chiptool::generate::rust::{self, DefmtOption, Options, RustArch};
 use chiptool::ir::{Access, Array, BitOffset, BlockItemInner, IR};
 use serde::Deserialize;
+pub mod expanded;
 use std::{
     collections::{BTreeMap, BTreeSet},
     fs,
@@ -21,7 +22,7 @@ pub struct Chip {
     pub constants: BTreeMap<String, u64>,
     pub provenance: String,
 }
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Clone)]
 #[serde(deny_unknown_fields)]
 pub struct Policy {
     pub aliases: BTreeMap<String, Vec<Vec<String>>>,
@@ -42,7 +43,14 @@ fn offsets(base: u32, array: &Option<Array>) -> Result<Vec<u64>> {
                 .collect()
         }
         Some(Array::Cursed(a)) => {
-            ensure!(!a.offsets.is_empty(), "empty array");
+            ensure!(
+                !a.offsets.is_empty() && a.offsets.len() <= 4096,
+                "invalid sparse array"
+            );
+            ensure!(
+                a.offsets.iter().collect::<BTreeSet<_>>().len() == a.offsets.len(),
+                "duplicate sparse offsets"
+            );
             a.offsets.iter().map(|i| u64::from(*i)).collect()
         }
     };
@@ -65,7 +73,10 @@ fn block_size(ir: &IR, name: &str, stack: &mut BTreeSet<String>) -> Result<u64> 
     let mut size = 0;
     for item in &block.items {
         let bytes = match &item.inner {
-            BlockItemInner::Register(r) => u64::from(r.bit_size / 8),
+            BlockItemInner::Register(r) => {
+                ensure!([8, 16, 32, 64].contains(&r.bit_size), "invalid MMIO width");
+                u64::from(r.bit_size / 8)
+            }
             BlockItemInner::Block(b) => block_size(ir, &b.block, stack)?,
         };
         for offset in offsets(item.byte_offset, &item.array)? {
@@ -76,13 +87,137 @@ fn block_size(ir: &IR, name: &str, stack: &mut BTreeSet<String>) -> Result<u64> 
     Ok(size)
 }
 
+fn validate_fields(ir: &IR) -> Result<()> {
+    let all_names: BTreeSet<_> = ir
+        .blocks
+        .keys()
+        .chain(ir.fieldsets.keys())
+        .chain(ir.enums.keys())
+        .collect();
+    ensure!(
+        all_names.len() == ir.blocks.len() + ir.fieldsets.len() + ir.enums.len(),
+        "duplicate IR type paths"
+    );
+    for name in ir
+        .blocks
+        .keys()
+        .chain(ir.fieldsets.keys())
+        .chain(ir.enums.keys())
+    {
+        ensure!(expanded::qualified(name), "invalid IR identifier {name}");
+    }
+    let mut used_enums = BTreeSet::new();
+    for (name, fs) in &ir.fieldsets {
+        ensure!(
+            [8, 16, 32, 64].contains(&fs.bit_size),
+            "invalid fieldset width"
+        );
+        let mut occupied = BTreeSet::new();
+        let mut names = BTreeSet::new();
+        for field in &fs.fields {
+            ensure!(
+                expanded::identifier(&field.name) && names.insert(&field.name),
+                "invalid/duplicate field name"
+            );
+            ensure!(
+                field.bit_size > 0 && field.bit_size <= fs.bit_size,
+                "invalid field width"
+            );
+            let bits: Vec<u64> = match &field.bit_offset {
+                BitOffset::Regular(start) => (0..field.bit_size)
+                    .map(|i| u64::from(*start) + u64::from(i))
+                    .collect(),
+                BitOffset::Cursed(ranges) => {
+                    ensure!(!ranges.is_empty(), "empty bit ranges");
+                    let mut bits = Vec::new();
+                    let mut previous = None;
+                    for range in ranges {
+                        ensure!(
+                            range.start() <= range.end() && *range.end() < fs.bit_size,
+                            "invalid bit range"
+                        );
+                        ensure!(
+                            previous.is_none_or(|p| p < *range.start()),
+                            "unordered/overlapping bit ranges"
+                        );
+                        previous = Some(*range.end());
+                        bits.extend(range.clone().map(u64::from));
+                    }
+                    ensure!(
+                        bits.len() == field.bit_size as usize,
+                        "bit range width mismatch"
+                    );
+                    bits
+                }
+            };
+            for offset in offsets(0, &field.array)? {
+                for bit in &bits {
+                    let bit = offset + bit;
+                    ensure!(
+                        bit < u64::from(fs.bit_size),
+                        "field out of bounds {name}.{}",
+                        field.name
+                    );
+                    ensure!(occupied.insert(bit), "field overlap {name}.{}", field.name);
+                }
+            }
+            if let Some(ename) = &field.enumm {
+                let e = ir.enums.get(ename).context("missing field enum")?;
+                ensure!(e.bit_size == field.bit_size, "enum width mismatch");
+                used_enums.insert(ename);
+            }
+        }
+    }
+    for (name, e) in &ir.enums {
+        ensure!(
+            e.bit_size > 0 && e.bit_size <= 64 && used_enums.contains(name),
+            "invalid/unused enum"
+        );
+        let mut names = BTreeSet::new();
+        let mut values = BTreeSet::new();
+        for v in &e.variants {
+            ensure!(
+                expanded::identifier(&v.name) && names.insert(&v.name) && values.insert(v.value),
+                "invalid/duplicate enum variant"
+            );
+            ensure!(
+                e.bit_size == 64 || v.value < (1u64 << e.bit_size),
+                "enum value out of bounds"
+            );
+        }
+    }
+    Ok(())
+}
+
+fn block_alignment(ir: &IR, name: &str) -> u64 {
+    ir.blocks[name]
+        .items
+        .iter()
+        .map(|i| match &i.inner {
+            BlockItemInner::Register(r) => u64::from(r.bit_size / 8),
+            BlockItemInner::Block(b) => block_alignment(ir, &b.block),
+        })
+        .max()
+        .unwrap_or(1)
+}
+
 /// Validate overlaps including every array element; only exact reviewed alias sets pass.
 pub fn validate(ir: &IR, policy: &Policy) -> Result<()> {
+    validate_fields(ir)?;
+    // Own bit/enum validation: upstream ignores arrays and misses single-bit
+    // overlap endpoints, and its enum bound expression overflows for u64.
+    let mut structural = ir.clone();
+    structural.enums.clear();
+    for fs in structural.fieldsets.values_mut() {
+        for f in &mut fs.fields {
+            f.enumm = None;
+        }
+    }
     let errors = chiptool::validate::validate(
-        ir,
+        &structural,
         chiptool::validate::Options {
             allow_register_overlap: true, // Our stricter alias/byte-range check below owns overlaps.
-            allow_field_overlap: false,
+            allow_field_overlap: true,
             allow_enum_dup_value: false,
             allow_unused_enums: false,
             allow_unused_fieldsets: false,
@@ -94,7 +229,7 @@ pub fn validate(ir: &IR, policy: &Policy) -> Result<()> {
         let mut names = BTreeSet::new();
         for item in &block.items {
             ensure!(
-                names.insert(&item.name),
+                expanded::identifier(&item.name) && names.insert(&item.name),
                 "duplicate item {name}.{}",
                 item.name
             );
@@ -109,7 +244,10 @@ pub fn validate(ir: &IR, policy: &Policy) -> Result<()> {
                     }
                     (u64::from(r.bit_size / 8), u64::from(r.bit_size / 8))
                 }
-                BlockItemInner::Block(b) => (block_size(ir, &b.block, &mut BTreeSet::new())?, 1),
+                BlockItemInner::Block(b) => (
+                    block_size(ir, &b.block, &mut BTreeSet::new())?,
+                    block_alignment(ir, &b.block),
+                ),
             };
             for offset in offsets(item.byte_offset, &item.array)? {
                 ensure!(offset % alignment == 0, "misaligned {name}.{}", item.name);
@@ -120,6 +258,10 @@ pub fn validate(ir: &IR, policy: &Policy) -> Result<()> {
         let allowed = policy.aliases.get(name).cloned().unwrap_or_default();
         for group in &allowed {
             ensure!(group.len() >= 2, "alias needs at least two names");
+            ensure!(
+                group.iter().collect::<BTreeSet<_>>().len() == group.len(),
+                "duplicate alias names"
+            );
             let mut positions = BTreeSet::new();
             for alias in group {
                 let item = block
@@ -127,16 +269,22 @@ pub fn validate(ir: &IR, policy: &Policy) -> Result<()> {
                     .iter()
                     .find(|i| &i.name == alias)
                     .context("stale alias policy")?;
-                ensure!(item.array.is_none(), "array alias unsupported");
+
                 let BlockItemInner::Register(r) = &item.inner else {
                     bail!("block alias unsupported")
                 };
-                positions.insert((item.byte_offset, r.bit_size));
+                let mut alias_offsets = offsets(item.byte_offset, &item.array)?;
+                alias_offsets.sort_unstable();
+                positions.insert((alias_offsets, r.bit_size));
             }
             ensure!(positions.len() == 1, "alias offsets/widths differ");
         }
+        spans.sort_unstable();
         for (i, a) in spans.iter().enumerate() {
             for b in &spans[i + 1..] {
+                if b.0 >= a.1 {
+                    break;
+                }
                 if a.0 < b.1 && b.0 < a.1 {
                     ensure!(
                         a.0 == b.0
@@ -151,22 +299,6 @@ pub fn validate(ir: &IR, policy: &Policy) -> Result<()> {
                     );
                 }
             }
-        }
-    }
-    for (name, fs) in &ir.fieldsets {
-        for field in &fs.fields {
-            let BitOffset::Regular(start) = field.bit_offset else {
-                bail!("noncontiguous field not supported")
-            };
-            ensure!(field.array.is_none(), "field array not supported");
-            ensure!(
-                field.bit_size > 0
-                    && start
-                        .checked_add(field.bit_size)
-                        .is_some_and(|end| end <= fs.bit_size),
-                "field out of bounds {name}.{}",
-                field.name
-            );
         }
     }
     for qualified in &policy.write_mask_registers {
@@ -226,8 +358,50 @@ fn normalize_header(formatted: &str) -> Result<String> {
     Ok(result)
 }
 
+fn validate_extends(ir: &IR) -> Result<()> {
+    // Pinned chiptool's topological sort does not terminate on an extends cycle.
+    for parents in [
+        ir.blocks
+            .iter()
+            .map(|(n, b)| (n.as_str(), b.extends.as_deref()))
+            .collect::<BTreeMap<_, _>>(),
+        ir.fieldsets
+            .iter()
+            .map(|(n, f)| (n.as_str(), f.extends.as_deref()))
+            .collect::<BTreeMap<_, _>>(),
+    ] {
+        for name in parents.keys() {
+            let mut seen = BTreeSet::new();
+            let mut current = Some(*name);
+            while let Some(name) = current {
+                ensure!(seen.insert(name), "recursive extends {name}");
+                current = *parents
+                    .get(name)
+                    .with_context(|| format!("missing extends parent {name}"))?;
+            }
+        }
+    }
+    Ok(())
+}
+
+fn merge_ir(ir: &mut IR, sub: IR) -> Result<()> {
+    ensure!(
+        sub.devices.is_empty(),
+        "device runtime generation forbidden"
+    );
+    ensure!(
+        sub.blocks.keys().all(|k| !ir.blocks.contains_key(k))
+            && sub.fieldsets.keys().all(|k| !ir.fieldsets.contains_key(k))
+            && sub.enums.keys().all(|k| !ir.enums.contains_key(k)),
+        "duplicate IR names"
+    );
+    ir.merge(sub);
+    Ok(())
+}
+
 pub fn generate(root: &Path) -> Result<BTreeMap<PathBuf, String>> {
-    let policy: Policy = load(&root.join("provenance/policy.yaml"))?;
+    let base_policy: Policy = load(&root.join("provenance/policy.yaml"))?;
+    let manifests = expanded::discover(root)?;
     let mut outputs = BTreeMap::new();
     let mut lib = String::from(
         "// Generated by spacemit-data-gen; DO NOT EDIT.\n#![no_std]\n#![doc = include_str!(\"../ACCESS.md\")]\n#[cfg(all(target_arch = \"riscv32\", any(feature = \"k3-rcpu0\", feature = \"k3-rcpu1\")))] compile_error!(\"K3 requires RV64\");\n#[cfg(all(target_arch = \"riscv64\", feature = \"k1-rcpu\"))] compile_error!(\"K1 requires RV32\");\n",
@@ -242,27 +416,58 @@ pub fn generate(root: &Path) -> Result<BTreeMap<PathBuf, String>> {
         ensure!([32, 64].contains(&chip.pointer_width), "pointer width");
         ensure!(root.join(&chip.provenance).is_file(), "missing provenance");
         let mut ir = IR::new();
+        ensure!(
+            expanded::relative(&chip.provenance),
+            "invalid provenance path"
+        );
         for block in &chip.registers {
+            ensure!(expanded::identifier(block), "register file identifier");
             let sub: IR = load(&root.join(format!("data/registers/{block}.yaml")))?;
-            ensure!(
-                sub.devices.is_empty(),
-                "device runtime generation forbidden"
-            );
-            ensure!(
-                sub.blocks.keys().all(|k| !ir.blocks.contains_key(k))
-                    && sub.fieldsets.keys().all(|k| !ir.fieldsets.contains_key(k))
-                    && sub.enums.keys().all(|k| !ir.enums.contains_key(k)),
-                "duplicate IR names"
-            );
-            ir.merge(sub);
+            merge_ir(&mut ir, sub)?;
         }
+        let family = if *feature == "k1-rcpu" {
+            expanded::Family::K1
+        } else {
+            expanded::Family::K3
+        };
+        ensure!(
+            chip.pointer_width
+                == if family == expanded::Family::K1 {
+                    32
+                } else {
+                    64
+                },
+            "feature pointer width mismatch"
+        );
+        ensure!(
+            chip.hart_id == if *feature == "k3-rcpu1" { 1 } else { 0 },
+            "feature hart mismatch"
+        );
+        let mut policy = base_policy.clone();
+        expanded::merge(root, family, &manifests, &mut ir, &mut policy)?;
+        validate_extends(&ir)?;
         chiptool::transform::expand_extends::ExpandExtends {}.run(&mut ir)?;
-        chiptool::transform::sort::Sort {}.run(&mut ir)?;
         validate(&ir, &policy)?;
+        expanded::validate_references(root, family, &manifests, &ir)?;
+        chiptool::transform::sort::Sort {}.run(&mut ir)?;
+        let mut render_ir = ir.clone();
+        // Pinned chiptool computes wrapping_shl(64)-1 as zero. Two 32-bit
+        // ranges preserve the exact u64 getter/setter API and every source bit.
+        for fs in render_ir.fieldsets.values_mut() {
+            for field in &mut fs.fields {
+                if field.bit_size == 64 {
+                    field.bit_offset = BitOffset::Cursed(vec![0..=31, 32..=63]);
+                }
+            }
+        }
+        ensure!(
+            render_ir.enums.values().all(|e| e.bit_size < 64),
+            "pinned chiptool cannot render 64-bit enums; explicit renderer support required"
+        );
         let mut source = String::from("// Generated by spacemit-data-gen; DO NOT EDIT.\n");
         source.push_str(
             &rust::render(
-                &ir,
+                &render_ir,
                 &Options::new()
                     .with_skip_no_std(true)
                     .with_arch(RustArch::RiscV)
@@ -280,12 +485,14 @@ pub fn generate(root: &Path) -> Result<BTreeMap<PathBuf, String>> {
                     .all(|c| c.is_ascii_uppercase() || c.is_ascii_digit() || c == '_'),
                 "constant identifier"
             );
+            ensure!(expanded::identifier(&name), "constant identifier");
             if chip.pointer_width == 32 {
                 ensure!(value <= u32::MAX as u64, "RV32 constant overflow");
             }
             source.push_str(&format!("pub const {name}: u64 = 0x{value:x};\n"));
         }
         source.push_str("}\n");
+        source.push_str(&expanded::render(family, &manifests, &ir)?);
         let module = feature.replace('-', "_");
         lib.push_str(&format!(
             "#[cfg(feature = {feature:?})] #[path = \"{module}.rs\"] mod selected;\n"

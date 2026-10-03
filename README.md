@@ -1,7 +1,7 @@
 # spacemit-data
 
-Small source-reviewed register-data repository and generated `no_std`
-`spacemit-pac` for SpacemiT K1 N308 and K3 RT24 auxiliary cores. Original work
+Source-reviewed K1/K3 register-data repository and generated `no_std`
+`spacemit-pac`, preserving the K1 N308 and K3 RT24 auxiliary-core selections. Original work
 is **Apache-2.0 OR MIT**. This is an ASPEED-style separation of register data,
 deterministic host generator and firmware PAC, not a hardware bring-up claim.
 No allocator or external dependencies in the PAC. Rust edition 2024.
@@ -20,8 +20,8 @@ No allocator or external dependencies in the PAC. Rust edition 2024.
 - `spacemit-pac/`: generated Rust; never edit `src/*.rs` manually.
 
 ```sh
-cargo run --manifest-path spacemit-data-gen/Cargo.toml
-cargo run --manifest-path spacemit-data-gen/Cargo.toml -- --check
+cargo run --locked --offline --manifest-path spacemit-data-gen/Cargo.toml
+cargo run --locked --offline --manifest-path spacemit-data-gen/Cargo.toml -- --check
 scripts/check.sh
 # Optional integrity and original C ABI evidence with supplied research cache:
 python3 scripts/verify-sources.py /tmp/spacemit-research
@@ -49,6 +49,31 @@ Use that only for an archive/checkout matching the pin, not arbitrary edits.
 The normal git dependency does not rely on this research directory or a
 prebuilt binary.
 
+## Complete source coverage
+
+Eight expanded manifests cover every register-bearing table in the public K1/K3
+Markdown manuals, plus repeated K1 datasheet facts and pinned C supplements:
+CPU/system/security, clocks/reset/PMU, memory/storage, GPIO/pinmux, serial/audio,
+CAN/Ethernet/PCIe/USB, graphics/video/display/capture. Published numeric facts
+are exposed even when hardware testing has not yet occurred. Unpublished maps,
+unknown counts/access semantics and conflicting locations remain explicit source
+limitations, not prerequisites for PAC generation.
+
+The expansion contains **153 block definitions, 6,444 register-view declarations,
+13,491 reused/compressed field definitions and 498 source-view instances**.
+These are definition counts, **not unique silicon-register counts**: directional
+aliases, layout variants, arrays and shared banks must not be multiplied into a
+chip inventory. K3 V2D's 47 view declarations cover 386 source words/558 named
+fields; K1 pinmux's 129 named words share 12 common field definitions.
+[Exact per-lane inventory and count definitions](provenance/COVERAGE.md) include
+all 1,771 register-oriented source tables, 44 genuine additional table headers,
+C definition records, source revisions and precise residual gaps.
+
+Normal generation only needs committed IR/manifests and the pinned Rust dependency
+cache; it never reads or fetches vendor sources. `scripts/verify-expanded.py`
+independently checks accounting offline; supplied source roots additionally enable
+all source hashes, real table-header checks and exhaustive table completeness.
+
 ## Consumer API
 
 Choose exactly one feature in the HAL/application dependency:
@@ -72,6 +97,14 @@ allowed for tests. Featureless crate exposes no MMIO API.
 | `n308_eclic::Eclic`, `Irq` | `cfg/info/mth`, `irq(index).ip/ie/attr/ctl` (byte IRQ registers) |
 | `n308_timer::Timer` | `mtime_lo/hi`, `mtimecmp_lo/hi`, `mtimectl`, `msip` |
 | `k3_boot::Boot` | `core0_boot_entry_lo/hi`, `core1_boot_entry_lo/hi` |
+
+The original modules/constants above remain unchanged. Expanded modules use
+`k1_system`, `k1_io`, `k1_media`, `k1_pinmux`, `k3_system`, `k3_io`, `k3_image`
+and `k3_memory`. `soc::peripherals::*` exposes typed `soc::Instance<T>` metadata
+with address, AP/RCPU/secure view, source kind/path/line and an unsafe
+`peripheral()` constructor. These constants do **not** claim AP or secure
+addresses are translated/reachable from RCPU, or that the consumer owns the
+peripheral. Dynamic/prebanked controller metadata under `chip::*` is unchanged.
 
 Every block has `unsafe const from_ptr(*mut ())` and `as_ptr() -> *mut ()`.
 Registers use chiptool `common::Reg<T, R/W/RW>`: `read`, `write_value`, `write`
@@ -108,17 +141,23 @@ configuration requires deliberate board validation. This is hardware-unverified.
 
 ## Validation and boundaries
 
-`scripts/check.sh` runs four generator validation/determinism tests, actual
+`scripts/check.sh` runs 11 generator validation/determinism tests, 15 independent
+verifier tests, and (with supplied source caches) eight importer checks/113
+source tests including native C offset/bitfield oracles. It also runs actual
 host storage-backed access tests for aliases, widths, status decoding, masks,
 byte IRQ writes, array limits, counter high bits and opposite-core readiness
-addressing; RO/WO compile-fail doctests; PAC cross-checks on
+addressing, source-view instance construction, sparse pin/GPIO arrays, V2D
+endpoints, full-width GPIO set masks, accessor-established GPU widths, MDIO GD,
+clock requests, timer restart/W0C status and SDHCI native byte/halfword boundaries;
+nine RO/WO/no-modify compile-fail doctests per feature;
+strict generator Clippy; PAC cross-checks on
 `riscv32imafc-unknown-none-elf` (K1) and `riscv64gc-unknown-none-elf` (both K3
 cores); invalid feature/width rejection and no staged files. Host storage is
 **not** a FIFO, W1C hardware model or a successful Linux handshake.
 
-No hardware available. No RPMI/RPMsg protocol implementation, Linux transport
-validation, PM replacement, suspend/resume, cache maintenance, clock/reset or
-pinmux changes. Inherited UART clock/pins and register ownership must be
+Hardware testing is deferred and is not a generation/delivery gate. No
+RPMI/RPMsg protocol implementation, Linux transport validation, PM replacement,
+suspend/resume, cache maintenance, or clock/reset/pinmux runtime changes. Inherited UART clock/pins and register ownership must be
 established by a board before use. Unsupported/ambiguous behavior is recorded
 in `provenance/README.md`, including conflicting N308 interrupt counts,
 revision-dependent timer fields and UART divisor-high/FIFO ambiguities.

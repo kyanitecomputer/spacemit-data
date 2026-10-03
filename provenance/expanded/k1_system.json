@@ -1,0 +1,3762 @@
+{
+  "schema": 1,
+  "chip": "k1",
+  "registers": [
+    "expanded_k1_system"
+  ],
+  "sources": [
+    {
+      "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+      "sha256": "b0997b76224b2f0e26453097e7184298e215ab0fc7d62e58f618c47060e43135",
+      "kind": "docs"
+    },
+    {
+      "path": "k1/k1_docs/k1_usermanual/7.Interrupt_Assignments.md",
+      "sha256": "22b6e21dca7fa151aa012009f5b056156a4a8f702921028609a11c652611a302",
+      "kind": "docs"
+    },
+    {
+      "path": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "sha256": "69ed5a5c71ac809f1df5e736289c64ebaeb70c0d6e04234e5c7aa92697e89489",
+      "kind": "docs"
+    },
+    {
+      "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "sha256": "9517e57b3e35ad3db6258fd5b1eb03107925c4d0975073e8596e51585548b283",
+      "kind": "docs"
+    },
+    {
+      "path": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "sha256": "56ce8255ba6de097f4d1a5610b3f0f5a4075b8ce99ee455041dd447e40e35782",
+      "kind": "docs"
+    },
+    {
+      "path": "components/nmsis/core/include/core_feature_timer.h",
+      "sha256": "98c9e6ebe9843669bbb7e21cb2ff18a0eecbe79ec110f8b6b57fdcb007e3cf6e",
+      "kind": "esos"
+    },
+    {
+      "path": "components/nmsis/core/include/core_feature_eclic.h",
+      "sha256": "a84841e4b126fe40a5cb42a0e1b43d9a6dda4ad277ec37bdfee46cf9be16e17a",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/mailbox/k1x_mailbox.h",
+      "sha256": "a64724114e951517423d52a21c92e533e9f7c9b202acbf18d46a71e0e4e8bb38",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/mailbox/k1x-mailbox.c",
+      "sha256": "fb9ce13c3f0945471d24ee1e6b9c568b8aa36969a6f1887d70ab536a8e35ccc1",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/dma/dma_k1x.c",
+      "sha256": "5b3f3f325943348ffc9a8d16977c5accf2740dcfce8bf4f8d2344d717f13773a",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/clk/ccu-spacemit-k1x.h",
+      "sha256": "d407a22fec6443c82df22e298a6024abcbe6278a941be905aa6ee15601bab1a5",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/clk/ccu-spacemit-k1x.c",
+      "sha256": "49ce4cb2a75583e69ffa72bf9c9bbf0d4c63861676c160e8dff0e85c8396a57e",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/platform/n308/k1-x/_register_defination.h",
+      "sha256": "d06ec42092fe07fbb6df18056ee493aaa0ccb454c80ad7325fd0259333dcd9e1",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+      "sha256": "c35dc10e6962b4a2315856baf519c036b90fd5722650a9e21a6cd7425a8db357",
+      "kind": "esos"
+    },
+    {
+      "path": "libcpu/risc-v/spacemit/n308/spacemit_sdk_soc.h",
+      "sha256": "2a6ceeb93a02ff4fc01cb76ab461f1f9ab7a34f3165ed6208285909a5e1866a1",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/pwm/pwm-pxa.c",
+      "sha256": "cc4ef492ae808c7286bcc6f7cb2d732efdb96449e786b0c2557d8ee159692424",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/pm/k1x_pm.c",
+      "sha256": "c8e40f76cac4ef4cf675e7ec64fca618ac05dfc2a80259f932a891558786e487",
+      "kind": "esos"
+    },
+    {
+      "path": "arch/riscv/boot/dts/spacemit/k1.dtsi",
+      "sha256": "944d8f6fb253d0d7be9ed9ca81be8b99aefeb9a04026ebbf6f5b19d01a017464",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/clocksource/timer-clint.c",
+      "sha256": "8bbc4ca3c7137fa2a9b1908bcb0330130e9cd81c6ee9e2cc8a9277395246fc80",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/irqchip/irq-sifive-plic.c",
+      "sha256": "21390bc9d3015cf20025f993d4b5553325272dacae231d849739667efb53e4a2",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/net/ethernet/spacemit/k1_emac.c",
+      "sha256": "db395f26410f759e3fcbd5f98e87b347cac6a9db6ce3246e142de4d4e7583191",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/net/ethernet/spacemit/k1_emac.h",
+      "sha256": "7882c91bbf380b3809c3f14fc04652cba5555f1827b5f16452975c8b27d31892",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/pci/controller/dwc/pcie-spacemit-k1.c",
+      "sha256": "aa9b4a1ef0f0ff2c04954d835e00d0a85bd0fa349b15c47ef5f8cecb4ea5c01a",
+      "kind": "linux"
+    },
+    {
+      "path": "include/soc/spacemit/k1-syscon.h",
+      "sha256": "a6f6a70751f69e4dbb67cb28636668143c323632db1bae2f451962238a61f52f",
+      "kind": "linux"
+    }
+  ],
+  "instances": [
+    {
+      "name": "AP_K1_SYSTEM_APBC",
+      "block": "k1_system::Apbc",
+      "address": 3556855808,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 1080
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_APB_TIMER2",
+      "block": "k1_system::TimerWatchdog",
+      "address": 3556859904,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 2710
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_APPMU",
+      "block": "k1_system::ApPmu",
+      "address": 3559401472,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 237
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_CLINT",
+      "block": "k1_system::ApClint",
+      "address": 3825205248,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1.dtsi",
+        "line": 906
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_DRAGONCIU",
+      "block": "k1_system::DragonCiu",
+      "address": 3628335104,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+        "line": 99
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_GENERICCOUNTER",
+      "block": "k1_system::GenericCounter",
+      "address": 3573551104,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+        "line": 51
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_MAILBOX",
+      "block": "k1_system::Mailbox",
+      "address": 3556848640,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 3033
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_MAINPMU",
+      "block": "k1_system::MainPmu",
+      "address": 3557097472,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 96
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PDMA",
+      "block": "k1_system::Pdma",
+      "address": 3556769792,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 2224
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PLIC",
+      "block": "k1_system::ApPlic",
+      "address": 3758096384,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1.dtsi",
+        "line": 889
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PLL",
+      "block": "k1_system::Pll",
+      "address": 3557359616,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 1357
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PMU_TIMER",
+      "block": "k1_system::TimerWatchdog",
+      "address": 3557294080,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 2711
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM0",
+      "block": "k1_system::Pwm",
+      "address": 3556876288,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 84
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM1",
+      "block": "k1_system::Pwm",
+      "address": 3556877312,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 85
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM10",
+      "block": "k1_system::Pwm",
+      "address": 3556902912,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 98
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM11",
+      "block": "k1_system::Pwm",
+      "address": 3556903936,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 99
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM12",
+      "block": "k1_system::Pwm",
+      "address": 3556904960,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 100
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM13",
+      "block": "k1_system::Pwm",
+      "address": 3556905984,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 101
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM14",
+      "block": "k1_system::Pwm",
+      "address": 3556907008,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 102
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM15",
+      "block": "k1_system::Pwm",
+      "address": 3556908032,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 103
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM16",
+      "block": "k1_system::Pwm",
+      "address": 3556909056,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 104
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM17",
+      "block": "k1_system::Pwm",
+      "address": 3556910080,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 105
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM18",
+      "block": "k1_system::Pwm",
+      "address": 3556911104,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 106
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM19",
+      "block": "k1_system::Pwm",
+      "address": 3556912128,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 107
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM2",
+      "block": "k1_system::Pwm",
+      "address": 3556878336,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 86
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM3",
+      "block": "k1_system::Pwm",
+      "address": 3556879360,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 87
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM4",
+      "block": "k1_system::Pwm",
+      "address": 3556880384,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 88
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM5",
+      "block": "k1_system::Pwm",
+      "address": 3556881408,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 89
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM6",
+      "block": "k1_system::Pwm",
+      "address": 3556882432,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 90
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM7",
+      "block": "k1_system::Pwm",
+      "address": 3556883456,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 91
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM8",
+      "block": "k1_system::Pwm",
+      "address": 3556900864,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 96
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_PWM9",
+      "block": "k1_system::Pwm",
+      "address": 3556901888,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 97
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_RTC",
+      "block": "k1_system::Rtc",
+      "address": 3556835328,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 2957
+      }
+    },
+    {
+      "name": "AP_K1_SYSTEM_TIMERWATCHDOG",
+      "block": "k1_system::TimerWatchdog",
+      "address": 3556851712,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 2709
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_AHBDMA",
+      "block": "k1_system::AhbDma",
+      "address": 3230154752,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+        "line": 369
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_AON_TIMER",
+      "block": "k1_system::TimerWatchdog",
+      "address": 3230175232,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 193
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_AUDIOCLOCK",
+      "block": "k1_system::AudioClock",
+      "address": 3230146560,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 1558
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_AUDIO_PMU",
+      "block": "k1_system::AudioPmu",
+      "address": 3230187520,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 197
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_MAILBOX",
+      "block": "k1_system::Mailbox",
+      "address": 3230179328,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 194
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_N308ECLIC",
+      "block": "k1_system::N308Eclic",
+      "address": 3758227456,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+        "line": 966
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_N308TIMER",
+      "block": "k1_system::N308Timer",
+      "address": 3758292992,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+        "line": 890
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_PWM0",
+      "block": "k1_system::RcpuPwm",
+      "address": 3230171392,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 166
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_PWM1",
+      "block": "k1_system::RcpuPwm",
+      "address": 3230171648,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 175
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_PWM2",
+      "block": "k1_system::RcpuPwm",
+      "address": 3230171904,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 184
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_PWM3",
+      "block": "k1_system::RcpuPwm",
+      "address": 3230172160,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 193
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_PWM4",
+      "block": "k1_system::RcpuPwm",
+      "address": 3230172416,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 202
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_PWM5",
+      "block": "k1_system::RcpuPwm",
+      "address": 3230172672,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 211
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_PWM6",
+      "block": "k1_system::RcpuPwm",
+      "address": 3230172928,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 220
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_PWM7",
+      "block": "k1_system::RcpuPwm",
+      "address": 3230173184,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 229
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_PWM8",
+      "block": "k1_system::RcpuPwm",
+      "address": 3230173440,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 238
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_PWM9",
+      "block": "k1_system::RcpuPwm",
+      "address": 3230173696,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 247
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_RCPUPWMCLOCK",
+      "block": "k1_system::RcpuPwmClock",
+      "address": 3230171136,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 1643
+      }
+    },
+    {
+      "name": "RCPU_K1_SYSTEM_RCPUSYSCTRL",
+      "block": "k1_system::RcpuSysctrl",
+      "address": 3230138368,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 1488
+      }
+    },
+    {
+      "name": "SECURE_K1_SYSTEM_DMA2",
+      "block": "k1_system::Pdma",
+      "address": 4032823296,
+      "view": "secure",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 2225
+      }
+    },
+    {
+      "name": "SECURE_K1_SYSTEM_RNG",
+      "block": "k1_system::Rng",
+      "address": 4033886208,
+      "view": "secure",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 2483
+      }
+    },
+    {
+      "name": "SECURE_K1_SYSTEM_RTC",
+      "block": "k1_system::Rtc",
+      "address": 4032909312,
+      "view": "secure",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 157
+      }
+    },
+    {
+      "name": "SECURE_K1_SYSTEM_SECUREAPBC",
+      "block": "k1_system::SecureApbc",
+      "address": 4032888832,
+      "view": "secure",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 1412
+      }
+    },
+    {
+      "name": "SECURE_K1_SYSTEM_SEC_TIMER",
+      "block": "k1_system::TimerWatchdog",
+      "address": 4032913408,
+      "view": "secure",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+        "line": 2712
+      }
+    }
+  ],
+  "aliases": {
+    "k1_system::AudioPmu": [
+      [
+        "audio_ctrl_read",
+        "audio_ctrl_write"
+      ]
+    ],
+    "k1_system::AhbDma": [
+      [
+        "dma_dcr_read",
+        "dma_dcr_write"
+      ],
+      [
+        "dma_sr_read",
+        "dma_sr_write"
+      ]
+    ],
+    "k1_system::N308Timer": [
+      [
+        "msftrst_read",
+        "msftrst_write"
+      ]
+    ],
+    "k1_system::ApPmu": [
+      [
+        "pmu_jpeg_clk_res_ctrl_read",
+        "pmu_jpeg_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_csi_ccic2_clk_res_ctrl_read",
+        "pmu_csi_ccic2_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_isp_clk_res_ctrl_read",
+        "pmu_isp_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_lcd_clk_res_ctrl1_read",
+        "pmu_lcd_clk_res_ctrl1_write"
+      ],
+      [
+        "pmu_lcd_spi_clk_res_ctrl_read",
+        "pmu_lcd_spi_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_ccic_clk_res_ctrl_read",
+        "pmu_ccic_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_sdh0_clk_res_ctrl_read",
+        "pmu_sdh0_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_sdh1_clk_res_ctrl_read",
+        "pmu_sdh1_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_qspi_clk_res_ctrl_read",
+        "pmu_qspi_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_vpu_clk_res_ctrl_read",
+        "pmu_vpu_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_mc_hw_slp_type_read",
+        "pmu_mc_hw_slp_type_write"
+      ],
+      [
+        "pmu_gpu_clk_res_ctrl_read",
+        "pmu_gpu_clk_res_ctrl_write"
+      ],
+      [
+        "pmua_sdh2_clk_res_ctrl_read",
+        "pmua_sdh2_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_audio_clk_res_ctrl_read",
+        "pmu_audio_clk_res_ctrl_write"
+      ],
+      [
+        "dfc_ap_read",
+        "dfc_ap_write"
+      ],
+      [
+        "pmu_hdmi_clk_res_ctrl_read",
+        "pmu_hdmi_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_usb_sd_rot_wake_clr_read",
+        "pmu_usb_sd_rot_wake_clr_write"
+      ],
+      [
+        "pmu_res_frm_slp_clr_read",
+        "pmu_res_frm_slp_clr_write"
+      ],
+      [
+        "pmu_cap_corex_wakeup_x_0_read",
+        "pmu_cap_corex_wakeup_x_0_write"
+      ],
+      [
+        "pmu_cap_corex_wakeup_x_1_read",
+        "pmu_cap_corex_wakeup_x_1_write"
+      ],
+      [
+        "pmu_cap_corex_wakeup_x_2_read",
+        "pmu_cap_corex_wakeup_x_2_write"
+      ],
+      [
+        "pmu_cap_corex_wakeup_x_3_read",
+        "pmu_cap_corex_wakeup_x_3_write"
+      ],
+      [
+        "pmu_cap_corex_wakeup_x_4_read",
+        "pmu_cap_corex_wakeup_x_4_write"
+      ],
+      [
+        "pmu_cap_corex_wakeup_x_5_read",
+        "pmu_cap_corex_wakeup_x_5_write"
+      ],
+      [
+        "pmu_cap_corex_wakeup_x_6_read",
+        "pmu_cap_corex_wakeup_x_6_write"
+      ],
+      [
+        "pmu_cap_corex_wakeup_x_7_read",
+        "pmu_cap_corex_wakeup_x_7_write"
+      ],
+      [
+        "pmu_usbp1_wake_clr_read",
+        "pmu_usbp1_wake_clr_write"
+      ],
+      [
+        "pmu_usb3_wake_clr_read",
+        "pmu_usb3_wake_clr_write"
+      ]
+    ],
+    "k1_system::Pdma": [
+      [
+        "dcsr_x_0_read",
+        "dcsr_x_0_write"
+      ],
+      [
+        "dcsr_x_1_read",
+        "dcsr_x_1_write"
+      ],
+      [
+        "dcsr_x_2_read",
+        "dcsr_x_2_write"
+      ],
+      [
+        "dcsr_x_3_read",
+        "dcsr_x_3_write"
+      ],
+      [
+        "dcsr_x_4_read",
+        "dcsr_x_4_write"
+      ],
+      [
+        "dcsr_x_5_read",
+        "dcsr_x_5_write"
+      ],
+      [
+        "dcsr_x_6_read",
+        "dcsr_x_6_write"
+      ],
+      [
+        "dcsr_x_7_read",
+        "dcsr_x_7_write"
+      ],
+      [
+        "dcsr_x_8_read",
+        "dcsr_x_8_write"
+      ],
+      [
+        "dcsr_x_9_read",
+        "dcsr_x_9_write"
+      ],
+      [
+        "dcsr_x_10_read",
+        "dcsr_x_10_write"
+      ],
+      [
+        "dcsr_x_11_read",
+        "dcsr_x_11_write"
+      ],
+      [
+        "dcsr_x_12_read",
+        "dcsr_x_12_write"
+      ],
+      [
+        "dcsr_x_13_read",
+        "dcsr_x_13_write"
+      ],
+      [
+        "dcsr_x_14_read",
+        "dcsr_x_14_write"
+      ],
+      [
+        "dcsr_x_15_read",
+        "dcsr_x_15_write"
+      ],
+      [
+        "drqsr_read",
+        "drqsr_write"
+      ]
+    ],
+    "k1_system::Rng": [
+      [
+        "rng_control_read",
+        "rng_control_write"
+      ],
+      [
+        "rng_reset_select_read",
+        "rng_reset_select_write"
+      ],
+      [
+        "rng_interrupt_status_read",
+        "rng_interrupt_status_write"
+      ]
+    ],
+    "k1_system::TimerWatchdog": [
+      [
+        "timer_count_restart_read",
+        "timer_count_restart_write"
+      ],
+      [
+        "timer_watchdog_status_read",
+        "timer_watchdog_status_write"
+      ]
+    ],
+    "k1_system::Rtc": [
+      [
+        "rtc_status_read",
+        "rtc_status_write"
+      ]
+    ],
+    "k1_system::Mailbox": [
+      [
+        "iir_read",
+        "iir_write"
+      ]
+    ],
+    "k1_system::PlicContext": [
+      [
+        "claim_complete_read",
+        "claim_complete_write"
+      ]
+    ]
+  },
+  "write_mask_registers": [
+    "k1_system::AhbDma.dma_dcr_write",
+    "k1_system::AhbDma.dma_sr_write",
+    "k1_system::ApPmu.dfc_ap_write",
+    "k1_system::ApPmu.pmu_audio_clk_res_ctrl_write",
+    "k1_system::ApPmu.pmu_cap_corex_wakeup_x_0_write",
+    "k1_system::ApPmu.pmu_cap_corex_wakeup_x_1_write",
+    "k1_system::ApPmu.pmu_cap_corex_wakeup_x_2_write",
+    "k1_system::ApPmu.pmu_cap_corex_wakeup_x_3_write",
+    "k1_system::ApPmu.pmu_cap_corex_wakeup_x_4_write",
+    "k1_system::ApPmu.pmu_cap_corex_wakeup_x_5_write",
+    "k1_system::ApPmu.pmu_cap_corex_wakeup_x_6_write",
+    "k1_system::ApPmu.pmu_cap_corex_wakeup_x_7_write",
+    "k1_system::ApPmu.pmu_ccic_clk_res_ctrl_write",
+    "k1_system::ApPmu.pmu_csi_ccic2_clk_res_ctrl_write",
+    "k1_system::ApPmu.pmu_gpu_clk_res_ctrl_write",
+    "k1_system::ApPmu.pmu_hdmi_clk_res_ctrl_write",
+    "k1_system::ApPmu.pmu_isp_clk_res_ctrl_write",
+    "k1_system::ApPmu.pmu_jpeg_clk_res_ctrl_write",
+    "k1_system::ApPmu.pmu_lcd_clk_res_ctrl1_write",
+    "k1_system::ApPmu.pmu_lcd_spi_clk_res_ctrl_write",
+    "k1_system::ApPmu.pmu_mc_hw_slp_type_write",
+    "k1_system::ApPmu.pmu_qspi_clk_res_ctrl_write",
+    "k1_system::ApPmu.pmu_res_frm_slp_clr_write",
+    "k1_system::ApPmu.pmu_sdh0_clk_res_ctrl_write",
+    "k1_system::ApPmu.pmu_sdh1_clk_res_ctrl_write",
+    "k1_system::ApPmu.pmu_usb3_wake_clr_write",
+    "k1_system::ApPmu.pmu_usb_sd_rot_wake_clr_write",
+    "k1_system::ApPmu.pmu_usbp1_wake_clr_write",
+    "k1_system::ApPmu.pmu_vpu_clk_res_ctrl_write",
+    "k1_system::ApPmu.pmua_sdh2_clk_res_ctrl_write",
+    "k1_system::Apbc.apbc_twsi8_clk_rst",
+    "k1_system::AudioPmu.audio_ctrl_write",
+    "k1_system::AudioPmu.lp_wakeup_mask",
+    "k1_system::Mailbox.icr",
+    "k1_system::Mailbox.iir_write",
+    "k1_system::Mailbox.isrw",
+    "k1_system::Mailbox.wdr",
+    "k1_system::N308Timer.msftrst_write",
+    "k1_system::Pdma.dcsr_x_0_write",
+    "k1_system::Pdma.dcsr_x_10_write",
+    "k1_system::Pdma.dcsr_x_11_write",
+    "k1_system::Pdma.dcsr_x_12_write",
+    "k1_system::Pdma.dcsr_x_13_write",
+    "k1_system::Pdma.dcsr_x_14_write",
+    "k1_system::Pdma.dcsr_x_15_write",
+    "k1_system::Pdma.dcsr_x_1_write",
+    "k1_system::Pdma.dcsr_x_2_write",
+    "k1_system::Pdma.dcsr_x_3_write",
+    "k1_system::Pdma.dcsr_x_4_write",
+    "k1_system::Pdma.dcsr_x_5_write",
+    "k1_system::Pdma.dcsr_x_6_write",
+    "k1_system::Pdma.dcsr_x_7_write",
+    "k1_system::Pdma.dcsr_x_8_write",
+    "k1_system::Pdma.dcsr_x_9_write",
+    "k1_system::Pdma.drqsr_write",
+    "k1_system::PlicContext.claim_complete_write",
+    "k1_system::Rng.rng_control_write",
+    "k1_system::Rng.rng_interrupt_status_write",
+    "k1_system::Rng.rng_reset_select_write",
+    "k1_system::Rtc.rtc_status_write",
+    "k1_system::TimerWatchdog.timer_count_restart_write",
+    "k1_system::TimerWatchdog.timer_interrupt_clear",
+    "k1_system::TimerWatchdog.timer_watchdog_counter_reset",
+    "k1_system::TimerWatchdog.timer_watchdog_first_access",
+    "k1_system::TimerWatchdog.timer_watchdog_interrupt_clear",
+    "k1_system::TimerWatchdog.timer_watchdog_second_access",
+    "k1_system::TimerWatchdog.timer_watchdog_status_write"
+  ],
+  "tables": [
+    {
+      "source": "bsp/spacemit/drivers/clk/ccu-spacemit-k1x.h",
+      "line": 15,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.posr"
+      ],
+      "note": "Pinned C definitions beginning at bsp/spacemit/drivers/clk/ccu-spacemit-k1x.h:15; tableless supplemental register layout."
+    },
+    {
+      "source": "bsp/spacemit/drivers/dma/dma_k1x.c",
+      "line": 26,
+      "status": "generated",
+      "registers": [
+        "k1_system::AhbDma.dma_wr_cnt"
+      ],
+      "note": "Pinned C definitions beginning at bsp/spacemit/drivers/dma/dma_k1x.c:26; tableless supplemental register layout."
+    },
+    {
+      "source": "bsp/spacemit/drivers/dma/dma_k1x.c",
+      "line": 27,
+      "status": "generated",
+      "registers": [
+        "k1_system::AhbDma.dma_rd_cnt"
+      ],
+      "note": "Pinned C definitions beginning at bsp/spacemit/drivers/dma/dma_k1x.c:27; tableless supplemental register layout."
+    },
+    {
+      "source": "bsp/spacemit/drivers/pwm/pwm-pxa.c",
+      "line": 13,
+      "status": "generated",
+      "registers": [
+        "k1_system::RcpuPwm.pwm_crx",
+        "k1_system::RcpuPwm.pwm_dcr",
+        "k1_system::RcpuPwm.pwm_pcr"
+      ],
+      "note": "Pinned ESOS PWMCR/PWMDCR/PWMPCR definitions supply the three-word RCPU PWM layout; tableless C supplement."
+    },
+    {
+      "source": "bsp/spacemit/platform/n308/k1-x/_register_defination.h",
+      "line": 89,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioPmu.lp_wakeup_mask"
+      ],
+      "note": "Pinned C definitions beginning at bsp/spacemit/platform/n308/k1-x/_register_defination.h:89; tableless supplemental register layout."
+    },
+    {
+      "source": "drivers/clocksource/timer-clint.c",
+      "line": 31,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApClint.msip",
+        "k1_system::ApClint.mtimecmp_lo",
+        "k1_system::ApClint.mtimecmp_hi",
+        "k1_system::ApClint.mtime_lo",
+        "k1_system::ApClint.mtime_hi"
+      ],
+      "note": "Pinned C definitions beginning at drivers/clocksource/timer-clint.c:31; tableless supplemental register layout."
+    },
+    {
+      "source": "drivers/irqchip/irq-sifive-plic.c",
+      "line": 42,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPlic.priority",
+        "k1_system::ApPlic.pending",
+        "k1_system::PlicEnable.enable",
+        "k1_system::PlicContext.threshold",
+        "k1_system::PlicContext.claim_complete_read",
+        "k1_system::PlicContext.claim_complete_write"
+      ],
+      "note": "Pinned C definitions beginning at drivers/irqchip/irq-sifive-plic.c:42; tableless supplemental register layout."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 52,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioPmu.audio_pmu_vote"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 64,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioPmu.audio_vote_for_main_pmu"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 79,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioPmu.audio_wakeup_en"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 95,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioPmu.aon_per_clk_rst_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 105,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioPmu.mcu_execution_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 114,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioPmu.audio_bus_clk_div"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 125,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioPmu.shub_gpo"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 134,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioPmu.audio_ctrl_read",
+        "k1_system::AudioPmu.audio_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 157,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioPmu.audio_ctrl2"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 169,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioPmu.aud_det_clk_div"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 180,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioPmu.aud_int_msk"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 195,
+      "status": "generated",
+      "registers": [
+        "k1_system::RcpuSysctrl.shubssp0_clk_res_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 210,
+      "status": "generated",
+      "registers": [
+        "k1_system::RcpuSysctrl.shubi2c0_clk_res_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 225,
+      "status": "generated",
+      "registers": [
+        "k1_system::RcpuSysctrl.uart1_clk_res_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 240,
+      "status": "generated",
+      "registers": [
+        "k1_system::RcpuSysctrl.r_can_clk_res_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 255,
+      "status": "generated",
+      "registers": [
+        "k1_system::RcpuSysctrl.r_r_ir_clk_res_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 270,
+      "status": "generated",
+      "registers": [
+        "k1_system::RcpuSysctrl.ddr_remap_base"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 278,
+      "status": "generated",
+      "registers": [
+        "k1_system::RcpuSysctrl.uart0_clk_res_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 297,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioClock.audio_codec_tx_rx_clk_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 312,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioClock.audio_dfe_clk_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 326,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioClock.audio_i2s1_tx_rx_clk_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 341,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioClock.audio_hdmi_clk_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 356,
+      "status": "generated",
+      "registers": [
+        "k1_system::AudioClock.audio_i2s0_tx_rx_clk_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 375,
+      "status": "generated",
+      "registers": [
+        "k1_system::AhbDma.dma_dcr_read",
+        "k1_system::AhbDma.dma_dcr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 386,
+      "status": "generated",
+      "registers": [
+        "k1_system::AhbDma.dma_sr_read",
+        "k1_system::AhbDma.dma_sr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 410,
+      "status": "generated",
+      "registers": [
+        "k1_system::AhbDma.dma_dimr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 419,
+      "status": "generated",
+      "registers": [
+        "k1_system::AhbDma.dma_sarn"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 427,
+      "status": "generated",
+      "registers": [
+        "k1_system::AhbDma.dma_darn"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 435,
+      "status": "generated",
+      "registers": [
+        "k1_system::AhbDma.dma_cntrn"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 444,
+      "status": "generated",
+      "registers": [
+        "k1_system::AhbDma.dma_ccrn"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 460,
+      "status": "generated",
+      "registers": [
+        "k1_system::AhbDma.dma_rssrn"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 469,
+      "status": "generated",
+      "registers": [
+        "k1_system::AhbDma.dma_blrn"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 478,
+      "status": "generated",
+      "registers": [
+        "k1_system::AhbDma.dma_trsf_cnt"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 487,
+      "status": "generated",
+      "registers": [
+        "k1_system::AhbDma.dma_btype"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 505,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pwm.pwm_crx"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 519,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pwm.pwm_dcr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 531,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pwm.pwm_pcr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 542,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pwm.pwm_outcnt"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/7.Interrupt_Assignments.md",
+      "line": 18,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Interrupt-source assignments, not numeric MMIO register layouts."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/7.Interrupt_Assignments.md",
+      "line": 159,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Interrupt-source assignments, not numeric MMIO register layouts."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 57,
+      "status": "generated",
+      "registers": [
+        "k1_system::GenericCounter.cntcr_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 67,
+      "status": "generated",
+      "registers": [
+        "k1_system::GenericCounter.cntsr_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 77,
+      "status": "generated",
+      "registers": [
+        "k1_system::GenericCounter.cntcvlw_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 85,
+      "status": "generated",
+      "registers": [
+        "k1_system::GenericCounter.cntcvup_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 93,
+      "status": "generated",
+      "registers": [
+        "k1_system::GenericCounter.cntfid_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 105,
+      "status": "generated",
+      "registers": [
+        "k1_system::GenericCounter.cluster0_cpu_sram_ctrl0_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 113,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.cluster0_cpu_sram_ctrl1_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 121,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.cluster1_cpu_sram_ctrl0_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 129,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.cluster1_cpu_sram_ctrl1_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 137,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.ckg_ctrl_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 151,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.cci_dbg_ctrl_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 163,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.cci_inf_qos_ctrl_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 175,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.cci_sfram_ctl_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 183,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.x60_outer_coh_en_ctrl_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 193,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.fab_tom_rd_sts0_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 208,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.fab_tom_rd_sts1_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 231,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.fab_timeout_ctrl_x_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 251,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.fab_timeout_id_x_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 266,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.fab_timeout_status0_x_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 278,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.fab_timeout_status1_x_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 288,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.fab_debug_reg_x_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 296,
+      "status": "source_gap",
+      "registers": [],
+      "note": "PAD PLIC trigger-control offset is explicitly Reserved; no numeric location established by pinned C."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 304,
+      "status": "source_gap",
+      "registers": [],
+      "note": "PAD PLIC trigger-control offset is explicitly Reserved; no numeric location established by pinned C."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 312,
+      "status": "source_gap",
+      "registers": [],
+      "note": "PAD PLIC trigger-control offset is explicitly Reserved; no numeric location established by pinned C."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 320,
+      "status": "source_gap",
+      "registers": [],
+      "note": "PAD PLIC trigger-control offset is explicitly Reserved; no numeric location established by pinned C."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 328,
+      "status": "source_gap",
+      "registers": [],
+      "note": "PAD PLIC trigger-control offset is explicitly Reserved; no numeric location established by pinned C."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 336,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.c0_int_wakeup_mask_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 354,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.c1_int_wakeup_mask_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 372,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.cpu_sys_sw_reset_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 382,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.c0_l2_flush_ctl_reset_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 395,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.c1_l2_flush_ctl_reset_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 408,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.cpu_access_ddr_remap_en_reset_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 417,
+      "status": "generated",
+      "registers": [
+        "k1_system::DragonCiu.hap_dm_ctl_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 708,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "N308 CSR instruction encoding, not a byte-addressed MMIO register."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 721,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "N308 CSR instruction encoding, not a byte-addressed MMIO register."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 732,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "N308 CSR instruction encoding, not a byte-addressed MMIO register."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 746,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "N308 CSR instruction encoding, not a byte-addressed MMIO register."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 772,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "N308 CSR instruction encoding, not a byte-addressed MMIO register."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 781,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "N308 CSR instruction encoding, not a byte-addressed MMIO register."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 792,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "N308 CSR instruction encoding, not a byte-addressed MMIO register."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 805,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "N308 CSR instruction encoding, not a byte-addressed MMIO register."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 822,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "N308 CSR instruction encoding, not a byte-addressed MMIO register."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 837,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "N308 CSR instruction encoding, not a byte-addressed MMIO register."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 896,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Timer.mtime_lo"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 904,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Timer.mtime_hi"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 912,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Timer.mtimecmp_l"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 920,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Timer.mtimecmp_hi"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 928,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Timer.mtime_srw_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 937,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Timer.msftrst_read",
+        "k1_system::N308Timer.msftrst_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 946,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Timer.mtimectl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 957,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Timer.msip"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 974,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Eclic.cliccfg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 986,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Eclic.clicinfo"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 999,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Eclic.mth"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 1009,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Eclic.clicintip_i"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 1020,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Eclic.clicintie_i"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 1031,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Eclic.clicintattr_i"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 1044,
+      "status": "generated",
+      "registers": [
+        "k1_system::N308Eclic.clicintctl_i"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 98,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.fccr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 109,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.pocr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 121,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.vrcr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 143,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.isccr0_1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 156,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.wdtpcr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 167,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.ripccr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 178,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.cgr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 208,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.apbcscr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 217,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.pm_mn_clk"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 230,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.succr_1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 243,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.ap_clock_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 256,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_dm_cc_ap"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 275,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_jpeg_clk_res_ctrl_read",
+        "k1_system::ApPmu.pmu_jpeg_clk_res_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 291,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_csi_ccic2_clk_res_ctrl_read",
+        "k1_system::ApPmu.pmu_csi_ccic2_clk_res_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 318,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_ccic1_clk_gate_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 340,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_isp_clk_res_ctrl_read",
+        "k1_system::ApPmu.pmu_isp_clk_res_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 366,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_lcd_clk_res_ctrl1_read",
+        "k1_system::ApPmu.pmu_lcd_clk_res_ctrl1_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 394,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_lcd_spi_clk_res_ctrl_read",
+        "k1_system::ApPmu.pmu_lcd_spi_clk_res_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 412,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_lcd_clk_res_ctrl2"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 429,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_ccic_clk_res_ctrl_read",
+        "k1_system::ApPmu.pmu_ccic_clk_res_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 453,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_sdh0_clk_res_ctrl_read",
+        "k1_system::ApPmu.pmu_sdh0_clk_res_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 468,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_sdh1_clk_res_ctrl_read",
+        "k1_system::ApPmu.pmu_sdh1_clk_res_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 482,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_usb_clk_res_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 504,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_qspi_clk_res_ctrl_read",
+        "k1_system::ApPmu.pmu_qspi_clk_res_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 520,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_dma_clk_res_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 530,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_aes_clk_res_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 541,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_vpu_clk_res_ctrl_read",
+        "k1_system::ApPmu.pmu_vpu_clk_res_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 556,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_mc_hw_slp_type_read",
+        "k1_system::ApPmu.pmu_mc_hw_slp_type_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 574,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_pll_sel_status"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 585,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_gpu_clk_res_ctrl_read",
+        "k1_system::ApPmu.pmu_gpu_clk_res_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 601,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_sdh2_clk_res_ctrl_read",
+        "k1_system::ApPmu.pmua_sdh2_clk_res_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 615,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_mc_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 649,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_cc2_ap"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 684,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_em_clk_res_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 707,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_usb_phy_ctrl0"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 716,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_audio_clk_res_ctrl_read",
+        "k1_system::ApPmu.pmu_audio_clk_res_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 744,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.dfc_ap_read",
+        "k1_system::ApPmu.dfc_ap_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 753,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.dfc_status"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 764,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.dfc_level_x"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 779,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_hdmi_clk_res_ctrl_read",
+        "k1_system::ApPmu.pmu_hdmi_clk_res_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 793,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_ccic2_clk_gate_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 813,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_ccic3_clk_gate_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 833,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_cci_clk_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 849,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_aclk_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 860,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_cpu_c0_clk_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 873,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_cpu_c1_clk_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 886,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pcie_clk_res_ctrl_porta"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 913,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pcie_ctrl_logic_porta"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 933,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pcie_clk_res_ctrl_portb"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 960,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pcie_ctrl_logic_portb"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 980,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pcie_clk_res_ctrl_portc"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1007,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pcie_ctrl_logic_portc"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1027,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.emac0_clk_rst_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1043,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.emac0_rgmii_dline"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1055,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.emac1_clk_rst_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1071,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.emac1_rgmii_dline"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1087,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_uartx_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1099,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_gpio_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1111,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_pwmx_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1125,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_sspx_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1138,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_rtc_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1151,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_twsi0_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1163,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_twsi1_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1175,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_twsi2_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1187,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_twsi4_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1199,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_twsi5_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1211,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_twsi6_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1223,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_twsi7_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1235,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_twsi8_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1249,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_timerx_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1261,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_aib_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1275,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_sspax_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1287,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_onewire_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1299,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_dro_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1309,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_ir_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1319,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_counter_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1329,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_tsen_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1339,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_ipc_ap2aud_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1349,
+      "status": "generated",
+      "registers": [
+        "k1_system::Apbc.apbc_can_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1364,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pll.pllx_sw1_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1376,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pll.pllx_sw2_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1407,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pll.pllx_sw3_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1417,
+      "status": "generated",
+      "registers": [
+        "k1_system::SecureApbc.apb2_uart1_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1429,
+      "status": "generated",
+      "registers": [
+        "k1_system::SecureApbc.apb2_ssp2_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1442,
+      "status": "generated",
+      "registers": [
+        "k1_system::SecureApbc.apbc_twsi3_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1454,
+      "status": "generated",
+      "registers": [
+        "k1_system::SecureApbc.apb2_sec_rtc_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1467,
+      "status": "generated",
+      "registers": [
+        "k1_system::SecureApbc.apb2_timer0_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1479,
+      "status": "generated",
+      "registers": [
+        "k1_system::SecureApbc.apb2_kpc_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1493,
+      "status": "duplicate",
+      "registers": [
+        "k1_system::RcpuSysctrl.shubssp0_clk_res_ctrl"
+      ],
+      "note": "Same numeric word(s) as chapter 14; chapter 14 field table is authoritative."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1507,
+      "status": "duplicate",
+      "registers": [
+        "k1_system::RcpuSysctrl.shubi2c0_clk_res_ctrl"
+      ],
+      "note": "Same numeric word(s) as chapter 14; chapter 14 field table is authoritative."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1523,
+      "status": "duplicate",
+      "registers": [
+        "k1_system::RcpuSysctrl.uart1_clk_res_ctrl",
+        "k1_system::RcpuSysctrl.uart0_clk_res_ctrl"
+      ],
+      "note": "Same numeric word(s) as chapter 14; chapter 14 field table is authoritative."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1537,
+      "status": "duplicate",
+      "registers": [
+        "k1_system::RcpuSysctrl.r_can_clk_res_ctrl"
+      ],
+      "note": "Same numeric word(s) as chapter 14; chapter 14 field table is authoritative."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1551,
+      "status": "duplicate",
+      "registers": [
+        "k1_system::RcpuSysctrl.r_r_ir_clk_res_ctrl"
+      ],
+      "note": "Same numeric word(s) as chapter 14; chapter 14 field table is authoritative."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1565,
+      "status": "duplicate",
+      "registers": [
+        "k1_system::AudioClock.audio_codec_tx_rx_clk_ctrl"
+      ],
+      "note": "Same numeric word(s) as chapter 14; chapter 14 field table is authoritative."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1581,
+      "status": "duplicate",
+      "registers": [
+        "k1_system::AudioClock.audio_dfe_clk_ctrl"
+      ],
+      "note": "Same numeric word(s) as chapter 14; chapter 14 field table is authoritative."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1596,
+      "status": "duplicate",
+      "registers": [
+        "k1_system::AudioClock.audio_i2s1_tx_rx_clk_ctrl"
+      ],
+      "note": "Same numeric word(s) as chapter 14; chapter 14 field table is authoritative."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1612,
+      "status": "duplicate",
+      "registers": [
+        "k1_system::AudioClock.audio_hdmi_clk_ctrl"
+      ],
+      "note": "Same numeric word(s) as chapter 14; chapter 14 field table is authoritative."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1628,
+      "status": "duplicate",
+      "registers": [
+        "k1_system::AudioClock.audio_i2s0_tx_rx_clk_ctrl"
+      ],
+      "note": "Same numeric word(s) as chapter 14; chapter 14 field table is authoritative."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1644,
+      "status": "generated",
+      "registers": [
+        "k1_system::RcpuPwmClock.r_pwmx_clk_rst"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2222,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.dcsr_x_0_read",
+        "k1_system::Pdma.dcsr_x_0_write",
+        "k1_system::Pdma.dcsr_x_1_read",
+        "k1_system::Pdma.dcsr_x_1_write",
+        "k1_system::Pdma.dcsr_x_2_read",
+        "k1_system::Pdma.dcsr_x_2_write",
+        "k1_system::Pdma.dcsr_x_3_read",
+        "k1_system::Pdma.dcsr_x_3_write",
+        "k1_system::Pdma.dcsr_x_4_read",
+        "k1_system::Pdma.dcsr_x_4_write",
+        "k1_system::Pdma.dcsr_x_5_read",
+        "k1_system::Pdma.dcsr_x_5_write",
+        "k1_system::Pdma.dcsr_x_6_read",
+        "k1_system::Pdma.dcsr_x_6_write",
+        "k1_system::Pdma.dcsr_x_7_read",
+        "k1_system::Pdma.dcsr_x_7_write",
+        "k1_system::Pdma.dcsr_x_8_read",
+        "k1_system::Pdma.dcsr_x_8_write",
+        "k1_system::Pdma.dcsr_x_9_read",
+        "k1_system::Pdma.dcsr_x_9_write",
+        "k1_system::Pdma.dcsr_x_10_read",
+        "k1_system::Pdma.dcsr_x_10_write",
+        "k1_system::Pdma.dcsr_x_11_read",
+        "k1_system::Pdma.dcsr_x_11_write",
+        "k1_system::Pdma.dcsr_x_12_read",
+        "k1_system::Pdma.dcsr_x_12_write",
+        "k1_system::Pdma.dcsr_x_13_read",
+        "k1_system::Pdma.dcsr_x_13_write",
+        "k1_system::Pdma.dcsr_x_14_read",
+        "k1_system::Pdma.dcsr_x_14_write",
+        "k1_system::Pdma.dcsr_x_15_read",
+        "k1_system::Pdma.dcsr_x_15_write",
+        "k1_system::Pdma.dalgn",
+        "k1_system::Pdma.dpcsr",
+        "k1_system::Pdma.drqsr_read",
+        "k1_system::Pdma.drqsr_write",
+        "k1_system::Pdma.dint",
+        "k1_system::Pdma.drcmr_x",
+        "k1_system::Pdma.ddadr_l_x",
+        "k1_system::Pdma.dsadr_l_x",
+        "k1_system::Pdma.dtadr_l_x",
+        "k1_system::Pdma.dcmd_x",
+        "k1_system::Pdma.ddadr_h_x",
+        "k1_system::Pdma.dsadr_h_x",
+        "k1_system::Pdma.dtadr_h_x"
+      ],
+      "note": "Numeric instance base summary; references the associated register bank."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2232,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.dcsr_x_0_read",
+        "k1_system::Pdma.dcsr_x_0_write",
+        "k1_system::Pdma.dcsr_x_1_read",
+        "k1_system::Pdma.dcsr_x_1_write",
+        "k1_system::Pdma.dcsr_x_2_read",
+        "k1_system::Pdma.dcsr_x_2_write",
+        "k1_system::Pdma.dcsr_x_3_read",
+        "k1_system::Pdma.dcsr_x_3_write",
+        "k1_system::Pdma.dcsr_x_4_read",
+        "k1_system::Pdma.dcsr_x_4_write",
+        "k1_system::Pdma.dcsr_x_5_read",
+        "k1_system::Pdma.dcsr_x_5_write",
+        "k1_system::Pdma.dcsr_x_6_read",
+        "k1_system::Pdma.dcsr_x_6_write",
+        "k1_system::Pdma.dcsr_x_7_read",
+        "k1_system::Pdma.dcsr_x_7_write",
+        "k1_system::Pdma.dcsr_x_8_read",
+        "k1_system::Pdma.dcsr_x_8_write",
+        "k1_system::Pdma.dcsr_x_9_read",
+        "k1_system::Pdma.dcsr_x_9_write",
+        "k1_system::Pdma.dcsr_x_10_read",
+        "k1_system::Pdma.dcsr_x_10_write",
+        "k1_system::Pdma.dcsr_x_11_read",
+        "k1_system::Pdma.dcsr_x_11_write",
+        "k1_system::Pdma.dcsr_x_12_read",
+        "k1_system::Pdma.dcsr_x_12_write",
+        "k1_system::Pdma.dcsr_x_13_read",
+        "k1_system::Pdma.dcsr_x_13_write",
+        "k1_system::Pdma.dcsr_x_14_read",
+        "k1_system::Pdma.dcsr_x_14_write",
+        "k1_system::Pdma.dcsr_x_15_read",
+        "k1_system::Pdma.dcsr_x_15_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2270,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.dalgn"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2280,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.dpcsr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2297,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.drqsr_read",
+        "k1_system::Pdma.drqsr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2318,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.dint"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2328,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.drcmr_x"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2348,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.ddadr_l_x"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2369,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.dsadr_l_x"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2389,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.dtadr_l_x"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2400,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.dcmd_x"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2425,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.ddadr_h_x"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2442,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.dsadr_h_x"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2459,
+      "status": "generated",
+      "registers": [
+        "k1_system::Pdma.dtadr_h_x"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2488,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.rng_byte_count"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2496,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.rng_source_address"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2503,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.rng_destination_address"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2510,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.rng_next_descriptor_pointer"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2517,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.rng_control_read",
+        "k1_system::Rng.rng_control_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2540,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.rng_current_descriptor_pointer"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2547,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.rng_interrupt_mask"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2556,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.rng_reset_select_read",
+        "k1_system::Rng.rng_reset_select_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2564,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.rng_interrupt_status_read",
+        "k1_system::Rng.rng_interrupt_status_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2573,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.prng_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2583,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.prng_low"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2590,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.prng_high"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2598,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.trng_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2615,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.trng_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2625,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rng.trng_data"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2707,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_count_enable",
+        "k1_system::TimerWatchdog.timer_count_mode",
+        "k1_system::TimerWatchdog.timer_count_restart_read",
+        "k1_system::TimerWatchdog.timer_count_restart_write",
+        "k1_system::TimerWatchdog.timer_clock_control",
+        "k1_system::TimerWatchdog.timer_match",
+        "k1_system::TimerWatchdog.timer_preload_value",
+        "k1_system::TimerWatchdog.timer_preload_control",
+        "k1_system::TimerWatchdog.timer_interrupt_enable",
+        "k1_system::TimerWatchdog.timer_interrupt_clear",
+        "k1_system::TimerWatchdog.timer_status",
+        "k1_system::TimerWatchdog.timer_count",
+        "k1_system::TimerWatchdog.timer_watchdog_first_access",
+        "k1_system::TimerWatchdog.timer_watchdog_second_access",
+        "k1_system::TimerWatchdog.timer_watchdog_match_enable",
+        "k1_system::TimerWatchdog.timer_watchdog_match",
+        "k1_system::TimerWatchdog.timer_watchdog_status_read",
+        "k1_system::TimerWatchdog.timer_watchdog_status_write",
+        "k1_system::TimerWatchdog.timer_watchdog_interrupt_clear",
+        "k1_system::TimerWatchdog.timer_watchdog_counter_reset",
+        "k1_system::TimerWatchdog.timer_watchdog_value"
+      ],
+      "note": "Numeric instance base summary; references the associated register bank."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2720,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_count_enable"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2733,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_count_mode"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2744,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_count_restart_read",
+        "k1_system::TimerWatchdog.timer_count_restart_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2755,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_clock_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2766,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_match"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2775,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_preload_value"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2784,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_preload_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2797,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_interrupt_enable"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2811,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_interrupt_clear"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2828,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_status"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2844,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_count"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2851,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_watchdog_first_access"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2859,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_watchdog_second_access"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2869,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_watchdog_match_enable"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2880,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_watchdog_match"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2894,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_watchdog_status_read",
+        "k1_system::TimerWatchdog.timer_watchdog_status_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2902,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_watchdog_interrupt_clear"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2910,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_watchdog_counter_reset"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2918,
+      "status": "generated",
+      "registers": [
+        "k1_system::TimerWatchdog.timer_watchdog_value"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2955,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rtc.rtc_counter",
+        "k1_system::Rtc.rtc_alarm",
+        "k1_system::Rtc.rtc_status_read",
+        "k1_system::Rtc.rtc_status_write",
+        "k1_system::Rtc.rtc_trim",
+        "k1_system::Rtc.rtc_control",
+        "k1_system::Rtc.rtc_backup"
+      ],
+      "note": "Numeric instance base summary; references the associated register bank."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2963,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rtc.rtc_counter"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2970,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rtc.rtc_alarm"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2977,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rtc.rtc_status_read",
+        "k1_system::Rtc.rtc_status_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2988,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rtc.rtc_trim"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2998,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rtc.rtc_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3006,
+      "status": "generated",
+      "registers": [
+        "k1_system::Rtc.rtc_backup"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3039,
+      "status": "generated",
+      "registers": [
+        "k1_system::Mailbox.isrr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3047,
+      "status": "generated",
+      "registers": [
+        "k1_system::Mailbox.wdr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3054,
+      "status": "generated",
+      "registers": [
+        "k1_system::Mailbox.isrw"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3062,
+      "status": "generated",
+      "registers": [
+        "k1_system::Mailbox.icr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3070,
+      "status": "generated",
+      "registers": [
+        "k1_system::Mailbox.iir_read",
+        "k1_system::Mailbox.iir_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3078,
+      "status": "generated",
+      "registers": [
+        "k1_system::Mailbox.rdr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3173,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.power_mode_status"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3181,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.awucrs"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3219,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.awucrm1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3227,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.aawucrm0"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3265,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.awucrs1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3273,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.apcr_cluster0"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3294,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.apcr_cluster1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3315,
+      "status": "generated",
+      "registers": [
+        "k1_system::MainPmu.apcr_per"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3338,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_usb_sd_rot_wake_clr_read",
+        "k1_system::ApPmu.pmu_usb_sd_rot_wake_clr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3374,
+      "status": "source_gap",
+      "registers": [],
+      "note": "Power stable timer is assigned wake-clear offset 0x7C; conflicting independent layouts, no corroborated replacement offset in pinned C."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3384,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_core_status"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3422,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_res_frm_slp_clr_read",
+        "k1_system::ApPmu.pmu_res_frm_slp_clr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3430,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_vpu_pwr_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3442,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_gpu_pwr_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3454,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_pwr_blk_tmr_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3467,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_c0_capmp_idle_cfgx_x"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3493,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_pwr_status_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3511,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_usb_phy_read"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3533,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_cap_corex_idle_cfg_x"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3554,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_0_read",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_0_write",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_1_read",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_1_write",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_2_read",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_2_write",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_3_read",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_3_write",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_4_read",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_4_write",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_5_read",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_5_write",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_6_read",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_6_write",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_7_read",
+        "k1_system::ApPmu.pmu_cap_corex_wakeup_x_7_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3574,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_c1_capmp_idle_cfgx_x"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3600,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_pwr_ctrl_audio"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3612,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_pwr_ctrl_isp"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3624,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_pwr_ctrl_lcd"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3636,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmua_pwr_ctrl_hdmi"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3648,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_usbp1_wake_clr_read",
+        "k1_system::ApPmu.pmu_usbp1_wake_clr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3677,
+      "status": "generated",
+      "registers": [
+        "k1_system::ApPmu.pmu_usb3_wake_clr_read",
+        "k1_system::ApPmu.pmu_usb3_wake_clr_write"
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "source": "bsp/spacemit/drivers/clk/ccu-spacemit-k1x.h",
+      "line": 15,
+      "decision": "Expose C-established PLL lock status word; reset unspecified.",
+      "evidence": "esos:bsp/spacemit/drivers/clk/ccu-spacemit-k1x.h:15-18"
+    },
+    {
+      "source": "bsp/spacemit/drivers/dma/dma_k1x.c",
+      "line": 26,
+      "decision": "C-only per-channel traffic counter; reset and named bits not specified. WR_CNT access is not exercised by pinned C; expose a conservative read view, not a hardware read-only assertion.",
+      "evidence": "esos:bsp/spacemit/drivers/dma/dma_k1x.c:26-27,268"
+    },
+    {
+      "source": "bsp/spacemit/drivers/dma/dma_k1x.c",
+      "line": 27,
+      "decision": "C-only per-channel traffic counter; reset and named bits not specified. RD_CNT is accessed with readl.",
+      "evidence": "esos:bsp/spacemit/drivers/dma/dma_k1x.c:26-27,268"
+    },
+    {
+      "source": "bsp/spacemit/platform/n308/k1-x/_register_defination.h",
+      "line": 89,
+      "decision": "Expose numeric wakeup mask written during suspend; no inferred field layout.",
+      "evidence": "esos:bsp/spacemit/drivers/pm/k1x_pm.c:__suspend_asm_finish; bsp/spacemit/platform/n308/k1-x/_register_defination.h"
+    },
+    {
+      "source": "drivers/clocksource/timer-clint.c",
+      "line": 31,
+      "decision": "AP CLINT uses its own AP window and eight hart compare slots; independent of N308 local timer.",
+      "evidence": "https://github.com/spacemit-com/linux/blob/cee9395acd8043be0644b25c34bfa86623f2b935/arch/riscv/boot/dts/spacemit/k1.dtsi:906-917; https://github.com/spacemit-com/linux/blob/cee9395acd8043be0644b25c34bfa86623f2b935/drivers/clocksource/timer-clint.c:32-33; ESOS RV32 split-counter access sequence"
+    },
+    {
+      "source": "drivers/irqchip/irq-sifive-plic.c",
+      "line": 42,
+      "decision": "Expose AP PLIC with 159 source priorities, five bitmap words and 16 contexts in DTS order hart0 M/S through hart7 M/S. IRQ chapter 7.1 swaps controller roles; AP addresses and roles follow pinned C rather than that prose.",
+      "evidence": "https://github.com/spacemit-com/linux/blob/cee9395acd8043be0644b25c34bfa86623f2b935/arch/riscv/boot/dts/spacemit/k1.dtsi:889-902; https://github.com/spacemit-com/linux/blob/cee9395acd8043be0644b25c34bfa86623f2b935/drivers/irqchip/irq-sifive-plic.c:42-62"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 46,
+      "decision": "Audio PMU uses RCPU 0xC088C000; stated 0xC0A10000 collides with AP USB3 aperture.",
+      "evidence": "esos:bsp/spacemit/platform/n308/k1-x/_register_defination.h:37,53,75; address map 6.3 AON _PMU_REG"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 240,
+      "decision": "Retain CAN clock at 0x48 and IR at 0x4C; ESOS clock header swaps the labels, unlike manual and Linux.",
+      "evidence": "https://github.com/spacemit-com/linux/blob/cee9395acd8043be0644b25c34bfa86623f2b935/include/soc/spacemit/k1-syscon.h:125-126; esos:bsp/spacemit/drivers/clk/ccu-spacemit-k1x.h:57-63"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 495,
+      "decision": "AP PWM0..7 and PWM8..19 occupy two disjoint address windows; no linear twenty-instance translation.",
+      "evidence": "Chip address map 6.2 PWM0..PWM19."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/14.RCPU_Subsystem.md",
+      "line": 505,
+      "decision": "RCPU PWM instances use ESOS DTS addresses with 0x100 stride; control, duty and period match driver offsets. OUTCNT is documented only for AP layout.",
+      "evidence": "esos:bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi; bsp/spacemit/drivers/pwm/pwm-pxa.c:13-18"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 231,
+      "decision": "fab_timeout_ctrl_x_reg.axi_fabric_timeout_value: reset 0xC000 exceeds 15-bit field; no corrected reset asserted.",
+      "evidence": "k1/k1_docs/k1_usermanual/8.CPU_System.md:243"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 296,
+      "decision": "PAD PLIC trigger-control locations remain Reserved in both public representations.",
+      "evidence": "K1 V6.3 PDF pages 116-117, sections 8.2.5.17-21; sha256 484fe0fb426d67c0472cd17e430f9abea00538fa42432431252f8e031c0af88d"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 937,
+      "decision": "Reset request writes the full 32-bit key, not just bit 31.",
+      "evidence": "esos:components/nmsis/core/include/core_feature_timer.h:81,SysTimer_SoftwareReset; CPU manual software-reset generation"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 1009,
+      "decision": "Expose firmware index window 0..68, not discovered silicon interrupt capacity; check clicinfo before indexing.",
+      "evidence": "esos:libcpu/risc-v/spacemit/n308/spacemit_sdk_soc.h:75-153,185; CPU manual 8.3.3 says 64."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 1020,
+      "decision": "Expose firmware index window 0..68, not discovered silicon interrupt capacity; check clicinfo before indexing.",
+      "evidence": "esos:libcpu/risc-v/spacemit/n308/spacemit_sdk_soc.h:75-153,185; CPU manual 8.3.3 says 64."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 1031,
+      "decision": "Expose firmware index window 0..68, not discovered silicon interrupt capacity; check clicinfo before indexing.",
+      "evidence": "esos:libcpu/risc-v/spacemit/n308/spacemit_sdk_soc.h:75-153,185; CPU manual 8.3.3 says 64."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 1044,
+      "decision": "Expose firmware index window 0..68, not discovered silicon interrupt capacity; check clicinfo before indexing.",
+      "evidence": "esos:libcpu/risc-v/spacemit/n308/spacemit_sdk_soc.h:75-153,185; CPU manual 8.3.3 says 64."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 1044,
+      "decision": "clicintctl_i: dynamic field positions retained as raw register, not a fixed level/priority split.",
+      "evidence": "CPU manual cliccfg.nlbits and clicinfo.CLICINTCTLBITS; esos:components/nmsis/core/include/core_feature_eclic.h:CLIC_CTRL_Type"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/8.CPU_System.md",
+      "line": 1044,
+      "decision": "clicintctl_i: dynamic field positions retained as raw register, not a fixed level/priority split.",
+      "evidence": "CPU manual cliccfg.nlbits and clicinfo.CLICINTCTLBITS; esos:components/nmsis/core/include/core_feature_eclic.h:CLIC_CTRL_Type"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1007,
+      "decision": "Port C control follows its clock/reset word at +4.",
+      "evidence": "https://github.com/spacemit-com/linux/blob/cee9395acd8043be0644b25c34bfa86623f2b935/drivers/pci/controller/dwc/pcie-spacemit-k1.c:44; arch/riscv/boot/dts/spacemit/k1.dtsi:1282"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1071,
+      "decision": "EMAC1 delay word follows its control word at +4.",
+      "evidence": "https://github.com/spacemit-com/linux/blob/cee9395acd8043be0644b25c34bfa86623f2b935/drivers/net/ethernet/spacemit/k1_emac.h:APMU_EMAC_DLINE_REG; drivers/net/ethernet/spacemit/k1_emac.c:1593; arch/riscv/boot/dts/spacemit/k1.dtsi:1150"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1287,
+      "decision": "OneWire clock word is aligned at 0x48, not 0x49.",
+      "evidence": "https://github.com/spacemit-com/linux/blob/cee9395acd8043be0644b25c34bfa86623f2b935/include/soc/spacemit/k1-syscon.h:53"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1493,
+      "decision": "Repeated RCPU clock word uses chapter 14 definition; no additional alias or invented location.",
+      "evidence": "k1_system::RcpuSysctrl.shubssp0_clk_res_ctrl"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1507,
+      "decision": "Repeated RCPU clock word uses chapter 14 definition; no additional alias or invented location.",
+      "evidence": "k1_system::RcpuSysctrl.shubi2c0_clk_res_ctrl"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1523,
+      "decision": "Repeated RCPU clock word uses chapter 14 definition; no additional alias or invented location.",
+      "evidence": "k1_system::RcpuSysctrl.uart1_clk_res_ctrl; k1_system::RcpuSysctrl.uart0_clk_res_ctrl"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1537,
+      "decision": "Repeated RCPU clock word uses chapter 14 definition; no additional alias or invented location.",
+      "evidence": "k1_system::RcpuSysctrl.r_can_clk_res_ctrl"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1551,
+      "decision": "Repeated RCPU clock word uses chapter 14 definition; no additional alias or invented location.",
+      "evidence": "k1_system::RcpuSysctrl.r_r_ir_clk_res_ctrl"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1565,
+      "decision": "Repeated RCPU clock word uses chapter 14 definition; no additional alias or invented location.",
+      "evidence": "k1_system::AudioClock.audio_codec_tx_rx_clk_ctrl"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1581,
+      "decision": "Repeated RCPU clock word uses chapter 14 definition; no additional alias or invented location.",
+      "evidence": "k1_system::AudioClock.audio_dfe_clk_ctrl"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1596,
+      "decision": "Repeated RCPU clock word uses chapter 14 definition; no additional alias or invented location.",
+      "evidence": "k1_system::AudioClock.audio_i2s1_tx_rx_clk_ctrl"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1612,
+      "decision": "Repeated RCPU clock word uses chapter 14 definition; no additional alias or invented location.",
+      "evidence": "k1_system::AudioClock.audio_hdmi_clk_ctrl"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 1628,
+      "decision": "Repeated RCPU clock word uses chapter 14 definition; no additional alias or invented location.",
+      "evidence": "k1_system::AudioClock.audio_i2s0_tx_rx_clk_ctrl"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 2955,
+      "decision": "Secure RTC base follows chip address map 0xF0615000, not contradictory 0xD4010400 summary.",
+      "evidence": "Address map 6.2 SEC_RTC; non-secure RTC aperture size is 0x800, no separate secure identity at +0x400."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3070,
+      "decision": "IIR dummy write latches inbound state; split read and write without modify.",
+      "evidence": "esos:bsp/spacemit/drivers/mailbox/k1x-mailbox.c; manual IIR/RDR notes"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3070,
+      "decision": "IIR is the fifth 32-bit mailbox word, not ICR at 0xC.",
+      "evidence": "esos:bsp/spacemit/drivers/mailbox/k1x_mailbox.h:19-25; k1x-mailbox.c dummy write before read"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3294,
+      "decision": "Cluster 1 word is named apcr_cluster1; heading repeats cluster0.",
+      "evidence": "Same table heading and distinct offset 0x1094."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/9.Top_System.md",
+      "line": 3374,
+      "decision": "Power stable timer location remains unresolved; PDF repeats the 0x7C wake-clear collision.",
+      "evidence": "K1 V6.3 PDF page 298, section 9.9.4.9.2; sha256 484fe0fb426d67c0472cd17e430f9abea00538fa42432431252f8e031c0af88d"
+    }
+  ]
+}

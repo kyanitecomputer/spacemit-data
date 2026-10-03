@@ -1,0 +1,4048 @@
+{
+  "schema": 1,
+  "chip": "k3",
+  "registers": [
+    "expanded_k3_memory"
+  ],
+  "sources": [
+    {
+      "path": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "sha256": "ba09a55af45b71375c809022b517210b95f80e6a2849f74b2f497316234a5395",
+      "kind": "docs"
+    },
+    {
+      "path": "k3/k3_docs/k3_usermanual/11_video.md",
+      "sha256": "ae3e3f6b17e5790883802b321b163a5284a363312757e7a52477954884dfb1f7",
+      "kind": "docs"
+    },
+    {
+      "path": "k3/k3_docs/k3_usermanual/12_display.md",
+      "sha256": "e742a7731663c530438c39aeaceceffa0dad35cd86de8a2128e0ba746d40b8a5",
+      "kind": "docs"
+    },
+    {
+      "path": "k3/k3_docs/k3_usermanual/06_address_map.md",
+      "sha256": "8e30cf82f5fa5a6534c9f1bdc65b91682566417dc1a5957870887883e04ceea7",
+      "kind": "docs"
+    },
+    {
+      "path": "k3/k3_docs/k3_usermanual/07_interrupts.md",
+      "sha256": "8b382eb62ad1a572b25a250e3080378bf0de64f95b2c1278abfbacc7d116d152",
+      "kind": "docs"
+    },
+    {
+      "path": "include/sdhci.h",
+      "sha256": "c6d2436948be32d068f91ebae57c681d758ac9060f7a926e01539c1cbefdbca8",
+      "kind": "uboot"
+    },
+    {
+      "path": "drivers/mmc/spacemit_sdhci.c",
+      "sha256": "174b5482b4aeedfebba20f9c832136e5fdf449a7ff9830ee948027b3d1ed1071",
+      "kind": "uboot"
+    },
+    {
+      "path": "drivers/spi/k1x_qspi.c",
+      "sha256": "eb4a9a751f3338c971deca5209471b38d89c902021251342d10a7b45432837a0",
+      "kind": "uboot"
+    },
+    {
+      "path": "arch/riscv/dts/k3.dtsi",
+      "sha256": "166b147eb230c8c60717001e0f19bbdd8160505f9b4f345b62d7cbb40674e6a8",
+      "kind": "uboot"
+    },
+    {
+      "path": "drivers/video/spacemit/dsi/drv/spacemit_dsi_hw.h",
+      "sha256": "0afc9f486a9525a9aa52b32187634ac4f38b432b1e9d47976356bfbcddec047b",
+      "kind": "uboot"
+    },
+    {
+      "path": "drivers/video/spacemit/dsi/drv/spacemit_dsi_drv.c",
+      "sha256": "561d2ec83ebf8a223feeeb15d49e019c2a309e4867cba27f7eac70b7b2993ffa",
+      "kind": "uboot"
+    },
+    {
+      "path": "drivers/video/spacemit/dp/inno_dp_reg.h",
+      "sha256": "4b8ef672dd19b4e1bf1c3001761534b68b16e0d542885bd575a22770ed54550a",
+      "kind": "uboot"
+    },
+    {
+      "path": "drivers/video/spacemit/dp/inno_dp.c",
+      "sha256": "948ebb860fa1b497cf0a06eb38ebaa5727f9b1d6d1b99d67b92b0c52655adad5",
+      "kind": "uboot"
+    },
+    {
+      "path": "drivers/video/spacemit/dp/inno_dp_phy.c",
+      "sha256": "1e8045db1e5700779c6d58a85a82a56e247331aa5e2f12ae34ff7c83869954ab",
+      "kind": "uboot"
+    },
+    {
+      "path": "drivers/video/spacemit/spacemit_dpu.c",
+      "sha256": "0f7ec248ef72a078d5ad5a69eb9236c4cf27c046cbf40835ea9439cf06a2a86f",
+      "kind": "uboot"
+    },
+    {
+      "path": "drivers/video/spacemit/spacemit_dpu.h",
+      "sha256": "9150f3b9a6bdcab667727c34de1705fe012a00fe4e1bc6a22e65ddf2b0b0021c",
+      "kind": "uboot"
+    },
+    {
+      "path": "drivers/ddr/spacemit/k3/k3_ddr.h",
+      "sha256": "5dd6f2d0a9fc42aa2818a0c11e1cb84ee529fb7155f931dd4136bb90d7d4cde0",
+      "kind": "uboot"
+    },
+    {
+      "path": "drivers/ddr/spacemit/k3/lpddr_common.c",
+      "sha256": "cd11fde96beea40a488989dd7479dc04b9d1cc112856dd4a4083505f8f4affc2",
+      "kind": "uboot"
+    },
+    {
+      "path": "drivers/ddr/spacemit/k3/lpddr4x_init.c",
+      "sha256": "abf932bd430fc24dda8398466f645e46812e018f808ff9559ed96aa8bd743b99",
+      "kind": "uboot"
+    },
+    {
+      "path": "drivers/ddr/spacemit/k3/lpddr5_init.c",
+      "sha256": "92572c590e03bf766e6c708d522afddc7e39584cf5241f9425ef692095fa74c1",
+      "kind": "uboot"
+    }
+  ],
+  "instances": [
+    {
+      "name": "AP_K3_MEMORY_DDRC0",
+      "block": "k3_memory::Ddrc",
+      "address": 3405774848,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md",
+        "line": 66
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_DDRC1",
+      "block": "k3_memory::Ddrc",
+      "address": 3422552064,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md",
+        "line": 67
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_DDR_CONFIG0",
+      "block": "k3_memory::DdrConfig",
+      "address": 3412066304,
+      "view": "ap",
+      "source": {
+        "path": "drivers/ddr/spacemit/k3/lpddr_common.c",
+        "line": 205
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_DDR_CONFIG1",
+      "block": "k3_memory::DdrConfig",
+      "address": 3428843520,
+      "view": "ap",
+      "source": {
+        "path": "drivers/ddr/spacemit/k3/lpddr_common.c",
+        "line": 205
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_DDR_PHY0",
+      "block": "k3_memory::DdrPhy",
+      "address": 3414163456,
+      "view": "ap",
+      "source": {
+        "path": "drivers/ddr/spacemit/k3/lpddr_common.c",
+        "line": 12
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_DDR_PHY1",
+      "block": "k3_memory::DdrPhy",
+      "address": 3430940672,
+      "view": "ap",
+      "source": {
+        "path": "drivers/ddr/spacemit/k3/lpddr_common.c",
+        "line": 12
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_DP0",
+      "block": "k3_memory::Dp",
+      "address": 3402121216,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md",
+        "line": 50
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_DP1",
+      "block": "k3_memory::Dp",
+      "address": 3402137600,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md",
+        "line": 51
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_DPU0",
+      "block": "k3_memory::Dpu",
+      "address": 3224633344,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md",
+        "line": 26
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_DPU1",
+      "block": "k3_memory::Dpu",
+      "address": 3225681920,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md",
+        "line": 35
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_DSI00",
+      "block": "k3_memory::Dsi",
+      "address": 3558975488,
+      "view": "ap",
+      "source": {
+        "path": "drivers/video/spacemit/dsi/drv/spacemit_dsi_hw.h",
+        "line": 13
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_DSI01",
+      "block": "k3_memory::Dsi",
+      "address": 3558976000,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/12_display.md",
+        "line": 55
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_QSPI",
+      "block": "k3_memory::Qspi",
+      "address": 3558916096,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md",
+        "line": 156
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_SD1",
+      "block": "k3_memory::Sdhci",
+      "address": 3559391232,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+        "line": 427
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_SD2",
+      "block": "k3_memory::Sdhci",
+      "address": 3559393280,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+        "line": 428
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_SD3",
+      "block": "k3_memory::Sdhci",
+      "address": 3559395328,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+        "line": 429
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_UFS",
+      "block": "k3_memory::Ufs",
+      "address": 3235905536,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+        "line": 1651
+      }
+    },
+    {
+      "name": "AP_K3_MEMORY_UFS_MANAGEMENT",
+      "block": "k3_memory::UfsManagement",
+      "address": 3235912448,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+        "line": 2040
+      }
+    }
+  ],
+  "aliases": {
+    "k3_memory::Sdhci": [
+      [
+        "sd_command_read",
+        "sd_command_write"
+      ],
+      [
+        "sd_buffer_data_port_01_read",
+        "sd_buffer_data_port_01_write"
+      ],
+      [
+        "sd_block_gap_control_read",
+        "sd_block_gap_control_write"
+      ],
+      [
+        "sd_clock_control_read",
+        "sd_clock_control_write"
+      ],
+      [
+        "sd_software_reset_read",
+        "sd_software_reset_write"
+      ],
+      [
+        "sd_normal_int_status_read",
+        "sd_normal_int_status_write"
+      ],
+      [
+        "sd_auto_cmd12_error_status_read",
+        "sd_auto_cmd12_error_status_write"
+      ],
+      [
+        "sd_host_control2_read",
+        "sd_host_control2_write"
+      ],
+      [
+        "sd_capabilities_1_read",
+        "sd_capabilities_1_write"
+      ],
+      [
+        "shared_bus_ctrl_read",
+        "shared_bus_ctrl_write"
+      ],
+      [
+        "sdhc_legacy_ctrl_reg_read",
+        "sdhc_legacy_ctrl_reg_write"
+      ],
+      [
+        "sdhc_mmc_ctrl_reg_read",
+        "sdhc_mmc_ctrl_reg_write"
+      ],
+      [
+        "sdhc_hwtune_cfg_reg_read",
+        "sdhc_hwtune_cfg_reg_write"
+      ],
+      [
+        "sdhc_hwtune_cfg2_reg_read",
+        "sdhc_hwtune_cfg2_reg_write"
+      ],
+      [
+        "sdhc_phy_ctrl_reg_read",
+        "sdhc_phy_ctrl_reg_write"
+      ],
+      [
+        "sdhc_phy_func_reg_read",
+        "sdhc_phy_func_reg_write"
+      ],
+      [
+        "sdhc_phy_lbctrl_reg_read",
+        "sdhc_phy_lbctrl_reg_write"
+      ],
+      [
+        "sdhc_phy_lbdata_reg_read",
+        "sdhc_phy_lbdata_reg_write"
+      ],
+      [
+        "cqe_cqctl_reg_read",
+        "cqe_cqctl_reg_write"
+      ],
+      [
+        "cqe_cqis_reg_read",
+        "cqe_cqis_reg_write"
+      ],
+      [
+        "cqe_cqic_reg_read",
+        "cqe_cqic_reg_write"
+      ],
+      [
+        "cqe_cqtdbr_reg_read",
+        "cqe_cqtdbr_reg_write"
+      ],
+      [
+        "cqe_cqtcn_reg_read",
+        "cqe_cqtcn_reg_write"
+      ],
+      [
+        "cqe_cqtclr_reg_read",
+        "cqe_cqtclr_reg_write"
+      ]
+    ],
+    "k3_memory::Ufs": [
+      [
+        "auto_hibernate_idle_timer_read",
+        "auto_hibernate_idle_timer_write"
+      ],
+      [
+        "interrupt_status_read",
+        "interrupt_status_write"
+      ],
+      [
+        "interrupt_enable_read",
+        "interrupt_enable_write"
+      ],
+      [
+        "host_uic_error_code_phy_adapter_layer_read",
+        "host_uic_error_code_phy_adapter_layer_write"
+      ],
+      [
+        "utp_transfer_request_interrupt_aggregation_control_read",
+        "utp_transfer_request_interrupt_aggregation_control_write"
+      ],
+      [
+        "utp_transfer_request_list_door_bell_read",
+        "utp_transfer_request_list_door_bell_write"
+      ],
+      [
+        "utp_transfer_request_list_notification_read",
+        "utp_transfer_request_list_notification_write"
+      ],
+      [
+        "utp_task_management_request_list_door_bell_read",
+        "utp_task_management_request_list_door_bell_write"
+      ],
+      [
+        "utp_task_management_request_list_clear_read",
+        "utp_task_management_request_list_clear_write"
+      ]
+    ],
+    "k3_memory::UfsManagement": [
+      [
+        "ufs_mphy_pu_ctrl_read",
+        "ufs_mphy_pu_ctrl_write"
+      ]
+    ],
+    "k3_memory::Dsi": [
+      [
+        "dsi_irq_st1_read",
+        "dsi_irq_st1_write"
+      ],
+      [
+        "dsi_irq_st_read",
+        "dsi_irq_st_write"
+      ],
+      [
+        "dsi_fpga_phy_ctrl_1_read",
+        "dsi_fpga_phy_ctrl_1_write"
+      ],
+      [
+        "dsi_cpu_cmd_0_read",
+        "dsi_cpu_cmd_0_write"
+      ],
+      [
+        "dsi_cpu_cmd_3_read",
+        "dsi_cpu_cmd_3_write"
+      ],
+      [
+        "dsi_cpu_status_0_read",
+        "dsi_cpu_status_0_write"
+      ],
+      [
+        "dsi_cpn_status_0_read",
+        "dsi_cpn_status_0_write"
+      ],
+      [
+        "dsi_rx_pkt_st_0_read",
+        "dsi_rx_pkt_st_0_write"
+      ],
+      [
+        "dsi_rx_pkt_st_1_read",
+        "dsi_rx_pkt_st_1_write"
+      ],
+      [
+        "dsi_rx_pkt_ctrl_read",
+        "dsi_rx_pkt_ctrl_write"
+      ],
+      [
+        "dsi_rx_pkt_ctrl_1_read",
+        "dsi_rx_pkt_ctrl_1_write"
+      ],
+      [
+        "dsi_rx_pkt_st_2_read",
+        "dsi_rx_pkt_st_2_write"
+      ],
+      [
+        "dsi_lcd_bdg_ctrl0_read",
+        "dsi_lcd_bdg_ctrl0_write"
+      ],
+      [
+        "dsi_phy_status_0_read",
+        "dsi_phy_status_0_write"
+      ],
+      [
+        "dsi_phy_code_1_read",
+        "dsi_phy_code_1_write"
+      ],
+      [
+        "pll_ctrl_reg3_read",
+        "pll_ctrl_reg3_write"
+      ]
+    ],
+    "k3_memory::Qspi": [
+      [
+        "qspi_mcr_read",
+        "qspi_mcr_write"
+      ],
+      [
+        "qspi_ipcr_read",
+        "qspi_ipcr_write"
+      ],
+      [
+        "qspi_buf0cr_read",
+        "qspi_buf0cr_write"
+      ],
+      [
+        "qspi_buf1cr_read",
+        "qspi_buf1cr_write"
+      ],
+      [
+        "qspi_buf2cr_read",
+        "qspi_buf2cr_write"
+      ],
+      [
+        "qspi_buf3cr_read",
+        "qspi_buf3cr_write"
+      ],
+      [
+        "qspi_bfgencr_read",
+        "qspi_bfgencr_write"
+      ],
+      [
+        "qspi_soccr_read",
+        "qspi_soccr_write"
+      ],
+      [
+        "qspi_buf0ind_read",
+        "qspi_buf0ind_write"
+      ],
+      [
+        "qspi_buf1ind_read",
+        "qspi_buf1ind_write"
+      ],
+      [
+        "qspi_buf2ind_read",
+        "qspi_buf2ind_write"
+      ],
+      [
+        "qspi_sfar_read",
+        "qspi_sfar_write"
+      ],
+      [
+        "qspi_sfacr_read",
+        "qspi_sfacr_write"
+      ],
+      [
+        "qspi_smpr_read",
+        "qspi_smpr_write"
+      ],
+      [
+        "qspi_rbct_read",
+        "qspi_rbct_write"
+      ],
+      [
+        "qspi_tbdr_read",
+        "qspi_tbdr_write"
+      ],
+      [
+        "qspi_fr_read",
+        "qspi_fr_write"
+      ],
+      [
+        "qspi_sptrclr_read",
+        "qspi_sptrclr_write"
+      ],
+      [
+        "qspi_sfa1ad_read",
+        "qspi_sfa1ad_write"
+      ],
+      [
+        "qspi_sfa2ad_read",
+        "qspi_sfa2ad_write"
+      ],
+      [
+        "qspi_sfb1ad_read",
+        "qspi_sfb1ad_write"
+      ],
+      [
+        "qspi_sfb2ad_read",
+        "qspi_sfb2ad_write"
+      ],
+      [
+        "qspi_lutkey_read",
+        "qspi_lutkey_write"
+      ],
+      [
+        "qspi_lckcr_read",
+        "qspi_lckcr_write"
+      ],
+      [
+        "qspi_lut_0_0_read",
+        "qspi_lut_0_0_write"
+      ],
+      [
+        "qspi_lut_0_1_read",
+        "qspi_lut_0_1_write"
+      ],
+      [
+        "qspi_lut_0_2_read",
+        "qspi_lut_0_2_write"
+      ],
+      [
+        "qspi_lut_0_3_read",
+        "qspi_lut_0_3_write"
+      ],
+      [
+        "qspi_lut_1_0_read",
+        "qspi_lut_1_0_write"
+      ],
+      [
+        "qspi_lut_1_1_read",
+        "qspi_lut_1_1_write"
+      ],
+      [
+        "qspi_lut_1_2_read",
+        "qspi_lut_1_2_write"
+      ],
+      [
+        "qspi_lut_1_3_read",
+        "qspi_lut_1_3_write"
+      ]
+    ],
+    "k3_memory::Dp": [
+      [
+        "r_0018_read",
+        "r_0018_write"
+      ],
+      [
+        "r_001c_read",
+        "r_001c_write"
+      ],
+      [
+        "r_0028_read",
+        "r_0028_write"
+      ],
+      [
+        "r_0080_read",
+        "r_0080_write"
+      ],
+      [
+        "r_0084_read",
+        "r_0084_write"
+      ],
+      [
+        "r_0088_read",
+        "r_0088_write"
+      ],
+      [
+        "r_008c_read",
+        "r_008c_write"
+      ],
+      [
+        "r_0100_read",
+        "r_0100_write"
+      ],
+      [
+        "r_0180_read",
+        "r_0180_write"
+      ],
+      [
+        "r_0184_read",
+        "r_0184_write"
+      ],
+      [
+        "r_0188_read",
+        "r_0188_write"
+      ],
+      [
+        "r_0190_read",
+        "r_0190_write"
+      ],
+      [
+        "r_0194_read",
+        "r_0194_write"
+      ],
+      [
+        "r_0198_read",
+        "r_0198_write"
+      ],
+      [
+        "r_019c_read",
+        "r_019c_write"
+      ],
+      [
+        "r_01a0_read",
+        "r_01a0_write"
+      ],
+      [
+        "r_01a4_read",
+        "r_01a4_write"
+      ],
+      [
+        "r_01a8_read",
+        "r_01a8_write"
+      ],
+      [
+        "r_01ac_read",
+        "r_01ac_write"
+      ],
+      [
+        "r_01b0_read",
+        "r_01b0_write"
+      ],
+      [
+        "r_01c0_read",
+        "r_01c0_write"
+      ],
+      [
+        "r_01c4_read",
+        "r_01c4_write"
+      ],
+      [
+        "r_01d0_read",
+        "r_01d0_write"
+      ],
+      [
+        "r_01dc_read",
+        "r_01dc_write"
+      ],
+      [
+        "r_0200_read",
+        "r_0200_write"
+      ],
+      [
+        "r_020c_read",
+        "r_020c_write"
+      ],
+      [
+        "r_0210_read",
+        "r_0210_write"
+      ],
+      [
+        "r_0214_read",
+        "r_0214_write"
+      ],
+      [
+        "r_0218_read",
+        "r_0218_write"
+      ],
+      [
+        "r_021c_read",
+        "r_021c_write"
+      ],
+      [
+        "r_0220_read",
+        "r_0220_write"
+      ],
+      [
+        "r_0224_read",
+        "r_0224_write"
+      ],
+      [
+        "r_0228_read",
+        "r_0228_write"
+      ],
+      [
+        "r_022c_read",
+        "r_022c_write"
+      ],
+      [
+        "r_0230_read",
+        "r_0230_write"
+      ],
+      [
+        "r_0238_read",
+        "r_0238_write"
+      ],
+      [
+        "r_0404_read",
+        "r_0404_write"
+      ],
+      [
+        "r_0408_read",
+        "r_0408_write"
+      ],
+      [
+        "r_040c_read",
+        "r_040c_write"
+      ],
+      [
+        "r_0410_read",
+        "r_0410_write"
+      ],
+      [
+        "r_0414_read",
+        "r_0414_write"
+      ],
+      [
+        "r_0418_read",
+        "r_0418_write"
+      ]
+    ],
+    "k3_memory::Ddrc": [
+      [
+        "r_010000_read",
+        "r_010000_write"
+      ],
+      [
+        "r_010180_read",
+        "r_010180_write"
+      ]
+    ],
+    "k3_memory::DdrConfig": [
+      [
+        "r_00000c_read",
+        "r_00000c_write"
+      ],
+      [
+        "r_000018_read",
+        "r_000018_write"
+      ]
+    ]
+  },
+  "write_mask_registers": [
+    "k3_memory::DdrConfig.r_000008",
+    "k3_memory::DdrConfig.r_00000c_write",
+    "k3_memory::DdrConfig.r_000010",
+    "k3_memory::DdrConfig.r_000018_write",
+    "k3_memory::DdrPhy.dct_write_prot",
+    "k3_memory::DdrPhy.micro_cont_mux_sel",
+    "k3_memory::DdrPhy.micro_reset",
+    "k3_memory::DdrPhy.odt_impedance_array",
+    "k3_memory::DdrPhy.r_160068",
+    "k3_memory::DdrPhy.r_16006c",
+    "k3_memory::DdrPhy.r_160078",
+    "k3_memory::DdrPhy.r_160080",
+    "k3_memory::DdrPhy.r_160084",
+    "k3_memory::DdrPhy.r_160090",
+    "k3_memory::DdrPhy.r_1600c4",
+    "k3_memory::DdrPhy.r_1600c8",
+    "k3_memory::DdrPhy.r_1600cc",
+    "k3_memory::DdrPhy.r_1600d0",
+    "k3_memory::DdrPhy.r_1600d4",
+    "k3_memory::DdrPhy.r_1600d8",
+    "k3_memory::DdrPhy.r_1600dc",
+    "k3_memory::DdrPhy.r_1600e4",
+    "k3_memory::DdrPhy.r_1600e8",
+    "k3_memory::DdrPhy.r_1600f4",
+    "k3_memory::DdrPhy.r_160104",
+    "k3_memory::DdrPhy.r_160108",
+    "k3_memory::DdrPhy.r_160124",
+    "k3_memory::DdrPhy.r_160194",
+    "k3_memory::DdrPhy.r_160198",
+    "k3_memory::DdrPhy.r_16019c",
+    "k3_memory::DdrPhy.tx_impedance_array",
+    "k3_memory::DdrPhy.tx_impedance_array1",
+    "k3_memory::Ddrc.r_000000",
+    "k3_memory::Ddrc.r_000004",
+    "k3_memory::Ddrc.r_000008",
+    "k3_memory::Ddrc.r_00000c",
+    "k3_memory::Ddrc.r_000010",
+    "k3_memory::Ddrc.r_000014",
+    "k3_memory::Ddrc.r_000018",
+    "k3_memory::Ddrc.r_00001c",
+    "k3_memory::Ddrc.r_000024",
+    "k3_memory::Ddrc.r_000030",
+    "k3_memory::Ddrc.r_000034",
+    "k3_memory::Ddrc.r_000038",
+    "k3_memory::Ddrc.r_00005c",
+    "k3_memory::Ddrc.r_000060",
+    "k3_memory::Ddrc.r_000064",
+    "k3_memory::Ddrc.r_000078",
+    "k3_memory::Ddrc.r_000080",
+    "k3_memory::Ddrc.r_000500",
+    "k3_memory::Ddrc.r_000504",
+    "k3_memory::Ddrc.r_000508",
+    "k3_memory::Ddrc.r_00050c",
+    "k3_memory::Ddrc.r_000580",
+    "k3_memory::Ddrc.r_000584",
+    "k3_memory::Ddrc.r_000588",
+    "k3_memory::Ddrc.r_000590",
+    "k3_memory::Ddrc.r_000594",
+    "k3_memory::Ddrc.r_0005a0",
+    "k3_memory::Ddrc.r_0005a4",
+    "k3_memory::Ddrc.r_0005a8",
+    "k3_memory::Ddrc.r_0005ac",
+    "k3_memory::Ddrc.r_0005b0",
+    "k3_memory::Ddrc.r_0005b4",
+    "k3_memory::Ddrc.r_0005b8",
+    "k3_memory::Ddrc.r_000600",
+    "k3_memory::Ddrc.r_000604",
+    "k3_memory::Ddrc.r_000608",
+    "k3_memory::Ddrc.r_00060c",
+    "k3_memory::Ddrc.r_000610",
+    "k3_memory::Ddrc.r_000650",
+    "k3_memory::Ddrc.r_000800",
+    "k3_memory::Ddrc.r_000804",
+    "k3_memory::Ddrc.r_000a80",
+    "k3_memory::Ddrc.r_000b00",
+    "k3_memory::Ddrc.r_000b04",
+    "k3_memory::Ddrc.r_000b08",
+    "k3_memory::Ddrc.r_000b80",
+    "k3_memory::Ddrc.r_000c00",
+    "k3_memory::Ddrc.r_000c80",
+    "k3_memory::Ddrc.r_000c84",
+    "k3_memory::Ddrc.r_000c88",
+    "k3_memory::Ddrc.r_000d00",
+    "k3_memory::Ddrc.r_000d04",
+    "k3_memory::Ddrc.r_000d08",
+    "k3_memory::Ddrc.r_000d0c",
+    "k3_memory::Ddrc.r_000d30",
+    "k3_memory::Ddrc.r_000d34",
+    "k3_memory::Ddrc.r_010000_write",
+    "k3_memory::Ddrc.r_010008",
+    "k3_memory::Ddrc.r_010010",
+    "k3_memory::Ddrc.r_010080",
+    "k3_memory::Ddrc.r_010084",
+    "k3_memory::Ddrc.r_010100",
+    "k3_memory::Ddrc.r_010104",
+    "k3_memory::Ddrc.r_010108",
+    "k3_memory::Ddrc.r_010114",
+    "k3_memory::Ddrc.r_010118",
+    "k3_memory::Ddrc.r_010128",
+    "k3_memory::Ddrc.r_010180_write",
+    "k3_memory::Ddrc.r_010184",
+    "k3_memory::Ddrc.r_01018c",
+    "k3_memory::Ddrc.r_010200",
+    "k3_memory::Ddrc.r_010208",
+    "k3_memory::Ddrc.r_010220",
+    "k3_memory::Ddrc.r_010224",
+    "k3_memory::Ddrc.r_010280",
+    "k3_memory::Ddrc.r_010284",
+    "k3_memory::Ddrc.r_010288",
+    "k3_memory::Ddrc.r_010300",
+    "k3_memory::Ddrc.r_010308",
+    "k3_memory::Ddrc.r_010380",
+    "k3_memory::Ddrc.r_010384",
+    "k3_memory::Ddrc.r_01038c",
+    "k3_memory::Ddrc.r_010390",
+    "k3_memory::Ddrc.r_010500",
+    "k3_memory::Ddrc.r_010508",
+    "k3_memory::Ddrc.r_010510",
+    "k3_memory::Ddrc.r_010518",
+    "k3_memory::Ddrc.r_010580",
+    "k3_memory::Ddrc.r_010b80",
+    "k3_memory::Ddrc.r_010b84",
+    "k3_memory::Ddrc.r_010b8c",
+    "k3_memory::Ddrc.r_010b98",
+    "k3_memory::Ddrc.r_010c80",
+    "k3_memory::Ddrc.r_010c90",
+    "k3_memory::Ddrc.r_010c94",
+    "k3_memory::Ddrc.r_010ca0",
+    "k3_memory::Ddrc.r_010ca4",
+    "k3_memory::Ddrc.r_010d00",
+    "k3_memory::Ddrc.r_010f00",
+    "k3_memory::Ddrc.r_020000",
+    "k3_memory::Ddrc.r_020004",
+    "k3_memory::Ddrc.r_020008",
+    "k3_memory::Ddrc.r_020090",
+    "k3_memory::Ddrc.r_020094",
+    "k3_memory::Ddrc.r_020098",
+    "k3_memory::Ddrc.r_02009c",
+    "k3_memory::Ddrc.r_0200a0",
+    "k3_memory::Ddrc.r_0200c0",
+    "k3_memory::Ddrc.r_0200c4",
+    "k3_memory::Ddrc.r_0200c8",
+    "k3_memory::Ddrc.r_0200cc",
+    "k3_memory::Ddrc.r_0200d0",
+    "k3_memory::Ddrc.r_0200d4",
+    "k3_memory::Ddrc.r_0200d8",
+    "k3_memory::Ddrc.r_0200dc",
+    "k3_memory::Ddrc.r_021004",
+    "k3_memory::Ddrc.r_021008",
+    "k3_memory::Ddrc.r_021090",
+    "k3_memory::Ddrc.r_021094",
+    "k3_memory::Ddrc.r_021098",
+    "k3_memory::Ddrc.r_02109c",
+    "k3_memory::Ddrc.r_0210a0",
+    "k3_memory::Ddrc.r_022004",
+    "k3_memory::Ddrc.r_022008",
+    "k3_memory::Ddrc.r_022090",
+    "k3_memory::Ddrc.r_022094",
+    "k3_memory::Ddrc.r_022098",
+    "k3_memory::Ddrc.r_02209c",
+    "k3_memory::Ddrc.r_0220a0",
+    "k3_memory::Ddrc.r_023004",
+    "k3_memory::Ddrc.r_023008",
+    "k3_memory::Ddrc.r_023090",
+    "k3_memory::Ddrc.r_023094",
+    "k3_memory::Ddrc.r_023098",
+    "k3_memory::Ddrc.r_02309c",
+    "k3_memory::Ddrc.r_0230a0",
+    "k3_memory::Ddrc.r_024004",
+    "k3_memory::Ddrc.r_024008",
+    "k3_memory::Ddrc.r_024090",
+    "k3_memory::Ddrc.r_024094",
+    "k3_memory::Ddrc.r_024098",
+    "k3_memory::Ddrc.r_02409c",
+    "k3_memory::Ddrc.r_0240a0",
+    "k3_memory::Ddrc.r_030004",
+    "k3_memory::Ddrc.r_03000c",
+    "k3_memory::Ddrc.r_030010",
+    "k3_memory::Ddrc.r_030014",
+    "k3_memory::Ddrc.r_030018",
+    "k3_memory::Ddrc.r_03001c",
+    "k3_memory::Ddrc.r_030020",
+    "k3_memory::Ddrc.r_030024",
+    "k3_memory::Ddrc.r_030028",
+    "k3_memory::Ddrc.r_03002c",
+    "k3_memory::Ddrc.r_030030",
+    "k3_memory::Dp.r_0018_write",
+    "k3_memory::Dp.r_001c_write",
+    "k3_memory::Dp.r_0028_write",
+    "k3_memory::Dp.r_0080_write",
+    "k3_memory::Dp.r_0084_write",
+    "k3_memory::Dp.r_0088_write",
+    "k3_memory::Dp.r_008c_write",
+    "k3_memory::Dp.r_0100_write",
+    "k3_memory::Dp.r_0180_write",
+    "k3_memory::Dp.r_0184_write",
+    "k3_memory::Dp.r_0188_write",
+    "k3_memory::Dp.r_0190_write",
+    "k3_memory::Dp.r_0194_write",
+    "k3_memory::Dp.r_0198_write",
+    "k3_memory::Dp.r_019c_write",
+    "k3_memory::Dp.r_01a0_write",
+    "k3_memory::Dp.r_01a4_write",
+    "k3_memory::Dp.r_01a8_write",
+    "k3_memory::Dp.r_01ac_write",
+    "k3_memory::Dp.r_01b0_write",
+    "k3_memory::Dp.r_01c0_write",
+    "k3_memory::Dp.r_01c4_write",
+    "k3_memory::Dp.r_01d0_write",
+    "k3_memory::Dp.r_01dc_write",
+    "k3_memory::Dp.r_0200_write",
+    "k3_memory::Dp.r_020c_write",
+    "k3_memory::Dp.r_0210_write",
+    "k3_memory::Dp.r_0214_write",
+    "k3_memory::Dp.r_0218_write",
+    "k3_memory::Dp.r_021c_write",
+    "k3_memory::Dp.r_0220_write",
+    "k3_memory::Dp.r_0224_write",
+    "k3_memory::Dp.r_0228_write",
+    "k3_memory::Dp.r_022c_write",
+    "k3_memory::Dp.r_0230_write",
+    "k3_memory::Dp.r_0238_write",
+    "k3_memory::Dp.r_0404_write",
+    "k3_memory::Dp.r_0408_write",
+    "k3_memory::Dp.r_040c_write",
+    "k3_memory::Dp.r_0410_write",
+    "k3_memory::Dp.r_0414_write",
+    "k3_memory::Dp.r_0418_write",
+    "k3_memory::Dpu.framebuffer_address_hi",
+    "k3_memory::Dpu.framebuffer_address_lo",
+    "k3_memory::Dpu.r_00340",
+    "k3_memory::Dpu.r_00348",
+    "k3_memory::Dpu.r_0034c",
+    "k3_memory::Dpu.r_00350",
+    "k3_memory::Dpu.r_01000",
+    "k3_memory::Dpu.r_0103c",
+    "k3_memory::Dpu.r_01040",
+    "k3_memory::Dpu.r_01044",
+    "k3_memory::Dpu.r_01048",
+    "k3_memory::Dpu.r_01074",
+    "k3_memory::Dpu.r_0107c",
+    "k3_memory::Dpu.r_01284",
+    "k3_memory::Dpu.r_30000",
+    "k3_memory::Dpu.r_30004",
+    "k3_memory::Dpu.r_30020",
+    "k3_memory::Dpu.r_30024",
+    "k3_memory::Dpu.r_30038",
+    "k3_memory::Dpu.r_30300",
+    "k3_memory::Dpu.r_30334",
+    "k3_memory::Dpu.r_51200",
+    "k3_memory::Dpu.r_51208",
+    "k3_memory::Dpu.r_5120c",
+    "k3_memory::Dpu.r_51210",
+    "k3_memory::Dpu.r_51214",
+    "k3_memory::Dpu.r_51218",
+    "k3_memory::Dpu.r_5121c",
+    "k3_memory::Dpu.r_5123c",
+    "k3_memory::Dsi.dsi_cpn_status_0_write",
+    "k3_memory::Dsi.dsi_cpu_cmd_0_write",
+    "k3_memory::Dsi.dsi_cpu_cmd_3_write",
+    "k3_memory::Dsi.dsi_cpu_status_0_write",
+    "k3_memory::Dsi.dsi_fpga_phy_ctrl_1_write",
+    "k3_memory::Dsi.dsi_irq_st1_write",
+    "k3_memory::Dsi.dsi_irq_st_write",
+    "k3_memory::Dsi.dsi_lcd_bdg_ctrl0_write",
+    "k3_memory::Dsi.dsi_phy_code_1_write",
+    "k3_memory::Dsi.dsi_phy_status_0_write",
+    "k3_memory::Dsi.dsi_rx_pkt_ctrl_1_write",
+    "k3_memory::Dsi.dsi_rx_pkt_ctrl_write",
+    "k3_memory::Dsi.dsi_rx_pkt_st_0_write",
+    "k3_memory::Dsi.dsi_rx_pkt_st_1_write",
+    "k3_memory::Dsi.dsi_rx_pkt_st_2_write",
+    "k3_memory::Dsi.pll_ctrl_reg3_write",
+    "k3_memory::Qspi.qspi_bfgencr_write",
+    "k3_memory::Qspi.qspi_buf0cr_write",
+    "k3_memory::Qspi.qspi_buf0ind_write",
+    "k3_memory::Qspi.qspi_buf1cr_write",
+    "k3_memory::Qspi.qspi_buf1ind_write",
+    "k3_memory::Qspi.qspi_buf2cr_write",
+    "k3_memory::Qspi.qspi_buf2ind_write",
+    "k3_memory::Qspi.qspi_buf3cr_write",
+    "k3_memory::Qspi.qspi_fr_write",
+    "k3_memory::Qspi.qspi_ipcr_write",
+    "k3_memory::Qspi.qspi_lckcr_write",
+    "k3_memory::Qspi.qspi_lut_0_0_write",
+    "k3_memory::Qspi.qspi_lut_0_1_write",
+    "k3_memory::Qspi.qspi_lut_0_2_write",
+    "k3_memory::Qspi.qspi_lut_0_3_write",
+    "k3_memory::Qspi.qspi_lut_1_0_write",
+    "k3_memory::Qspi.qspi_lut_1_1_write",
+    "k3_memory::Qspi.qspi_lut_1_2_write",
+    "k3_memory::Qspi.qspi_lut_1_3_write",
+    "k3_memory::Qspi.qspi_lutkey_write",
+    "k3_memory::Qspi.qspi_mcr_write",
+    "k3_memory::Qspi.qspi_rbct_write",
+    "k3_memory::Qspi.qspi_sfa1ad_write",
+    "k3_memory::Qspi.qspi_sfa2ad_write",
+    "k3_memory::Qspi.qspi_sfacr_write",
+    "k3_memory::Qspi.qspi_sfar_write",
+    "k3_memory::Qspi.qspi_sfb1ad_write",
+    "k3_memory::Qspi.qspi_sfb2ad_write",
+    "k3_memory::Qspi.qspi_smpr_write",
+    "k3_memory::Qspi.qspi_soccr_write",
+    "k3_memory::Qspi.qspi_sptrclr_write",
+    "k3_memory::Qspi.qspi_tbdr_write",
+    "k3_memory::Sdhci.cqe_cqctl_reg_write",
+    "k3_memory::Sdhci.cqe_cqic_reg_write",
+    "k3_memory::Sdhci.cqe_cqis_reg_write",
+    "k3_memory::Sdhci.cqe_cqtclr_reg_write",
+    "k3_memory::Sdhci.cqe_cqtcn_reg_write",
+    "k3_memory::Sdhci.cqe_cqtdbr_reg_write",
+    "k3_memory::Sdhci.sd_auto_cmd12_error_status_write",
+    "k3_memory::Sdhci.sd_block_gap_control_write",
+    "k3_memory::Sdhci.sd_buffer_data_port_01_write",
+    "k3_memory::Sdhci.sd_capabilities_1_write",
+    "k3_memory::Sdhci.sd_clock_control_write",
+    "k3_memory::Sdhci.sd_command_write",
+    "k3_memory::Sdhci.sd_force_auto_cmd12_error",
+    "k3_memory::Sdhci.sd_force_interrupt_error",
+    "k3_memory::Sdhci.sd_host_control2_write",
+    "k3_memory::Sdhci.sd_normal_int_status_write",
+    "k3_memory::Sdhci.sd_software_reset_write",
+    "k3_memory::Sdhci.sdhc_hwtune_cfg2_reg_write",
+    "k3_memory::Sdhci.sdhc_hwtune_cfg_reg_write",
+    "k3_memory::Sdhci.sdhc_legacy_ctrl_reg_write",
+    "k3_memory::Sdhci.sdhc_mmc_ctrl_reg_write",
+    "k3_memory::Sdhci.sdhc_phy_ctrl_reg_write",
+    "k3_memory::Sdhci.sdhc_phy_func_reg_write",
+    "k3_memory::Sdhci.sdhc_phy_lbctrl_reg_write",
+    "k3_memory::Sdhci.sdhc_phy_lbdata_reg_write",
+    "k3_memory::Sdhci.shared_bus_ctrl_write",
+    "k3_memory::Ufs.auto_hibernate_idle_timer_write",
+    "k3_memory::Ufs.host_uic_error_code_phy_adapter_layer_write",
+    "k3_memory::Ufs.interrupt_enable_write",
+    "k3_memory::Ufs.interrupt_status_write",
+    "k3_memory::Ufs.utp_task_management_request_list_clear_write",
+    "k3_memory::Ufs.utp_task_management_request_list_door_bell_write",
+    "k3_memory::Ufs.utp_transfer_request_interrupt_aggregation_control_write",
+    "k3_memory::Ufs.utp_transfer_request_list_clear",
+    "k3_memory::Ufs.utp_transfer_request_list_door_bell_write",
+    "k3_memory::Ufs.utp_transfer_request_list_notification_write",
+    "k3_memory::UfsManagement.ufs_mphy_pu_ctrl_write"
+  ],
+  "tables": [
+    {
+      "source": "drivers/ddr/spacemit/k3/k3_ddr.h",
+      "line": 52,
+      "status": "generated",
+      "registers": [
+        "k3_memory::DdrPhy.uct_write_only",
+        "k3_memory::DdrPhy.uct_write_prot",
+        "k3_memory::DdrPhy.ucclk_hclk_enables",
+        "k3_memory::DdrPhy.dct_write_only"
+      ],
+      "note": "Tableless k3_memory::DdrPhy C uint32_t register slots; no initialization value interpreted as reset."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr4x_init.c",
+      "line": 27,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Firmware data-memory clearing loop (PHY DMEM word indices below 0x60000), not named control registers. Firmware training payload SRAM tables are not imported as registers."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr4x_init.c",
+      "line": 95,
+      "status": "generated",
+      "registers": [
+        "k3_memory::DdrPhy.r_160068",
+        "k3_memory::DdrPhy.r_16006c",
+        "k3_memory::DdrPhy.r_160078",
+        "k3_memory::DdrPhy.r_160080",
+        "k3_memory::DdrPhy.r_160084",
+        "k3_memory::DdrPhy.r_160090",
+        "k3_memory::DdrPhy.r_1600cc",
+        "k3_memory::DdrPhy.r_1600d0",
+        "k3_memory::DdrPhy.r_1600dc",
+        "k3_memory::DdrPhy.r_1600e4",
+        "k3_memory::DdrPhy.r_1600e8",
+        "k3_memory::DdrPhy.r_1600f4",
+        "k3_memory::DdrPhy.r_160124",
+        "k3_memory::DdrPhy.micro_cont_mux_sel",
+        "k3_memory::DdrPhy.micro_reset"
+      ],
+      "note": "Tableless k3_memory::DdrPhy C uint32_t register slots; no initialization value interpreted as reset."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr4x_init.c",
+      "line": 262,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ddrc.r_000000",
+        "k3_memory::Ddrc.r_000004",
+        "k3_memory::Ddrc.r_000008",
+        "k3_memory::Ddrc.r_00000c",
+        "k3_memory::Ddrc.r_000010",
+        "k3_memory::Ddrc.r_000014",
+        "k3_memory::Ddrc.r_000018",
+        "k3_memory::Ddrc.r_000024",
+        "k3_memory::Ddrc.r_000030",
+        "k3_memory::Ddrc.r_000038",
+        "k3_memory::Ddrc.r_000060",
+        "k3_memory::Ddrc.r_000064",
+        "k3_memory::Ddrc.r_000078",
+        "k3_memory::Ddrc.r_000080",
+        "k3_memory::Ddrc.r_000500",
+        "k3_memory::Ddrc.r_000504",
+        "k3_memory::Ddrc.r_000508",
+        "k3_memory::Ddrc.r_00050c",
+        "k3_memory::Ddrc.r_000580",
+        "k3_memory::Ddrc.r_000584",
+        "k3_memory::Ddrc.r_000588",
+        "k3_memory::Ddrc.r_0005a0",
+        "k3_memory::Ddrc.r_0005a4",
+        "k3_memory::Ddrc.r_0005a8",
+        "k3_memory::Ddrc.r_0005ac",
+        "k3_memory::Ddrc.r_0005b0",
+        "k3_memory::Ddrc.r_0005b4",
+        "k3_memory::Ddrc.r_0005b8",
+        "k3_memory::Ddrc.r_000600",
+        "k3_memory::Ddrc.r_000604",
+        "k3_memory::Ddrc.r_000608",
+        "k3_memory::Ddrc.r_00060c",
+        "k3_memory::Ddrc.r_000650",
+        "k3_memory::Ddrc.r_000800",
+        "k3_memory::Ddrc.r_000804",
+        "k3_memory::Ddrc.r_000a80",
+        "k3_memory::Ddrc.r_000b00",
+        "k3_memory::Ddrc.r_000b04",
+        "k3_memory::Ddrc.r_000b08",
+        "k3_memory::Ddrc.r_000b80",
+        "k3_memory::Ddrc.r_000c88",
+        "k3_memory::Ddrc.r_000d04",
+        "k3_memory::Ddrc.r_000d08",
+        "k3_memory::Ddrc.r_000d0c",
+        "k3_memory::Ddrc.r_000d30",
+        "k3_memory::Ddrc.r_000d34",
+        "k3_memory::Ddrc.r_010000_read",
+        "k3_memory::Ddrc.r_010000_write",
+        "k3_memory::Ddrc.r_010010",
+        "k3_memory::Ddrc.r_010014",
+        "k3_memory::Ddrc.r_010080",
+        "k3_memory::Ddrc.r_010084",
+        "k3_memory::Ddrc.r_010090",
+        "k3_memory::Ddrc.r_010100",
+        "k3_memory::Ddrc.r_010104",
+        "k3_memory::Ddrc.r_010108",
+        "k3_memory::Ddrc.r_010118",
+        "k3_memory::Ddrc.r_010180_read",
+        "k3_memory::Ddrc.r_010180_write",
+        "k3_memory::Ddrc.r_010184",
+        "k3_memory::Ddrc.r_01018c",
+        "k3_memory::Ddrc.r_010200",
+        "k3_memory::Ddrc.r_010208",
+        "k3_memory::Ddrc.r_010220",
+        "k3_memory::Ddrc.r_010224",
+        "k3_memory::Ddrc.r_010280",
+        "k3_memory::Ddrc.r_010288",
+        "k3_memory::Ddrc.r_010300",
+        "k3_memory::Ddrc.r_010308",
+        "k3_memory::Ddrc.r_010380",
+        "k3_memory::Ddrc.r_010384",
+        "k3_memory::Ddrc.r_010390",
+        "k3_memory::Ddrc.r_010500",
+        "k3_memory::Ddrc.r_010508",
+        "k3_memory::Ddrc.r_010510",
+        "k3_memory::Ddrc.r_010514",
+        "k3_memory::Ddrc.r_010518",
+        "k3_memory::Ddrc.r_010580",
+        "k3_memory::Ddrc.r_010b84",
+        "k3_memory::Ddrc.r_010c80",
+        "k3_memory::Ddrc.r_010c84",
+        "k3_memory::Ddrc.r_010c90",
+        "k3_memory::Ddrc.r_010c94",
+        "k3_memory::Ddrc.r_010d00",
+        "k3_memory::Ddrc.r_010f00",
+        "k3_memory::Ddrc.r_020004",
+        "k3_memory::Ddrc.r_020008",
+        "k3_memory::Ddrc.r_020090",
+        "k3_memory::Ddrc.r_020094",
+        "k3_memory::Ddrc.r_020098",
+        "k3_memory::Ddrc.r_02009c",
+        "k3_memory::Ddrc.r_0200a0",
+        "k3_memory::Ddrc.r_0200c0",
+        "k3_memory::Ddrc.r_0200c4",
+        "k3_memory::Ddrc.r_0200c8",
+        "k3_memory::Ddrc.r_0200cc",
+        "k3_memory::Ddrc.r_0200d0",
+        "k3_memory::Ddrc.r_0200d4",
+        "k3_memory::Ddrc.r_0200d8",
+        "k3_memory::Ddrc.r_0200dc",
+        "k3_memory::Ddrc.r_021004",
+        "k3_memory::Ddrc.r_021008",
+        "k3_memory::Ddrc.r_021090",
+        "k3_memory::Ddrc.r_021094",
+        "k3_memory::Ddrc.r_021098",
+        "k3_memory::Ddrc.r_02109c",
+        "k3_memory::Ddrc.r_0210a0",
+        "k3_memory::Ddrc.r_022004",
+        "k3_memory::Ddrc.r_022008",
+        "k3_memory::Ddrc.r_022090",
+        "k3_memory::Ddrc.r_022094",
+        "k3_memory::Ddrc.r_022098",
+        "k3_memory::Ddrc.r_02209c",
+        "k3_memory::Ddrc.r_0220a0",
+        "k3_memory::Ddrc.r_023004",
+        "k3_memory::Ddrc.r_023008",
+        "k3_memory::Ddrc.r_023090",
+        "k3_memory::Ddrc.r_023094",
+        "k3_memory::Ddrc.r_023098",
+        "k3_memory::Ddrc.r_02309c",
+        "k3_memory::Ddrc.r_0230a0",
+        "k3_memory::Ddrc.r_024004",
+        "k3_memory::Ddrc.r_024008",
+        "k3_memory::Ddrc.r_024090",
+        "k3_memory::Ddrc.r_024094",
+        "k3_memory::Ddrc.r_024098",
+        "k3_memory::Ddrc.r_02409c",
+        "k3_memory::Ddrc.r_0240a0",
+        "k3_memory::Ddrc.r_030004",
+        "k3_memory::Ddrc.r_03000c",
+        "k3_memory::Ddrc.r_030010",
+        "k3_memory::Ddrc.r_030014",
+        "k3_memory::Ddrc.r_030018",
+        "k3_memory::Ddrc.r_03001c",
+        "k3_memory::Ddrc.r_030020",
+        "k3_memory::Ddrc.r_030024",
+        "k3_memory::Ddrc.r_030028",
+        "k3_memory::Ddrc.r_03002c",
+        "k3_memory::Ddrc.r_030030"
+      ],
+      "note": "Tableless k3_memory::Ddrc C uint32_t register slots; no initialization value interpreted as reset."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr4x_init.c",
+      "line": 555,
+      "status": "generated",
+      "registers": [
+        "k3_memory::DdrConfig.r_000018_read",
+        "k3_memory::DdrConfig.r_000018_write"
+      ],
+      "note": "Tableless k3_memory::DdrConfig C uint32_t register slots; no initialization value interpreted as reset."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr5_init.c",
+      "line": 8,
+      "status": "generated",
+      "registers": [
+        "k3_memory::DdrPhy.tx_impedance_array"
+      ],
+      "note": "4 lanes, sparse slot list from C; uint32_t MMIO, uint16_t payload does not narrow access. LPDDR4x is a subset."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr5_init.c",
+      "line": 9,
+      "status": "generated",
+      "registers": [
+        "k3_memory::DdrPhy.tx_impedance_array1"
+      ],
+      "note": "2 lanes, sparse slot list from C; uint32_t MMIO, uint16_t payload does not narrow access. LPDDR4x is a subset."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr5_init.c",
+      "line": 30,
+      "status": "generated",
+      "registers": [
+        "k3_memory::DdrPhy.odt_impedance_array"
+      ],
+      "note": "4 lanes, sparse slot list from C; uint32_t MMIO, uint16_t payload does not narrow access. LPDDR4x is a subset."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr5_init.c",
+      "line": 56,
+      "status": "generated",
+      "registers": [
+        "k3_memory::DdrPhy.r_1600c4",
+        "k3_memory::DdrPhy.r_1600c8",
+        "k3_memory::DdrPhy.r_1600d4",
+        "k3_memory::DdrPhy.r_1600d8",
+        "k3_memory::DdrPhy.r_160104",
+        "k3_memory::DdrPhy.r_160108",
+        "k3_memory::DdrPhy.r_160194",
+        "k3_memory::DdrPhy.r_160198",
+        "k3_memory::DdrPhy.r_16019c"
+      ],
+      "note": "Tableless k3_memory::DdrPhy C uint32_t register slots; no initialization value interpreted as reset."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr5_init.c",
+      "line": 189,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Firmware data-memory clearing loop (PHY DMEM word indices below 0x60000), not named control registers. Firmware training payload SRAM tables are not imported as registers."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr5_init.c",
+      "line": 375,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ddrc.r_00001c",
+        "k3_memory::Ddrc.r_000034",
+        "k3_memory::Ddrc.r_00005c",
+        "k3_memory::Ddrc.r_000590",
+        "k3_memory::Ddrc.r_000594",
+        "k3_memory::Ddrc.r_000610",
+        "k3_memory::Ddrc.r_000c00",
+        "k3_memory::Ddrc.r_000c80",
+        "k3_memory::Ddrc.r_000c84",
+        "k3_memory::Ddrc.r_000d00",
+        "k3_memory::Ddrc.r_010008",
+        "k3_memory::Ddrc.r_010114",
+        "k3_memory::Ddrc.r_010128",
+        "k3_memory::Ddrc.r_010284",
+        "k3_memory::Ddrc.r_01038c",
+        "k3_memory::Ddrc.r_010b80",
+        "k3_memory::Ddrc.r_010b8c",
+        "k3_memory::Ddrc.r_010b98",
+        "k3_memory::Ddrc.r_010ca0",
+        "k3_memory::Ddrc.r_010ca4",
+        "k3_memory::Ddrc.r_020000"
+      ],
+      "note": "Tableless k3_memory::Ddrc C uint32_t register slots; no initialization value interpreted as reset."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr_common.c",
+      "line": 112,
+      "status": "generated",
+      "registers": [
+        "k3_memory::DdrPhy.r_080324",
+        "k3_memory::DdrPhy.uct_shadow",
+        "k3_memory::DdrPhy.dct_write_prot",
+        "k3_memory::DdrPhy.uct_write_only_shadow",
+        "k3_memory::DdrPhy.uct_data_write_only_shadow"
+      ],
+      "note": "Tableless k3_memory::DdrPhy C uint32_t register slots; no initialization value interpreted as reset."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr_common.c",
+      "line": 210,
+      "status": "generated",
+      "registers": [
+        "k3_memory::DdrConfig.r_000008",
+        "k3_memory::DdrConfig.r_00000c_read",
+        "k3_memory::DdrConfig.r_00000c_write",
+        "k3_memory::DdrConfig.r_000010",
+        "k3_memory::DdrConfig.r_00001c"
+      ],
+      "note": "Tableless k3_memory::DdrConfig C uint32_t register slots; no initialization value interpreted as reset."
+    },
+    {
+      "source": "drivers/spi/k1x_qspi.c",
+      "line": 59,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Qspi.qspi_mcr_read",
+        "k3_memory::Qspi.qspi_mcr_write",
+        "k3_memory::Qspi.qspi_tcr",
+        "k3_memory::Qspi.qspi_ipcr_read",
+        "k3_memory::Qspi.qspi_ipcr_write",
+        "k3_memory::Qspi.qspi_flshcr",
+        "k3_memory::Qspi.qspi_buf0cr_read",
+        "k3_memory::Qspi.qspi_buf0cr_write",
+        "k3_memory::Qspi.qspi_buf1cr_read",
+        "k3_memory::Qspi.qspi_buf1cr_write",
+        "k3_memory::Qspi.qspi_buf2cr_read",
+        "k3_memory::Qspi.qspi_buf2cr_write",
+        "k3_memory::Qspi.qspi_buf3cr_read",
+        "k3_memory::Qspi.qspi_buf3cr_write",
+        "k3_memory::Qspi.qspi_bfgencr_read",
+        "k3_memory::Qspi.qspi_bfgencr_write",
+        "k3_memory::Qspi.qspi_soccr_read",
+        "k3_memory::Qspi.qspi_soccr_write",
+        "k3_memory::Qspi.qspi_buf0ind_read",
+        "k3_memory::Qspi.qspi_buf0ind_write",
+        "k3_memory::Qspi.qspi_buf1ind_read",
+        "k3_memory::Qspi.qspi_buf1ind_write",
+        "k3_memory::Qspi.qspi_buf2ind_read",
+        "k3_memory::Qspi.qspi_buf2ind_write",
+        "k3_memory::Qspi.qspi_sfar_read",
+        "k3_memory::Qspi.qspi_sfar_write",
+        "k3_memory::Qspi.qspi_sfacr_read",
+        "k3_memory::Qspi.qspi_sfacr_write",
+        "k3_memory::Qspi.qspi_smpr_read",
+        "k3_memory::Qspi.qspi_smpr_write",
+        "k3_memory::Qspi.qspi_rbsr",
+        "k3_memory::Qspi.qspi_rbct_read",
+        "k3_memory::Qspi.qspi_rbct_write",
+        "k3_memory::Qspi.qspi_tbsr",
+        "k3_memory::Qspi.qspi_tbdr_read",
+        "k3_memory::Qspi.qspi_tbdr_write",
+        "k3_memory::Qspi.qspi_tbct",
+        "k3_memory::Qspi.qspi_sr",
+        "k3_memory::Qspi.qspi_fr_read",
+        "k3_memory::Qspi.qspi_fr_write",
+        "k3_memory::Qspi.qspi_rser",
+        "k3_memory::Qspi.qspi_spndst",
+        "k3_memory::Qspi.qspi_sptrclr_read",
+        "k3_memory::Qspi.qspi_sptrclr_write",
+        "k3_memory::Qspi.qspi_sfa1ad_read",
+        "k3_memory::Qspi.qspi_sfa1ad_write",
+        "k3_memory::Qspi.qspi_sfa2ad_read",
+        "k3_memory::Qspi.qspi_sfa2ad_write",
+        "k3_memory::Qspi.qspi_sfb1ad_read",
+        "k3_memory::Qspi.qspi_sfb1ad_write",
+        "k3_memory::Qspi.qspi_sfb2ad_read",
+        "k3_memory::Qspi.qspi_sfb2ad_write",
+        "k3_memory::Qspi.qspi_dlpr",
+        "k3_memory::Qspi.qspi_lutkey_read",
+        "k3_memory::Qspi.qspi_lutkey_write",
+        "k3_memory::Qspi.qspi_lckcr_read",
+        "k3_memory::Qspi.qspi_lckcr_write",
+        "k3_memory::Qspi.qspi_rbdr",
+        "k3_memory::Qspi.qspi_lut_0_0_read",
+        "k3_memory::Qspi.qspi_lut_0_0_write",
+        "k3_memory::Qspi.qspi_lut_0_1_read",
+        "k3_memory::Qspi.qspi_lut_0_1_write",
+        "k3_memory::Qspi.qspi_lut_0_2_read",
+        "k3_memory::Qspi.qspi_lut_0_2_write",
+        "k3_memory::Qspi.qspi_lut_0_3_read",
+        "k3_memory::Qspi.qspi_lut_0_3_write",
+        "k3_memory::Qspi.qspi_lut_1_0_read",
+        "k3_memory::Qspi.qspi_lut_1_0_write",
+        "k3_memory::Qspi.qspi_lut_1_1_read",
+        "k3_memory::Qspi.qspi_lut_1_1_write",
+        "k3_memory::Qspi.qspi_lut_1_2_read",
+        "k3_memory::Qspi.qspi_lut_1_2_write",
+        "k3_memory::Qspi.qspi_lut_1_3_read",
+        "k3_memory::Qspi.qspi_lut_1_3_write"
+      ],
+      "note": "Tableless C QSPI offsets; read/direct-write views avoid unproven modify semantics. RX array has 32 words; only two driver-selected LUT sequences have established bounds."
+    },
+    {
+      "source": "drivers/video/spacemit/dp/inno_dp_reg.h",
+      "line": 10,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dp.r_0018_read",
+        "k3_memory::Dp.r_0018_write",
+        "k3_memory::Dp.r_001c_read",
+        "k3_memory::Dp.r_001c_write",
+        "k3_memory::Dp.r_0028_read",
+        "k3_memory::Dp.r_0028_write",
+        "k3_memory::Dp.r_0080_read",
+        "k3_memory::Dp.r_0080_write",
+        "k3_memory::Dp.r_0084_read",
+        "k3_memory::Dp.r_0084_write",
+        "k3_memory::Dp.r_0088_read",
+        "k3_memory::Dp.r_0088_write",
+        "k3_memory::Dp.r_008c_read",
+        "k3_memory::Dp.r_008c_write",
+        "k3_memory::Dp.r_0100_read",
+        "k3_memory::Dp.r_0100_write",
+        "k3_memory::Dp.r_0180_read",
+        "k3_memory::Dp.r_0180_write",
+        "k3_memory::Dp.r_0184_read",
+        "k3_memory::Dp.r_0184_write",
+        "k3_memory::Dp.r_0188_read",
+        "k3_memory::Dp.r_0188_write",
+        "k3_memory::Dp.r_0190_read",
+        "k3_memory::Dp.r_0190_write",
+        "k3_memory::Dp.r_0194_read",
+        "k3_memory::Dp.r_0194_write",
+        "k3_memory::Dp.r_0198_read",
+        "k3_memory::Dp.r_0198_write",
+        "k3_memory::Dp.r_019c_read",
+        "k3_memory::Dp.r_019c_write",
+        "k3_memory::Dp.r_01a0_read",
+        "k3_memory::Dp.r_01a0_write",
+        "k3_memory::Dp.r_01a4_read",
+        "k3_memory::Dp.r_01a4_write",
+        "k3_memory::Dp.r_01a8_read",
+        "k3_memory::Dp.r_01a8_write",
+        "k3_memory::Dp.r_01ac_read",
+        "k3_memory::Dp.r_01ac_write",
+        "k3_memory::Dp.r_01b0_read",
+        "k3_memory::Dp.r_01b0_write",
+        "k3_memory::Dp.r_01c0_read",
+        "k3_memory::Dp.r_01c0_write",
+        "k3_memory::Dp.r_01c4_read",
+        "k3_memory::Dp.r_01c4_write",
+        "k3_memory::Dp.r_01d0_read",
+        "k3_memory::Dp.r_01d0_write",
+        "k3_memory::Dp.r_01dc_read",
+        "k3_memory::Dp.r_01dc_write",
+        "k3_memory::Dp.r_0200_read",
+        "k3_memory::Dp.r_0200_write",
+        "k3_memory::Dp.r_020c_read",
+        "k3_memory::Dp.r_020c_write",
+        "k3_memory::Dp.r_0210_read",
+        "k3_memory::Dp.r_0210_write",
+        "k3_memory::Dp.r_0214_read",
+        "k3_memory::Dp.r_0214_write",
+        "k3_memory::Dp.r_0218_read",
+        "k3_memory::Dp.r_0218_write",
+        "k3_memory::Dp.r_021c_read",
+        "k3_memory::Dp.r_021c_write",
+        "k3_memory::Dp.r_0220_read",
+        "k3_memory::Dp.r_0220_write",
+        "k3_memory::Dp.r_0224_read",
+        "k3_memory::Dp.r_0224_write",
+        "k3_memory::Dp.r_0228_read",
+        "k3_memory::Dp.r_0228_write",
+        "k3_memory::Dp.r_022c_read",
+        "k3_memory::Dp.r_022c_write",
+        "k3_memory::Dp.r_0230_read",
+        "k3_memory::Dp.r_0230_write",
+        "k3_memory::Dp.r_0238_read",
+        "k3_memory::Dp.r_0238_write",
+        "k3_memory::Dp.r_0400",
+        "k3_memory::Dp.r_0404_read",
+        "k3_memory::Dp.r_0404_write",
+        "k3_memory::Dp.r_0408_read",
+        "k3_memory::Dp.r_0408_write",
+        "k3_memory::Dp.r_040c_read",
+        "k3_memory::Dp.r_040c_write",
+        "k3_memory::Dp.r_0410_read",
+        "k3_memory::Dp.r_0410_write",
+        "k3_memory::Dp.r_0414_read",
+        "k3_memory::Dp.r_0414_write",
+        "k3_memory::Dp.r_0418_read",
+        "k3_memory::Dp.r_0418_write"
+      ],
+      "note": "Tableless local DP field macros; C readl/writel width. Status and direct-write views; no reset asserted."
+    },
+    {
+      "source": "drivers/video/spacemit/spacemit_dpu.c",
+      "line": 56,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dpu.r_30000",
+        "k3_memory::Dpu.r_5120c",
+        "k3_memory::Dpu.r_51210",
+        "k3_memory::Dpu.r_51214",
+        "k3_memory::Dpu.r_51218",
+        "k3_memory::Dpu.r_5121c",
+        "k3_memory::Dpu.r_51200",
+        "k3_memory::Dpu.r_51208",
+        "k3_memory::Dpu.r_5123c",
+        "k3_memory::Dpu.r_01284",
+        "k3_memory::Dpu.r_01000",
+        "k3_memory::Dpu.framebuffer_address_lo",
+        "k3_memory::Dpu.framebuffer_address_hi",
+        "k3_memory::Dpu.r_0103c",
+        "k3_memory::Dpu.r_01040",
+        "k3_memory::Dpu.r_01044",
+        "k3_memory::Dpu.r_01048",
+        "k3_memory::Dpu.r_01074",
+        "k3_memory::Dpu.r_0107c",
+        "k3_memory::Dpu.r_30004",
+        "k3_memory::Dpu.r_30020",
+        "k3_memory::Dpu.r_30024",
+        "k3_memory::Dpu.r_30038",
+        "k3_memory::Dpu.r_30300",
+        "k3_memory::Dpu.r_30334",
+        "k3_memory::Dpu.r_00340",
+        "k3_memory::Dpu.r_0034c",
+        "k3_memory::Dpu.r_00348",
+        "k3_memory::Dpu.r_00350"
+      ],
+      "note": "Tableless DPU C offsets, including framebuffer address halves; no undocumented plane stride inferred."
+    },
+    {
+      "source": "drivers/video/spacemit/spacemit_dpu.h",
+      "line": 13,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dpu.dpu_int_reg_24",
+        "k3_memory::Dpu.dpu_int_reg_14"
+      ],
+      "note": "Tableless DPU interrupt register macros; raw read views, no speculative clear/mask setters."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/07_interrupts.md",
+      "line": 23,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Interrupt-source assignments, not numeric MMIO register layouts."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/07_interrupts.md",
+      "line": 324,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Interrupt-source assignments, not numeric MMIO register layouts."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 438,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_sys_addr"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 447,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_block_size",
+        "k3_memory::Sdhci.sd_block_count"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 458,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_arg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 467,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_transfer_mode",
+        "k3_memory::Sdhci.sd_command_read",
+        "k3_memory::Sdhci.sd_command_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 488,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_resp_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 497,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_resp_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 506,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_resp_2"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 514,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_resp_3"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 523,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_buffer_data_port_01_read",
+        "k3_memory::Sdhci.sd_buffer_data_port_01_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 532,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_present_state_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 556,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_host_control",
+        "k3_memory::Sdhci.sd_power_control",
+        "k3_memory::Sdhci.sd_block_gap_control_read",
+        "k3_memory::Sdhci.sd_block_gap_control_write",
+        "k3_memory::Sdhci.sd_wake_up_control"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 582,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_clock_control_read",
+        "k3_memory::Sdhci.sd_clock_control_write",
+        "k3_memory::Sdhci.sd_timeout_control",
+        "k3_memory::Sdhci.sd_software_reset_read",
+        "k3_memory::Sdhci.sd_software_reset_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 602,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_normal_int_status_read",
+        "k3_memory::Sdhci.sd_normal_int_status_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 640,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_normal_int_status_en"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 679,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_normal_int_status_int_en"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 718,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_auto_cmd12_error_status_read",
+        "k3_memory::Sdhci.sd_auto_cmd12_error_status_write",
+        "k3_memory::Sdhci.sd_host_control2_read",
+        "k3_memory::Sdhci.sd_host_control2_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 741,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_capabilities_1_read",
+        "k3_memory::Sdhci.sd_capabilities_1_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 766,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_capabilities_3"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 787,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_max_current_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 798,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_max_current_3"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 806,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_force_auto_cmd12_error",
+        "k3_memory::Sdhci.sd_force_interrupt_error"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 836,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_adma_error_status"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 846,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_adma_sys_addr_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 855,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_adma_sys_addr_3"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 864,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_preset_initialization",
+        "k3_memory::Sdhci.sd_preset_default_speed"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 879,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_preset_high_speed",
+        "k3_memory::Sdhci.sd_preset_sdr12"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 894,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_preset_sdr25",
+        "k3_memory::Sdhci.sd_preset_sdr50"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 909,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_preset_sdr104",
+        "k3_memory::Sdhci.sd_preset_ddr50"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 924,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.shared_bus_ctrl_read",
+        "k3_memory::Sdhci.shared_bus_ctrl_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 943,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sd_slot_interrupt_status",
+        "k3_memory::Sdhci.sd_host_version"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 955,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_vid_pid"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 965,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_op_ctrl"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 982,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_op_ext_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1010,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_legacy_ctrl_reg_read",
+        "k3_memory::Sdhci.sdhc_legacy_ctrl_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1029,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_legacy_ceata_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1042,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_mmc_ctrl_reg_read",
+        "k3_memory::Sdhci.sdhc_mmc_ctrl_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1064,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_rx_cfg_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1077,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_tx_cfg_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1091,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_hwtune_cfg_reg_read",
+        "k3_memory::Sdhci.sdhc_hwtune_cfg_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1102,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_hwtune_cfg2_reg_read",
+        "k3_memory::Sdhci.sdhc_hwtune_cfg2_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1113,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_roundtrip_timing_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1130,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_gpio_cfg_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1139,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_dline_ctrl_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1150,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_dline_cfg_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1161,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_phy_ctrl_reg_read",
+        "k3_memory::Sdhci.sdhc_phy_ctrl_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1176,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_phy_func_reg_read",
+        "k3_memory::Sdhci.sdhc_phy_func_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1199,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_phy_dllcfg_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1218,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_phy_dllcfg1_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1229,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_phy_dllsts_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1241,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_phy_dllsts1_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1252,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_phy_padcfg_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1272,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_phy_padcfg1_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1281,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_phy_lbctrl_reg_read",
+        "k3_memory::Sdhci.sdhc_phy_lbctrl_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1293,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_phy_lbfunc_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1311,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_phy_lbcnt_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1319,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_phy_lbsts_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1334,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.sdhc_phy_lbdata_reg_read",
+        "k3_memory::Sdhci.sdhc_phy_lbdata_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1346,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqbdctrl_reg0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1356,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqbdctrl_reg1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1364,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqver_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1375,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqcap_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1386,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqcfg_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1399,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqctl_reg_read",
+        "k3_memory::Sdhci.cqe_cqctl_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1410,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqis_reg_read",
+        "k3_memory::Sdhci.cqe_cqis_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1424,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqiste_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1436,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqisge_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1448,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqic_reg_read",
+        "k3_memory::Sdhci.cqe_cqic_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1465,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqtdlba_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1473,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqtdlbau_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1481,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqtdbr_reg_read",
+        "k3_memory::Sdhci.cqe_cqtdbr_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1489,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqtcn_reg_read",
+        "k3_memory::Sdhci.cqe_cqtcn_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1497,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqdqs_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1505,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqdpt_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1513,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqtclr_reg_read",
+        "k3_memory::Sdhci.cqe_cqtclr_reg_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1521,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqssc1_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1531,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqssc2_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1540,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqcrdct_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1548,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqrmem_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1556,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqterri_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1573,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqcri_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1582,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Sdhci.cqe_cqcra_reg"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1657,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.host_controller_capabilities"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1676,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.ufs_version"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1687,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.host_controller_identification_descriptor_product_id"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1695,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.host_controller_identification_descriptor_manufacturer_id"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1705,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.auto_hibernate_idle_timer_read",
+        "k3_memory::Ufs.auto_hibernate_idle_timer_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1715,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.interrupt_status_read",
+        "k3_memory::Ufs.interrupt_status_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1742,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.interrupt_enable_read",
+        "k3_memory::Ufs.interrupt_enable_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1769,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.host_controller_status"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1784,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.host_controller_enable"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1793,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.host_uic_error_code_phy_adapter_layer_read",
+        "k3_memory::Ufs.host_uic_error_code_phy_adapter_layer_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1803,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.host_uic_error_code_data_link_layer"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1813,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.host_uic_error_code_network_layer"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1823,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.host_uic_error_code_transport_layer"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1833,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.host_uic_error_code_dme"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1843,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.utp_transfer_request_interrupt_aggregation_control_read",
+        "k3_memory::Ufs.utp_transfer_request_interrupt_aggregation_control_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1860,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.utp_transfer_request_list_base_address"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1869,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.utp_transfer_request_list_base_address_upper_32bits"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1878,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.utp_transfer_request_list_door_bell_read",
+        "k3_memory::Ufs.utp_transfer_request_list_door_bell_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1886,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.utp_transfer_request_list_clear"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1894,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.utp_transfer_request_list_run_stop"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1903,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.utp_transfer_request_list_notification_read",
+        "k3_memory::Ufs.utp_transfer_request_list_notification_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1911,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.utp_task_management_request_list_base_address"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1920,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.utp_task_management_request_list_base_address_upper_32bits"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1928,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.utp_task_management_request_list_door_bell_read",
+        "k3_memory::Ufs.utp_task_management_request_list_door_bell_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1937,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.utp_task_management_request_list_clear_read",
+        "k3_memory::Ufs.utp_task_management_request_list_clear_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1946,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.utp_task_management_request_list_run_stop"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1955,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.uic_command"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1964,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.uic_command_argument_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1972,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.uic_command_argument_2"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1980,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.uic_command_argument_3"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1988,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.sys1clk_1us"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1997,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.tx_symbol_clk_ns_1us"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 2007,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.local_cport_id"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 2016,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.pa_error_code"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 2025,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.retry_timer"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 2033,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Ufs.pa_linkstartup_timer"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 2046,
+      "status": "generated",
+      "registers": [
+        "k3_memory::UfsManagement.ufs_mphy_rst_ctrl"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 2056,
+      "status": "generated",
+      "registers": [
+        "k3_memory::UfsManagement.ufs_mphy_pu_ctrl_read",
+        "k3_memory::UfsManagement.ufs_mphy_pu_ctrl_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 2072,
+      "status": "generated",
+      "registers": [
+        "k3_memory::UfsManagement.ufs_mphy_backdoor_ctrl"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 2081,
+      "status": "generated",
+      "registers": [
+        "k3_memory::UfsManagement.ufs_device_io_ctrl"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 64,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_ctrl_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 92,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_ctrl_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 104,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_irq_st1_read",
+        "k3_memory::Dsi.dsi_irq_st1_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 117,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_irq_mask1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 126,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_irq_st_read",
+        "k3_memory::Dsi.dsi_irq_st_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 165,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_irq_mask"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 173,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_fpga_phy_ctrl_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 196,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_fpga_phy_ctrl_1_read",
+        "k3_memory::Dsi.dsi_fpga_phy_ctrl_1_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 211,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpu_cmd_0_read",
+        "k3_memory::Dsi.dsi_cpu_cmd_0_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 225,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpu_cmd_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 236,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpu_cmd_3_read",
+        "k3_memory::Dsi.dsi_cpu_cmd_3_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 248,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpu_wdat"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 256,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpu_status_0_read",
+        "k3_memory::Dsi.dsi_cpu_status_0_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 265,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpu_status_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 273,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpu_status_2"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 281,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpu_status_3"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 289,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpu_status_4"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 297,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpn_status_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 305,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpn_cmd"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 320,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpn_ctrl_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 331,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpn_ctrl_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 342,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_cpn_status_0_read",
+        "k3_memory::Dsi.dsi_cpn_status_0_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 350,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_rx_pkt_st_0_read",
+        "k3_memory::Dsi.dsi_rx_pkt_st_0_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 373,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_rx_pkt_hdr_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 381,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_rx_pkt_st_1_read",
+        "k3_memory::Dsi.dsi_rx_pkt_st_1_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 404,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_rx_pkt_hdr_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 412,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_rx_pkt_ctrl_read",
+        "k3_memory::Dsi.dsi_rx_pkt_ctrl_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 424,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_rx_pkt_ctrl_1_read",
+        "k3_memory::Dsi.dsi_rx_pkt_ctrl_1_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 434,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_rx_pkt_st_2_read",
+        "k3_memory::Dsi.dsi_rx_pkt_st_2_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 457,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_rx_pkt_hdr_2"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 465,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_lcd_bdg_ctrl0_read",
+        "k3_memory::Dsi.dsi_lcd_bdg_ctrl0_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 487,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_lcd_bdg_ctrl1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 496,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_tx_timer"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 504,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_rx_timer"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 512,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_turn_timer"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 520,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_ctrl_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 534,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_ctrl_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 565,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_timing_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 574,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_timing_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 583,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_timing_2"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 592,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_timing_3"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 601,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_wc_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 610,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_wc_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 619,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_wc_2"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 628,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_slot_cnt_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 637,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_slot_cnt_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 646,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_sync_code"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 661,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_status_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 676,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_status_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 685,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_status_2"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 694,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_status_3"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 703,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_status_4"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 711,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_vpn_status_5"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 720,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_ctrl_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 735,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_ctrl_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 749,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_ctrl_2"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 762,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_ctrl_3"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 774,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_status_0_read",
+        "k3_memory::Dsi.dsi_phy_status_0_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 789,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_status_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 807,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_lprx_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 822,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_lprx_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 830,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dyn_pll_ctrl_dsi"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 838,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_lptx_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 851,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_lptx_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 860,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_lptx_2"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 868,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_status_2"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 877,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_time_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 888,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_time_1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 898,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_time_2"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 909,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_time_3"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 919,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_time_8"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 928,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_code_0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 939,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_code_1_read",
+        "k3_memory::Dsi.dsi_phy_code_1_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 953,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_ana_pwr_ctrl"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 964,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_ana_ctrl0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 975,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_ana_ctrl1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 986,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.dsi_phy_debug"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 995,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.pll_ctrl_reg0"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 1006,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.pll_ctrl_reg1"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 1017,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.pll_ctrl_reg2"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 1033,
+      "status": "generated",
+      "registers": [
+        "k3_memory::Dsi.pll_ctrl_reg3_read",
+        "k3_memory::Dsi.pll_ctrl_reg3_write"
+      ],
+      "note": "Native numeric register facts; reserved bits omitted."
+    }
+  ],
+  "corrections": [
+    {
+      "source": "arch/riscv/dts/k3.dtsi",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/arch/riscv/dts/k3.dtsi"
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/k3_ddr.h",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/drivers/ddr/spacemit/k3/k3_ddr.h"
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/k3_ddr.h",
+      "line": 52,
+      "decision": "Macro-only register retained as raw read view; no speculative setter.",
+      "evidence": "Numeric word index supplied; selected C accessors do not establish a write operation at this slot."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/k3_ddr.h",
+      "line": 53,
+      "decision": "Macro-only register retained as raw read view; no speculative setter.",
+      "evidence": "Numeric word index supplied; selected C accessors do not establish a write operation at this slot."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/k3_ddr.h",
+      "line": 54,
+      "decision": "Macro-only register retained as raw read view; no speculative setter.",
+      "evidence": "Numeric word index supplied; selected C accessors do not establish a write operation at this slot."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/k3_ddr.h",
+      "line": 57,
+      "decision": "Macro-only register retained as raw read view; no speculative setter.",
+      "evidence": "Numeric word index supplied; selected C accessors do not establish a write operation at this slot."
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr4x_init.c",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/drivers/ddr/spacemit/k3/lpddr4x_init.c"
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr5_init.c",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/drivers/ddr/spacemit/k3/lpddr5_init.c"
+    },
+    {
+      "source": "drivers/ddr/spacemit/k3/lpddr_common.c",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/drivers/ddr/spacemit/k3/lpddr_common.c"
+    },
+    {
+      "source": "drivers/mmc/spacemit_sdhci.c",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/drivers/mmc/spacemit_sdhci.c"
+    },
+    {
+      "source": "drivers/spi/k1x_qspi.c",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/drivers/spi/k1x_qspi.c"
+    },
+    {
+      "source": "drivers/spi/k1x_qspi.c",
+      "line": 59,
+      "decision": "Write views restricted to C-observed writes; masks imported exactly.",
+      "evidence": "All declared offsets occur in the C diagnostic read table. Unused configuration offsets remain readable numeric registers without speculative setters."
+    },
+    {
+      "source": "drivers/video/spacemit/dp/inno_dp.c",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/drivers/video/spacemit/dp/inno_dp.c"
+    },
+    {
+      "source": "drivers/video/spacemit/dp/inno_dp_phy.c",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/drivers/video/spacemit/dp/inno_dp_phy.c"
+    },
+    {
+      "source": "drivers/video/spacemit/dp/inno_dp_reg.h",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/drivers/video/spacemit/dp/inno_dp_reg.h"
+    },
+    {
+      "source": "drivers/video/spacemit/dp/inno_dp_reg.h",
+      "line": 37,
+      "decision": "Non-written macro fields retained in read view; write permission not inferred.",
+      "evidence": "C consumers do not establish setters for: hpd_in_status"
+    },
+    {
+      "source": "drivers/video/spacemit/dp/inno_dp_reg.h",
+      "line": 49,
+      "decision": "Non-written macro fields retained in read view; write permission not inferred.",
+      "evidence": "C consumers do not establish setters for: ad_lock_corepll"
+    },
+    {
+      "source": "drivers/video/spacemit/dp/inno_dp_reg.h",
+      "line": 63,
+      "decision": "Non-written macro fields retained in read view; write permission not inferred.",
+      "evidence": "C consumers do not establish setters for: ad_lock_pixelpll"
+    },
+    {
+      "source": "drivers/video/spacemit/dp/inno_dp_reg.h",
+      "line": 145,
+      "decision": "Non-written macro fields retained in read view; write permission not inferred.",
+      "evidence": "C consumers do not establish setters for: aux_status, aux_reply_err_code"
+    },
+    {
+      "source": "drivers/video/spacemit/dsi/drv/spacemit_dsi_drv.c",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/drivers/video/spacemit/dsi/drv/spacemit_dsi_drv.c"
+    },
+    {
+      "source": "drivers/video/spacemit/dsi/drv/spacemit_dsi_hw.h",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/drivers/video/spacemit/dsi/drv/spacemit_dsi_hw.h"
+    },
+    {
+      "source": "drivers/video/spacemit/spacemit_dpu.c",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/drivers/video/spacemit/spacemit_dpu.c"
+    },
+    {
+      "source": "drivers/video/spacemit/spacemit_dpu.h",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/drivers/video/spacemit/spacemit_dpu.h"
+    },
+    {
+      "source": "include/sdhci.h",
+      "line": 1,
+      "decision": "Pinned C fact comparison; no descriptive prose imported.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/include/sdhci.h"
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 17,
+      "decision": "LPDDR narrative has no complete DDRCTL/PHY register layout. C direct slots supplemented; training SRAM payload tables are not named register definitions.",
+      "evidence": "k3/k3_docs/k3_usermanual/09_memory_storage.md:17"
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 259,
+      "decision": "QSPI manual has no register tables. C supplements known offsets; LUT sequences beyond driver-selected 0/1 lack established bound in this pinned driver.",
+      "evidence": "k3/k3_docs/k3_usermanual/09_memory_storage.md:259"
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 447,
+      "decision": "Split word presentation into native SDHCI accesses.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/include/sdhci.h; byte/halfword offsets and sdhci_readb/readw/writeb/writew accessors."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 467,
+      "decision": "SD command +0x0e is a native16-bit trigger: preserve readback and direct-write aliases, not modify. Transfer mode +0x0c remains an independent native16-bit configuration view.",
+      "evidence": "k3/k3_docs/k3_usermanual/09_memory_storage.md:467-479,550; pinned U-Boot include/sdhci.h SDHCI_COMMAND and sdhci_writew command accesses."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 467,
+      "decision": "Split word presentation into native SDHCI accesses.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/include/sdhci.h; byte/halfword offsets and sdhci_readb/readw/writeb/writew accessors."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 556,
+      "decision": "Split word presentation into native SDHCI accesses.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/include/sdhci.h; byte/halfword offsets and sdhci_readb/readw/writeb/writew accessors."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 582,
+      "decision": "Split word presentation into native SDHCI accesses.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/include/sdhci.h; byte/halfword offsets and sdhci_readb/readw/writeb/writew accessors."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 718,
+      "decision": "Host control2 bits 10:13 override reserved manual range.",
+      "evidence": "Pinned U-Boot 28805afe074715a0ede143d42999ea06bee58fbd drivers/mmc/spacemit_sdhci.c:15-18,36-46 writes these control bits with sdhci_writew."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 718,
+      "decision": "Split word presentation into native SDHCI accesses.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/include/sdhci.h; byte/halfword offsets and sdhci_readb/readw/writeb/writew accessors."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 806,
+      "decision": "Split word presentation into native SDHCI accesses.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/include/sdhci.h; byte/halfword offsets and sdhci_readb/readw/writeb/writew accessors."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 836,
+      "decision": "Split word presentation into native SDHCI accesses.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/include/sdhci.h; byte/halfword offsets and sdhci_readb/readw/writeb/writew accessors."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 848,
+      "decision": "Disambiguate repeated ADMA address half name.",
+      "evidence": "Same table assigns the identical label to distinct 31:16 and 15:0 ranges."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 849,
+      "decision": "Disambiguate repeated ADMA address half name.",
+      "evidence": "Same table assigns the identical label to distinct 31:16 and 15:0 ranges."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 857,
+      "decision": "Disambiguate repeated ADMA address half name.",
+      "evidence": "Same table assigns the identical label to distinct 31:16 and 15:0 ranges."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 858,
+      "decision": "Disambiguate repeated ADMA address half name.",
+      "evidence": "Same table assigns the identical label to distinct 31:16 and 15:0 ranges."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 864,
+      "decision": "Split word presentation into native SDHCI accesses.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/include/sdhci.h; byte/halfword offsets and sdhci_readb/readw/writeb/writew accessors."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 870,
+      "decision": "Disambiguate repeated field label by documented bit range.",
+      "evidence": "Source repeats DRV_STRENGTH_VAL at distinct ranges; numeric positions unchanged."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 872,
+      "decision": "Disambiguate repeated field label by documented bit range.",
+      "evidence": "Source repeats CLKGEN_SEL_VAL at distinct ranges; numeric positions unchanged."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 873,
+      "decision": "Disambiguate repeated field label by documented bit range.",
+      "evidence": "Source repeats SDCLK_FREQ_SEL_VAL at distinct ranges; numeric positions unchanged."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 879,
+      "decision": "Split word presentation into native SDHCI accesses.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/include/sdhci.h; byte/halfword offsets and sdhci_readb/readw/writeb/writew accessors."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 885,
+      "decision": "Disambiguate repeated field label by documented bit range.",
+      "evidence": "Source repeats DRV_STRENGTH_VAL at distinct ranges; numeric positions unchanged."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 887,
+      "decision": "Disambiguate repeated field label by documented bit range.",
+      "evidence": "Source repeats CLKGEN_SEL_VAL at distinct ranges; numeric positions unchanged."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 888,
+      "decision": "Disambiguate repeated field label by documented bit range.",
+      "evidence": "Source repeats SDCLK_FREQ_SEL_VAL at distinct ranges; numeric positions unchanged."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 894,
+      "decision": "Split word presentation into native SDHCI accesses.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/include/sdhci.h; byte/halfword offsets and sdhci_readb/readw/writeb/writew accessors."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 900,
+      "decision": "Disambiguate repeated field label by documented bit range.",
+      "evidence": "Source repeats DRV_STRENGTH_VAL at distinct ranges; numeric positions unchanged."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 902,
+      "decision": "Disambiguate repeated field label by documented bit range.",
+      "evidence": "Source repeats CLKGEN_SEL_VAL at distinct ranges; numeric positions unchanged."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 903,
+      "decision": "Disambiguate repeated field label by documented bit range.",
+      "evidence": "Source repeats SDCLK_FREQ_SEL_VAL at distinct ranges; numeric positions unchanged."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 909,
+      "decision": "Split word presentation into native SDHCI accesses.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/include/sdhci.h; byte/halfword offsets and sdhci_readb/readw/writeb/writew accessors."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 915,
+      "decision": "Disambiguate repeated field label by documented bit range.",
+      "evidence": "Source repeats DRV_STRENGTH_VAL at distinct ranges; numeric positions unchanged."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 917,
+      "decision": "Disambiguate repeated field label by documented bit range.",
+      "evidence": "Source repeats CLKGEN_SEL_VAL at distinct ranges; numeric positions unchanged."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 918,
+      "decision": "Disambiguate repeated field label by documented bit range.",
+      "evidence": "Source repeats SDCLK_FREQ_SEL_VAL at distinct ranges; numeric positions unchanged."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 943,
+      "decision": "Split word presentation into native SDHCI accesses.",
+      "evidence": "https://github.com/spacemit-com/uboot-2022.10/blob/28805afe074715a0ede143d42999ea06bee58fbd/include/sdhci.h; byte/halfword offsets and sdhci_readb/readw/writeb/writew accessors."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 1404,
+      "decision": "HALT is writable despite RO column.",
+      "evidence": "Same row describes writing 1 to halt and 0 to resume."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/09_memory_storage.md",
+      "line": 2075,
+      "decision": "UFS analog backdoor mentions byte-wide ATOP accesses, but no ATOP register list or resolved base (C0A8 versus UFS C0E0); no invented analog registers.",
+      "evidence": "k3/k3_docs/k3_usermanual/09_memory_storage.md:2075"
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/11_video.md",
+      "line": 5,
+      "decision": "Video chapter has no numeric register definitions. Pinned ESOS has no K3 video driver; available pinned U-Boot contains no VPU layout. Linux pinned tree API returned 404; no codec register bank invented.",
+      "evidence": "k3/k3_docs/k3_usermanual/11_video.md:5"
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 7,
+      "decision": "DPU manual is feature-only. C supplements all literal DPU writes; full eight-plane offsets/stride and secure-layout equivalence not supplied, so no plane array or secure instances invented.",
+      "evidence": "k3/k3_docs/k3_usermanual/12_display.md:7"
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 54,
+      "decision": "DSI00 base corrected from 0xd421a000 to 0xd421a800.",
+      "evidence": "06_address_map.md LCD_DSI row; K3 PDF V1.13 pp83/289 repeats the conflicting bases. U-Boot 28805afe074715a0ede143d42999ea06bee58fbd spacemit_dsi_hw.h:13 and k3.dtsi:1089-1092 agree on a800. DSI01 0xd421aa00 remains documented only."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 104,
+      "decision": "Expose separate status/direct-write views; no modify.",
+      "evidence": "Register prose states interrupt write-1-clear or counter write-clear, overriding generic Type columns."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 126,
+      "decision": "Expose separate status/direct-write views; no modify.",
+      "evidence": "Register prose states interrupt write-1-clear or counter write-clear, overriding generic Type columns."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 213,
+      "decision": "Request field is hardware-cleared after completion; no modify.",
+      "evidence": "Same row explicitly describes hardware de-asserting/clearing the request after its operation."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 238,
+      "decision": "Request field is hardware-cleared after completion; no modify.",
+      "evidence": "Same row explicitly describes hardware de-asserting/clearing the request after its operation."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 256,
+      "decision": "Expose separate status/direct-write views; no modify.",
+      "evidence": "Register prose states interrupt write-1-clear or counter write-clear, overriding generic Type columns."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 342,
+      "decision": "Expose separate status/direct-write views; no modify.",
+      "evidence": "Register prose states interrupt write-1-clear or counter write-clear, overriding generic Type columns."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 350,
+      "decision": "RWC retained as separate read/direct-write views; clear value unspecified.",
+      "evidence": "Source Type=RWC; no write-clear polarity is asserted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 381,
+      "decision": "RWC retained as separate read/direct-write views; clear value unspecified.",
+      "evidence": "Source Type=RWC; no write-clear polarity is asserted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 414,
+      "decision": "Request field is hardware-cleared after completion; no modify.",
+      "evidence": "Same row explicitly describes hardware de-asserting/clearing the request after its operation."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 424,
+      "decision": "RWC retained as separate read/direct-write views; clear value unspecified.",
+      "evidence": "Source Type=RWC; no write-clear polarity is asserted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 434,
+      "decision": "RWC retained as separate read/direct-write views; clear value unspecified.",
+      "evidence": "Source Type=RWC; no write-clear polarity is asserted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 774,
+      "decision": "RWC retained as separate read/direct-write views; clear value unspecified.",
+      "evidence": "Source Type=RWC; no write-clear polarity is asserted."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 832,
+      "decision": "Dynamic PLL offset/32-bit container known; detailed bits referenced only by inaccessible vendor file URL. Full-width field retained.",
+      "evidence": "k3/k3_docs/k3_usermanual/12_display.md:832"
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 947,
+      "decision": "Calibration is write-one-trigger, hardware-cleared, not W1C status.",
+      "evidence": "Same row explicitly states write 1 to trigger calibration and hardware clears on completion."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/12_display.md",
+      "line": 1044,
+      "decision": "DP/eDP manual has no numeric register definitions. Local DP field macro offsets supplemented from pinned U-Boot; no sink DPCD registers treated as MMIO.",
+      "evidence": "k3/k3_docs/k3_usermanual/12_display.md:1044"
+    }
+  ]
+}

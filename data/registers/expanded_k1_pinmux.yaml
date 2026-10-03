@@ -1,0 +1,1108 @@
+{
+  "block/k1_pinmux::Mfpr": {
+    "description": "K1 published sparse MFPR pin locations. No inferred RCPU/security translation or uniform per-pin reset.",
+    "items": [
+      {
+        "name": "gpio_00",
+        "byte_offset": 4,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1115. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_01",
+        "byte_offset": 8,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1116. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_02",
+        "byte_offset": 12,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1117. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_03",
+        "byte_offset": 16,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1118. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_04",
+        "byte_offset": 20,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1119. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_05",
+        "byte_offset": 24,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1120. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_06",
+        "byte_offset": 28,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1121. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_07",
+        "byte_offset": 32,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1122. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_08",
+        "byte_offset": 36,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1123. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_09",
+        "byte_offset": 40,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1124. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_10",
+        "byte_offset": 44,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1125. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_11",
+        "byte_offset": 48,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1126. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_12",
+        "byte_offset": 52,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1127. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_13",
+        "byte_offset": 56,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1128. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_14",
+        "byte_offset": 60,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1129. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_15",
+        "byte_offset": 64,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1130. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_16",
+        "byte_offset": 68,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1131. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_17",
+        "byte_offset": 72,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1132. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_18",
+        "byte_offset": 76,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1133. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_19",
+        "byte_offset": 80,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1134. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_20",
+        "byte_offset": 84,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1135. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_21",
+        "byte_offset": 88,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1136. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_22",
+        "byte_offset": 92,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1137. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_23",
+        "byte_offset": 96,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1138. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_24",
+        "byte_offset": 100,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1139. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_25",
+        "byte_offset": 104,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1140. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_26",
+        "byte_offset": 108,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1141. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_27",
+        "byte_offset": 112,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1142. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_28",
+        "byte_offset": 116,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1143. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_29",
+        "byte_offset": 120,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1144. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_30",
+        "byte_offset": 124,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1145. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_31",
+        "byte_offset": 128,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1146. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_32",
+        "byte_offset": 132,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1147. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_33",
+        "byte_offset": 136,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1148. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_34",
+        "byte_offset": 140,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1149. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_35",
+        "byte_offset": 144,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1150. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_36",
+        "byte_offset": 148,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1151. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_37",
+        "byte_offset": 152,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1152. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_38",
+        "byte_offset": 156,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1153. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_39",
+        "byte_offset": 160,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1154. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_40",
+        "byte_offset": 164,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1155. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_41",
+        "byte_offset": 168,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1156. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_42",
+        "byte_offset": 172,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1157. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_43",
+        "byte_offset": 176,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1158. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_44",
+        "byte_offset": 180,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1159. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_45",
+        "byte_offset": 184,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1160. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_46",
+        "byte_offset": 188,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1161. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_47",
+        "byte_offset": 192,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1162. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_48",
+        "byte_offset": 196,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1163. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_49",
+        "byte_offset": 200,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1164. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_50",
+        "byte_offset": 204,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1165. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_51",
+        "byte_offset": 208,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1166. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_52",
+        "byte_offset": 212,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1167. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_53",
+        "byte_offset": 216,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1168. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_54",
+        "byte_offset": 220,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1169. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_55",
+        "byte_offset": 224,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1170. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_56",
+        "byte_offset": 228,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1171. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_57",
+        "byte_offset": 232,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1172. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_58",
+        "byte_offset": 236,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1173. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_59",
+        "byte_offset": 240,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1174. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_60",
+        "byte_offset": 244,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1175. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_61",
+        "byte_offset": 248,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1176. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_62",
+        "byte_offset": 252,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1177. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_63",
+        "byte_offset": 256,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1178. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_64",
+        "byte_offset": 260,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1179. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_65",
+        "byte_offset": 264,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1180. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_66",
+        "byte_offset": 268,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1181. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_67",
+        "byte_offset": 272,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1182. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_68",
+        "byte_offset": 276,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1183. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_69",
+        "byte_offset": 280,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1184. Wake fields only apply where implemented."
+      },
+      {
+        "name": "pri_tdi",
+        "byte_offset": 284,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1185. Wake fields only apply where implemented."
+      },
+      {
+        "name": "pri_tms",
+        "byte_offset": 288,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1186. Wake fields only apply where implemented."
+      },
+      {
+        "name": "pri_tck",
+        "byte_offset": 292,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1187. Wake fields only apply where implemented."
+      },
+      {
+        "name": "pri_tdo",
+        "byte_offset": 296,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1188. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_74",
+        "byte_offset": 300,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1189. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_75",
+        "byte_offset": 304,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1190. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_76",
+        "byte_offset": 308,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1191. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_77",
+        "byte_offset": 312,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1192. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_78",
+        "byte_offset": 316,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1193. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_79",
+        "byte_offset": 320,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1194. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_80",
+        "byte_offset": 324,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1195. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_81",
+        "byte_offset": 328,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1196. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_82",
+        "byte_offset": 332,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1197. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_83",
+        "byte_offset": 336,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1198. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_84",
+        "byte_offset": 340,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1199. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_85",
+        "byte_offset": 344,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1200. Wake fields only apply where implemented."
+      },
+      {
+        "name": "qspi_dat0",
+        "byte_offset": 360,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1201. Wake fields only apply where implemented."
+      },
+      {
+        "name": "qspi_dat1",
+        "byte_offset": 364,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1202. Wake fields only apply where implemented."
+      },
+      {
+        "name": "qspi_dat2",
+        "byte_offset": 368,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1203. Wake fields only apply where implemented."
+      },
+      {
+        "name": "qspi_dat3",
+        "byte_offset": 372,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1204. Wake fields only apply where implemented."
+      },
+      {
+        "name": "qspi_cs1",
+        "byte_offset": 376,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1205. Wake fields only apply where implemented."
+      },
+      {
+        "name": "qspi_clk",
+        "byte_offset": 380,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1206. Wake fields only apply where implemented."
+      },
+      {
+        "name": "mmc1_dat3",
+        "byte_offset": 440,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1207. Wake fields only apply where implemented."
+      },
+      {
+        "name": "mmc1_dat2",
+        "byte_offset": 444,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1208. Wake fields only apply where implemented."
+      },
+      {
+        "name": "mmc1_dat1",
+        "byte_offset": 448,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1209. Wake fields only apply where implemented."
+      },
+      {
+        "name": "mmc1_dat0",
+        "byte_offset": 452,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1210. Wake fields only apply where implemented."
+      },
+      {
+        "name": "mmc1_cmd",
+        "byte_offset": 456,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1211. Wake fields only apply where implemented."
+      },
+      {
+        "name": "mmc1_clk",
+        "byte_offset": 460,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1212. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_110",
+        "byte_offset": 464,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1213. Wake fields only apply where implemented."
+      },
+      {
+        "name": "pwr_scl",
+        "byte_offset": 468,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1214. Wake fields only apply where implemented."
+      },
+      {
+        "name": "pwr_sda",
+        "byte_offset": 472,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1215. Wake fields only apply where implemented."
+      },
+      {
+        "name": "vcxo_en",
+        "byte_offset": 476,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1216. Wake fields only apply where implemented."
+      },
+      {
+        "name": "dvl0",
+        "byte_offset": 480,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1217. Wake fields only apply where implemented."
+      },
+      {
+        "name": "dvl1",
+        "byte_offset": 484,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1218. Wake fields only apply where implemented."
+      },
+      {
+        "name": "pmic_int_n",
+        "byte_offset": 488,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1219. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_86",
+        "byte_offset": 492,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1220. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_87",
+        "byte_offset": 496,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1221. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_88",
+        "byte_offset": 500,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1222. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_89",
+        "byte_offset": 504,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1223. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_90",
+        "byte_offset": 508,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1224. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_91",
+        "byte_offset": 512,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1225. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_92",
+        "byte_offset": 516,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1226. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_111",
+        "byte_offset": 524,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1227. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_112",
+        "byte_offset": 528,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1228. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_113",
+        "byte_offset": 532,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1229. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_114",
+        "byte_offset": 536,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1230. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_115",
+        "byte_offset": 540,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1231. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_116",
+        "byte_offset": 544,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1232. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_117",
+        "byte_offset": 548,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1233. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_118",
+        "byte_offset": 552,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1234. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_119",
+        "byte_offset": 556,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1235. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_120",
+        "byte_offset": 560,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1236. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_121",
+        "byte_offset": 564,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1237. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_122",
+        "byte_offset": 568,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1238. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_123",
+        "byte_offset": 572,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1239. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_124",
+        "byte_offset": 576,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1240. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_125",
+        "byte_offset": 580,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1241. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_126",
+        "byte_offset": 584,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1242. Wake fields only apply where implemented."
+      },
+      {
+        "name": "gpio_127",
+        "byte_offset": 588,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k1_pinmux::regs::Pin",
+        "description": "Pin configuration; k1/k1_docs/k1_usermanual/3.Pinout.md:1243. Wake fields only apply where implemented."
+      }
+    ]
+  },
+  "fieldset/k1_pinmux::regs::Pin": {
+    "bit_size": 32,
+    "description": "Common MFPR encoding. DRIVE[1:0] occupies bits12:11, DRIVE[2] bit10. Table reset examples are not per-pin reset guarantees.",
+    "fields": [
+      {
+        "name": "pull_sel",
+        "bit_offset": 15,
+        "bit_size": 1
+      },
+      {
+        "name": "pullup_en",
+        "bit_offset": 14,
+        "bit_size": 1
+      },
+      {
+        "name": "pulldn_en",
+        "bit_offset": 13,
+        "bit_size": 1
+      },
+      {
+        "name": "drive_1_0",
+        "bit_offset": 11,
+        "bit_size": 2
+      },
+      {
+        "name": "drive_2",
+        "bit_offset": 10,
+        "bit_size": 1
+      },
+      {
+        "name": "st_1_0",
+        "bit_offset": 8,
+        "bit_size": 2
+      },
+      {
+        "name": "sle",
+        "bit_offset": 7,
+        "bit_size": 1
+      },
+      {
+        "name": "edge_clear",
+        "bit_offset": 6,
+        "bit_size": 1,
+        "description": "Conditional wake-capable pin field; applicability is pin-dependent. EDGE_CLEAR disables detection, not an inferred W1C command."
+      },
+      {
+        "name": "edge_fall_en",
+        "bit_offset": 5,
+        "bit_size": 1,
+        "description": "Conditional wake-capable pin field; applicability is pin-dependent. EDGE_CLEAR disables detection, not an inferred W1C command."
+      },
+      {
+        "name": "edge_rise_en",
+        "bit_offset": 4,
+        "bit_size": 1,
+        "description": "Conditional wake-capable pin field; applicability is pin-dependent. EDGE_CLEAR disables detection, not an inferred W1C command."
+      },
+      {
+        "name": "spu",
+        "bit_offset": 3,
+        "bit_size": 1
+      },
+      {
+        "name": "af_sel",
+        "bit_offset": 0,
+        "bit_size": 3
+      }
+    ]
+  }
+}

@@ -5,7 +5,12 @@ Source pin: [SpacemiT ESOS](https://github.com/spacemit-com/esos),
 `e0b8d955bdc84957da3b7bba8c89e35ee0d27c2b` (`k3-br-v1.0.y`).
 Paths below are relative to that tree. C source is marked Apache-2.0;
 NMSIS core headers have their own upstream licenses. Generated chiptool support
-is Apache-2.0 OR MIT. Vendor facts do not constitute silicon validation.
+is Apache-2.0 OR MIT. Vendor facts do not constitute silicon validation. Hardware testing is later,
+not a PAC generation prerequisite. [Complete expanded inventory](COVERAGE.md)
+covers all public-manual register-bearing tables, repeated K1 datasheet facts,
+pinned C supplements, exact count definitions and residual source gaps. The
+entries below describe the retained firmware-selected API, not the boundaries
+of the expanded register inventory.
 
 | Data | Definition and behavior evidence |
 |---|---|
@@ -55,15 +60,15 @@ claims differ, not encoded. No reset values are guessed: generated Default is
 zero, not hardware reset. Manual W1C descriptions and vendor command usage
 support direct mask writes, but no hardware side effect is tested here.
 
-## Deliberately unsupported
+## Runtime boundaries
 
-No clock/reset/pinctrl manipulation: inherited clock/pin state only. A board
-must establish UART readiness and ownership before use. There is no evidence
-for a general safe PM reconfiguration policy in this scope. No DMA/GPIO/APB
-timers, AP controllers, suspend/resume, management services, cache maintenance,
-DDR aliases, RPMsg queues, RPMI transport or shared wire structs are supplied.
-Those belong to consumers; shared wire layouts must use zerocopy, not PAC
-register fieldsets. PAC fieldsets are native-endian MMIO values, never host
+The expansion supplies source-backed clock/reset/pinmux, DMA/GPIO/APB timer,
+AP controller and DDR register definitions, while leaving all runtime policy
+with consumers. A board must establish UART readiness and ownership before
+using it; this is not a prerequisite for generating the PAC. No general safe
+PM reconfiguration policy, suspend/resume, management service, cache maintenance,
+RPMsg queue, RPMI transport or shared wire struct implementation is supplied.
+Shared wire layouts must use zerocopy, not PAC register fieldsets. PAC fieldsets are native-endian MMIO values, never host
 protocol layouts. UART reads and mailbox FIFO reads have side effects. Generic
 `modify` exists on raw RW FIFO/claim views due to chiptool; it is forbidden for
 those registers by the reviewed API contract. W1C/W1S registers have no modify.

@@ -1,0 +1,1318 @@
+{
+  "block/k3_image::V2d": {
+    "description": "K3 V2D V2. 32-bit words, offsets 0x000..0x604. AP base 0xC0100000; APLIC input 86. No inferred RCPU translation.",
+    "items": [
+      {
+        "name": "v2_reg_0_read",
+        "byte_offset": 0,
+        "access": "Read",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg0",
+        "description": "V2D_V2_REG_0; k3/k3_docs/k3_usermanual/10_image.md:658. Reset word 0x00101000."
+      },
+      {
+        "name": "v2_reg_0_write",
+        "byte_offset": 0,
+        "access": "Write",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg0",
+        "description": "V2D_V2_REG_0; k3/k3_docs/k3_usermanual/10_image.md:658. Reset word 0x00101000."
+      },
+      {
+        "name": "scaler_coef",
+        "byte_offset": 4,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::ScalerCoef",
+        "description": "Index i=0..23: source word 1+i, coefficients 2*i and 2*i+1. Reset word 0x00000000.",
+        "array": {
+          "len": 24,
+          "stride": 4
+        }
+      },
+      {
+        "name": "v2_reg_25",
+        "byte_offset": 100,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg25",
+        "description": "V2D_V2_REG_25; k3/k3_docs/k3_usermanual/10_image.md:936. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_26",
+        "byte_offset": 104,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg26",
+        "description": "V2D_V2_REG_26; k3/k3_docs/k3_usermanual/10_image.md:949. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_27",
+        "byte_offset": 108,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg27",
+        "description": "V2D_V2_REG_27; k3/k3_docs/k3_usermanual/10_image.md:958. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_28",
+        "byte_offset": 112,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg28",
+        "description": "V2D_V2_REG_28; k3/k3_docs/k3_usermanual/10_image.md:969. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_29",
+        "byte_offset": 116,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg29",
+        "description": "V2D_V2_REG_29; k3/k3_docs/k3_usermanual/10_image.md:978. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_30",
+        "byte_offset": 120,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg30",
+        "description": "V2D_V2_REG_30; k3/k3_docs/k3_usermanual/10_image.md:987. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_31",
+        "byte_offset": 124,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg31",
+        "description": "V2D_V2_REG_31; k3/k3_docs/k3_usermanual/10_image.md:995. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_32",
+        "byte_offset": 128,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg32",
+        "description": "V2D_V2_REG_32; k3/k3_docs/k3_usermanual/10_image.md:1004. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_33",
+        "byte_offset": 132,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg33",
+        "description": "V2D_V2_REG_33; k3/k3_docs/k3_usermanual/10_image.md:1012. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_34",
+        "byte_offset": 136,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg34",
+        "description": "V2D_V2_REG_34; k3/k3_docs/k3_usermanual/10_image.md:1023. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_35",
+        "byte_offset": 140,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg35",
+        "description": "V2D_V2_REG_35; k3/k3_docs/k3_usermanual/10_image.md:1032. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_36",
+        "byte_offset": 144,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg36",
+        "description": "V2D_V2_REG_36; k3/k3_docs/k3_usermanual/10_image.md:1046. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_37",
+        "byte_offset": 148,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg37",
+        "description": "V2D_V2_REG_37; k3/k3_docs/k3_usermanual/10_image.md:1055. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_38",
+        "byte_offset": 152,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg38",
+        "description": "V2D_V2_REG_38; k3/k3_docs/k3_usermanual/10_image.md:1064. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_39",
+        "byte_offset": 156,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg39",
+        "description": "V2D_V2_REG_39; k3/k3_docs/k3_usermanual/10_image.md:1072. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_40",
+        "byte_offset": 160,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg40",
+        "description": "V2D_V2_REG_40; k3/k3_docs/k3_usermanual/10_image.md:1083. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_41",
+        "byte_offset": 164,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg41",
+        "description": "V2D_V2_REG_41; k3/k3_docs/k3_usermanual/10_image.md:1092. Reset word 0x00000000."
+      },
+      {
+        "name": "v2_reg_42",
+        "byte_offset": 168,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg42",
+        "description": "V2D_V2_REG_42; k3/k3_docs/k3_usermanual/10_image.md:1101. Reset word 0x00000000."
+      },
+      {
+        "name": "layer",
+        "byte_offset": 172,
+        "block": "k3_image::Layer",
+        "array": {
+          "len": 4,
+          "stride": 84
+        },
+        "description": "Index n=0..3. Registers 43+21*n through 63+21*n."
+      },
+      {
+        "name": "v2_reg_127",
+        "byte_offset": 508,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg127",
+        "description": "V2D_V2_REG_127; k3/k3_docs/k3_usermanual/10_image.md:1985. Reset word 0x00FFFF00."
+      },
+      {
+        "name": "v2_reg_128",
+        "byte_offset": 512,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg128",
+        "description": "V2D_V2_REG_128; k3/k3_docs/k3_usermanual/10_image.md:1996. Reset word 0xFFFFFFFF."
+      },
+      {
+        "name": "v2_reg_129_read",
+        "byte_offset": 516,
+        "access": "Read",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg129",
+        "description": "V2D_V2_REG_129; k3/k3_docs/k3_usermanual/10_image.md:2005. Reset word 0x01FFE002."
+      },
+      {
+        "name": "v2_reg_129_write",
+        "byte_offset": 516,
+        "access": "Write",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::V2Reg129",
+        "description": "V2D_V2_REG_129; k3/k3_docs/k3_usermanual/10_image.md:2005. Reset word 0x01FFE002."
+      },
+      {
+        "name": "palette_table",
+        "byte_offset": 520,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::regs::PaletteTable",
+        "description": "Index i=0..255: source register 130+i, offset 0x208+4*i. Reset word 0x00000000.",
+        "array": {
+          "len": 256,
+          "stride": 4
+        }
+      }
+    ]
+  },
+  "block/k3_image::Layer": {
+    "description": "Layer n=0..3; base offset 0xAC+0x54*n. Local word j=0..20 is V2D_V2_REG_(43+21*n+j). Field R_L_ denotes source R_Ln_.",
+    "items": [
+      {
+        "name": "reg_0",
+        "byte_offset": 0,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg0",
+        "description": "Layer-local word j=0; source register 43+21*n+0, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_1",
+        "byte_offset": 4,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg1",
+        "description": "Layer-local word j=1; source register 43+21*n+1, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_2",
+        "byte_offset": 8,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg2",
+        "description": "Layer-local word j=2; source register 43+21*n+2, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_3",
+        "byte_offset": 12,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg3",
+        "description": "Layer-local word j=3; source register 43+21*n+3, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_4",
+        "byte_offset": 16,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg4",
+        "description": "Layer-local word j=4; source register 43+21*n+4, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_5",
+        "byte_offset": 20,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg5",
+        "description": "Layer-local word j=5; source register 43+21*n+5, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_6",
+        "byte_offset": 24,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg6",
+        "description": "Layer-local word j=6; source register 43+21*n+6, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_7",
+        "byte_offset": 28,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg7",
+        "description": "Layer-local word j=7; source register 43+21*n+7, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_8",
+        "byte_offset": 32,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg8",
+        "description": "Layer-local word j=8; source register 43+21*n+8, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_9",
+        "byte_offset": 36,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg9",
+        "description": "Layer-local word j=9; source register 43+21*n+9, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_10",
+        "byte_offset": 40,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg10",
+        "description": "Layer-local word j=10; source register 43+21*n+10, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_11",
+        "byte_offset": 44,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg11",
+        "description": "Layer-local word j=11; source register 43+21*n+11, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_12",
+        "byte_offset": 48,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg12",
+        "description": "Layer-local word j=12; source register 43+21*n+12, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_13",
+        "byte_offset": 52,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg13",
+        "description": "Layer-local word j=13; source register 43+21*n+13, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_14",
+        "byte_offset": 56,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg14",
+        "description": "Layer-local word j=14; source register 43+21*n+14, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_15",
+        "byte_offset": 60,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg15",
+        "description": "Layer-local word j=15; source register 43+21*n+15, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_16",
+        "byte_offset": 64,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg16",
+        "description": "Layer-local word j=16; source register 43+21*n+16, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_17",
+        "byte_offset": 68,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg17",
+        "description": "Layer-local word j=17; source register 43+21*n+17, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_18",
+        "byte_offset": 72,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg18",
+        "description": "Layer-local word j=18; source register 43+21*n+18, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_19",
+        "byte_offset": 76,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg19",
+        "description": "Layer-local word j=19; source register 43+21*n+19, n=0..3. Reset word 0x00000000."
+      },
+      {
+        "name": "reg_20",
+        "byte_offset": 80,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "k3_image::layer_regs::Reg20",
+        "description": "Layer-local word j=20; source register 43+21*n+20, n=0..3. Reset word 0x00000000."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg0": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_rdma_burst_len",
+        "bit_offset": 16,
+        "bit_size": 8,
+        "description": "Source RW; reset 16."
+      },
+      {
+        "name": "r_wdma_burst_len",
+        "bit_offset": 8,
+        "bit_size": 5,
+        "description": "Source RW; reset 16."
+      },
+      {
+        "name": "r_trigger",
+        "bit_offset": 0,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg25": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_bld_bg_b",
+        "bit_offset": 24,
+        "bit_size": 8,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_bld_bg_g",
+        "bit_offset": 16,
+        "bit_size": 8,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_bld_bg_r",
+        "bit_offset": 8,
+        "bit_size": 8,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_bld_bg_enable",
+        "bit_offset": 1,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_bld_mode",
+        "bit_offset": 0,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg26": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_bld_bg_a",
+        "bit_offset": 0,
+        "bit_size": 8,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg27": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_bld_mask_rect_ltop_x",
+        "bit_offset": 8,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_bld_mask_enable",
+        "bit_offset": 0,
+        "bit_size": 2,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg28": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_bld_mask_rect_width",
+        "bit_offset": 16,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_bld_mask_rect_ltop_y",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg29": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_bld_mask_rect_height",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg30": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_out_addr_y_31_0",
+        "bit_offset": 0,
+        "bit_size": 32,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg31": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_out_addr_y_33_32",
+        "bit_offset": 0,
+        "bit_size": 2,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg32": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_out_addr_uv_31_0",
+        "bit_offset": 0,
+        "bit_size": 32,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg33": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_out_ori_width",
+        "bit_offset": 8,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_out_addr_uv_33_32",
+        "bit_offset": 0,
+        "bit_size": 2,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg34": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_out_stride",
+        "bit_offset": 16,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_out_ori_height",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg35": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_out_crop_ltop_x",
+        "bit_offset": 16,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_out_fbc_en",
+        "bit_offset": 8,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_out_swap",
+        "bit_offset": 7,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_out_dither",
+        "bit_offset": 5,
+        "bit_size": 2,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_out_range",
+        "bit_offset": 4,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_out_format",
+        "bit_offset": 0,
+        "bit_size": 4,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg36": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_out_crop_width",
+        "bit_offset": 16,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_out_crop_ltop_y",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg37": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_out_crop_height",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg38": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_mask_base_addr_31_0",
+        "bit_offset": 0,
+        "bit_size": 32,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg39": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_mask_in_ori_width",
+        "bit_offset": 8,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_mask_base_addr_33_32",
+        "bit_offset": 0,
+        "bit_size": 2,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg40": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_mask_in_stride",
+        "bit_offset": 16,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_mask_in_ori_height",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg41": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_mask_in_crop_ltop_y",
+        "bit_offset": 16,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_mask_in_crop_ltop_x",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg42": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_mask_in_crop_height",
+        "bit_offset": 16,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_mask_in_crop_width",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg127": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "dma_timeout_num",
+        "bit_offset": 8,
+        "bit_size": 16,
+        "description": "Source RW; reset 65535."
+      },
+      {
+        "name": "r_debug_mode",
+        "bit_offset": 0,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg128": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "layer_timeout_num",
+        "bit_offset": 16,
+        "bit_size": 16,
+        "description": "Source RW; reset 65535."
+      },
+      {
+        "name": "fbc_timeout_num",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 65535."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::V2Reg129": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_damc_wr_int_clr",
+        "bit_offset": 31,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_damc_rd_int_clr",
+        "bit_offset": 30,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_dmac_user_id",
+        "bit_offset": 26,
+        "bit_size": 4,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_dmac_rst_req",
+        "bit_offset": 25,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_dmac_rst_n_pwr",
+        "bit_offset": 24,
+        "bit_size": 1,
+        "description": "Source RW; reset 1."
+      },
+      {
+        "name": "r_dmac_postwr_en",
+        "bit_offset": 16,
+        "bit_size": 8,
+        "description": "Source RW; reset 255."
+      },
+      {
+        "name": "r_dmac_max_req_num",
+        "bit_offset": 13,
+        "bit_size": 3,
+        "description": "Source RW; reset 7."
+      },
+      {
+        "name": "r_dmac_axi_sec",
+        "bit_offset": 12,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_dmac_awqos",
+        "bit_offset": 8,
+        "bit_size": 4,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_dmac_arqos",
+        "bit_offset": 2,
+        "bit_size": 4,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_dmac_arb_mode",
+        "bit_offset": 0,
+        "bit_size": 2,
+        "description": "Source RW; reset 2."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::ScalerCoef": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_scaler_coef_odd",
+        "bit_offset": 16,
+        "bit_size": 12,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_scaler_coef_even",
+        "bit_offset": 0,
+        "bit_size": 12,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg0": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_in_addr_y_31_0",
+        "bit_offset": 0,
+        "bit_size": 32,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg1": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_in_addr_y_33_32",
+        "bit_offset": 0,
+        "bit_size": 2,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg2": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_in_addr_uv_31_0",
+        "bit_offset": 0,
+        "bit_size": 32,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg3": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_bld_alpha_rop2_code",
+        "bit_offset": 20,
+        "bit_size": 4,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_bld_color_rop2_code",
+        "bit_offset": 16,
+        "bit_size": 4,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_bld_dst_alpha_factor",
+        "bit_offset": 11,
+        "bit_size": 3,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_bld_src_alpha_factor",
+        "bit_offset": 8,
+        "bit_size": 3,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_bld_dst_color_factor",
+        "bit_offset": 5,
+        "bit_size": 3,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_bld_src_color_factor",
+        "bit_offset": 2,
+        "bit_size": 3,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_in_addr_uv_33_32",
+        "bit_offset": 0,
+        "bit_size": 2,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg4": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_in_ori_height",
+        "bit_offset": 16,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_in_ori_width",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg5": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_in_fbc_en",
+        "bit_offset": 24,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_in_swap",
+        "bit_offset": 23,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_rt_degree",
+        "bit_offset": 20,
+        "bit_size": 3,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_in_format",
+        "bit_offset": 16,
+        "bit_size": 4,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_in_stride",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg6": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_in_crop_ltop_y",
+        "bit_offset": 16,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_in_crop_ltop_x",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg7": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_in_crop_height",
+        "bit_offset": 16,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_in_crop_width",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg8": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_solid_b",
+        "bit_offset": 24,
+        "bit_size": 8,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_solid_g",
+        "bit_offset": 16,
+        "bit_size": 8,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_solid_r",
+        "bit_offset": 8,
+        "bit_size": 8,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_solid_en",
+        "bit_offset": 0,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg9": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_csc_matrix0",
+        "bit_offset": 16,
+        "bit_size": 13,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_csc_en",
+        "bit_offset": 8,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_solid_a",
+        "bit_offset": 0,
+        "bit_size": 8,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg10": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_csc_matrix2",
+        "bit_offset": 16,
+        "bit_size": 13,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_csc_matrix1",
+        "bit_offset": 0,
+        "bit_size": 13,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg11": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_csc_matrix4",
+        "bit_offset": 16,
+        "bit_size": 13,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_csc_matrix3",
+        "bit_offset": 0,
+        "bit_size": 13,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg12": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_csc_matrix6",
+        "bit_offset": 16,
+        "bit_size": 13,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_csc_matrix5",
+        "bit_offset": 0,
+        "bit_size": 13,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg13": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_csc_matrix8",
+        "bit_offset": 16,
+        "bit_size": 13,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_csc_matrix7",
+        "bit_offset": 0,
+        "bit_size": 13,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg14": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_csc_matrix10",
+        "bit_offset": 16,
+        "bit_size": 13,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_csc_matrix9",
+        "bit_offset": 0,
+        "bit_size": 13,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg15": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_scl_mode",
+        "bit_offset": 13,
+        "bit_size": 2,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_csc_matrix11",
+        "bit_offset": 0,
+        "bit_size": 13,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg16": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_scl_delta_x",
+        "bit_offset": 0,
+        "bit_size": 20,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg17": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_bld_glb_alp",
+        "bit_offset": 24,
+        "bit_size": 8,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_bld_pre_alp_func",
+        "bit_offset": 22,
+        "bit_size": 2,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_bld_alpha_source",
+        "bit_offset": 20,
+        "bit_size": 2,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_scl_delta_y",
+        "bit_offset": 0,
+        "bit_size": 20,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg18": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_bld_rect_ltop_x",
+        "bit_offset": 8,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_blend_en",
+        "bit_offset": 0,
+        "bit_size": 1,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg19": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_bld_rect_width",
+        "bit_offset": 16,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      },
+      {
+        "name": "r_l_bld_rect_ltop_y",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::layer_regs::Reg20": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_l_bld_rect_height",
+        "bit_offset": 0,
+        "bit_size": 16,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  },
+  "fieldset/k3_image::regs::PaletteTable": {
+    "bit_size": 32,
+    "description": "Numeric fields; reset facts do not define chiptool Default.",
+    "fields": [
+      {
+        "name": "r_palette_table",
+        "bit_offset": 0,
+        "bit_size": 32,
+        "description": "Source RW; reset 0."
+      }
+    ]
+  }
+}

@@ -1,0 +1,3702 @@
+{
+  "schema": 1,
+  "chip": "k3",
+  "registers": [
+    "expanded_k3_image"
+  ],
+  "sources": [
+    {
+      "path": "k3/k3_docs/k3_usermanual/10_image.md",
+      "sha256": "95d0be4f1aeb65b30a9ee5202637876da5d5034331ed131ca30dca07a5c5fbae",
+      "kind": "docs"
+    },
+    {
+      "path": "k3/k3_docs/k3_usermanual/06_address_map.md",
+      "sha256": "8e30cf82f5fa5a6534c9f1bdc65b91682566417dc1a5957870887883e04ceea7",
+      "kind": "docs"
+    },
+    {
+      "path": "k3/k3_docs/k3_usermanual/07_interrupts.md",
+      "sha256": "8b382eb62ad1a572b25a250e3080378bf0de64f95b2c1278abfbacc7d116d152",
+      "kind": "docs"
+    }
+  ],
+  "instances": [
+    {
+      "name": "AP_K3_IMAGE_V2D",
+      "block": "k3_image::V2d",
+      "address": 3222274048,
+      "view": "ap",
+      "source": {
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md",
+        "line": 25
+      }
+    }
+  ],
+  "aliases": {
+    "k3_image::V2d": [
+      [
+        "v2_reg_0_read",
+        "v2_reg_0_write"
+      ],
+      [
+        "v2_reg_129_read",
+        "v2_reg_129_write"
+      ]
+    ]
+  },
+  "write_mask_registers": [
+    "k3_image::V2d.v2_reg_0_write",
+    "k3_image::V2d.v2_reg_129_write"
+  ],
+  "tables": [
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 308,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Pixel-algorithm variables, not MMIO bit positions."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 320,
+      "status": "duplicate",
+      "registers": [
+        "k3_image::Layer.reg_5"
+      ],
+      "note": "Input format and swap functional references; numeric definitions cover all four layers."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 356,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Solid-color algorithm variables, not MMIO bit positions."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 368,
+      "status": "duplicate",
+      "registers": [
+        "k3_image::Layer.reg_8",
+        "k3_image::Layer.reg_9"
+      ],
+      "note": "Solid color functional references; enable and RGBA components are packed into two words per layer."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 456,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Rotation algorithm variables, not MMIO bit positions."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 466,
+      "status": "duplicate",
+      "registers": [
+        "k3_image::Layer.reg_5",
+        "k3_image::Layer.reg_4"
+      ],
+      "note": "Functional field references; numeric definitions cover all four layers."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 513,
+      "status": "duplicate",
+      "registers": [
+        "k3_image::Layer.reg_9",
+        "k3_image::Layer.reg_10",
+        "k3_image::Layer.reg_11",
+        "k3_image::Layer.reg_12",
+        "k3_image::Layer.reg_13",
+        "k3_image::Layer.reg_14",
+        "k3_image::Layer.reg_15"
+      ],
+      "note": "CSC field references; twelve coefficients per layer are in seven packed words."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 520,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "CSC intermediate variables, not MMIO bit positions."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 629,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Output algorithm variables, not MMIO bit positions."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 640,
+      "status": "duplicate",
+      "registers": [
+        "k3_image::V2d.v2_reg_35",
+        "k3_image::V2d.v2_reg_36",
+        "k3_image::V2d.v2_reg_37"
+      ],
+      "note": "Output format, swap, layout and crop functional references; use the numeric bank field widths."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 658,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_0_read",
+        "k3_image::V2d.v2_reg_0_write"
+      ],
+      "note": "32-bit word at offset 0x0. Read/direct-write aliases; no RMW or assumed W1C."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 671,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 0; offset 0x4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 682,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 1; offset 0x8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 693,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 2; offset 0xc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 704,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 3; offset 0x10."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 715,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 4; offset 0x14."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 726,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 5; offset 0x18."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 738,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 6; offset 0x1c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 749,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 7; offset 0x20."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 760,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 8; offset 0x24."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 771,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 9; offset 0x28."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 782,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 10; offset 0x2c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 793,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 11; offset 0x30."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 804,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 12; offset 0x34."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 815,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 13; offset 0x38."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 826,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 14; offset 0x3c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 837,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 15; offset 0x40."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 848,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 16; offset 0x44."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 859,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 17; offset 0x48."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 870,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 18; offset 0x4c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 881,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 19; offset 0x50."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 892,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 20; offset 0x54."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 903,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 21; offset 0x58."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 914,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 22; offset 0x5c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 925,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.scaler_coef"
+      ],
+      "note": "Scaler pair index 23; offset 0x60."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 936,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_25"
+      ],
+      "note": "32-bit word at offset 0x64."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 949,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_26"
+      ],
+      "note": "32-bit word at offset 0x68."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 958,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_27"
+      ],
+      "note": "32-bit word at offset 0x6c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 969,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_28"
+      ],
+      "note": "32-bit word at offset 0x70."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 978,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_29"
+      ],
+      "note": "32-bit word at offset 0x74."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 987,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_30"
+      ],
+      "note": "32-bit word at offset 0x78."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 995,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_31"
+      ],
+      "note": "32-bit word at offset 0x7c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1004,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_32"
+      ],
+      "note": "32-bit word at offset 0x80."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1012,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_33"
+      ],
+      "note": "32-bit word at offset 0x84."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1023,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_34"
+      ],
+      "note": "32-bit word at offset 0x88."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1032,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_35"
+      ],
+      "note": "32-bit word at offset 0x8c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1046,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_36"
+      ],
+      "note": "32-bit word at offset 0x90."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1055,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_37"
+      ],
+      "note": "32-bit word at offset 0x94."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1064,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_38"
+      ],
+      "note": "32-bit word at offset 0x98."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1072,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_39"
+      ],
+      "note": "32-bit word at offset 0x9c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1083,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_40"
+      ],
+      "note": "32-bit word at offset 0xa0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1092,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_41"
+      ],
+      "note": "32-bit word at offset 0xa4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1101,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_42"
+      ],
+      "note": "32-bit word at offset 0xa8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1110,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_0"
+      ],
+      "note": "Layer index 0, local word 0; offset 0xac."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1118,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_1"
+      ],
+      "note": "Layer index 0, local word 1; offset 0xb0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1127,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_2"
+      ],
+      "note": "Layer index 0, local word 2; offset 0xb4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1135,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_3"
+      ],
+      "note": "Layer index 0, local word 3; offset 0xb8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1151,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_4"
+      ],
+      "note": "Layer index 0, local word 4; offset 0xbc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1160,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_5"
+      ],
+      "note": "Layer index 0, local word 5; offset 0xc0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1173,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_6"
+      ],
+      "note": "Layer index 0, local word 6; offset 0xc4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1182,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_7"
+      ],
+      "note": "Layer index 0, local word 7; offset 0xc8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1191,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_8"
+      ],
+      "note": "Layer index 0, local word 8; offset 0xcc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1203,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_9"
+      ],
+      "note": "Layer index 0, local word 9; offset 0xd0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1215,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_10"
+      ],
+      "note": "Layer index 0, local word 10; offset 0xd4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1226,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_11"
+      ],
+      "note": "Layer index 0, local word 11; offset 0xd8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1237,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_12"
+      ],
+      "note": "Layer index 0, local word 12; offset 0xdc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1248,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_13"
+      ],
+      "note": "Layer index 0, local word 13; offset 0xe0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1259,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_14"
+      ],
+      "note": "Layer index 0, local word 14; offset 0xe4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1270,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_15"
+      ],
+      "note": "Layer index 0, local word 15; offset 0xe8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1280,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_16"
+      ],
+      "note": "Layer index 0, local word 16; offset 0xec."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1289,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_17"
+      ],
+      "note": "Layer index 0, local word 17; offset 0xf0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1300,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_18"
+      ],
+      "note": "Layer index 0, local word 18; offset 0xf4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1311,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_19"
+      ],
+      "note": "Layer index 0, local word 19; offset 0xf8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1320,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_20"
+      ],
+      "note": "Layer index 0, local word 20; offset 0xfc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1329,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_0"
+      ],
+      "note": "Layer index 1, local word 0; offset 0x100."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1337,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_1"
+      ],
+      "note": "Layer index 1, local word 1; offset 0x104."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1346,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_2"
+      ],
+      "note": "Layer index 1, local word 2; offset 0x108."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1354,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_3"
+      ],
+      "note": "Layer index 1, local word 3; offset 0x10c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1370,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_4"
+      ],
+      "note": "Layer index 1, local word 4; offset 0x110."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1379,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_5"
+      ],
+      "note": "Layer index 1, local word 5; offset 0x114."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1392,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_6"
+      ],
+      "note": "Layer index 1, local word 6; offset 0x118."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1401,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_7"
+      ],
+      "note": "Layer index 1, local word 7; offset 0x11c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1410,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_8"
+      ],
+      "note": "Layer index 1, local word 8; offset 0x120."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1421,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_9"
+      ],
+      "note": "Layer index 1, local word 9; offset 0x124."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1433,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_10"
+      ],
+      "note": "Layer index 1, local word 10; offset 0x128."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1444,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_11"
+      ],
+      "note": "Layer index 1, local word 11; offset 0x12c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1455,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_12"
+      ],
+      "note": "Layer index 1, local word 12; offset 0x130."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1466,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_13"
+      ],
+      "note": "Layer index 1, local word 13; offset 0x134."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1477,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_14"
+      ],
+      "note": "Layer index 1, local word 14; offset 0x138."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1488,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_15"
+      ],
+      "note": "Layer index 1, local word 15; offset 0x13c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1498,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_16"
+      ],
+      "note": "Layer index 1, local word 16; offset 0x140."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1507,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_17"
+      ],
+      "note": "Layer index 1, local word 17; offset 0x144."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1518,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_18"
+      ],
+      "note": "Layer index 1, local word 18; offset 0x148."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1529,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_19"
+      ],
+      "note": "Layer index 1, local word 19; offset 0x14c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1538,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_20"
+      ],
+      "note": "Layer index 1, local word 20; offset 0x150."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1547,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_0"
+      ],
+      "note": "Layer index 2, local word 0; offset 0x154."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1555,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_1"
+      ],
+      "note": "Layer index 2, local word 1; offset 0x158."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1564,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_2"
+      ],
+      "note": "Layer index 2, local word 2; offset 0x15c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1572,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_3"
+      ],
+      "note": "Layer index 2, local word 3; offset 0x160."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1588,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_4"
+      ],
+      "note": "Layer index 2, local word 4; offset 0x164."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1597,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_5"
+      ],
+      "note": "Layer index 2, local word 5; offset 0x168."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1610,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_6"
+      ],
+      "note": "Layer index 2, local word 6; offset 0x16c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1619,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_7"
+      ],
+      "note": "Layer index 2, local word 7; offset 0x170."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1628,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_8"
+      ],
+      "note": "Layer index 2, local word 8; offset 0x174."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1640,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_9"
+      ],
+      "note": "Layer index 2, local word 9; offset 0x178."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1652,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_10"
+      ],
+      "note": "Layer index 2, local word 10; offset 0x17c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1663,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_11"
+      ],
+      "note": "Layer index 2, local word 11; offset 0x180."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1674,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_12"
+      ],
+      "note": "Layer index 2, local word 12; offset 0x184."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1685,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_13"
+      ],
+      "note": "Layer index 2, local word 13; offset 0x188."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1696,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_14"
+      ],
+      "note": "Layer index 2, local word 14; offset 0x18c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1707,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_15"
+      ],
+      "note": "Layer index 2, local word 15; offset 0x190."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1717,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_16"
+      ],
+      "note": "Layer index 2, local word 16; offset 0x194."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1726,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_17"
+      ],
+      "note": "Layer index 2, local word 17; offset 0x198."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1737,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_18"
+      ],
+      "note": "Layer index 2, local word 18; offset 0x19c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1748,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_19"
+      ],
+      "note": "Layer index 2, local word 19; offset 0x1a0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1757,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_20"
+      ],
+      "note": "Layer index 2, local word 20; offset 0x1a4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1766,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_0"
+      ],
+      "note": "Layer index 3, local word 0; offset 0x1a8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1774,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_1"
+      ],
+      "note": "Layer index 3, local word 1; offset 0x1ac."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1783,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_2"
+      ],
+      "note": "Layer index 3, local word 2; offset 0x1b0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1791,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_3"
+      ],
+      "note": "Layer index 3, local word 3; offset 0x1b4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1807,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_4"
+      ],
+      "note": "Layer index 3, local word 4; offset 0x1b8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1816,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_5"
+      ],
+      "note": "Layer index 3, local word 5; offset 0x1bc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1829,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_6"
+      ],
+      "note": "Layer index 3, local word 6; offset 0x1c0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1838,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_7"
+      ],
+      "note": "Layer index 3, local word 7; offset 0x1c4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1847,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_8"
+      ],
+      "note": "Layer index 3, local word 8; offset 0x1c8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1859,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_9"
+      ],
+      "note": "Layer index 3, local word 9; offset 0x1cc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1871,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_10"
+      ],
+      "note": "Layer index 3, local word 10; offset 0x1d0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1882,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_11"
+      ],
+      "note": "Layer index 3, local word 11; offset 0x1d4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1893,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_12"
+      ],
+      "note": "Layer index 3, local word 12; offset 0x1d8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1904,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_13"
+      ],
+      "note": "Layer index 3, local word 13; offset 0x1dc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1915,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_14"
+      ],
+      "note": "Layer index 3, local word 14; offset 0x1e0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1926,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_15"
+      ],
+      "note": "Layer index 3, local word 15; offset 0x1e4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1936,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_16"
+      ],
+      "note": "Layer index 3, local word 16; offset 0x1e8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1945,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_17"
+      ],
+      "note": "Layer index 3, local word 17; offset 0x1ec."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1956,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_18"
+      ],
+      "note": "Layer index 3, local word 18; offset 0x1f0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1967,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_19"
+      ],
+      "note": "Layer index 3, local word 19; offset 0x1f4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1976,
+      "status": "generated",
+      "registers": [
+        "k3_image::Layer.reg_20"
+      ],
+      "note": "Layer index 3, local word 20; offset 0x1f8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1985,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_127"
+      ],
+      "note": "32-bit word at offset 0x1fc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 1996,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_128"
+      ],
+      "note": "32-bit word at offset 0x200."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2005,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.v2_reg_129_read",
+        "k3_image::V2d.v2_reg_129_write"
+      ],
+      "note": "32-bit word at offset 0x204. Read/direct-write aliases; no RMW or assumed W1C."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2024,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 0; offset 0x208."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2032,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 1; offset 0x20c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2040,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 2; offset 0x210."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2048,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 3; offset 0x214."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2056,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 4; offset 0x218."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2064,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 5; offset 0x21c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2072,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 6; offset 0x220."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2080,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 7; offset 0x224."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2088,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 8; offset 0x228."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2096,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 9; offset 0x22c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2104,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 10; offset 0x230."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2112,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 11; offset 0x234."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2120,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 12; offset 0x238."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2128,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 13; offset 0x23c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2136,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 14; offset 0x240."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2144,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 15; offset 0x244."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2152,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 16; offset 0x248."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2160,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 17; offset 0x24c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2168,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 18; offset 0x250."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2176,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 19; offset 0x254."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2184,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 20; offset 0x258."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2192,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 21; offset 0x25c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2200,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 22; offset 0x260."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2208,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 23; offset 0x264."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2216,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 24; offset 0x268."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2224,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 25; offset 0x26c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2232,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 26; offset 0x270."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2240,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 27; offset 0x274."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2248,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 28; offset 0x278."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2256,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 29; offset 0x27c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2264,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 30; offset 0x280."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2272,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 31; offset 0x284."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2280,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 32; offset 0x288."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2288,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 33; offset 0x28c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2296,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 34; offset 0x290."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2304,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 35; offset 0x294."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2312,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 36; offset 0x298."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2320,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 37; offset 0x29c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2328,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 38; offset 0x2a0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2336,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 39; offset 0x2a4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2344,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 40; offset 0x2a8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2352,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 41; offset 0x2ac."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2360,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 42; offset 0x2b0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2368,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 43; offset 0x2b4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2376,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 44; offset 0x2b8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2384,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 45; offset 0x2bc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2392,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 46; offset 0x2c0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2400,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 47; offset 0x2c4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2408,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 48; offset 0x2c8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2416,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 49; offset 0x2cc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2424,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 50; offset 0x2d0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2432,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 51; offset 0x2d4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2440,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 52; offset 0x2d8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2448,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 53; offset 0x2dc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2456,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 54; offset 0x2e0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2464,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 55; offset 0x2e4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2472,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 56; offset 0x2e8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2480,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 57; offset 0x2ec."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2488,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 58; offset 0x2f0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2496,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 59; offset 0x2f4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2504,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 60; offset 0x2f8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2512,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 61; offset 0x2fc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2520,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 62; offset 0x300."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2528,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 63; offset 0x304."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2536,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 64; offset 0x308."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2544,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 65; offset 0x30c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2552,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 66; offset 0x310."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2560,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 67; offset 0x314."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2568,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 68; offset 0x318."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2576,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 69; offset 0x31c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2584,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 70; offset 0x320."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2592,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 71; offset 0x324."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2600,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 72; offset 0x328."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2608,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 73; offset 0x32c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2616,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 74; offset 0x330."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2624,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 75; offset 0x334."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2632,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 76; offset 0x338."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2640,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 77; offset 0x33c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2648,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 78; offset 0x340."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2656,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 79; offset 0x344."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2664,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 80; offset 0x348."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2672,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 81; offset 0x34c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2680,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 82; offset 0x350."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2688,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 83; offset 0x354."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2696,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 84; offset 0x358."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2704,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 85; offset 0x35c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2712,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 86; offset 0x360."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2720,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 87; offset 0x364."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2728,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 88; offset 0x368."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2736,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 89; offset 0x36c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2744,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 90; offset 0x370."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2752,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 91; offset 0x374."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2760,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 92; offset 0x378."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2768,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 93; offset 0x37c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2776,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 94; offset 0x380."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2784,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 95; offset 0x384."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2792,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 96; offset 0x388."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2800,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 97; offset 0x38c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2808,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 98; offset 0x390."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2816,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 99; offset 0x394."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2824,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 100; offset 0x398."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2832,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 101; offset 0x39c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2840,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 102; offset 0x3a0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2848,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 103; offset 0x3a4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2856,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 104; offset 0x3a8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2864,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 105; offset 0x3ac."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2872,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 106; offset 0x3b0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2880,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 107; offset 0x3b4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2888,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 108; offset 0x3b8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2896,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 109; offset 0x3bc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2904,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 110; offset 0x3c0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2912,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 111; offset 0x3c4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2920,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 112; offset 0x3c8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2928,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 113; offset 0x3cc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2936,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 114; offset 0x3d0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2944,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 115; offset 0x3d4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2952,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 116; offset 0x3d8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2960,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 117; offset 0x3dc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2968,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 118; offset 0x3e0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2976,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 119; offset 0x3e4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2984,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 120; offset 0x3e8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2992,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 121; offset 0x3ec."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3000,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 122; offset 0x3f0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3008,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 123; offset 0x3f4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3016,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 124; offset 0x3f8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3024,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 125; offset 0x3fc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3032,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 126; offset 0x400."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3040,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 127; offset 0x404."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3048,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 128; offset 0x408."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3056,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 129; offset 0x40c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3064,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 130; offset 0x410."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3072,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 131; offset 0x414."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3080,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 132; offset 0x418."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3088,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 133; offset 0x41c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3096,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 134; offset 0x420."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3104,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 135; offset 0x424."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3112,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 136; offset 0x428."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3120,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 137; offset 0x42c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3128,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 138; offset 0x430."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3136,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 139; offset 0x434."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3144,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 140; offset 0x438."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3152,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 141; offset 0x43c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3160,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 142; offset 0x440."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3168,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 143; offset 0x444."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3176,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 144; offset 0x448."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3184,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 145; offset 0x44c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3192,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 146; offset 0x450."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3200,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 147; offset 0x454."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3208,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 148; offset 0x458."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3216,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 149; offset 0x45c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3224,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 150; offset 0x460."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3232,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 151; offset 0x464."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3240,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 152; offset 0x468."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3248,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 153; offset 0x46c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3256,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 154; offset 0x470."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3264,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 155; offset 0x474."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3272,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 156; offset 0x478."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3280,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 157; offset 0x47c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3288,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 158; offset 0x480."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3296,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 159; offset 0x484."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3304,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 160; offset 0x488."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3312,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 161; offset 0x48c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3320,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 162; offset 0x490."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3328,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 163; offset 0x494."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3336,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 164; offset 0x498."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3344,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 165; offset 0x49c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3352,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 166; offset 0x4a0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3360,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 167; offset 0x4a4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3368,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 168; offset 0x4a8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3376,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 169; offset 0x4ac."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3384,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 170; offset 0x4b0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3392,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 171; offset 0x4b4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3400,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 172; offset 0x4b8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3408,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 173; offset 0x4bc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3416,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 174; offset 0x4c0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3424,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 175; offset 0x4c4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3432,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 176; offset 0x4c8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3440,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 177; offset 0x4cc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3448,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 178; offset 0x4d0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3456,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 179; offset 0x4d4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3464,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 180; offset 0x4d8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3472,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 181; offset 0x4dc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3480,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 182; offset 0x4e0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3488,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 183; offset 0x4e4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3496,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 184; offset 0x4e8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3504,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 185; offset 0x4ec."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3512,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 186; offset 0x4f0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3520,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 187; offset 0x4f4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3528,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 188; offset 0x4f8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3536,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 189; offset 0x4fc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3544,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 190; offset 0x500."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3552,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 191; offset 0x504."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3560,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 192; offset 0x508."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3568,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 193; offset 0x50c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3576,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 194; offset 0x510."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3584,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 195; offset 0x514."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3592,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 196; offset 0x518."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3600,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 197; offset 0x51c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3608,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 198; offset 0x520."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3616,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 199; offset 0x524."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3624,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 200; offset 0x528."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3632,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 201; offset 0x52c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3640,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 202; offset 0x530."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3648,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 203; offset 0x534."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3656,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 204; offset 0x538."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3664,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 205; offset 0x53c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3672,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 206; offset 0x540."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3680,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 207; offset 0x544."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3688,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 208; offset 0x548."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3696,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 209; offset 0x54c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3704,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 210; offset 0x550."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3712,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 211; offset 0x554."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3720,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 212; offset 0x558."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3728,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 213; offset 0x55c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3736,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 214; offset 0x560."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3744,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 215; offset 0x564."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3752,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 216; offset 0x568."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3760,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 217; offset 0x56c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3768,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 218; offset 0x570."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3776,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 219; offset 0x574."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3784,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 220; offset 0x578."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3792,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 221; offset 0x57c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3800,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 222; offset 0x580."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3808,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 223; offset 0x584."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3816,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 224; offset 0x588."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3824,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 225; offset 0x58c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3832,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 226; offset 0x590."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3840,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 227; offset 0x594."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3848,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 228; offset 0x598."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3856,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 229; offset 0x59c."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3864,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 230; offset 0x5a0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3872,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 231; offset 0x5a4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3880,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 232; offset 0x5a8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3888,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 233; offset 0x5ac."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3896,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 234; offset 0x5b0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3904,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 235; offset 0x5b4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3912,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 236; offset 0x5b8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3920,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 237; offset 0x5bc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3928,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 238; offset 0x5c0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3936,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 239; offset 0x5c4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3944,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 240; offset 0x5c8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3952,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 241; offset 0x5cc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3960,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 242; offset 0x5d0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3968,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 243; offset 0x5d4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3976,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 244; offset 0x5d8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3984,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 245; offset 0x5dc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 3992,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 246; offset 0x5e0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 4000,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 247; offset 0x5e4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 4008,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 248; offset 0x5e8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 4016,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 249; offset 0x5ec."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 4024,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 250; offset 0x5f0."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 4032,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 251; offset 0x5f4."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 4040,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 252; offset 0x5f8."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 4048,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 253; offset 0x5fc."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 4056,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 254; offset 0x600."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 4064,
+      "status": "generated",
+      "registers": [
+        "k3_image::V2d.palette_table"
+      ],
+      "note": "Palette index 255; offset 0x604."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/07_interrupts.md",
+      "line": 23,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Interrupt-source assignments, not numeric MMIO register layouts."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/07_interrupts.md",
+      "line": 324,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Interrupt-source assignments, not numeric MMIO register layouts."
+    }
+  ],
+  "corrections": [
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 7,
+      "decision": "MIPI CSI has no numeric register bank in chapter 10; no CSI registers or instances invented.",
+      "evidence": "10.1.1-10.1.3; address-map chapter 6 has no CSI instance address."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 166,
+      "decision": "V2D MMU, AFBC and interrupt capabilities have no separate numeric control/status tables in this chapter. Do not import K1 top/FBC/MMU offsets into the K3 V2 bank.",
+      "evidence": "10.3.2 and 10.3.6; 07_interrupts.md:107 supplies APLIC input 86, not V2D interrupt-register definitions."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 36,
+      "decision": "GPU has features but no numeric registers in chapter 10; the address-map base alone cannot define a register bank.",
+      "evidence": "10.2.1-10.2.2; 06_address_map.md:48 gives only the GPU window."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 322,
+      "decision": "Functional text mentions only layers 0 and 1, but the numeric V2 bank contains layers 0 through 3. Use four layers, stride 0x54.",
+      "evidence": "10_image.md:1112-1979, V2D_V2_REG_43 through V2D_V2_REG_126; K3 V1.13 PDF pp.229-246."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 642,
+      "decision": "Functional Output_format is called 3-bit, but the numeric R_OUT_FORMAT field is bits 3:0. Retain the numeric four-bit field without extrapolating enum values.",
+      "evidence": "10_image.md:642 and :1041; K3 V1.13 PDF V2D_V2_REG_35."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 661,
+      "decision": "K3 RDMA burst length is eight bits at 23:16, unlike the related K1 C field at 3:1. Do not copy the K1 control bit layout.",
+      "evidence": "https://github.com/spacemit-com/linux-6.6/blob/31c449aeaad8c7759bc983ca0e26946e5b6746dc/drivers/soc/spacemit/v2d/v2d_reg.h#L262-L270; 10_image.md:661; K3 V1.13 PDF p.220."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 652,
+      "decision": "Keep K3 V2 offsets relative to 0xC0100000, without the K1 core offset 0x100. K1 top, encoder, decoder and MMU registers are not K3 supplements.",
+      "evidence": "https://github.com/spacemit-com/linux-6.6/blob/31c449aeaad8c7759bc983ca0e26946e5b6746dc/drivers/soc/spacemit/v2d/v2d_reg.h#L5-L11 and #L39-L64; K3 V1.13 PDF p.220."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 658,
+      "decision": "Trigger and configuration share one word; expose read/direct-write views without RMW. Source fields remain RW facts; this API restriction does not claim W1C.",
+      "evidence": "10_image.md:658-665; https://github.com/spacemit-com/linux-6.6/blob/31c449aeaad8c7759bc983ca0e26946e5b6746dc/drivers/soc/spacemit/v2d/v2d_hw.c#L833-L858 uses a complete trigger/configuration write for the related K1 core."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2007,
+      "decision": "Preserve DAMC spelling for the two clear fields; do not silently rename them DMAC.",
+      "evidence": "10_image.md:2007-2008; K3 V1.13 PDF p.247; https://github.com/spacemit-com/linux-6.6/blob/31c449aeaad8c7759bc983ca0e26946e5b6746dc/drivers/soc/spacemit/v2d/v2d_reg.h#L272-L292 uses the same damc spelling."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2005,
+      "decision": "DMA clear controls and configuration share one word; expose read/direct-write views without RMW. Clear polarity and self-clearing behavior are unspecified. Do not infer W1C from CLR names or grant modify.",
+      "evidence": "10_image.md:2005-2019 declares RW but descriptions contain no side-effect definition; https://github.com/spacemit-com/linux-6.6/blob/31c449aeaad8c7759bc983ca0e26946e5b6746dc/drivers/soc/spacemit/v2d/v2d_hw.c#L819-L830 uses a complete DMA configuration write."
+    },
+    {
+      "source": "k3/k3_docs/k3_usermanual/10_image.md",
+      "line": 2024,
+      "decision": "Palette contains exactly 256 32-bit entries; index 255 is offset 0x604, not an unbounded formula.",
+      "evidence": "V2D_V2_REG_130-385; 10_image.md:2021-4066; https://github.com/spacemit-com/linux-6.6/blob/31c449aeaad8c7759bc983ca0e26946e5b6746dc/drivers/soc/spacemit/v2d/v2d_reg.h#L170 has the related K1 formula with an additional core base."
+    }
+  ]
+}

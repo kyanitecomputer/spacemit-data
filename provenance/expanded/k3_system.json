@@ -1,0 +1,5950 @@
+{
+  "aliases": {
+    "k3_system::Ciudragon": [
+      [
+        "pmu_c0_l2_flush_ctrl_read",
+        "pmu_c0_l2_flush_ctrl_write"
+      ],
+      [
+        "pmu_c1_l2_flush_ctrl_read",
+        "pmu_c1_l2_flush_ctrl_write"
+      ],
+      [
+        "pmu_c2_l2_flush_ctrl_read",
+        "pmu_c2_l2_flush_ctrl_write"
+      ],
+      [
+        "pmu_c3_l2_flush_ctrl_read",
+        "pmu_c3_l2_flush_ctrl_write"
+      ]
+    ],
+    "k3_system::CpuConfig": [
+      [
+        "c0_rvbaddr_lo_addr_read",
+        "c0_rvbaddr_lo_addr_write"
+      ],
+      [
+        "c0_rvbaddr_hi_addr_read",
+        "c0_rvbaddr_hi_addr_write"
+      ],
+      [
+        "c1_rvbaddr_lo_addr_read",
+        "c1_rvbaddr_lo_addr_write"
+      ],
+      [
+        "c1_rvbaddr_hi_addr_read",
+        "c1_rvbaddr_hi_addr_write"
+      ],
+      [
+        "c2_rvbaddr_lo_addr_read",
+        "c2_rvbaddr_lo_addr_write"
+      ],
+      [
+        "c2_rvbaddr_hi_addr_read",
+        "c2_rvbaddr_hi_addr_write"
+      ],
+      [
+        "c3_rvbaddr_lo_addr_read",
+        "c3_rvbaddr_lo_addr_write"
+      ],
+      [
+        "c3_rvbaddr_hi_addr_read",
+        "c3_rvbaddr_hi_addr_write"
+      ]
+    ],
+    "k3_system::GpioBank": [
+      [
+        "gedr_read",
+        "gedr_write"
+      ]
+    ],
+    "k3_system::Hdma": [
+      [
+        "irq_pending_read",
+        "irq_pending_write"
+      ],
+      [
+        "irq_source_read",
+        "irq_source_write"
+      ],
+      [
+        "transfer_submit_read",
+        "transfer_submit_write"
+      ]
+    ],
+    "k3_system::IopmpSid1": [
+      [
+        "hwcfg0_read",
+        "hwcfg0_write"
+      ],
+      [
+        "mdlck_read",
+        "mdlck_write"
+      ],
+      [
+        "mdlckh_read",
+        "mdlckh_write"
+      ],
+      [
+        "entrylck_read",
+        "entrylck_write"
+      ],
+      [
+        "err_cfg_read",
+        "err_cfg_write"
+      ],
+      [
+        "err_reqinfo_read",
+        "err_reqinfo_write"
+      ],
+      [
+        "deviceidcfg_read",
+        "deviceidcfg_write"
+      ],
+      [
+        "srcmd_en_read",
+        "srcmd_en_write"
+      ],
+      [
+        "entry_cfg_read",
+        "entry_cfg_write"
+      ]
+    ],
+    "k3_system::IopmpSid16": [
+      [
+        "hwcfg0_read",
+        "hwcfg0_write"
+      ],
+      [
+        "mdlck_read",
+        "mdlck_write"
+      ],
+      [
+        "mdlckh_read",
+        "mdlckh_write"
+      ],
+      [
+        "entrylck_read",
+        "entrylck_write"
+      ],
+      [
+        "err_cfg_read",
+        "err_cfg_write"
+      ],
+      [
+        "err_reqinfo_read",
+        "err_reqinfo_write"
+      ],
+      [
+        "deviceidcfg_read",
+        "deviceidcfg_write"
+      ],
+      [
+        "srcmd_en_read",
+        "srcmd_en_write"
+      ],
+      [
+        "entry_cfg_read",
+        "entry_cfg_write"
+      ]
+    ],
+    "k3_system::IopmpSid16Entries256": [
+      [
+        "hwcfg0_read",
+        "hwcfg0_write"
+      ],
+      [
+        "mdlck_read",
+        "mdlck_write"
+      ],
+      [
+        "mdlckh_read",
+        "mdlckh_write"
+      ],
+      [
+        "entrylck_read",
+        "entrylck_write"
+      ],
+      [
+        "err_cfg_read",
+        "err_cfg_write"
+      ],
+      [
+        "err_reqinfo_read",
+        "err_reqinfo_write"
+      ],
+      [
+        "deviceidcfg_read",
+        "deviceidcfg_write"
+      ],
+      [
+        "srcmd_en_read",
+        "srcmd_en_write"
+      ],
+      [
+        "entry_cfg_read",
+        "entry_cfg_write"
+      ]
+    ],
+    "k3_system::Mailbox16": [
+      [
+        "sysconfig_read",
+        "sysconfig_write"
+      ],
+      [
+        "message_m_read",
+        "message_m_write"
+      ],
+      [
+        "fifostatus_m_read",
+        "fifostatus_m_write"
+      ],
+      [
+        "msgstatus_m_read",
+        "msgstatus_m_write"
+      ],
+      [
+        "irqstatus_raw_u_read",
+        "irqstatus_raw_u_write"
+      ],
+      [
+        "irqstatus_clr_u_read",
+        "irqstatus_clr_u_write"
+      ],
+      [
+        "irqenable_set_u_read",
+        "irqenable_set_u_write"
+      ],
+      [
+        "irqenable_clr_u_read",
+        "irqenable_clr_u_write"
+      ]
+    ],
+    "k3_system::Mailbox4": [
+      [
+        "sysconfig_read",
+        "sysconfig_write"
+      ],
+      [
+        "message_m_read",
+        "message_m_write"
+      ],
+      [
+        "fifostatus_m_read",
+        "fifostatus_m_write"
+      ],
+      [
+        "msgstatus_m_read",
+        "msgstatus_m_write"
+      ],
+      [
+        "irqstatus_raw_u_read",
+        "irqstatus_raw_u_write"
+      ],
+      [
+        "irqstatus_clr_u_read",
+        "irqstatus_clr_u_write"
+      ],
+      [
+        "irqenable_set_u_read",
+        "irqenable_set_u_write"
+      ],
+      [
+        "irqenable_clr_u_read",
+        "irqenable_clr_u_write"
+      ]
+    ],
+    "k3_system::Mailbox8": [
+      [
+        "sysconfig_read",
+        "sysconfig_write"
+      ],
+      [
+        "message_m_read",
+        "message_m_write"
+      ],
+      [
+        "fifostatus_m_read",
+        "fifostatus_m_write"
+      ],
+      [
+        "msgstatus_m_read",
+        "msgstatus_m_write"
+      ],
+      [
+        "irqstatus_raw_u_read",
+        "irqstatus_raw_u_write"
+      ],
+      [
+        "irqstatus_clr_u_read",
+        "irqstatus_clr_u_write"
+      ],
+      [
+        "irqenable_set_u_read",
+        "irqenable_set_u_write"
+      ],
+      [
+        "irqenable_clr_u_read",
+        "irqenable_clr_u_write"
+      ]
+    ],
+    "k3_system::Pdma": [
+      [
+        "dcsr_x_read",
+        "dcsr_x_write"
+      ],
+      [
+        "dpcsr_read",
+        "dpcsr_write"
+      ],
+      [
+        "drqsr_read",
+        "drqsr_write"
+      ]
+    ],
+    "k3_system::Pmuap": [
+      [
+        "pmu_csi_ccic2_clk_res_ctrl_read",
+        "pmu_csi_ccic2_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_isp_clk_res_ctrl_read",
+        "pmu_isp_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_lcd_clk_res_ctrl1_read",
+        "pmu_lcd_clk_res_ctrl1_write"
+      ],
+      [
+        "pmu_ccic_clk_res_ctrl_read",
+        "pmu_ccic_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_sdh0_clk_res_ctrl_read",
+        "pmu_sdh0_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_sdh1_clk_res_ctrl_read",
+        "pmu_sdh1_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_qspi_clk_res_ctrl_read",
+        "pmu_qspi_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_vpu_clk_res_ctrl_read",
+        "pmu_vpu_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_gpu_clk_res_ctrl_read",
+        "pmu_gpu_clk_res_ctrl_write"
+      ],
+      [
+        "pmua_sdh2_clk_res_ctrl_read",
+        "pmua_sdh2_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_top_dclk_ctrl_read",
+        "pmu_top_dclk_ctrl_write"
+      ],
+      [
+        "trace_config_read",
+        "trace_config_write"
+      ],
+      [
+        "pmu_audio_clk_res_ctrl_read",
+        "pmu_audio_clk_res_ctrl_write"
+      ],
+      [
+        "pmu_lcd_clk_res_ctrl3_read",
+        "pmu_lcd_clk_res_ctrl3_write"
+      ],
+      [
+        "pmu_ufs_clk_rst_ctrl_read",
+        "pmu_ufs_clk_rst_ctrl_write"
+      ],
+      [
+        "pmu_lcd_clk_rst_ctrl5_read",
+        "pmu_lcd_clk_rst_ctrl5_write"
+      ],
+      [
+        "pmu_cci_clk_ctrl_read",
+        "pmu_cci_clk_ctrl_write"
+      ],
+      [
+        "pmua_aclk_ctrl_read",
+        "pmua_aclk_ctrl_write"
+      ],
+      [
+        "pmua_cpu_c0_clk_ctrl_read",
+        "pmua_cpu_c0_clk_ctrl_write"
+      ],
+      [
+        "pmua_cpu_c1_clk_ctrl_read",
+        "pmua_cpu_c1_clk_ctrl_write"
+      ],
+      [
+        "pmua_cpu_c2_clk_ctrl_read",
+        "pmua_cpu_c2_clk_ctrl_write"
+      ],
+      [
+        "pmua_cpu_c3_clk_ctrl_read",
+        "pmua_cpu_c3_clk_ctrl_write"
+      ],
+      [
+        "pcie_clk_res_ctrl_porta_read",
+        "pcie_clk_res_ctrl_porta_write"
+      ],
+      [
+        "pcie_ctrl_logic_porta_read",
+        "pcie_ctrl_logic_porta_write"
+      ],
+      [
+        "pcie_clk_res_ctrl_portbcde_x_read",
+        "pcie_clk_res_ctrl_portbcde_x_write"
+      ],
+      [
+        "pcie_ctrl_logic_portbcde_x_read",
+        "pcie_ctrl_logic_portbcde_x_write"
+      ],
+      [
+        "core_wakeup_read",
+        "core_wakeup_write"
+      ],
+      [
+        "pmu_cc3_ap_read",
+        "pmu_cc3_ap_write"
+      ]
+    ],
+    "k3_system::Pmumain": [
+      [
+        "posr_read",
+        "posr_write"
+      ],
+      [
+        "awucrm_reg_read",
+        "awucrm_reg_write"
+      ],
+      [
+        "mpmu_wdtpcr_read",
+        "mpmu_wdtpcr_write"
+      ]
+    ],
+    "k3_system::RcpuPmu": [
+      [
+        "rcpu_bus_clk_ctrl_read",
+        "rcpu_bus_clk_ctrl_write"
+      ],
+      [
+        "rt24_core0_clk_ctrl_read",
+        "rt24_core0_clk_ctrl_write"
+      ],
+      [
+        "rt24_core1_clk_ctrl_read",
+        "rt24_core1_clk_ctrl_write"
+      ],
+      [
+        "ap_c0_m2_int_en_reg_read",
+        "ap_c0_m2_int_en_reg_write"
+      ],
+      [
+        "ap_c1_m2_int_en_reg_read",
+        "ap_c1_m2_int_en_reg_write"
+      ],
+      [
+        "ap_c2_m2_int_en_reg_read",
+        "ap_c2_m2_int_en_reg_write"
+      ],
+      [
+        "ap_c3_m2_int_en_reg_read",
+        "ap_c3_m2_int_en_reg_write"
+      ],
+      [
+        "audio_pmu_vote_reg_read",
+        "audio_pmu_vote_reg_write"
+      ],
+      [
+        "audio_vote_for_main_pmu_read",
+        "audio_vote_for_main_pmu_write"
+      ],
+      [
+        "audio_wakeup_en_reg_read",
+        "audio_wakeup_en_reg_write"
+      ],
+      [
+        "soc_top_d2_lp_ctrl_read",
+        "soc_top_d2_lp_ctrl_write"
+      ],
+      [
+        "rt24_core0_idle_cfg_reg_read",
+        "rt24_core0_idle_cfg_reg_write"
+      ],
+      [
+        "rt24_core1_idle_cfg_reg_read",
+        "rt24_core1_idle_cfg_reg_write"
+      ],
+      [
+        "pwrctl_lp_wakeup_mask_read",
+        "pwrctl_lp_wakeup_mask_write"
+      ],
+      [
+        "rt24_core0_sw_wakeup_reg_read",
+        "rt24_core0_sw_wakeup_reg_write"
+      ],
+      [
+        "rt24_core1_sw_wakeup_reg_read",
+        "rt24_core1_sw_wakeup_reg_write"
+      ]
+    ],
+    "k3_system::RcpuSysctrl": [
+      [
+        "rcpu_core0_boot_entry_lo_read",
+        "rcpu_core0_boot_entry_lo_write"
+      ],
+      [
+        "rcpu_core0_boot_entry_hi_read",
+        "rcpu_core0_boot_entry_hi_write"
+      ],
+      [
+        "rcpu_core1_boot_entry_lo_read",
+        "rcpu_core1_boot_entry_lo_write"
+      ],
+      [
+        "rcpu_core1_boot_entry_hi_read",
+        "rcpu_core1_boot_entry_hi_write"
+      ],
+      [
+        "rcpu_core1_hart_id_set_read",
+        "rcpu_core1_hart_id_set_write"
+      ],
+      [
+        "rcpu_uart_nm_clk_14m_ctrl_read",
+        "rcpu_uart_nm_clk_14m_ctrl_write"
+      ],
+      [
+        "rcpu_uart_nm_clk_58m_ctrl_read",
+        "rcpu_uart_nm_clk_58m_ctrl_write"
+      ]
+    ],
+    "k3_system::Spinlock": [
+      [
+        "spinlockn_lock_reg_read",
+        "spinlockn_lock_reg_write"
+      ],
+      [
+        "spinlock_irq_sta_reg_read",
+        "spinlock_irq_sta_reg_write"
+      ]
+    ],
+    "k3_system::TimerWatchdog": [
+      [
+        "timer_count_restart_read",
+        "timer_count_restart_write"
+      ],
+      [
+        "timer_watchdog_status_read",
+        "timer_watchdog_status_write"
+      ]
+    ]
+  },
+  "chip": "k3",
+  "corrections": [
+    {
+      "decision": "Retain numeric clock word omitted from manual tables without inventing fields.",
+      "evidence": "bsp/spacemit/drivers/clk/ccu-spacemit-k3.h:27",
+      "line": 27,
+      "source": "bsp/spacemit/drivers/clk/ccu-spacemit-k3.h"
+    },
+    {
+      "decision": "Retain numeric clock word omitted from manual tables without inventing fields.",
+      "evidence": "bsp/spacemit/drivers/clk/ccu-spacemit-k3.h:81",
+      "line": 81,
+      "source": "bsp/spacemit/drivers/clk/ccu-spacemit-k3.h"
+    },
+    {
+      "decision": "Retain numeric clock word omitted from manual tables without inventing fields.",
+      "evidence": "bsp/spacemit/drivers/clk/ccu-spacemit-k3.h:82",
+      "line": 82,
+      "source": "bsp/spacemit/drivers/clk/ccu-spacemit-k3.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:5",
+      "line": 5,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:6",
+      "line": 6,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:8",
+      "line": 8,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:9",
+      "line": 9,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:11",
+      "line": 11,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:12",
+      "line": 12,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:14",
+      "line": 14,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:15",
+      "line": 15,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:88",
+      "line": 88,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:89",
+      "line": 89,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "C name aliases existing manual word; do not duplicate the offset.",
+      "evidence": "k3_system::Pmuap.pmu_cc2_ap",
+      "line": 91,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:92",
+      "line": 92,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:120",
+      "line": 120,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:121",
+      "line": 121,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:122",
+      "line": 122,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:123",
+      "line": 123,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:127",
+      "line": 127,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:128",
+      "line": 128,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:129",
+      "line": 129,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:130",
+      "line": 130,
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:32",
+      "line": 32,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:47",
+      "line": 47,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:69",
+      "line": 69,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:97",
+      "line": 97,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:126",
+      "line": 126,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:139",
+      "line": 139,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:141",
+      "line": 141,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:143",
+      "line": 143,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:145",
+      "line": 145,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:146",
+      "line": 146,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:148",
+      "line": 148,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:149",
+      "line": 149,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:153",
+      "line": 153,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:154",
+      "line": 154,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:157",
+      "line": 157,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "Supplement manual-omitted numeric CPU/PM word, using C readl/writel width.",
+      "evidence": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h:165",
+      "line": 165,
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h"
+    },
+    {
+      "decision": "X100/A100 ACLINT/APLIC/IMSIC/debug/trace layouts are not specified here. Preserve old hart-prebanked RT24 CLINT/PLIC definitions, not generic RISC-V extrapolations.",
+      "evidence": "k3/k3_docs/k3_usermanual/08_cpu.md:25",
+      "line": 25,
+      "source": "k3/k3_docs/k3_usermanual/08_cpu.md"
+    },
+    {
+      "decision": "Crypto/TRNG/eFuse capabilities only; no numeric register map. TE200 secure BCM base is documented but does not define its register offsets.",
+      "evidence": "k3/k3_docs/k3_usermanual/15_security.md:7",
+      "line": 7,
+      "source": "k3/k3_docs/k3_usermanual/15_security.md"
+    },
+    {
+      "decision": "Do not invent LCD1 SID field: prose identifies bits27:24 but the field table labels27:20 reserved.",
+      "evidence": "k3/k3_docs/k3_usermanual/15_security.md:344 versus317; PDF printed p514 has the same conflict.",
+      "line": 344,
+      "source": "k3/k3_docs/k3_usermanual/15_security.md"
+    },
+    {
+      "decision": "Keep numeric register raw where configured field width is not fixed.",
+      "evidence": "IOPMP_DEVICEID_WIDTH is a parameter; per-instance value is not specified.",
+      "line": 632,
+      "source": "k3/k3_docs/k3_usermanual/15_security.md"
+    },
+    {
+      "decision": "Add omitted rising-edge clear word at +0x28; banks are sparse.",
+      "evidence": "bsp/spacemit/drivers/gpio/spacemit-gpio.c:48-113 (k3_regs and k3_*_chip_data).",
+      "line": 263,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md"
+    },
+    {
+      "decision": "Eight HDMA instances are stated, but no per-instance bases/stride or mapping to HSDMA/AIDMA/DMA350 address windows is specified. Emit complete HDMA layout unbound rather than guess that mapping.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md:10",
+      "line": 10,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md"
+    },
+    {
+      "decision": "IRQ_SOURCE is write-one-to-clear despite RO table cells; correct truncated register spelling.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md:59-61; matching PDF printed pp544-545 section16.2.4.3.",
+      "line": 469,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md"
+    },
+    {
+      "decision": "TRANSFER_SUBMIT writes queue a transfer; zero has no effect. Use direct write-one request view.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md:83-85 and 503.",
+      "line": 500,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md"
+    },
+    {
+      "decision": "X/Y length and source/destination stride implemented fields are 24 bits, not generic 32-bit table widths.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md:371-372; PDF section16.2.4.19 (bit-width limitation).",
+      "line": 536,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md"
+    },
+    {
+      "decision": "Navigation index; no numeric register definitions.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/index.md:1",
+      "line": 1,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/index.md"
+    },
+    {
+      "decision": "tap_ctl(0x98) routing values 0xA/0xE are JTAG-chain facts. No MMIO base/width is specified; SEC_JTAG base alone cannot prove this is a +0x98 MMIO word.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/jtag.md:43",
+      "line": 43,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/jtag.md"
+    },
+    {
+      "decision": "Keep generic 16/8-channel layouts unbound: address map does not identify their concrete mailbox numbers. Bind C-proven 4-channel layouts only.",
+      "evidence": "bsp/spacemit/drivers/mailbox/k3_mailbox.h:14,159-175 and bsp/spacemit/platform/rt24/k3.dtsi:555-607 establish mailbox3-7.",
+      "line": 17,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md"
+    },
+    {
+      "decision": "Mailbox0/1/2 AP base windows are known, but 4/8/16-channel configuration mapping is unspecified; generic layouts remain available without invented instance bindings.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md:17",
+      "line": 17,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md"
+    },
+    {
+      "decision": "Accept missing and full-width table terminators; numeric columns are intact.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md:251,281,292; cells before descriptions are unambiguous.",
+      "line": 251,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md"
+    },
+    {
+      "decision": "IRQENABLE_CLR field suffixes repeat incorrectly; name channel by bit pair, matching IRQENABLE_SET.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md:218; bit position and clear semantics agree.",
+      "line": 259,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md"
+    },
+    {
+      "decision": "Threshold user stride is 0x10. Do not use the RV64 C struct stride 0x20.",
+      "evidence": "bsp/spacemit/drivers/mailbox/k3_mailbox.h:117-137 uses struct instead of union and unsigned long bitfields; manual explicit formula is authoritative.",
+      "line": 297,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md"
+    },
+    {
+      "decision": "Resolve missing offsets from sparse ESOS PMU macros; array index is hart number.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:34; bsp/spacemit/drivers/rpmi/k3/k3-os0_hsm_interface.c uses readl/writel.",
+      "line": 21,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/power_management.md"
+    },
+    {
+      "decision": "Resolve missing offsets from sparse ESOS PMU macros; array index is hart number.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:34; bsp/spacemit/drivers/rpmi/k3/k3-os0_hsm_interface.c uses readl/writel.",
+      "line": 41,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/power_management.md"
+    },
+    {
+      "decision": "Resolve missing offsets from sparse ESOS PMU macros; array index is hart number.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:34; bsp/spacemit/drivers/rpmi/k3/k3-os0_hsm_interface.c uses readl/writel.",
+      "line": 66,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/power_management.md"
+    },
+    {
+      "decision": "Wakeup is a write-one request, including cores6/15 despite RO table cells; expose separate read/write views.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/power_management.md:69-84 prose; ESOS k3-os0_hsm_interface.c writes 1<<hart to per-hart wakeup register.",
+      "line": 69,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/power_management.md"
+    },
+    {
+      "decision": "Resolve missing offsets from sparse ESOS PMU macros; array index is hart number.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:34; bsp/spacemit/drivers/rpmi/k3/k3-os0_hsm_interface.c uses readl/writel.",
+      "line": 88,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/power_management.md"
+    },
+    {
+      "decision": "Resolve missing offsets from sparse ESOS PMU macros; array index is hart number.",
+      "evidence": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h:34; bsp/spacemit/drivers/rpmi/k3/k3-os0_hsm_interface.c uses readl/writel.",
+      "line": 108,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/power_management.md"
+    },
+    {
+      "decision": "IRQ status clear uses write-one mask, not the example write-zero.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/spinlock.md:137 explicitly specifies write-one-to-clear.",
+      "line": 160,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/spinlock.md"
+    },
+    {
+      "decision": "Capabilities only; no register offsets, widths or base in owned chapter or ESOS platform sources.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/timeout_monitor.md:7",
+      "line": 7,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timeout_monitor.md"
+    },
+    {
+      "decision": "Timer restart: write1 to restart selected counters, write0 has no effect; readback retained. Read/direct-write aliases prohibit implicit RMW.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md:121-123; K3 V1.13 PDF section16.3.4.3",
+      "line": 118,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md"
+    },
+    {
+      "decision": "Retain manual watchdog enable/match at +0xB8/+0xBC; C +0x68/+0x6C macros are unused stale definitions.",
+      "evidence": "bsp/spacemit/drivers/hwtimer/k3-hwtimer.c:19-20; these conflict with timer2 interrupt enable at +0x68. WVR +0xCC agrees.",
+      "line": 253,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md"
+    },
+    {
+      "decision": "Watchdog reset status: write0 clears WTS, write1 has no effect (W0C); readback retained. Read/direct-write aliases prohibit implicit RMW.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md:271-284; K3 V1.13 PDF section16.3.4.16",
+      "line": 281,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md"
+    },
+    {
+      "decision": "Seven 12-bit sensors and AP base 0xD4018000 are known; no offsets/masks. Pinned Linux k1_tsensor.c describes five K1 sensors, not evidence for K3.",
+      "evidence": "k3/k3_docs/k3_usermanual/16_peripherals/tsensor.md:7",
+      "line": 7,
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/tsensor.md"
+    },
+    {
+      "decision": "Use full PMUAP offsets from this chapter, not the address-map 0x100 size.",
+      "evidence": "k3/k3_docs/k3_usermanual/06_address_map.md:171; chapter 17 offsets extend through 0x3F8; ESOS k3_hsm.h agrees.",
+      "line": 75,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:996,997,998,1000",
+      "line": 993,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1051,1052",
+      "line": 1041,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1072",
+      "line": 1069,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1088",
+      "line": 1085,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1133",
+      "line": 1130,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1195",
+      "line": 1192,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1224",
+      "line": 1219,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1239",
+      "line": 1236,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1277",
+      "line": 1274,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1334,1340",
+      "line": 1328,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1381",
+      "line": 1369,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1401,1402,1404",
+      "line": 1398,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1443",
+      "line": 1440,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1455,1456",
+      "line": 1453,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1494",
+      "line": 1487,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1507",
+      "line": 1504,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1519",
+      "line": 1516,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1532",
+      "line": 1528,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1544",
+      "line": 1541,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Keep cluster3 clock at +0x208; it is not contiguous with cluster0-2 clocks.",
+      "evidence": "https://github.com/spacemit-com/linux/blob/cee9395acd8043be0644b25c34bfa86623f2b935/include/soc/spacemit/k3-syscon.h:170 and drivers/clk/spacemit/ccu-k3.c:634 agree.",
+      "line": 1553,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1557",
+      "line": 1553,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "PORTBCDE logic table repeats reset-table fields. Retain only stated numeric facts; do not extrapolate PORTA fields.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:1620,1647; PDF section17.4.2 repeats this table too. Offset-specific extra fields remain unspecified.",
+      "line": 1647,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:2352",
+      "line": 2349,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:2364",
+      "line": 2361,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    },
+    {
+      "decision": "Read/direct-write aliases prevent replay of hardware-cleared clock requests while retaining normal configuration fields; no modify.",
+      "evidence": "k3/k3_docs/k3_usermanual/17_clock_reset.md:2377",
+      "line": 2374,
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+    }
+  ],
+  "instances": [
+    {
+      "address": 3402173440,
+      "block": "k3_system::Mailbox4",
+      "name": "RCPU_K3_SYSTEM_MAILBOX3",
+      "source": {
+        "line": 555,
+        "path": "bsp/spacemit/platform/rt24/k3.dtsi"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3402174464,
+      "block": "k3_system::Mailbox4",
+      "name": "RCPU_K3_SYSTEM_MAILBOX4",
+      "source": {
+        "line": 565,
+        "path": "bsp/spacemit/platform/rt24/k3.dtsi"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3402175488,
+      "block": "k3_system::Mailbox4",
+      "name": "RCPU_K3_SYSTEM_MAILBOX5",
+      "source": {
+        "line": 575,
+        "path": "bsp/spacemit/platform/rt24/k3.dtsi"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3402176512,
+      "block": "k3_system::Mailbox4",
+      "name": "RCPU_K3_SYSTEM_MAILBOX6",
+      "source": {
+        "line": 585,
+        "path": "bsp/spacemit/platform/rt24/k3.dtsi"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3228958720,
+      "block": "k3_system::Mailbox4",
+      "name": "RCPU_K3_SYSTEM_MAILBOX7",
+      "source": {
+        "line": 595,
+        "path": "bsp/spacemit/platform/rt24/k3.dtsi"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3556872192,
+      "block": "k3_system::Gpio",
+      "name": "AP_K3_SYSTEM_GPIO",
+      "source": {
+        "line": 96,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3402173440,
+      "block": "k3_system::Mailbox4",
+      "name": "AP_K3_SYSTEM_MAILBOX3",
+      "source": {
+        "line": 58,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3402174464,
+      "block": "k3_system::Mailbox4",
+      "name": "AP_K3_SYSTEM_MAILBOX4",
+      "source": {
+        "line": 59,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3402175488,
+      "block": "k3_system::Mailbox4",
+      "name": "AP_K3_SYSTEM_MAILBOX5",
+      "source": {
+        "line": 60,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3402176512,
+      "block": "k3_system::Mailbox4",
+      "name": "AP_K3_SYSTEM_MAILBOX6",
+      "source": {
+        "line": 61,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556769792,
+      "block": "k3_system::Pdma",
+      "name": "AP_K3_SYSTEM_PDMA_CONTROLLER_CONFIG",
+      "source": {
+        "line": 69,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3557294080,
+      "block": "k3_system::TimerWatchdog",
+      "name": "AP_K3_SYSTEM_PMU_TIMER_WDT_NDR",
+      "source": {
+        "line": 147,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556876288,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM0",
+      "source": {
+        "line": 98,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556877312,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM1",
+      "source": {
+        "line": 99,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556902912,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM10",
+      "source": {
+        "line": 112,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556903936,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM11",
+      "source": {
+        "line": 113,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556904960,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM12",
+      "source": {
+        "line": 114,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556905984,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM13",
+      "source": {
+        "line": 115,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556907008,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM14",
+      "source": {
+        "line": 116,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556908032,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM15",
+      "source": {
+        "line": 117,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556909056,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM16",
+      "source": {
+        "line": 118,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556910080,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM17",
+      "source": {
+        "line": 119,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556911104,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM18",
+      "source": {
+        "line": 120,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556912128,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM19",
+      "source": {
+        "line": 121,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556878336,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM2",
+      "source": {
+        "line": 100,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556879360,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM3",
+      "source": {
+        "line": 101,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556880384,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM4",
+      "source": {
+        "line": 102,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556881408,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM5",
+      "source": {
+        "line": 103,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556882432,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM6",
+      "source": {
+        "line": 104,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556883456,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM7",
+      "source": {
+        "line": 105,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556900864,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM8",
+      "source": {
+        "line": 110,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556901888,
+      "block": "k3_system::Pwm",
+      "name": "AP_K3_SYSTEM_PWM9",
+      "source": {
+        "line": 111,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3402177536,
+      "block": "k3_system::Spinlock",
+      "name": "AP_K3_SYSTEM_SPINLOCK",
+      "source": {
+        "line": 62,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556851712,
+      "block": "k3_system::TimerWatchdog",
+      "name": "AP_K3_SYSTEM_TIMER0_WDT0",
+      "source": {
+        "line": 79,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556859904,
+      "block": "k3_system::TimerWatchdog",
+      "name": "AP_K3_SYSTEM_TIMER1_WDT1",
+      "source": {
+        "line": 81,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556972544,
+      "block": "k3_system::TimerWatchdog",
+      "name": "AP_K3_SYSTEM_TIMER2_WDT2",
+      "source": {
+        "line": 130,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556973568,
+      "block": "k3_system::TimerWatchdog",
+      "name": "AP_K3_SYSTEM_TIMER3_WDT3",
+      "source": {
+        "line": 131,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556974592,
+      "block": "k3_system::TimerWatchdog",
+      "name": "AP_K3_SYSTEM_TIMER4",
+      "source": {
+        "line": 132,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556975616,
+      "block": "k3_system::TimerWatchdog",
+      "name": "AP_K3_SYSTEM_TIMER5",
+      "source": {
+        "line": 133,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556976640,
+      "block": "k3_system::TimerWatchdog",
+      "name": "AP_K3_SYSTEM_TIMER6",
+      "source": {
+        "line": 134,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556977664,
+      "block": "k3_system::TimerWatchdog",
+      "name": "AP_K3_SYSTEM_TIMER7",
+      "source": {
+        "line": 135,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3230175232,
+      "block": "k3_system::TimerWatchdog",
+      "name": "RCPU_K3_SYSTEM_AON_TIMER1",
+      "source": {
+        "line": 266,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230189568,
+      "block": "k3_system::TimerWatchdog",
+      "name": "RCPU_K3_SYSTEM_AON_TIMER2",
+      "source": {
+        "line": 272,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230189824,
+      "block": "k3_system::TimerWatchdog",
+      "name": "RCPU_K3_SYSTEM_AON_TIMER3",
+      "source": {
+        "line": 273,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230190080,
+      "block": "k3_system::TimerWatchdog",
+      "name": "RCPU_K3_SYSTEM_AON_TIMER4",
+      "source": {
+        "line": 274,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230191872,
+      "block": "k3_system::Pwm",
+      "name": "RCPU_K3_SYSTEM_PWM0",
+      "source": {
+        "line": 277,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230192128,
+      "block": "k3_system::Pwm",
+      "name": "RCPU_K3_SYSTEM_PWM1",
+      "source": {
+        "line": 278,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230192384,
+      "block": "k3_system::Pwm",
+      "name": "RCPU_K3_SYSTEM_PWM2",
+      "source": {
+        "line": 279,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230192640,
+      "block": "k3_system::Pwm",
+      "name": "RCPU_K3_SYSTEM_PWM3",
+      "source": {
+        "line": 280,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230192896,
+      "block": "k3_system::Pwm",
+      "name": "RCPU_K3_SYSTEM_PWM4",
+      "source": {
+        "line": 281,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230193152,
+      "block": "k3_system::Pwm",
+      "name": "RCPU_K3_SYSTEM_PWM5",
+      "source": {
+        "line": 282,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230193408,
+      "block": "k3_system::Pwm",
+      "name": "RCPU_K3_SYSTEM_PWM6",
+      "source": {
+        "line": 283,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230193664,
+      "block": "k3_system::Pwm",
+      "name": "RCPU_K3_SYSTEM_PWM7",
+      "source": {
+        "line": 284,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230193920,
+      "block": "k3_system::Pwm",
+      "name": "RCPU_K3_SYSTEM_PWM8",
+      "source": {
+        "line": 285,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230194176,
+      "block": "k3_system::Pwm",
+      "name": "RCPU_K3_SYSTEM_PWM9",
+      "source": {
+        "line": 286,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230176256,
+      "block": "k3_system::Rgpio",
+      "name": "RCPU_K3_SYSTEM_R_GPIO",
+      "source": {
+        "line": 267,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3559402496,
+      "block": "k3_system::CpuConfig",
+      "name": "SECURE_K3_SYSTEM_CPU_CONFIG",
+      "source": {
+        "line": 174,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4032823296,
+      "block": "k3_system::Pdma",
+      "name": "SECURE_K3_SYSTEM_SECURE_DMA_CONTROLLER_CONFIG",
+      "source": {
+        "line": 185,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4032913408,
+      "block": "k3_system::TimerWatchdog",
+      "name": "SECURE_K3_SYSTEM_SEC_TIMER_8",
+      "source": {
+        "line": 191,
+        "path": "k3/k3_docs/k3_usermanual/06_address_map.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4034920448,
+      "block": "k3_system::IopmpSid1",
+      "name": "SECURE_K3_SYSTEM_IOPMP1",
+      "source": {
+        "line": 365,
+        "path": "k3/k3_docs/k3_usermanual/15_security.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4035248128,
+      "block": "k3_system::IopmpSid16",
+      "name": "SECURE_K3_SYSTEM_IOPMP2",
+      "source": {
+        "line": 366,
+        "path": "k3/k3_docs/k3_usermanual/15_security.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4035379200,
+      "block": "k3_system::IopmpSid1",
+      "name": "SECURE_K3_SYSTEM_IOPMP3",
+      "source": {
+        "line": 367,
+        "path": "k3/k3_docs/k3_usermanual/15_security.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4035313664,
+      "block": "k3_system::IopmpSid16Entries256",
+      "name": "SECURE_K3_SYSTEM_IOPMP4",
+      "source": {
+        "line": 368,
+        "path": "k3/k3_docs/k3_usermanual/15_security.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4035444736,
+      "block": "k3_system::IopmpSid1",
+      "name": "SECURE_K3_SYSTEM_IOPMP5",
+      "source": {
+        "line": 369,
+        "path": "k3/k3_docs/k3_usermanual/15_security.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4034985984,
+      "block": "k3_system::IopmpSid16",
+      "name": "SECURE_K3_SYSTEM_IOPMP6",
+      "source": {
+        "line": 370,
+        "path": "k3/k3_docs/k3_usermanual/15_security.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4035051520,
+      "block": "k3_system::IopmpSid16",
+      "name": "SECURE_K3_SYSTEM_IOPMP7",
+      "source": {
+        "line": 371,
+        "path": "k3/k3_docs/k3_usermanual/15_security.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4035117056,
+      "block": "k3_system::IopmpSid16",
+      "name": "SECURE_K3_SYSTEM_IOPMP8",
+      "source": {
+        "line": 372,
+        "path": "k3/k3_docs/k3_usermanual/15_security.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4035182592,
+      "block": "k3_system::IopmpSid16",
+      "name": "SECURE_K3_SYSTEM_IOPMP9",
+      "source": {
+        "line": 373,
+        "path": "k3/k3_docs/k3_usermanual/15_security.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4032299008,
+      "block": "k3_system::SecCiu",
+      "name": "SECURE_K3_SYSTEM_SEC_CIU",
+      "source": {
+        "line": 171,
+        "path": "k3/k3_docs/k3_usermanual/15_security.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 3556872192,
+      "block": "k3_system::GpioBank",
+      "name": "AP_K3_SYSTEM_GPIO0",
+      "source": {
+        "line": 27,
+        "path": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556872256,
+      "block": "k3_system::GpioBank",
+      "name": "AP_K3_SYSTEM_GPIO1",
+      "source": {
+        "line": 28,
+        "path": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556872320,
+      "block": "k3_system::GpioBank",
+      "name": "AP_K3_SYSTEM_GPIO2",
+      "source": {
+        "line": 29,
+        "path": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3556872448,
+      "block": "k3_system::GpioBank",
+      "name": "AP_K3_SYSTEM_GPIO3",
+      "source": {
+        "line": 30,
+        "path": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 4032925696,
+      "block": "k3_system::GpioBank",
+      "name": "SECURE_K3_SYSTEM_SEC_GPIO0",
+      "source": {
+        "line": 31,
+        "path": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4032925760,
+      "block": "k3_system::GpioBank",
+      "name": "SECURE_K3_SYSTEM_SEC_GPIO1",
+      "source": {
+        "line": 32,
+        "path": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4032925824,
+      "block": "k3_system::GpioBank",
+      "name": "SECURE_K3_SYSTEM_SEC_GPIO2",
+      "source": {
+        "line": 33,
+        "path": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 4032925952,
+      "block": "k3_system::GpioBank",
+      "name": "SECURE_K3_SYSTEM_SEC_GPIO3",
+      "source": {
+        "line": 34,
+        "path": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 3556855808,
+      "block": "k3_system::Apbclock",
+      "name": "AP_K3_SYSTEM_APBCLOCK",
+      "source": {
+        "line": 77,
+        "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3557359616,
+      "block": "k3_system::ApbSpare",
+      "name": "AP_K3_SYSTEM_APB_SPARE",
+      "source": {
+        "line": 76,
+        "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3557097472,
+      "block": "k3_system::Pmumain",
+      "name": "AP_K3_SYSTEM_PMUMAIN",
+      "source": {
+        "line": 75,
+        "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+      },
+      "view": "ap"
+    },
+    {
+      "address": 3230166784,
+      "block": "k3_system::RcpuI2Cctrl",
+      "name": "RCPU_K3_SYSTEM_RCPU_I2CCTRL",
+      "source": {
+        "line": 85,
+        "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230146560,
+      "block": "k3_system::RcpuI2Sctrl",
+      "name": "RCPU_K3_SYSTEM_RCPU_I2SCTRL",
+      "source": {
+        "line": 83,
+        "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230187520,
+      "block": "k3_system::RcpuPmu",
+      "name": "RCPU_K3_SYSTEM_RCPU_PMU",
+      "source": {
+        "line": 86,
+        "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230191616,
+      "block": "k3_system::RcpuPwmctrl",
+      "name": "RCPU_K3_SYSTEM_RCPU_PWMCTRL",
+      "source": {
+        "line": 87,
+        "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230162688,
+      "block": "k3_system::RcpuSpictrl",
+      "name": "RCPU_K3_SYSTEM_RCPU_SPICTRL",
+      "source": {
+        "line": 84,
+        "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230138368,
+      "block": "k3_system::RcpuSysctrl",
+      "name": "RCPU_K3_SYSTEM_RCPU_SYSCTRL",
+      "source": {
+        "line": 81,
+        "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 3230146304,
+      "block": "k3_system::RcpuUartctrl",
+      "name": "RCPU_K3_SYSTEM_RCPU_UARTCTRL",
+      "source": {
+        "line": 82,
+        "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+      },
+      "view": "rcpu"
+    },
+    {
+      "address": 4032888832,
+      "block": "k3_system::Apb2Clock",
+      "name": "SECURE_K3_SYSTEM_APB2CLOCK",
+      "source": {
+        "line": 80,
+        "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 3628335104,
+      "block": "k3_system::Ciudragon",
+      "name": "SECURE_K3_SYSTEM_CIUDRAGON",
+      "source": {
+        "line": 79,
+        "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+      },
+      "view": "secure"
+    },
+    {
+      "address": 3559401472,
+      "block": "k3_system::Pmuap",
+      "name": "SECURE_K3_SYSTEM_PMUAP",
+      "source": {
+        "line": 78,
+        "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md"
+      },
+      "view": "secure"
+    }
+  ],
+  "registers": [
+    "expanded_k3_system"
+  ],
+  "schema": 1,
+  "sources": [
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/drivers/clk/ccu-spacemit-k3.c",
+      "sha256": "a381ab057d9141a8095aabe45c6c8053abbbb1045e24e1e735c44ec957733659"
+    },
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/drivers/clk/ccu-spacemit-k3.h",
+      "sha256": "07e34fe483ec3d558d149462fa67018d2b163e3fd4f83211eb0d1844b02fb8d7"
+    },
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/drivers/gpio/spacemit-gpio.c",
+      "sha256": "15baf6e82b45f326dc45ed6849398f80a18cac104fb5308fd96b6a27fb1f4b65"
+    },
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/drivers/hwspinlock/spacemit_hwspinlock.c",
+      "sha256": "75a274bf8cc45aa5113ab9bbf67fef3f4fc2c0b36f66d53cbe1e1b9879815ea9"
+    },
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/drivers/hwtimer/k3-hwtimer.c",
+      "sha256": "7449e0b1abb00c92dfe3ac870f3f42fac39435430775c1d9265bb9b30de7adda"
+    },
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/drivers/mailbox/k3-mailbox.c",
+      "sha256": "860b9306f62f064021dc400aa5f2cd5ea690a574012e1c96339ffb0853778cfb"
+    },
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/drivers/mailbox/k3_mailbox.h",
+      "sha256": "ebcdcfdf70b2969eff0a31d056f0bf7ac0c4d5eeac549067f27d5b2259f6c14d"
+    },
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/drivers/pm/k3_pm.c",
+      "sha256": "e66f75c9e41ada0523ab99844821fd31695eabb9b6b0d99229ea04e7210038fe"
+    },
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/drivers/pwm/pwm-pxa.c",
+      "sha256": "cc4ef492ae808c7286bcc6f7cb2d732efdb96449e786b0c2557d8ee159692424"
+    },
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/drivers/rpmi/k3/k3-os0_hsm_interface.c",
+      "sha256": "bd41887e65579989914994730dff301f6a601d7e0bb53f5ae0c106dc0415eed6"
+    },
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "sha256": "bd7030481daf1723bc71dbb14b3f8fbed41141c3092761915ba175e5bfb74c18"
+    },
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/platform/rt24/k3.dtsi",
+      "sha256": "ac320a4c4179ecac9ac07aeaac60ecd4c1224ef5fa2fe3404b176a7692f1cf20"
+    },
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "sha256": "73a897385ea776dd2264028bdac630e2b3bbafabd686527ac11a7938d8f9f602"
+    },
+    {
+      "kind": "esos",
+      "path": "bsp/spacemit/platform/rt24/os1_rcpu/_register_defination.h",
+      "sha256": "3ea16a609d3505d297f673bf1ec4940e6821682a817dcb17e8f074a6d875be39"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/06_address_map.md",
+      "sha256": "8e30cf82f5fa5a6534c9f1bdc65b91682566417dc1a5957870887883e04ceea7"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/07_interrupts.md",
+      "sha256": "8b382eb62ad1a572b25a250e3080378bf0de64f95b2c1278abfbacc7d116d152"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/08_cpu.md",
+      "sha256": "a8120daa10a1f4aaeabe26b0a1bf599955521f289e66835c5c09b663ac21328e"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/15_security.md",
+      "sha256": "7543a07e2ac1302a342400fbdae65a5f008aeb98861bb6d3f9d74ddfd83cda84"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "sha256": "fa200b6c3a396a4e0cdb4433edfd4110760bd3bcc5970e8f88870480b0a14fe3"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "sha256": "8132991e8f5b4c44e9e9dec3ea47949d21a2c49170c23688ac6a55b92f3423d5"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "sha256": "2c698cdc1869a1a133500e5e5d9ce8f5bad1d200d69a67f7f5c0066fa3857bd8"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/16_peripherals/index.md",
+      "sha256": "953f18c2d9e4d72382339a59fa46f38b6f64160200fa7f16e90d03b97bdb25d8"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/16_peripherals/jtag.md",
+      "sha256": "708a71d0cec6e5c92fba1d87f3cfaf1db1d1243205475abde60a7e29a77d5f39"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "sha256": "a272d3fe5ca2339672988949938698e675e4e50499d370bce2105344436d8d59"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/16_peripherals/power_management.md",
+      "sha256": "ccb47c8b64445c53db3dc34ff46422f019efe2ed9cc44be757c71cb81fc9eb72"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/16_peripherals/pwm.md",
+      "sha256": "101ef28df447effd20ea71b98ba4bb95041e825e7746935b2a61b1944339b55c"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/16_peripherals/spinlock.md",
+      "sha256": "2bba573638aab658a3369e7218393ee7d1c68a9c22d51a551e010c325f679330"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/16_peripherals/timeout_monitor.md",
+      "sha256": "327660854d350d7d0293f1483462d3b11ee178d7ec4247aa9c28d4b883b03b2b"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "sha256": "01151998cf02e18e52a08a835758a0dca1238c727cdf012c6414b3b11ecdfa25"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/16_peripherals/tsensor.md",
+      "sha256": "bdda3b97089c7ff7c6eaee110bc90c030296647a370b31c586b6dbdb4a26ea41"
+    },
+    {
+      "kind": "docs",
+      "path": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "sha256": "5076a8e5d5325ea803d5e34416dcf408cec3985650ec3bbcb0f0b8853e2138b9"
+    }
+  ],
+  "tables": [
+    {
+      "line": 27,
+      "note": "Tableless C supplement: numeric clock-control macro.",
+      "registers": [
+        "k3_system::Pmumain.mpmu_wdtpcr_read",
+        "k3_system::Pmumain.mpmu_wdtpcr_write"
+      ],
+      "source": "bsp/spacemit/drivers/clk/ccu-spacemit-k3.h",
+      "status": "generated"
+    },
+    {
+      "line": 81,
+      "note": "Tableless C supplement: numeric clock-control macro.",
+      "registers": [
+        "k3_system::RcpuSysctrl.rcpu_uart_nm_clk_14m_ctrl_read",
+        "k3_system::RcpuSysctrl.rcpu_uart_nm_clk_14m_ctrl_write"
+      ],
+      "source": "bsp/spacemit/drivers/clk/ccu-spacemit-k3.h",
+      "status": "generated"
+    },
+    {
+      "line": 82,
+      "note": "Tableless C supplement: numeric clock-control macro.",
+      "registers": [
+        "k3_system::RcpuSysctrl.rcpu_uart_nm_clk_58m_ctrl_read",
+        "k3_system::RcpuSysctrl.rcpu_uart_nm_clk_58m_ctrl_write"
+      ],
+      "source": "bsp/spacemit/drivers/clk/ccu-spacemit-k3.h",
+      "status": "generated"
+    },
+    {
+      "line": 62,
+      "note": "Tableless C supplement: omitted K3 rising-edge clear word.",
+      "registers": [
+        "k3_system::GpioBank.gcrer"
+      ],
+      "source": "bsp/spacemit/drivers/gpio/spacemit-gpio.c",
+      "status": "generated"
+    },
+    {
+      "line": 5,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::CpuConfig.c0_rvbaddr_lo_addr_read",
+        "k3_system::CpuConfig.c0_rvbaddr_lo_addr_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 6,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::CpuConfig.c0_rvbaddr_hi_addr_read",
+        "k3_system::CpuConfig.c0_rvbaddr_hi_addr_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 8,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::CpuConfig.c1_rvbaddr_lo_addr_read",
+        "k3_system::CpuConfig.c1_rvbaddr_lo_addr_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 9,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::CpuConfig.c1_rvbaddr_hi_addr_read",
+        "k3_system::CpuConfig.c1_rvbaddr_hi_addr_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 11,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::CpuConfig.c2_rvbaddr_lo_addr_read",
+        "k3_system::CpuConfig.c2_rvbaddr_lo_addr_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 12,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::CpuConfig.c2_rvbaddr_hi_addr_read",
+        "k3_system::CpuConfig.c2_rvbaddr_hi_addr_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 14,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::CpuConfig.c3_rvbaddr_lo_addr_read",
+        "k3_system::CpuConfig.c3_rvbaddr_lo_addr_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 15,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::CpuConfig.c3_rvbaddr_hi_addr_read",
+        "k3_system::CpuConfig.c3_rvbaddr_hi_addr_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 88,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::Pmuap.pmu_core_status0"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 89,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::Pmuap.pmu_core_status1"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 92,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::Pmuap.pmu_cc3_ap_read",
+        "k3_system::Pmuap.pmu_cc3_ap_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 120,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuPmu.ap_c0_m2_int_en_reg_read",
+        "k3_system::RcpuPmu.ap_c0_m2_int_en_reg_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 121,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuPmu.ap_c1_m2_int_en_reg_read",
+        "k3_system::RcpuPmu.ap_c1_m2_int_en_reg_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 122,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuPmu.ap_c2_m2_int_en_reg_read",
+        "k3_system::RcpuPmu.ap_c2_m2_int_en_reg_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 123,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuPmu.ap_c3_m2_int_en_reg_read",
+        "k3_system::RcpuPmu.ap_c3_m2_int_en_reg_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 127,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::Ciudragon.pmu_c0_l2_flush_ctrl_read",
+        "k3_system::Ciudragon.pmu_c0_l2_flush_ctrl_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 128,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::Ciudragon.pmu_c1_l2_flush_ctrl_read",
+        "k3_system::Ciudragon.pmu_c1_l2_flush_ctrl_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 129,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::Ciudragon.pmu_c2_l2_flush_ctrl_read",
+        "k3_system::Ciudragon.pmu_c2_l2_flush_ctrl_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 130,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::Ciudragon.pmu_c3_l2_flush_ctrl_read",
+        "k3_system::Ciudragon.pmu_c3_l2_flush_ctrl_write"
+      ],
+      "source": "bsp/spacemit/drivers/rpmi/k3/k3_hsm.h",
+      "status": "generated"
+    },
+    {
+      "line": 32,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuPmu.audio_pmu_vote_reg_read",
+        "k3_system::RcpuPmu.audio_pmu_vote_reg_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 47,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuPmu.audio_vote_for_main_pmu_read",
+        "k3_system::RcpuPmu.audio_vote_for_main_pmu_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 69,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuPmu.audio_wakeup_en_reg_read",
+        "k3_system::RcpuPmu.audio_wakeup_en_reg_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 97,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuPmu.soc_top_d2_lp_ctrl_read",
+        "k3_system::RcpuPmu.soc_top_d2_lp_ctrl_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 126,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuPmu.rt24_core0_idle_cfg_reg_read",
+        "k3_system::RcpuPmu.rt24_core0_idle_cfg_reg_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 139,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuPmu.rt24_core1_idle_cfg_reg_read",
+        "k3_system::RcpuPmu.rt24_core1_idle_cfg_reg_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 141,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuSysctrl.rt24_pmu_status"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 143,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuPmu.pwrctl_lp_wakeup_mask_read",
+        "k3_system::RcpuPmu.pwrctl_lp_wakeup_mask_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 145,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuSysctrl.rcpu_core0_boot_entry_lo_read",
+        "k3_system::RcpuSysctrl.rcpu_core0_boot_entry_lo_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 146,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuSysctrl.rcpu_core0_boot_entry_hi_read",
+        "k3_system::RcpuSysctrl.rcpu_core0_boot_entry_hi_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 148,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuSysctrl.rcpu_core1_boot_entry_lo_read",
+        "k3_system::RcpuSysctrl.rcpu_core1_boot_entry_lo_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 149,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuSysctrl.rcpu_core1_boot_entry_hi_read",
+        "k3_system::RcpuSysctrl.rcpu_core1_boot_entry_hi_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 153,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuPmu.rt24_core0_sw_wakeup_reg_read",
+        "k3_system::RcpuPmu.rt24_core0_sw_wakeup_reg_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 154,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuPmu.rt24_core1_sw_wakeup_reg_read",
+        "k3_system::RcpuPmu.rt24_core1_sw_wakeup_reg_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 157,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::RcpuSysctrl.rcpu_core1_hart_id_set_read",
+        "k3_system::RcpuSysctrl.rcpu_core1_hart_id_set_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 165,
+      "note": "Tableless C supplement: numeric CPU/PM macro and any associated uint32_t bitfields.",
+      "registers": [
+        "k3_system::Pmumain.awucrm_reg_read",
+        "k3_system::Pmumain.awucrm_reg_write"
+      ],
+      "source": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+      "status": "generated"
+    },
+    {
+      "line": 15,
+      "note": "Non-register 6.1 Main CPU Domain Address Mapping table; no MMIO words.",
+      "registers": [],
+      "source": "k3/k3_docs/k3_usermanual/06_address_map.md",
+      "status": "not_mmio"
+    },
+    {
+      "line": 216,
+      "note": "Non-register 6.2 RCPU Domain Address Mapping table; no MMIO words.",
+      "registers": [],
+      "source": "k3/k3_docs/k3_usermanual/06_address_map.md",
+      "status": "not_mmio"
+    },
+    {
+      "line": 23,
+      "note": "Non-register 7.1 Main CPU Interrupts table; no MMIO words.",
+      "registers": [],
+      "source": "k3/k3_docs/k3_usermanual/07_interrupts.md",
+      "status": "not_mmio"
+    },
+    {
+      "line": 324,
+      "note": "Non-register 7.2 Real-Time CPU Interrupts table; no MMIO words.",
+      "registers": [],
+      "source": "k3/k3_docs/k3_usermanual/07_interrupts.md",
+      "status": "not_mmio"
+    },
+    {
+      "line": 84,
+      "note": "Non-register 15.4.3.1 IOPMP Configuration Overview table; no MMIO words.",
+      "registers": [],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "not_mmio"
+    },
+    {
+      "line": 111,
+      "note": "Non-register 15.4.3.2 IOPMP Instance Overview table; no MMIO words.",
+      "registers": [],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "not_mmio"
+    },
+    {
+      "line": 128,
+      "note": "Non-register 15.4.3.3 SID Mechanism table; no MMIO words.",
+      "registers": [],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "not_mmio"
+    },
+    {
+      "line": 187,
+      "registers": [
+        "k3_system::SecCiu.dma_sec_ctrl_key_sel"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 212,
+      "registers": [
+        "k3_system::SecCiu.nsaid_ctrl0"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 235,
+      "registers": [
+        "k3_system::SecCiu.nsaid_ctrl1"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 268,
+      "registers": [
+        "k3_system::SecCiu.mas_sec_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 314,
+      "registers": [
+        "k3_system::SecCiu.ddrport_user_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 363,
+      "note": "Region base table is emitted as instance metadata.",
+      "registers": [
+        "k3_system::IopmpSid1.version",
+        "k3_system::IopmpSid1.implement",
+        "k3_system::IopmpSid1.hwcfg0_read",
+        "k3_system::IopmpSid1.hwcfg0_write",
+        "k3_system::IopmpSid1.hwcfg1",
+        "k3_system::IopmpSid1.hwcfg2",
+        "k3_system::IopmpSid1.entryoffset",
+        "k3_system::IopmpSid1.mdlck_read",
+        "k3_system::IopmpSid1.mdlck_write",
+        "k3_system::IopmpSid1.mdlckh_read",
+        "k3_system::IopmpSid1.mdlckh_write",
+        "k3_system::IopmpSid1.entrylck_read",
+        "k3_system::IopmpSid1.entrylck_write",
+        "k3_system::IopmpSid1.err_cfg_read",
+        "k3_system::IopmpSid1.err_cfg_write",
+        "k3_system::IopmpSid1.err_reqinfo_read",
+        "k3_system::IopmpSid1.err_reqinfo_write",
+        "k3_system::IopmpSid1.err_reqaddr",
+        "k3_system::IopmpSid1.err_reqaddrh",
+        "k3_system::IopmpSid1.err_reqid",
+        "k3_system::IopmpSid1.err_num_w",
+        "k3_system::IopmpSid1.err_num_r",
+        "k3_system::IopmpSid1.deviceidcfg_read",
+        "k3_system::IopmpSid1.deviceidcfg_write",
+        "k3_system::IopmpSid1.dft_addr_w",
+        "k3_system::IopmpSid1.dft_addrh_w",
+        "k3_system::IopmpSid1.dft_addr_r",
+        "k3_system::IopmpSid1.dft_addrh_r",
+        "k3_system::IopmpSid1.srcmd_en_read",
+        "k3_system::IopmpSid1.srcmd_en_write",
+        "k3_system::IopmpSid1.srcmd_enh",
+        "k3_system::IopmpSid1.deviceid",
+        "k3_system::IopmpSid1.entry_addr",
+        "k3_system::IopmpSid1.entry_addrh",
+        "k3_system::IopmpSid1.entry_cfg_read",
+        "k3_system::IopmpSid1.entry_cfg_write",
+        "k3_system::IopmpSid16.version",
+        "k3_system::IopmpSid16.implement",
+        "k3_system::IopmpSid16.hwcfg0_read",
+        "k3_system::IopmpSid16.hwcfg0_write",
+        "k3_system::IopmpSid16.hwcfg1",
+        "k3_system::IopmpSid16.hwcfg2",
+        "k3_system::IopmpSid16.entryoffset",
+        "k3_system::IopmpSid16.mdlck_read",
+        "k3_system::IopmpSid16.mdlck_write",
+        "k3_system::IopmpSid16.mdlckh_read",
+        "k3_system::IopmpSid16.mdlckh_write",
+        "k3_system::IopmpSid16.entrylck_read",
+        "k3_system::IopmpSid16.entrylck_write",
+        "k3_system::IopmpSid16.err_cfg_read",
+        "k3_system::IopmpSid16.err_cfg_write",
+        "k3_system::IopmpSid16.err_reqinfo_read",
+        "k3_system::IopmpSid16.err_reqinfo_write",
+        "k3_system::IopmpSid16.err_reqaddr",
+        "k3_system::IopmpSid16.err_reqaddrh",
+        "k3_system::IopmpSid16.err_reqid",
+        "k3_system::IopmpSid16.err_num_w",
+        "k3_system::IopmpSid16.err_num_r",
+        "k3_system::IopmpSid16.deviceidcfg_read",
+        "k3_system::IopmpSid16.deviceidcfg_write",
+        "k3_system::IopmpSid16.dft_addr_w",
+        "k3_system::IopmpSid16.dft_addrh_w",
+        "k3_system::IopmpSid16.dft_addr_r",
+        "k3_system::IopmpSid16.dft_addrh_r",
+        "k3_system::IopmpSid16.srcmd_en_read",
+        "k3_system::IopmpSid16.srcmd_en_write",
+        "k3_system::IopmpSid16.srcmd_enh",
+        "k3_system::IopmpSid16.deviceid",
+        "k3_system::IopmpSid16.entry_addr",
+        "k3_system::IopmpSid16.entry_addrh",
+        "k3_system::IopmpSid16.entry_cfg_read",
+        "k3_system::IopmpSid16.entry_cfg_write",
+        "k3_system::IopmpSid16Entries256.version",
+        "k3_system::IopmpSid16Entries256.implement",
+        "k3_system::IopmpSid16Entries256.hwcfg0_read",
+        "k3_system::IopmpSid16Entries256.hwcfg0_write",
+        "k3_system::IopmpSid16Entries256.hwcfg1",
+        "k3_system::IopmpSid16Entries256.hwcfg2",
+        "k3_system::IopmpSid16Entries256.entryoffset",
+        "k3_system::IopmpSid16Entries256.mdlck_read",
+        "k3_system::IopmpSid16Entries256.mdlck_write",
+        "k3_system::IopmpSid16Entries256.mdlckh_read",
+        "k3_system::IopmpSid16Entries256.mdlckh_write",
+        "k3_system::IopmpSid16Entries256.entrylck_read",
+        "k3_system::IopmpSid16Entries256.entrylck_write",
+        "k3_system::IopmpSid16Entries256.err_cfg_read",
+        "k3_system::IopmpSid16Entries256.err_cfg_write",
+        "k3_system::IopmpSid16Entries256.err_reqinfo_read",
+        "k3_system::IopmpSid16Entries256.err_reqinfo_write",
+        "k3_system::IopmpSid16Entries256.err_reqaddr",
+        "k3_system::IopmpSid16Entries256.err_reqaddrh",
+        "k3_system::IopmpSid16Entries256.err_reqid",
+        "k3_system::IopmpSid16Entries256.err_num_w",
+        "k3_system::IopmpSid16Entries256.err_num_r",
+        "k3_system::IopmpSid16Entries256.deviceidcfg_read",
+        "k3_system::IopmpSid16Entries256.deviceidcfg_write",
+        "k3_system::IopmpSid16Entries256.dft_addr_w",
+        "k3_system::IopmpSid16Entries256.dft_addrh_w",
+        "k3_system::IopmpSid16Entries256.dft_addr_r",
+        "k3_system::IopmpSid16Entries256.dft_addrh_r",
+        "k3_system::IopmpSid16Entries256.srcmd_en_read",
+        "k3_system::IopmpSid16Entries256.srcmd_en_write",
+        "k3_system::IopmpSid16Entries256.srcmd_enh",
+        "k3_system::IopmpSid16Entries256.deviceid",
+        "k3_system::IopmpSid16Entries256.entry_addr",
+        "k3_system::IopmpSid16Entries256.entry_addrh",
+        "k3_system::IopmpSid16Entries256.entry_cfg_read",
+        "k3_system::IopmpSid16Entries256.entry_cfg_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 379,
+      "note": "Detailed register definitions and configured array sizes emitted.",
+      "registers": [
+        "k3_system::IopmpSid1.version",
+        "k3_system::IopmpSid16.version",
+        "k3_system::IopmpSid16Entries256.version",
+        "k3_system::IopmpSid1.implement",
+        "k3_system::IopmpSid16.implement",
+        "k3_system::IopmpSid16Entries256.implement",
+        "k3_system::IopmpSid1.hwcfg0_read",
+        "k3_system::IopmpSid1.hwcfg0_write",
+        "k3_system::IopmpSid16.hwcfg0_read",
+        "k3_system::IopmpSid16.hwcfg0_write",
+        "k3_system::IopmpSid16Entries256.hwcfg0_read",
+        "k3_system::IopmpSid16Entries256.hwcfg0_write",
+        "k3_system::IopmpSid1.hwcfg1",
+        "k3_system::IopmpSid16.hwcfg1",
+        "k3_system::IopmpSid16Entries256.hwcfg1",
+        "k3_system::IopmpSid1.hwcfg2",
+        "k3_system::IopmpSid16.hwcfg2",
+        "k3_system::IopmpSid16Entries256.hwcfg2",
+        "k3_system::IopmpSid1.entryoffset",
+        "k3_system::IopmpSid16.entryoffset",
+        "k3_system::IopmpSid16Entries256.entryoffset"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 390,
+      "note": "Detailed register definitions and configured array sizes emitted.",
+      "registers": [
+        "k3_system::IopmpSid1.mdlck_read",
+        "k3_system::IopmpSid1.mdlck_write",
+        "k3_system::IopmpSid16.mdlck_read",
+        "k3_system::IopmpSid16.mdlck_write",
+        "k3_system::IopmpSid16Entries256.mdlck_read",
+        "k3_system::IopmpSid16Entries256.mdlck_write",
+        "k3_system::IopmpSid1.mdlckh_read",
+        "k3_system::IopmpSid1.mdlckh_write",
+        "k3_system::IopmpSid16.mdlckh_read",
+        "k3_system::IopmpSid16.mdlckh_write",
+        "k3_system::IopmpSid16Entries256.mdlckh_read",
+        "k3_system::IopmpSid16Entries256.mdlckh_write",
+        "k3_system::IopmpSid1.entrylck_read",
+        "k3_system::IopmpSid1.entrylck_write",
+        "k3_system::IopmpSid16.entrylck_read",
+        "k3_system::IopmpSid16.entrylck_write",
+        "k3_system::IopmpSid16Entries256.entrylck_read",
+        "k3_system::IopmpSid16Entries256.entrylck_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 398,
+      "note": "Detailed register definitions and configured array sizes emitted.",
+      "registers": [
+        "k3_system::IopmpSid1.err_cfg_read",
+        "k3_system::IopmpSid1.err_cfg_write",
+        "k3_system::IopmpSid16.err_cfg_read",
+        "k3_system::IopmpSid16.err_cfg_write",
+        "k3_system::IopmpSid16Entries256.err_cfg_read",
+        "k3_system::IopmpSid16Entries256.err_cfg_write",
+        "k3_system::IopmpSid1.err_reqinfo_read",
+        "k3_system::IopmpSid1.err_reqinfo_write",
+        "k3_system::IopmpSid16.err_reqinfo_read",
+        "k3_system::IopmpSid16.err_reqinfo_write",
+        "k3_system::IopmpSid16Entries256.err_reqinfo_read",
+        "k3_system::IopmpSid16Entries256.err_reqinfo_write",
+        "k3_system::IopmpSid1.err_reqaddr",
+        "k3_system::IopmpSid16.err_reqaddr",
+        "k3_system::IopmpSid16Entries256.err_reqaddr",
+        "k3_system::IopmpSid1.err_reqaddrh",
+        "k3_system::IopmpSid16.err_reqaddrh",
+        "k3_system::IopmpSid16Entries256.err_reqaddrh",
+        "k3_system::IopmpSid1.err_reqid",
+        "k3_system::IopmpSid16.err_reqid",
+        "k3_system::IopmpSid16Entries256.err_reqid",
+        "k3_system::IopmpSid1.err_num_w",
+        "k3_system::IopmpSid16.err_num_w",
+        "k3_system::IopmpSid16Entries256.err_num_w",
+        "k3_system::IopmpSid1.err_num_r",
+        "k3_system::IopmpSid16.err_num_r",
+        "k3_system::IopmpSid16Entries256.err_num_r"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 410,
+      "note": "Detailed register definitions and configured array sizes emitted.",
+      "registers": [
+        "k3_system::IopmpSid1.deviceidcfg_read",
+        "k3_system::IopmpSid1.deviceidcfg_write",
+        "k3_system::IopmpSid16.deviceidcfg_read",
+        "k3_system::IopmpSid16.deviceidcfg_write",
+        "k3_system::IopmpSid16Entries256.deviceidcfg_read",
+        "k3_system::IopmpSid16Entries256.deviceidcfg_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 416,
+      "note": "Detailed register definitions and configured array sizes emitted.",
+      "registers": [
+        "k3_system::IopmpSid1.dft_addr_w",
+        "k3_system::IopmpSid16.dft_addr_w",
+        "k3_system::IopmpSid16Entries256.dft_addr_w",
+        "k3_system::IopmpSid1.dft_addrh_w",
+        "k3_system::IopmpSid16.dft_addrh_w",
+        "k3_system::IopmpSid16Entries256.dft_addrh_w",
+        "k3_system::IopmpSid1.dft_addr_r",
+        "k3_system::IopmpSid16.dft_addr_r",
+        "k3_system::IopmpSid16Entries256.dft_addr_r",
+        "k3_system::IopmpSid1.dft_addrh_r",
+        "k3_system::IopmpSid16.dft_addrh_r",
+        "k3_system::IopmpSid16Entries256.dft_addrh_r"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 425,
+      "note": "Detailed register definitions and configured array sizes emitted.",
+      "registers": [
+        "k3_system::IopmpSid1.srcmd_en_read",
+        "k3_system::IopmpSid1.srcmd_en_write",
+        "k3_system::IopmpSid16.srcmd_en_read",
+        "k3_system::IopmpSid16.srcmd_en_write",
+        "k3_system::IopmpSid16Entries256.srcmd_en_read",
+        "k3_system::IopmpSid16Entries256.srcmd_en_write",
+        "k3_system::IopmpSid1.srcmd_enh",
+        "k3_system::IopmpSid16.srcmd_enh",
+        "k3_system::IopmpSid16Entries256.srcmd_enh"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 432,
+      "note": "Detailed register definitions and configured array sizes emitted.",
+      "registers": [
+        "k3_system::IopmpSid1.deviceid",
+        "k3_system::IopmpSid16.deviceid",
+        "k3_system::IopmpSid16Entries256.deviceid"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 438,
+      "note": "Detailed register definitions and configured array sizes emitted.",
+      "registers": [
+        "k3_system::IopmpSid1.entry_addr",
+        "k3_system::IopmpSid16.entry_addr",
+        "k3_system::IopmpSid16Entries256.entry_addr",
+        "k3_system::IopmpSid1.entry_addrh",
+        "k3_system::IopmpSid16.entry_addrh",
+        "k3_system::IopmpSid16Entries256.entry_addrh",
+        "k3_system::IopmpSid1.entry_cfg_read",
+        "k3_system::IopmpSid1.entry_cfg_write",
+        "k3_system::IopmpSid16.entry_cfg_read",
+        "k3_system::IopmpSid16.entry_cfg_write",
+        "k3_system::IopmpSid16Entries256.entry_cfg_read",
+        "k3_system::IopmpSid16Entries256.entry_cfg_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 448,
+      "registers": [
+        "k3_system::IopmpSid1.version"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 455,
+      "registers": [
+        "k3_system::IopmpSid1.implement"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 461,
+      "registers": [
+        "k3_system::IopmpSid1.hwcfg0_read",
+        "k3_system::IopmpSid1.hwcfg0_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 485,
+      "registers": [
+        "k3_system::IopmpSid1.hwcfg1"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 492,
+      "registers": [
+        "k3_system::IopmpSid1.hwcfg2"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 499,
+      "registers": [
+        "k3_system::IopmpSid1.entryoffset"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 505,
+      "registers": [
+        "k3_system::IopmpSid1.mdlck_read",
+        "k3_system::IopmpSid1.mdlck_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 512,
+      "registers": [
+        "k3_system::IopmpSid1.mdlckh_read",
+        "k3_system::IopmpSid1.mdlckh_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 518,
+      "registers": [
+        "k3_system::IopmpSid1.entrylck_read",
+        "k3_system::IopmpSid1.entrylck_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 526,
+      "registers": [
+        "k3_system::IopmpSid1.err_cfg_read",
+        "k3_system::IopmpSid1.err_cfg_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 538,
+      "registers": [
+        "k3_system::IopmpSid1.err_reqinfo_read",
+        "k3_system::IopmpSid1.err_reqinfo_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 549,
+      "registers": [
+        "k3_system::IopmpSid1.err_reqaddr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 555,
+      "registers": [
+        "k3_system::IopmpSid1.err_reqaddrh"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 561,
+      "registers": [
+        "k3_system::IopmpSid1.err_reqid"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 568,
+      "registers": [
+        "k3_system::IopmpSid1.err_num_w"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 575,
+      "registers": [
+        "k3_system::IopmpSid1.err_num_r"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 582,
+      "registers": [
+        "k3_system::IopmpSid1.deviceidcfg_read",
+        "k3_system::IopmpSid1.deviceidcfg_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 590,
+      "registers": [
+        "k3_system::IopmpSid1.dft_addr_w"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 597,
+      "registers": [
+        "k3_system::IopmpSid1.dft_addrh_w"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 603,
+      "registers": [
+        "k3_system::IopmpSid1.dft_addr_r"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 610,
+      "registers": [
+        "k3_system::IopmpSid1.dft_addrh_r"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 616,
+      "registers": [
+        "k3_system::IopmpSid1.srcmd_en_read",
+        "k3_system::IopmpSid1.srcmd_en_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 623,
+      "registers": [
+        "k3_system::IopmpSid1.srcmd_enh"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 629,
+      "registers": [
+        "k3_system::IopmpSid1.deviceid"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 636,
+      "registers": [
+        "k3_system::IopmpSid1.entry_addr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 644,
+      "registers": [
+        "k3_system::IopmpSid1.entry_addrh"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 650,
+      "registers": [
+        "k3_system::IopmpSid1.entry_cfg_read",
+        "k3_system::IopmpSid1.entry_cfg_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/15_security.md",
+      "status": "generated"
+    },
+    {
+      "line": 468,
+      "note": "Non-register 16.1.4.6 DMA Connectivity & Assignments table; no MMIO words.",
+      "registers": [],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "not_mmio"
+    },
+    {
+      "line": 531,
+      "note": "Non-register 16.1.4.6 DMA Connectivity & Assignments table; no MMIO words.",
+      "registers": [],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "not_mmio"
+    },
+    {
+      "line": 544,
+      "note": "Base/summary table; detailed tables define words.",
+      "registers": [
+        "k3_system::Pdma.dcsr_x_read",
+        "k3_system::Pdma.dcsr_x_write",
+        "k3_system::Pdma.dalgn",
+        "k3_system::Pdma.dpcsr_read",
+        "k3_system::Pdma.dpcsr_write",
+        "k3_system::Pdma.drqsr_read",
+        "k3_system::Pdma.drqsr_write",
+        "k3_system::Pdma.dint",
+        "k3_system::Pdma.drcmr_x",
+        "k3_system::Pdma.ddadr_l_x",
+        "k3_system::Pdma.dsadr_l_x",
+        "k3_system::Pdma.dtadr_l_x",
+        "k3_system::Pdma.dcmd_x",
+        "k3_system::Pdma.ddadr_h_x",
+        "k3_system::Pdma.dsadr_h_x",
+        "k3_system::Pdma.dtadr_h_x"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 555,
+      "registers": [
+        "k3_system::Pdma.dcsr_x_read",
+        "k3_system::Pdma.dcsr_x_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "generated"
+    },
+    {
+      "line": 594,
+      "registers": [
+        "k3_system::Pdma.dalgn"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "generated"
+    },
+    {
+      "line": 605,
+      "registers": [
+        "k3_system::Pdma.dpcsr_read",
+        "k3_system::Pdma.dpcsr_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "generated"
+    },
+    {
+      "line": 623,
+      "registers": [
+        "k3_system::Pdma.drqsr_read",
+        "k3_system::Pdma.drqsr_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "generated"
+    },
+    {
+      "line": 645,
+      "registers": [
+        "k3_system::Pdma.dint"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "generated"
+    },
+    {
+      "line": 656,
+      "registers": [
+        "k3_system::Pdma.drcmr_x"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "generated"
+    },
+    {
+      "line": 677,
+      "registers": [
+        "k3_system::Pdma.ddadr_l_x"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "generated"
+    },
+    {
+      "line": 699,
+      "registers": [
+        "k3_system::Pdma.dsadr_l_x"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "generated"
+    },
+    {
+      "line": 720,
+      "registers": [
+        "k3_system::Pdma.dtadr_l_x"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "generated"
+    },
+    {
+      "line": 732,
+      "registers": [
+        "k3_system::Pdma.dcmd_x"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "generated"
+    },
+    {
+      "line": 758,
+      "registers": [
+        "k3_system::Pdma.ddadr_h_x"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "generated"
+    },
+    {
+      "line": 776,
+      "registers": [
+        "k3_system::Pdma.dsadr_h_x"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "generated"
+    },
+    {
+      "line": 794,
+      "registers": [
+        "k3_system::Pdma.dtadr_h_x"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/dma.md",
+      "status": "generated"
+    },
+    {
+      "line": 24,
+      "note": "Region base table is emitted as instance metadata.",
+      "registers": [
+        "k3_system::GpioBank.gplr",
+        "k3_system::GpioBank.gpdr",
+        "k3_system::GpioBank.gpsr",
+        "k3_system::GpioBank.gpcr",
+        "k3_system::GpioBank.grer",
+        "k3_system::GpioBank.gfer",
+        "k3_system::GpioBank.gedr_read",
+        "k3_system::GpioBank.gedr_write",
+        "k3_system::GpioBank.gsdr",
+        "k3_system::GpioBank.gcdr",
+        "k3_system::GpioBank.gsrer",
+        "k3_system::GpioBank.gsfer",
+        "k3_system::GpioBank.gcfer",
+        "k3_system::GpioBank.gapmask",
+        "k3_system::GpioBank.gcpmask",
+        "k3_system::GpioBank.gcrer"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 97,
+      "registers": [
+        "k3_system::GpioBank.gplr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 122,
+      "registers": [
+        "k3_system::GpioBank.gpdr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 131,
+      "registers": [
+        "k3_system::GpioBank.gpsr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 140,
+      "registers": [
+        "k3_system::GpioBank.gpcr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 167,
+      "registers": [
+        "k3_system::GpioBank.grer"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 186,
+      "registers": [
+        "k3_system::GpioBank.gfer"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 209,
+      "registers": [
+        "k3_system::GpioBank.gedr_read",
+        "k3_system::GpioBank.gedr_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 232,
+      "registers": [
+        "k3_system::GpioBank.gsdr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 255,
+      "registers": [
+        "k3_system::GpioBank.gcdr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 265,
+      "registers": [
+        "k3_system::GpioBank.gsrer"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 273,
+      "registers": [
+        "k3_system::GpioBank.gsfer"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 281,
+      "registers": [
+        "k3_system::GpioBank.gcfer"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 289,
+      "registers": [
+        "k3_system::GpioBank.gapmask"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 297,
+      "registers": [
+        "k3_system::GpioBank.gcpmask"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/gpio.md",
+      "status": "generated"
+    },
+    {
+      "line": 153,
+      "note": "Non-register 16.2.4.12 Descriptor Structure table; no MMIO words.",
+      "registers": [],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "not_mmio"
+    },
+    {
+      "line": 388,
+      "registers": [
+        "k3_system::Hdma.version"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 398,
+      "registers": [
+        "k3_system::Hdma.peripheral_id"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 406,
+      "registers": [
+        "k3_system::Hdma.scratch"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 414,
+      "registers": [
+        "k3_system::Hdma.identification"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 422,
+      "registers": [
+        "k3_system::Hdma.interface_description_1"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 438,
+      "registers": [
+        "k3_system::Hdma.interface_description_2"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 449,
+      "registers": [
+        "k3_system::Hdma.irq_mask"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 459,
+      "registers": [
+        "k3_system::Hdma.irq_pending_read",
+        "k3_system::Hdma.irq_pending_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 469,
+      "registers": [
+        "k3_system::Hdma.irq_source_read",
+        "k3_system::Hdma.irq_source_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 479,
+      "registers": [
+        "k3_system::Hdma.control"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 491,
+      "registers": [
+        "k3_system::Hdma.transfer_id"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 500,
+      "registers": [
+        "k3_system::Hdma.transfer_submit_read",
+        "k3_system::Hdma.transfer_submit_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 509,
+      "registers": [
+        "k3_system::Hdma.flags"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 520,
+      "registers": [
+        "k3_system::Hdma.dest_address"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 528,
+      "registers": [
+        "k3_system::Hdma.src_address"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 536,
+      "registers": [
+        "k3_system::Hdma.x_length"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 544,
+      "registers": [
+        "k3_system::Hdma.y_length"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 552,
+      "registers": [
+        "k3_system::Hdma.dest_stride"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 560,
+      "registers": [
+        "k3_system::Hdma.src_stride"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 568,
+      "registers": [
+        "k3_system::Hdma.transfer_done"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 581,
+      "registers": [
+        "k3_system::Hdma.active_transfer_id"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 590,
+      "registers": [
+        "k3_system::Hdma.status"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 598,
+      "registers": [
+        "k3_system::Hdma.current_dest_address"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 606,
+      "registers": [
+        "k3_system::Hdma.current_src_address"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 614,
+      "registers": [
+        "k3_system::Hdma.transfer_progress"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 622,
+      "registers": [
+        "k3_system::Hdma.partial_transfer_length"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 632,
+      "registers": [
+        "k3_system::Hdma.partial_transfer_id"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 641,
+      "registers": [
+        "k3_system::Hdma.descriptor_id"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 651,
+      "registers": [
+        "k3_system::Hdma.framelock_config"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 664,
+      "registers": [
+        "k3_system::Hdma.framelock_stride"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 672,
+      "registers": [
+        "k3_system::Hdma.sg_address"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 680,
+      "registers": [
+        "k3_system::Hdma.dest_address_high"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 688,
+      "registers": [
+        "k3_system::Hdma.src_address_high"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 696,
+      "registers": [
+        "k3_system::Hdma.current_dest_address_high"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 704,
+      "registers": [
+        "k3_system::Hdma.current_src_address_high"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 712,
+      "registers": [
+        "k3_system::Hdma.sg_address_high"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 720,
+      "registers": [
+        "k3_system::Hdma.sgdg_cfg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 735,
+      "registers": [
+        "k3_system::Hdma.pad_value"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 744,
+      "registers": [
+        "k3_system::Hdma.sgdg_m_size"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 753,
+      "registers": [
+        "k3_system::Hdma.sgdg_k_size"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 762,
+      "registers": [
+        "k3_system::Hdma.sgdg_mr_size"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 771,
+      "registers": [
+        "k3_system::Hdma.sgdg_kr_size"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 780,
+      "registers": [
+        "k3_system::Hdma.sgdg_mp_size"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 789,
+      "registers": [
+        "k3_system::Hdma.sgdg_kp_size"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 798,
+      "registers": [
+        "k3_system::Hdma.sgdg_mb_size"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/hdma.md",
+      "status": "generated"
+    },
+    {
+      "line": 35,
+      "note": "Summary agrees with detailed offsets; 4/8/16-channel views are distinct.",
+      "registers": [
+        "k3_system::Mailbox16.revision",
+        "k3_system::Mailbox16.sysconfig_read",
+        "k3_system::Mailbox16.sysconfig_write",
+        "k3_system::Mailbox16.message_m_read",
+        "k3_system::Mailbox16.message_m_write",
+        "k3_system::Mailbox16.fifostatus_m_read",
+        "k3_system::Mailbox16.fifostatus_m_write",
+        "k3_system::Mailbox16.msgstatus_m_read",
+        "k3_system::Mailbox16.msgstatus_m_write",
+        "k3_system::Mailbox16.irqstatus_raw_u_read",
+        "k3_system::Mailbox16.irqstatus_raw_u_write",
+        "k3_system::Mailbox16.irqstatus_clr_u_read",
+        "k3_system::Mailbox16.irqstatus_clr_u_write",
+        "k3_system::Mailbox16.irqenable_set_u_read",
+        "k3_system::Mailbox16.irqenable_set_u_write",
+        "k3_system::Mailbox16.irqenable_clr_u_read",
+        "k3_system::Mailbox16.irqenable_clr_u_write",
+        "k3_system::Mailbox16.irqthr0_u",
+        "k3_system::Mailbox16.irqthr1_u",
+        "k3_system::Mailbox16.irqthr2_u",
+        "k3_system::Mailbox16.irqthr3_u",
+        "k3_system::Mailbox8.revision",
+        "k3_system::Mailbox8.sysconfig_read",
+        "k3_system::Mailbox8.sysconfig_write",
+        "k3_system::Mailbox8.message_m_read",
+        "k3_system::Mailbox8.message_m_write",
+        "k3_system::Mailbox8.fifostatus_m_read",
+        "k3_system::Mailbox8.fifostatus_m_write",
+        "k3_system::Mailbox8.msgstatus_m_read",
+        "k3_system::Mailbox8.msgstatus_m_write",
+        "k3_system::Mailbox8.irqstatus_raw_u_read",
+        "k3_system::Mailbox8.irqstatus_raw_u_write",
+        "k3_system::Mailbox8.irqstatus_clr_u_read",
+        "k3_system::Mailbox8.irqstatus_clr_u_write",
+        "k3_system::Mailbox8.irqenable_set_u_read",
+        "k3_system::Mailbox8.irqenable_set_u_write",
+        "k3_system::Mailbox8.irqenable_clr_u_read",
+        "k3_system::Mailbox8.irqenable_clr_u_write",
+        "k3_system::Mailbox8.irqthr0_u",
+        "k3_system::Mailbox8.irqthr1_u",
+        "k3_system::Mailbox4.revision",
+        "k3_system::Mailbox4.sysconfig_read",
+        "k3_system::Mailbox4.sysconfig_write",
+        "k3_system::Mailbox4.message_m_read",
+        "k3_system::Mailbox4.message_m_write",
+        "k3_system::Mailbox4.fifostatus_m_read",
+        "k3_system::Mailbox4.fifostatus_m_write",
+        "k3_system::Mailbox4.msgstatus_m_read",
+        "k3_system::Mailbox4.msgstatus_m_write",
+        "k3_system::Mailbox4.irqstatus_raw_u_read",
+        "k3_system::Mailbox4.irqstatus_raw_u_write",
+        "k3_system::Mailbox4.irqstatus_clr_u_read",
+        "k3_system::Mailbox4.irqstatus_clr_u_write",
+        "k3_system::Mailbox4.irqenable_set_u_read",
+        "k3_system::Mailbox4.irqenable_set_u_write",
+        "k3_system::Mailbox4.irqenable_clr_u_read",
+        "k3_system::Mailbox4.irqenable_clr_u_write",
+        "k3_system::Mailbox4.irqthr0_u"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 57,
+      "registers": [
+        "k3_system::Mailbox16.revision"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "generated"
+    },
+    {
+      "line": 67,
+      "registers": [
+        "k3_system::Mailbox16.sysconfig_read",
+        "k3_system::Mailbox16.sysconfig_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "generated"
+    },
+    {
+      "line": 93,
+      "registers": [
+        "k3_system::Mailbox16.message_m_read",
+        "k3_system::Mailbox16.message_m_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "generated"
+    },
+    {
+      "line": 103,
+      "registers": [
+        "k3_system::Mailbox16.fifostatus_m_read",
+        "k3_system::Mailbox16.fifostatus_m_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "generated"
+    },
+    {
+      "line": 118,
+      "registers": [
+        "k3_system::Mailbox16.msgstatus_m_read",
+        "k3_system::Mailbox16.msgstatus_m_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "generated"
+    },
+    {
+      "line": 135,
+      "registers": [
+        "k3_system::Mailbox16.irqstatus_raw_u_read",
+        "k3_system::Mailbox16.irqstatus_raw_u_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "generated"
+    },
+    {
+      "line": 177,
+      "registers": [
+        "k3_system::Mailbox16.irqstatus_clr_u_read",
+        "k3_system::Mailbox16.irqstatus_clr_u_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "generated"
+    },
+    {
+      "line": 218,
+      "registers": [
+        "k3_system::Mailbox16.irqenable_set_u_read",
+        "k3_system::Mailbox16.irqenable_set_u_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "generated"
+    },
+    {
+      "line": 259,
+      "registers": [
+        "k3_system::Mailbox16.irqenable_clr_u_read",
+        "k3_system::Mailbox16.irqenable_clr_u_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "generated"
+    },
+    {
+      "line": 304,
+      "registers": [
+        "k3_system::Mailbox16.irqthr0_u"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "generated"
+    },
+    {
+      "line": 319,
+      "registers": [
+        "k3_system::Mailbox16.irqthr1_u"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "generated"
+    },
+    {
+      "line": 334,
+      "registers": [
+        "k3_system::Mailbox16.irqthr2_u"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "generated"
+    },
+    {
+      "line": 349,
+      "registers": [
+        "k3_system::Mailbox16.irqthr3_u"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+      "status": "generated"
+    },
+    {
+      "line": 21,
+      "registers": [
+        "k3_system::Pmuap.core_idle_cfg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/power_management.md",
+      "status": "generated"
+    },
+    {
+      "line": 41,
+      "registers": [
+        "k3_system::Pmuap.cluster_idle_cfg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/power_management.md",
+      "status": "generated"
+    },
+    {
+      "line": 66,
+      "registers": [
+        "k3_system::Pmuap.core_wakeup_read",
+        "k3_system::Pmuap.core_wakeup_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/power_management.md",
+      "status": "generated"
+    },
+    {
+      "line": 88,
+      "registers": [
+        "k3_system::Pmumain.apcr_core"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/power_management.md",
+      "status": "generated"
+    },
+    {
+      "line": 108,
+      "registers": [
+        "k3_system::Pmumain.apcr_per"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/power_management.md",
+      "status": "generated"
+    },
+    {
+      "line": 37,
+      "registers": [
+        "k3_system::Pwm.pwm_crx"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/pwm.md",
+      "status": "generated"
+    },
+    {
+      "line": 53,
+      "registers": [
+        "k3_system::Pwm.pwm_dcr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/pwm.md",
+      "status": "generated"
+    },
+    {
+      "line": 69,
+      "registers": [
+        "k3_system::Pwm.pwm_pcr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/pwm.md",
+      "status": "generated"
+    },
+    {
+      "line": 80,
+      "registers": [
+        "k3_system::Pwm.pwm_outcnt"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/pwm.md",
+      "status": "generated"
+    },
+    {
+      "line": 79,
+      "note": "Base/summary table; detailed tables define words.",
+      "registers": [
+        "k3_system::Spinlock.spinlockn_lock_reg_read",
+        "k3_system::Spinlock.spinlockn_lock_reg_write",
+        "k3_system::Spinlock.spinlock_ver_reg",
+        "k3_system::Spinlock.spinlock_sstatus_reg",
+        "k3_system::Spinlock.spinlock_status_reg",
+        "k3_system::Spinlock.spinlock_irq_en_reg",
+        "k3_system::Spinlock.spinlock_irq_sta_reg_read",
+        "k3_system::Spinlock.spinlock_irq_sta_reg_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/spinlock.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 94,
+      "registers": [
+        "k3_system::Spinlock.spinlockn_lock_reg_read",
+        "k3_system::Spinlock.spinlockn_lock_reg_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/spinlock.md",
+      "status": "generated"
+    },
+    {
+      "line": 103,
+      "registers": [
+        "k3_system::Spinlock.spinlock_ver_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/spinlock.md",
+      "status": "generated"
+    },
+    {
+      "line": 111,
+      "registers": [
+        "k3_system::Spinlock.spinlock_sstatus_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/spinlock.md",
+      "status": "generated"
+    },
+    {
+      "line": 119,
+      "registers": [
+        "k3_system::Spinlock.spinlock_status_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/spinlock.md",
+      "status": "generated"
+    },
+    {
+      "line": 127,
+      "registers": [
+        "k3_system::Spinlock.spinlock_irq_en_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/spinlock.md",
+      "status": "generated"
+    },
+    {
+      "line": 135,
+      "registers": [
+        "k3_system::Spinlock.spinlock_irq_sta_reg_read",
+        "k3_system::Spinlock.spinlock_irq_sta_reg_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/spinlock.md",
+      "status": "generated"
+    },
+    {
+      "line": 81,
+      "note": "Base/summary table; detailed tables define words.",
+      "registers": [
+        "k3_system::TimerWatchdog.timer_count_enable",
+        "k3_system::TimerWatchdog.timer_count_mode",
+        "k3_system::TimerWatchdog.timer_count_restart_read",
+        "k3_system::TimerWatchdog.timer_count_restart_write",
+        "k3_system::TimerWatchdog.timer_clock_control",
+        "k3_system::TimerWatchdog.timer_match",
+        "k3_system::TimerWatchdog.timer_preload_value",
+        "k3_system::TimerWatchdog.timer_preload_control",
+        "k3_system::TimerWatchdog.timer_interrupt_enable",
+        "k3_system::TimerWatchdog.timer_interrupt_clear",
+        "k3_system::TimerWatchdog.timer_status",
+        "k3_system::TimerWatchdog.timer_count",
+        "k3_system::TimerWatchdog.timer_watchdog_first_access",
+        "k3_system::TimerWatchdog.timer_watchdog_second_access",
+        "k3_system::TimerWatchdog.timer_watchdog_match_enable",
+        "k3_system::TimerWatchdog.timer_watchdog_match",
+        "k3_system::TimerWatchdog.timer_watchdog_status_read",
+        "k3_system::TimerWatchdog.timer_watchdog_status_write",
+        "k3_system::TimerWatchdog.timer_watchdog_interrupt_clear",
+        "k3_system::TimerWatchdog.timer_watchdog_counter_reset",
+        "k3_system::TimerWatchdog.timer_watchdog_value"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 94,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_count_enable"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 107,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_count_mode"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 118,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_count_restart_read",
+        "k3_system::TimerWatchdog.timer_count_restart_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 129,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_clock_control"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 141,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_match"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 151,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_preload_value"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 161,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_preload_control"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 175,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_interrupt_enable"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 190,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_interrupt_clear"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 208,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_status"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 225,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_count"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 233,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_watchdog_first_access"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 242,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_watchdog_second_access"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 253,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_watchdog_match_enable"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 266,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_watchdog_match"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 281,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_watchdog_status_read",
+        "k3_system::TimerWatchdog.timer_watchdog_status_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 290,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_watchdog_interrupt_clear"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 299,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_watchdog_counter_reset"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 308,
+      "registers": [
+        "k3_system::TimerWatchdog.timer_watchdog_value"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/16_peripherals/timer_watchdog.md",
+      "status": "generated"
+    },
+    {
+      "line": 73,
+      "note": "Region base table is emitted as instance metadata.",
+      "registers": [
+        "k3_system::Pmumain.fccr",
+        "k3_system::Pmumain.posr_read",
+        "k3_system::Pmumain.posr_write",
+        "k3_system::Pmumain.succr",
+        "k3_system::Pmumain.gpcr",
+        "k3_system::Pmumain.gpcr2",
+        "k3_system::Pmumain.sccr",
+        "k3_system::Pmumain.isccr0",
+        "k3_system::Pmumain.isccr1",
+        "k3_system::Pmumain.ripccr",
+        "k3_system::Pmumain.acgr",
+        "k3_system::Pmumain.apbcscr",
+        "k3_system::Pmumain.pm_mn_clk",
+        "k3_system::Pmumain.succr_1",
+        "k3_system::Pmumain.i2s0_sysclk_ctrl",
+        "k3_system::Pmumain.i2s2_sysclk_ctrl",
+        "k3_system::Pmumain.i2s3_sysclk_ctrl",
+        "k3_system::Pmumain.i2s4_sysclk_ctrl",
+        "k3_system::Pmumain.i2s5_sysclk_ctrl",
+        "k3_system::Pmumain.i2s_sysctrl",
+        "k3_system::Pmumain.apcr_core",
+        "k3_system::Pmumain.apcr_per",
+        "k3_system::Pmumain.awucrm_reg_read",
+        "k3_system::Pmumain.awucrm_reg_write",
+        "k3_system::Pmumain.mpmu_wdtpcr_read",
+        "k3_system::Pmumain.mpmu_wdtpcr_write",
+        "k3_system::ApbSpare.apb_spare1_reg",
+        "k3_system::ApbSpare.apb_spare2_reg",
+        "k3_system::ApbSpare.apb_spare3_reg",
+        "k3_system::ApbSpare.apb_spare7_reg",
+        "k3_system::ApbSpare.apb_spare8_reg",
+        "k3_system::ApbSpare.apb_spare9_reg",
+        "k3_system::ApbSpare.apb_spare10_reg",
+        "k3_system::ApbSpare.apb_spare11_reg",
+        "k3_system::ApbSpare.apb_spare12_reg",
+        "k3_system::ApbSpare.apb_spare13_reg",
+        "k3_system::ApbSpare.apb_spare14_reg",
+        "k3_system::ApbSpare.apb_spare15_reg",
+        "k3_system::ApbSpare.apb_spare16_reg",
+        "k3_system::ApbSpare.apb_spare17_reg",
+        "k3_system::ApbSpare.apb_spare18_reg",
+        "k3_system::ApbSpare.apb_spare19_reg",
+        "k3_system::ApbSpare.apb_spare20_reg",
+        "k3_system::ApbSpare.apb_spare21_reg",
+        "k3_system::ApbSpare.apb_spare22_reg",
+        "k3_system::ApbSpare.apb_spare23_reg",
+        "k3_system::ApbSpare.apb_spare24_reg",
+        "k3_system::ApbSpare.apb_spare25_reg",
+        "k3_system::ApbSpare.apb_spare33_reg",
+        "k3_system::ApbSpare.apb_spare34_reg",
+        "k3_system::ApbSpare.apb_spare35_reg",
+        "k3_system::Apbclock.apbc_uartn_clk_rst",
+        "k3_system::Apbclock.apbc_gpio_clk_rst",
+        "k3_system::Apbclock.apbc_pwmn_clk_rst",
+        "k3_system::Apbclock.apbc_sspn_clk_rst",
+        "k3_system::Apbclock.apbc_rtc_clk_rst",
+        "k3_system::Apbclock.apbc_twsin_clk_rst",
+        "k3_system::Apbclock.apbc_timersn_clk_rst",
+        "k3_system::Apbclock.apbc_aib_clk_rst",
+        "k3_system::Apbclock.apbc_onewire_clk_rst",
+        "k3_system::Apbclock.apbc_sspan_clk_rst",
+        "k3_system::Apbclock.apbc_dro_clk_rst",
+        "k3_system::Apbclock.apbc_ir_clk_rst",
+        "k3_system::Apbclock.apbc_counter_clk_sel",
+        "k3_system::Apbclock.apbc_tsen_clk_rst",
+        "k3_system::Apbclock.apbc_ipc_ap2aud_clk_rst",
+        "k3_system::Apbclock.apbc_cann_clk_rst",
+        "k3_system::Pmuap.pmu_csi_ccic2_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_csi_ccic2_clk_res_ctrl_write",
+        "k3_system::Pmuap.pmu_isp_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_isp_clk_res_ctrl_write",
+        "k3_system::Pmuap.pmu_lcd_clk_res_ctrl1_read",
+        "k3_system::Pmuap.pmu_lcd_clk_res_ctrl1_write",
+        "k3_system::Pmuap.pmu_lcd_clk_res_ctrl2",
+        "k3_system::Pmuap.pmu_ccic_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_ccic_clk_res_ctrl_write",
+        "k3_system::Pmuap.pmu_sdh0_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_sdh0_clk_res_ctrl_write",
+        "k3_system::Pmuap.pmu_sdh1_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_sdh1_clk_res_ctrl_write",
+        "k3_system::Pmuap.pmu_usb_clk_res_ctrl",
+        "k3_system::Pmuap.pmu_qspi_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_qspi_clk_res_ctrl_write",
+        "k3_system::Pmuap.pmu_dma_clk_res_ctrl",
+        "k3_system::Pmuap.pmu_aes_clk_res_ctrl",
+        "k3_system::Pmuap.pmu_mcb_clk_res_ctrl",
+        "k3_system::Pmuap.pmu_vpu_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_vpu_clk_res_ctrl_write",
+        "k3_system::Pmuap.pmu_dtc_clk_res_ctrl",
+        "k3_system::Pmuap.pmu_gpu_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_gpu_clk_res_ctrl_write",
+        "k3_system::Pmuap.pmua_sdh2_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmua_sdh2_clk_res_ctrl_write",
+        "k3_system::Pmuap.pmua_mc_ctrl",
+        "k3_system::Pmuap.pmu_top_dclk_ctrl_read",
+        "k3_system::Pmuap.pmu_top_dclk_ctrl_write",
+        "k3_system::Pmuap.pmu_cc2_ap",
+        "k3_system::Pmuap.trace_config_read",
+        "k3_system::Pmuap.trace_config_write",
+        "k3_system::Pmuap.ucie_ctrl",
+        "k3_system::Pmuap.pmu_audio_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_audio_clk_res_ctrl_write",
+        "k3_system::Pmuap.pmu_lcd_clk_res_ctrl3_read",
+        "k3_system::Pmuap.pmu_lcd_clk_res_ctrl3_write",
+        "k3_system::Pmuap.pmu_lcd_clk_rst_ctrl4",
+        "k3_system::Pmuap.pmu_ufs_clk_rst_ctrl_read",
+        "k3_system::Pmuap.pmu_ufs_clk_rst_ctrl_write",
+        "k3_system::Pmuap.pmu_lcd_clk_rst_ctrl5_read",
+        "k3_system::Pmuap.pmu_lcd_clk_rst_ctrl5_write",
+        "k3_system::Pmuap.pmu_lcd_edp_ctrl",
+        "k3_system::Pmuap.pmu_cci_clk_ctrl_read",
+        "k3_system::Pmuap.pmu_cci_clk_ctrl_write",
+        "k3_system::Pmuap.pmua_aclk_ctrl_read",
+        "k3_system::Pmuap.pmua_aclk_ctrl_write",
+        "k3_system::Pmuap.pmua_cpu_c0_clk_ctrl_read",
+        "k3_system::Pmuap.pmua_cpu_c0_clk_ctrl_write",
+        "k3_system::Pmuap.pmua_cpu_c1_clk_ctrl_read",
+        "k3_system::Pmuap.pmua_cpu_c1_clk_ctrl_write",
+        "k3_system::Pmuap.pmua_cpu_c2_clk_ctrl_read",
+        "k3_system::Pmuap.pmua_cpu_c2_clk_ctrl_write",
+        "k3_system::Pmuap.pmua_cpu_c3_clk_ctrl_read",
+        "k3_system::Pmuap.pmua_cpu_c3_clk_ctrl_write",
+        "k3_system::Pmuap.pcie_clk_res_ctrl_porta_read",
+        "k3_system::Pmuap.pcie_clk_res_ctrl_porta_write",
+        "k3_system::Pmuap.pcie_ctrl_logic_porta_read",
+        "k3_system::Pmuap.pcie_ctrl_logic_porta_write",
+        "k3_system::Pmuap.pcie_clk_res_ctrl_portbcde_x_read",
+        "k3_system::Pmuap.pcie_clk_res_ctrl_portbcde_x_write",
+        "k3_system::Pmuap.pcie_ctrl_logic_portbcde_x_read",
+        "k3_system::Pmuap.pcie_ctrl_logic_portbcde_x_write",
+        "k3_system::Pmuap.emac0_clk_rst_ctrl",
+        "k3_system::Pmuap.emac1_clk_rst_ctrl",
+        "k3_system::Pmuap.emac2_clk_rst_ctrl",
+        "k3_system::Pmuap.espi_clk_rst_ctrl",
+        "k3_system::Pmuap.snr_isim_vclk_ctrl",
+        "k3_system::Pmuap.core_idle_cfg",
+        "k3_system::Pmuap.cluster_idle_cfg",
+        "k3_system::Pmuap.core_wakeup_read",
+        "k3_system::Pmuap.core_wakeup_write",
+        "k3_system::Pmuap.pmu_core_status0",
+        "k3_system::Pmuap.pmu_core_status1",
+        "k3_system::Pmuap.pmu_cc3_ap_read",
+        "k3_system::Pmuap.pmu_cc3_ap_write",
+        "k3_system::Ciudragon.dmasys_s0_rstn",
+        "k3_system::Ciudragon.dmasys_s1_rstn",
+        "k3_system::Ciudragon.dmasys_a0_rstn",
+        "k3_system::Ciudragon.dmasys_a1_rstn",
+        "k3_system::Ciudragon.dmasys_a2_rstn",
+        "k3_system::Ciudragon.dmasys_a3_rstn",
+        "k3_system::Ciudragon.dmasys_a4_rstn",
+        "k3_system::Ciudragon.dmasys_a5_rstn",
+        "k3_system::Ciudragon.dmasys_a6_rstn",
+        "k3_system::Ciudragon.dmasys_a7_rstn",
+        "k3_system::Ciudragon.dmasys_rstn",
+        "k3_system::Ciudragon.dmasys_sdma_rstn",
+        "k3_system::Ciudragon.dmasys_clk_en",
+        "k3_system::Ciudragon.dmasys_sdma_clk_en",
+        "k3_system::Ciudragon.c2_tcm_pipe_clk_en",
+        "k3_system::Ciudragon.c3_tcm_pipe_clk_en",
+        "k3_system::Ciudragon.pmu_c0_l2_flush_ctrl_read",
+        "k3_system::Ciudragon.pmu_c0_l2_flush_ctrl_write",
+        "k3_system::Ciudragon.pmu_c1_l2_flush_ctrl_read",
+        "k3_system::Ciudragon.pmu_c1_l2_flush_ctrl_write",
+        "k3_system::Ciudragon.pmu_c2_l2_flush_ctrl_read",
+        "k3_system::Ciudragon.pmu_c2_l2_flush_ctrl_write",
+        "k3_system::Ciudragon.pmu_c3_l2_flush_ctrl_read",
+        "k3_system::Ciudragon.pmu_c3_l2_flush_ctrl_write",
+        "k3_system::Apb2Clock.apbc_sec_uart1_clk_rst",
+        "k3_system::Apb2Clock.apbc_sec_ssp2_clk_rst",
+        "k3_system::Apb2Clock.apbc_sec_twsi3_clk_rst",
+        "k3_system::Apb2Clock.apbc_sec_rtc_clk_rst",
+        "k3_system::Apb2Clock.apbc_sec_timers_clk_rst",
+        "k3_system::Apb2Clock.apbc_sec_jtag_sw_clk_rst",
+        "k3_system::Apb2Clock.apbc_sec_gpio_clk_rst",
+        "k3_system::RcpuSysctrl.r_espi_clk_res_ctrl",
+        "k3_system::RcpuSysctrl.r_cann_clk_res_ctrl",
+        "k3_system::RcpuSysctrl.r_ircn_clk_res_ctrl",
+        "k3_system::RcpuSysctrl.r_sspan_sysclk_res_ctrl",
+        "k3_system::RcpuSysctrl.rsmp_clk_crl",
+        "k3_system::RcpuSysctrl.r_gmac_clk_res_ctrl",
+        "k3_system::RcpuSysctrl.rt24_pmu_status",
+        "k3_system::RcpuSysctrl.rcpu_core0_boot_entry_lo_read",
+        "k3_system::RcpuSysctrl.rcpu_core0_boot_entry_lo_write",
+        "k3_system::RcpuSysctrl.rcpu_core0_boot_entry_hi_read",
+        "k3_system::RcpuSysctrl.rcpu_core0_boot_entry_hi_write",
+        "k3_system::RcpuSysctrl.rcpu_core1_boot_entry_lo_read",
+        "k3_system::RcpuSysctrl.rcpu_core1_boot_entry_lo_write",
+        "k3_system::RcpuSysctrl.rcpu_core1_boot_entry_hi_read",
+        "k3_system::RcpuSysctrl.rcpu_core1_boot_entry_hi_write",
+        "k3_system::RcpuSysctrl.rcpu_core1_hart_id_set_read",
+        "k3_system::RcpuSysctrl.rcpu_core1_hart_id_set_write",
+        "k3_system::RcpuSysctrl.rcpu_uart_nm_clk_14m_ctrl_read",
+        "k3_system::RcpuSysctrl.rcpu_uart_nm_clk_14m_ctrl_write",
+        "k3_system::RcpuSysctrl.rcpu_uart_nm_clk_58m_ctrl_read",
+        "k3_system::RcpuSysctrl.rcpu_uart_nm_clk_58m_ctrl_write",
+        "k3_system::RcpuUartctrl.r_uartn_clk_rst",
+        "k3_system::RcpuI2Sctrl.rcpu_i2s0_tx_rx_clk_ctrl",
+        "k3_system::RcpuI2Sctrl.rcpu_i2s1_tx_rx_clk_ctrl",
+        "k3_system::RcpuI2Sctrl.rcpu_edp_i2s2_tx_rx_clk_ctrl",
+        "k3_system::RcpuI2Sctrl.rcpu_edp_i2s3_tx_rx_clk_ctrl",
+        "k3_system::RcpuI2Sctrl.rcpu_edp_i2s2_sysclk_res_ctrl",
+        "k3_system::RcpuI2Sctrl.rcpu_edp1_i2s3_sysclk_res_ctrl",
+        "k3_system::RcpuSpictrl.r_sspn_clk_rst",
+        "k3_system::RcpuSpictrl.pwr_ssp_clk_rst",
+        "k3_system::RcpuI2Cctrl.r_i2cn_clk_rst",
+        "k3_system::RcpuI2Cctrl.pwr_i2c_clk_rst",
+        "k3_system::RcpuPmu.aon_per_clk_rst_ctrl",
+        "k3_system::RcpuPmu.mcu_timern_clk_rst_ctrl",
+        "k3_system::RcpuPmu.force_chip_rst",
+        "k3_system::RcpuPmu.gpio_and_edge_clk_rst_ctrl",
+        "k3_system::RcpuPmu.rcpu_bus_clk_ctrl_read",
+        "k3_system::RcpuPmu.rcpu_bus_clk_ctrl_write",
+        "k3_system::RcpuPmu.rt24_core0_clk_ctrl_read",
+        "k3_system::RcpuPmu.rt24_core0_clk_ctrl_write",
+        "k3_system::RcpuPmu.rt24_core1_clk_ctrl_read",
+        "k3_system::RcpuPmu.rt24_core1_clk_ctrl_write",
+        "k3_system::RcpuPmu.rt24_core0_sw_reset",
+        "k3_system::RcpuPmu.rt24_core1_sw_reset",
+        "k3_system::RcpuPmu.ap_c0_m2_int_en_reg_read",
+        "k3_system::RcpuPmu.ap_c0_m2_int_en_reg_write",
+        "k3_system::RcpuPmu.ap_c1_m2_int_en_reg_read",
+        "k3_system::RcpuPmu.ap_c1_m2_int_en_reg_write",
+        "k3_system::RcpuPmu.ap_c2_m2_int_en_reg_read",
+        "k3_system::RcpuPmu.ap_c2_m2_int_en_reg_write",
+        "k3_system::RcpuPmu.ap_c3_m2_int_en_reg_read",
+        "k3_system::RcpuPmu.ap_c3_m2_int_en_reg_write",
+        "k3_system::RcpuPmu.audio_pmu_vote_reg_read",
+        "k3_system::RcpuPmu.audio_pmu_vote_reg_write",
+        "k3_system::RcpuPmu.audio_vote_for_main_pmu_read",
+        "k3_system::RcpuPmu.audio_vote_for_main_pmu_write",
+        "k3_system::RcpuPmu.audio_wakeup_en_reg_read",
+        "k3_system::RcpuPmu.audio_wakeup_en_reg_write",
+        "k3_system::RcpuPmu.soc_top_d2_lp_ctrl_read",
+        "k3_system::RcpuPmu.soc_top_d2_lp_ctrl_write",
+        "k3_system::RcpuPmu.rt24_core0_idle_cfg_reg_read",
+        "k3_system::RcpuPmu.rt24_core0_idle_cfg_reg_write",
+        "k3_system::RcpuPmu.rt24_core1_idle_cfg_reg_read",
+        "k3_system::RcpuPmu.rt24_core1_idle_cfg_reg_write",
+        "k3_system::RcpuPmu.pwrctl_lp_wakeup_mask_read",
+        "k3_system::RcpuPmu.pwrctl_lp_wakeup_mask_write",
+        "k3_system::RcpuPmu.rt24_core0_sw_wakeup_reg_read",
+        "k3_system::RcpuPmu.rt24_core0_sw_wakeup_reg_write",
+        "k3_system::RcpuPmu.rt24_core1_sw_wakeup_reg_read",
+        "k3_system::RcpuPmu.rt24_core1_sw_wakeup_reg_write",
+        "k3_system::RcpuPwmctrl.r_pwmn_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "duplicate"
+    },
+    {
+      "line": 97,
+      "registers": [
+        "k3_system::Pmumain.fccr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 109,
+      "registers": [
+        "k3_system::Pmumain.posr_read",
+        "k3_system::Pmumain.posr_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 127,
+      "registers": [
+        "k3_system::Pmumain.succr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 138,
+      "registers": [
+        "k3_system::Pmumain.gpcr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 147,
+      "registers": [
+        "k3_system::Pmumain.gpcr2"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 156,
+      "registers": [
+        "k3_system::Pmumain.sccr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 167,
+      "registers": [
+        "k3_system::Pmumain.isccr0"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 180,
+      "registers": [
+        "k3_system::Pmumain.isccr1"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 193,
+      "registers": [
+        "k3_system::Pmumain.ripccr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 205,
+      "registers": [
+        "k3_system::Pmumain.acgr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 236,
+      "registers": [
+        "k3_system::Pmumain.apbcscr"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 245,
+      "registers": [
+        "k3_system::Pmumain.pm_mn_clk"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 258,
+      "registers": [
+        "k3_system::Pmumain.succr_1"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 270,
+      "registers": [
+        "k3_system::Pmumain.i2s0_sysclk_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 280,
+      "registers": [
+        "k3_system::Pmumain.i2s2_sysclk_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 290,
+      "registers": [
+        "k3_system::Pmumain.i2s3_sysclk_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 300,
+      "registers": [
+        "k3_system::Pmumain.i2s4_sysclk_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 310,
+      "registers": [
+        "k3_system::Pmumain.i2s5_sysclk_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 320,
+      "registers": [
+        "k3_system::Pmumain.i2s_sysctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 352,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare1_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 363,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare2_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 388,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare3_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 399,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare7_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 410,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare8_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 435,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare9_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 446,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare10_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 457,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare11_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 482,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare12_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 493,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare13_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 504,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare14_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 529,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare15_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 540,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare16_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 551,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare17_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 576,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare18_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 587,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare19_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 598,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare20_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 623,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare21_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 634,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare22_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 650,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare23_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 661,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare24_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 686,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare25_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 697,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare33_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 708,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare34_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 733,
+      "registers": [
+        "k3_system::ApbSpare.apb_spare35_reg"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 746,
+      "registers": [
+        "k3_system::Apbclock.apbc_uartn_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 759,
+      "registers": [
+        "k3_system::Apbclock.apbc_gpio_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 773,
+      "registers": [
+        "k3_system::Apbclock.apbc_pwmn_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 786,
+      "registers": [
+        "k3_system::Apbclock.apbc_sspn_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 800,
+      "registers": [
+        "k3_system::Apbclock.apbc_rtc_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 814,
+      "registers": [
+        "k3_system::Apbclock.apbc_twsin_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 827,
+      "registers": [
+        "k3_system::Apbclock.apbc_timersn_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 840,
+      "registers": [
+        "k3_system::Apbclock.apbc_aib_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 853,
+      "registers": [
+        "k3_system::Apbclock.apbc_onewire_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 866,
+      "registers": [
+        "k3_system::Apbclock.apbc_sspan_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 880,
+      "registers": [
+        "k3_system::Apbclock.apbc_dro_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 891,
+      "registers": [
+        "k3_system::Apbclock.apbc_ir_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 902,
+      "registers": [
+        "k3_system::Apbclock.apbc_counter_clk_sel"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 913,
+      "registers": [
+        "k3_system::Apbclock.apbc_tsen_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 924,
+      "registers": [
+        "k3_system::Apbclock.apbc_ipc_ap2aud_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 937,
+      "registers": [
+        "k3_system::Apbclock.apbc_cann_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 952,
+      "registers": [
+        "k3_system::Pmuap.pmu_csi_ccic2_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_csi_ccic2_clk_res_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 976,
+      "registers": [
+        "k3_system::Pmuap.pmu_isp_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_isp_clk_res_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 993,
+      "registers": [
+        "k3_system::Pmuap.pmu_lcd_clk_res_ctrl1_read",
+        "k3_system::Pmuap.pmu_lcd_clk_res_ctrl1_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1018,
+      "registers": [
+        "k3_system::Pmuap.pmu_lcd_clk_res_ctrl2"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1041,
+      "registers": [
+        "k3_system::Pmuap.pmu_ccic_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_ccic_clk_res_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1069,
+      "registers": [
+        "k3_system::Pmuap.pmu_sdh0_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_sdh0_clk_res_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1085,
+      "registers": [
+        "k3_system::Pmuap.pmu_sdh1_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_sdh1_clk_res_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1100,
+      "registers": [
+        "k3_system::Pmuap.pmu_usb_clk_res_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1130,
+      "registers": [
+        "k3_system::Pmuap.pmu_qspi_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_qspi_clk_res_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1147,
+      "registers": [
+        "k3_system::Pmuap.pmu_dma_clk_res_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1158,
+      "registers": [
+        "k3_system::Pmuap.pmu_aes_clk_res_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1182,
+      "registers": [
+        "k3_system::Pmuap.pmu_mcb_clk_res_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1192,
+      "registers": [
+        "k3_system::Pmuap.pmu_vpu_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_vpu_clk_res_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1208,
+      "registers": [
+        "k3_system::Pmuap.pmu_dtc_clk_res_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1219,
+      "registers": [
+        "k3_system::Pmuap.pmu_gpu_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_gpu_clk_res_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1236,
+      "registers": [
+        "k3_system::Pmuap.pmua_sdh2_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmua_sdh2_clk_res_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1251,
+      "registers": [
+        "k3_system::Pmuap.pmua_mc_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1274,
+      "registers": [
+        "k3_system::Pmuap.pmu_top_dclk_ctrl_read",
+        "k3_system::Pmuap.pmu_top_dclk_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1292,
+      "registers": [
+        "k3_system::Pmuap.pmu_cc2_ap"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1328,
+      "registers": [
+        "k3_system::Pmuap.trace_config_read",
+        "k3_system::Pmuap.trace_config_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1349,
+      "registers": [
+        "k3_system::Pmuap.ucie_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1369,
+      "registers": [
+        "k3_system::Pmuap.pmu_audio_clk_res_ctrl_read",
+        "k3_system::Pmuap.pmu_audio_clk_res_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1398,
+      "registers": [
+        "k3_system::Pmuap.pmu_lcd_clk_res_ctrl3_read",
+        "k3_system::Pmuap.pmu_lcd_clk_res_ctrl3_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1417,
+      "registers": [
+        "k3_system::Pmuap.pmu_lcd_clk_rst_ctrl4"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1440,
+      "registers": [
+        "k3_system::Pmuap.pmu_ufs_clk_rst_ctrl_read",
+        "k3_system::Pmuap.pmu_ufs_clk_rst_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1453,
+      "registers": [
+        "k3_system::Pmuap.pmu_lcd_clk_rst_ctrl5_read",
+        "k3_system::Pmuap.pmu_lcd_clk_rst_ctrl5_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1472,
+      "registers": [
+        "k3_system::Pmuap.pmu_lcd_edp_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1487,
+      "registers": [
+        "k3_system::Pmuap.pmu_cci_clk_ctrl_read",
+        "k3_system::Pmuap.pmu_cci_clk_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1504,
+      "registers": [
+        "k3_system::Pmuap.pmua_aclk_ctrl_read",
+        "k3_system::Pmuap.pmua_aclk_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1516,
+      "registers": [
+        "k3_system::Pmuap.pmua_cpu_c0_clk_ctrl_read",
+        "k3_system::Pmuap.pmua_cpu_c0_clk_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1528,
+      "registers": [
+        "k3_system::Pmuap.pmua_cpu_c1_clk_ctrl_read",
+        "k3_system::Pmuap.pmua_cpu_c1_clk_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1541,
+      "registers": [
+        "k3_system::Pmuap.pmua_cpu_c2_clk_ctrl_read",
+        "k3_system::Pmuap.pmua_cpu_c2_clk_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1553,
+      "registers": [
+        "k3_system::Pmuap.pmua_cpu_c3_clk_ctrl_read",
+        "k3_system::Pmuap.pmua_cpu_c3_clk_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1566,
+      "registers": [
+        "k3_system::Pmuap.pcie_clk_res_ctrl_porta_read",
+        "k3_system::Pmuap.pcie_clk_res_ctrl_porta_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1593,
+      "registers": [
+        "k3_system::Pmuap.pcie_ctrl_logic_porta_read",
+        "k3_system::Pmuap.pcie_ctrl_logic_porta_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1620,
+      "registers": [
+        "k3_system::Pmuap.pcie_clk_res_ctrl_portbcde_x_read",
+        "k3_system::Pmuap.pcie_clk_res_ctrl_portbcde_x_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1647,
+      "registers": [
+        "k3_system::Pmuap.pcie_ctrl_logic_portbcde_x_read",
+        "k3_system::Pmuap.pcie_ctrl_logic_portbcde_x_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1674,
+      "registers": [
+        "k3_system::Pmuap.emac0_clk_rst_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1696,
+      "registers": [
+        "k3_system::Pmuap.emac1_clk_rst_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1718,
+      "registers": [
+        "k3_system::Pmuap.emac2_clk_rst_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1740,
+      "registers": [
+        "k3_system::Pmuap.espi_clk_rst_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1754,
+      "registers": [
+        "k3_system::Pmuap.snr_isim_vclk_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1780,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_s0_rstn"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1790,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_s1_rstn"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1800,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_a0_rstn"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1810,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_a1_rstn"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1820,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_a2_rstn"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1830,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_a3_rstn"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1840,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_a4_rstn"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1850,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_a5_rstn"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1860,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_a6_rstn"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1870,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_a7_rstn"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1880,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_rstn"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1890,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_sdma_rstn"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1900,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_clk_en"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1910,
+      "registers": [
+        "k3_system::Ciudragon.dmasys_sdma_clk_en"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1920,
+      "registers": [
+        "k3_system::Ciudragon.c2_tcm_pipe_clk_en"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1930,
+      "registers": [
+        "k3_system::Ciudragon.c3_tcm_pipe_clk_en"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1941,
+      "registers": [
+        "k3_system::Apb2Clock.apbc_sec_uart1_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1954,
+      "registers": [
+        "k3_system::Apb2Clock.apbc_sec_ssp2_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1968,
+      "registers": [
+        "k3_system::Apb2Clock.apbc_sec_twsi3_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1981,
+      "registers": [
+        "k3_system::Apb2Clock.apbc_sec_rtc_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 1995,
+      "registers": [
+        "k3_system::Apb2Clock.apbc_sec_timers_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2008,
+      "registers": [
+        "k3_system::Apb2Clock.apbc_sec_jtag_sw_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2021,
+      "registers": [
+        "k3_system::Apb2Clock.apbc_sec_gpio_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2036,
+      "registers": [
+        "k3_system::RcpuSysctrl.r_espi_clk_res_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2050,
+      "registers": [
+        "k3_system::RcpuSysctrl.r_cann_clk_res_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2063,
+      "registers": [
+        "k3_system::RcpuSysctrl.r_ircn_clk_res_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2074,
+      "registers": [
+        "k3_system::RcpuSysctrl.r_sspan_sysclk_res_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2089,
+      "registers": [
+        "k3_system::RcpuSysctrl.rsmp_clk_crl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2099,
+      "registers": [
+        "k3_system::RcpuSysctrl.r_gmac_clk_res_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2123,
+      "registers": [
+        "k3_system::RcpuUartctrl.r_uartn_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2140,
+      "registers": [
+        "k3_system::RcpuI2Sctrl.rcpu_i2s0_tx_rx_clk_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2155,
+      "registers": [
+        "k3_system::RcpuI2Sctrl.rcpu_i2s1_tx_rx_clk_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2171,
+      "registers": [
+        "k3_system::RcpuI2Sctrl.rcpu_edp_i2s2_tx_rx_clk_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2187,
+      "registers": [
+        "k3_system::RcpuI2Sctrl.rcpu_edp_i2s3_tx_rx_clk_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2202,
+      "registers": [
+        "k3_system::RcpuI2Sctrl.rcpu_edp_i2s2_sysclk_res_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2217,
+      "registers": [
+        "k3_system::RcpuI2Sctrl.rcpu_edp1_i2s3_sysclk_res_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2234,
+      "registers": [
+        "k3_system::RcpuSpictrl.r_sspn_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2249,
+      "registers": [
+        "k3_system::RcpuSpictrl.pwr_ssp_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2266,
+      "registers": [
+        "k3_system::RcpuI2Cctrl.r_i2cn_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2281,
+      "registers": [
+        "k3_system::RcpuI2Cctrl.pwr_i2c_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2298,
+      "registers": [
+        "k3_system::RcpuPmu.aon_per_clk_rst_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2312,
+      "registers": [
+        "k3_system::RcpuPmu.mcu_timern_clk_rst_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2327,
+      "registers": [
+        "k3_system::RcpuPmu.force_chip_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2336,
+      "registers": [
+        "k3_system::RcpuPmu.gpio_and_edge_clk_rst_ctrl"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2349,
+      "registers": [
+        "k3_system::RcpuPmu.rcpu_bus_clk_ctrl_read",
+        "k3_system::RcpuPmu.rcpu_bus_clk_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2361,
+      "registers": [
+        "k3_system::RcpuPmu.rt24_core0_clk_ctrl_read",
+        "k3_system::RcpuPmu.rt24_core0_clk_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2374,
+      "registers": [
+        "k3_system::RcpuPmu.rt24_core1_clk_ctrl_read",
+        "k3_system::RcpuPmu.rt24_core1_clk_ctrl_write"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2387,
+      "registers": [
+        "k3_system::RcpuPmu.rt24_core0_sw_reset"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2396,
+      "registers": [
+        "k3_system::RcpuPmu.rt24_core1_sw_reset"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    },
+    {
+      "line": 2407,
+      "registers": [
+        "k3_system::RcpuPwmctrl.r_pwmn_clk_rst"
+      ],
+      "source": "k3/k3_docs/k3_usermanual/17_clock_reset.md",
+      "status": "generated"
+    }
+  ],
+  "write_mask_registers": [
+    "k3_system::Ciudragon.pmu_c0_l2_flush_ctrl_write",
+    "k3_system::Ciudragon.pmu_c1_l2_flush_ctrl_write",
+    "k3_system::Ciudragon.pmu_c2_l2_flush_ctrl_write",
+    "k3_system::Ciudragon.pmu_c3_l2_flush_ctrl_write",
+    "k3_system::CpuConfig.c0_rvbaddr_hi_addr_write",
+    "k3_system::CpuConfig.c0_rvbaddr_lo_addr_write",
+    "k3_system::CpuConfig.c1_rvbaddr_hi_addr_write",
+    "k3_system::CpuConfig.c1_rvbaddr_lo_addr_write",
+    "k3_system::CpuConfig.c2_rvbaddr_hi_addr_write",
+    "k3_system::CpuConfig.c2_rvbaddr_lo_addr_write",
+    "k3_system::CpuConfig.c3_rvbaddr_hi_addr_write",
+    "k3_system::CpuConfig.c3_rvbaddr_lo_addr_write",
+    "k3_system::GpioBank.gcdr",
+    "k3_system::GpioBank.gcfer",
+    "k3_system::GpioBank.gcrer",
+    "k3_system::GpioBank.gedr_write",
+    "k3_system::GpioBank.gpcr",
+    "k3_system::GpioBank.gpsr",
+    "k3_system::GpioBank.gsdr",
+    "k3_system::GpioBank.gsfer",
+    "k3_system::GpioBank.gsrer",
+    "k3_system::Hdma.irq_pending_write",
+    "k3_system::Hdma.irq_source_write",
+    "k3_system::Hdma.transfer_submit_write",
+    "k3_system::IopmpSid1.deviceidcfg_write",
+    "k3_system::IopmpSid1.entrylck_write",
+    "k3_system::IopmpSid1.err_cfg_write",
+    "k3_system::IopmpSid1.err_reqinfo_write",
+    "k3_system::IopmpSid1.hwcfg0_write",
+    "k3_system::IopmpSid1.mdlck_write",
+    "k3_system::IopmpSid1.mdlckh_write",
+    "k3_system::IopmpSid1.srcmd_en_write",
+    "k3_system::IopmpSid16.deviceidcfg_write",
+    "k3_system::IopmpSid16.entrylck_write",
+    "k3_system::IopmpSid16.err_cfg_write",
+    "k3_system::IopmpSid16.err_reqinfo_write",
+    "k3_system::IopmpSid16.hwcfg0_write",
+    "k3_system::IopmpSid16.mdlck_write",
+    "k3_system::IopmpSid16.mdlckh_write",
+    "k3_system::IopmpSid16.srcmd_en_write",
+    "k3_system::IopmpSid16Entries256.deviceidcfg_write",
+    "k3_system::IopmpSid16Entries256.entrylck_write",
+    "k3_system::IopmpSid16Entries256.err_cfg_write",
+    "k3_system::IopmpSid16Entries256.err_reqinfo_write",
+    "k3_system::IopmpSid16Entries256.hwcfg0_write",
+    "k3_system::IopmpSid16Entries256.mdlck_write",
+    "k3_system::IopmpSid16Entries256.mdlckh_write",
+    "k3_system::IopmpSid16Entries256.srcmd_en_write",
+    "k3_system::Mailbox16.fifostatus_m_write",
+    "k3_system::Mailbox16.irqenable_clr_u_write",
+    "k3_system::Mailbox16.irqenable_set_u_write",
+    "k3_system::Mailbox16.irqstatus_clr_u_write",
+    "k3_system::Mailbox16.irqstatus_raw_u_write",
+    "k3_system::Mailbox16.message_m_write",
+    "k3_system::Mailbox16.msgstatus_m_write",
+    "k3_system::Mailbox16.sysconfig_write",
+    "k3_system::Mailbox4.fifostatus_m_write",
+    "k3_system::Mailbox4.irqenable_clr_u_write",
+    "k3_system::Mailbox4.irqenable_set_u_write",
+    "k3_system::Mailbox4.irqstatus_clr_u_write",
+    "k3_system::Mailbox4.irqstatus_raw_u_write",
+    "k3_system::Mailbox4.message_m_write",
+    "k3_system::Mailbox4.msgstatus_m_write",
+    "k3_system::Mailbox4.sysconfig_write",
+    "k3_system::Mailbox8.fifostatus_m_write",
+    "k3_system::Mailbox8.irqenable_clr_u_write",
+    "k3_system::Mailbox8.irqenable_set_u_write",
+    "k3_system::Mailbox8.irqstatus_clr_u_write",
+    "k3_system::Mailbox8.irqstatus_raw_u_write",
+    "k3_system::Mailbox8.message_m_write",
+    "k3_system::Mailbox8.msgstatus_m_write",
+    "k3_system::Mailbox8.sysconfig_write",
+    "k3_system::Pdma.dcsr_x_write",
+    "k3_system::Pdma.drqsr_write",
+    "k3_system::Pmuap.core_wakeup_write",
+    "k3_system::Pmuap.pcie_ctrl_logic_porta_write",
+    "k3_system::Pmuap.pmu_audio_clk_res_ctrl_write",
+    "k3_system::Pmuap.pmu_cc3_ap_write",
+    "k3_system::Pmuap.pmu_cci_clk_ctrl_write",
+    "k3_system::Pmuap.pmu_ccic_clk_res_ctrl_write",
+    "k3_system::Pmuap.pmu_csi_ccic2_clk_res_ctrl_write",
+    "k3_system::Pmuap.pmu_gpu_clk_res_ctrl_write",
+    "k3_system::Pmuap.pmu_isp_clk_res_ctrl_write",
+    "k3_system::Pmuap.pmu_lcd_clk_res_ctrl1_write",
+    "k3_system::Pmuap.pmu_lcd_clk_res_ctrl3_write",
+    "k3_system::Pmuap.pmu_lcd_clk_rst_ctrl5_write",
+    "k3_system::Pmuap.pmu_qspi_clk_res_ctrl_write",
+    "k3_system::Pmuap.pmu_sdh0_clk_res_ctrl_write",
+    "k3_system::Pmuap.pmu_sdh1_clk_res_ctrl_write",
+    "k3_system::Pmuap.pmu_top_dclk_ctrl_write",
+    "k3_system::Pmuap.pmu_ufs_clk_rst_ctrl_write",
+    "k3_system::Pmuap.pmu_vpu_clk_res_ctrl_write",
+    "k3_system::Pmuap.pmua_aclk_ctrl_write",
+    "k3_system::Pmuap.pmua_cpu_c0_clk_ctrl_write",
+    "k3_system::Pmuap.pmua_cpu_c1_clk_ctrl_write",
+    "k3_system::Pmuap.pmua_cpu_c2_clk_ctrl_write",
+    "k3_system::Pmuap.pmua_cpu_c3_clk_ctrl_write",
+    "k3_system::Pmuap.pmua_sdh2_clk_res_ctrl_write",
+    "k3_system::Pmuap.trace_config_write",
+    "k3_system::Pmumain.awucrm_reg_write",
+    "k3_system::Pmumain.mpmu_wdtpcr_write",
+    "k3_system::RcpuPmu.ap_c0_m2_int_en_reg_write",
+    "k3_system::RcpuPmu.ap_c1_m2_int_en_reg_write",
+    "k3_system::RcpuPmu.ap_c2_m2_int_en_reg_write",
+    "k3_system::RcpuPmu.ap_c3_m2_int_en_reg_write",
+    "k3_system::RcpuPmu.audio_pmu_vote_reg_write",
+    "k3_system::RcpuPmu.audio_vote_for_main_pmu_write",
+    "k3_system::RcpuPmu.audio_wakeup_en_reg_write",
+    "k3_system::RcpuPmu.pwrctl_lp_wakeup_mask_write",
+    "k3_system::RcpuPmu.rcpu_bus_clk_ctrl_write",
+    "k3_system::RcpuPmu.rt24_core0_clk_ctrl_write",
+    "k3_system::RcpuPmu.rt24_core0_idle_cfg_reg_write",
+    "k3_system::RcpuPmu.rt24_core0_sw_wakeup_reg_write",
+    "k3_system::RcpuPmu.rt24_core1_clk_ctrl_write",
+    "k3_system::RcpuPmu.rt24_core1_idle_cfg_reg_write",
+    "k3_system::RcpuPmu.rt24_core1_sw_wakeup_reg_write",
+    "k3_system::RcpuPmu.soc_top_d2_lp_ctrl_write",
+    "k3_system::RcpuSysctrl.rcpu_core0_boot_entry_hi_write",
+    "k3_system::RcpuSysctrl.rcpu_core0_boot_entry_lo_write",
+    "k3_system::RcpuSysctrl.rcpu_core1_boot_entry_hi_write",
+    "k3_system::RcpuSysctrl.rcpu_core1_boot_entry_lo_write",
+    "k3_system::RcpuSysctrl.rcpu_core1_hart_id_set_write",
+    "k3_system::RcpuSysctrl.rcpu_uart_nm_clk_14m_ctrl_write",
+    "k3_system::RcpuSysctrl.rcpu_uart_nm_clk_58m_ctrl_write",
+    "k3_system::Spinlock.spinlock_irq_sta_reg_write",
+    "k3_system::Spinlock.spinlockn_lock_reg_write",
+    "k3_system::TimerWatchdog.timer_count_restart_write",
+    "k3_system::TimerWatchdog.timer_interrupt_clear",
+    "k3_system::TimerWatchdog.timer_watchdog_counter_reset",
+    "k3_system::TimerWatchdog.timer_watchdog_first_access",
+    "k3_system::TimerWatchdog.timer_watchdog_interrupt_clear",
+    "k3_system::TimerWatchdog.timer_watchdog_second_access",
+    "k3_system::TimerWatchdog.timer_watchdog_status_write"
+  ]
+}

@@ -1,0 +1,4767 @@
+{
+  "schema": 1,
+  "chip": "k1",
+  "registers": [
+    "expanded_k1_io"
+  ],
+  "sources": [
+    {
+      "path": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "sha256": "12dfa54274cf4241fdf8b88ed6d3c21a6070720f61ae8bb0e8c764d5f3397ef8",
+      "kind": "docs"
+    },
+    {
+      "path": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "sha256": "03bf3c70505a2dbd986ce9475233a85af19324dd39ca80728f742c45ed1f1de0",
+      "kind": "docs"
+    },
+    {
+      "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "sha256": "d572bd164b500f405518b9684e2f4c78b6ed07d8f65523d1c489e5d78501bf3c",
+      "kind": "docs"
+    },
+    {
+      "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+      "sha256": "b0997b76224b2f0e26453097e7184298e215ab0fc7d62e58f618c47060e43135",
+      "kind": "docs"
+    },
+    {
+      "path": "k1/k1_docs/k1_usermanual/7.Interrupt_Assignments.md",
+      "sha256": "22b6e21dca7fa151aa012009f5b056156a4a8f702921028609a11c652611a302",
+      "kind": "docs"
+    },
+    {
+      "path": "arch/riscv/boot/dts/spacemit/k1-x.dtsi",
+      "sha256": "60e282c66f65170199a4ad54ff873918dfa1088a7dc2b6c9607ee91efae2c154",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/net/ethernet/spacemit/emac_ptp.c",
+      "sha256": "f5d0c1188eb83477913e9b49e51963d8df73de8b1882828a0dfcf1060392870e",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/net/ethernet/spacemit/k1x-emac.c",
+      "sha256": "9e4b64275329f3f614397f8fa70839165803471e12a6e2825e1a10e5f5027f6f",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/net/ethernet/spacemit/k1x-emac.h",
+      "sha256": "08b8aa394facacd015642541914f0d81f847ca70aa1be9b718ad8916f8f7f953",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/pci/controller/dwc/pcie-k1x.c",
+      "sha256": "e241915acc3d6c3e05eaebf69cd8190bd619ed4e89d49aebfcfa0f34cb591c4c",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/soc/spacemit/ddr-bw/spacemit_ddrbw.c",
+      "sha256": "63acab7a0aa408c2976b82824bb9872e375070e0839043b68038e5ab673feb77",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/soc/spacemit/ddr-bw/spacemit_ddrbw.h",
+      "sha256": "91cce587e3af6ddaf870d1748065f739e056e32ef88616035568037be62dbcc8",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/spi/spi-k1x-qspi.c",
+      "sha256": "bcc1ef761cdf8213f54778a7fd31e7f2b9223d527ab2c985432c9705176fa773",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/usb/dwc3/dwc3-spacemit.c",
+      "sha256": "33cc025a7f27dd65ac91ff5d0655f202180c330382ba889fed9701edfe79ff15",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/usb/gadget/udc/k1x_ci_udc.h",
+      "sha256": "daebbb2bebc6a6d530a00b0dadc58036ed82527a93ae595121fa47eba510aec4",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/usb/gadget/udc/k1x_udc_core.c",
+      "sha256": "e5799f1bc70a1778a47b443e50a5fb1db35098ab777d15c14ddb6f679fea583b",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/usb/phy/phy-k1x-ci-usb2.c",
+      "sha256": "850d77fc151215b3b4d5676ca747d8ed1723ed9846f3c01ba03b4ee19117988d",
+      "kind": "linux"
+    },
+    {
+      "path": "drivers/usb/phy/phy-k1x-ci-usb2.h",
+      "sha256": "b47864c3cb7ed35328095ee63a355bc0dfac87e73dd3970bea6f515361c46cd7",
+      "kind": "linux"
+    },
+    {
+      "path": "bsp/spacemit/drivers/gpio/spacemit-gpio.c",
+      "sha256": "15baf6e82b45f326dc45ed6849398f80a18cac104fb5308fd96b6a27fb1f4b65",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/i2c/i2c-k1.c",
+      "sha256": "4ebd315fe4ce0950a4a89efea304486af980d5adf5e12dfcd278a7e0fd036c59",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/i2c/i2c-k1.h",
+      "sha256": "1330c98d044b66738104720c491bd447dac04347f8eb6819b0a21f7baf08aa33",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/pwm/pwm-pxa.c",
+      "sha256": "cc4ef492ae808c7286bcc6f7cb2d732efdb96449e786b0c2557d8ee159692424",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/spi/k1x_spi.c",
+      "sha256": "fd646776f93e8228f60f2359f3809ef9e108cc7186eb367fc6f823398509cecc",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/spi/k1x_spi.h",
+      "sha256": "c08ba6e393a6486fd146499373817a06ad256a6b7e9d57697e0824e94c0b32bb",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/uart/pxa_uart.c",
+      "sha256": "a3634ad1fc4d7b5801972f1163471d09e39ceb8e856345b3b4c9b4a4f37ed644",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/drivers/uart/pxa_uart.h",
+      "sha256": "32e2a0aa68432b7fb0336b5e01283e0d2c2e2cfaa4cd906f90223a14b888dd33",
+      "kind": "esos"
+    },
+    {
+      "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+      "sha256": "c35dc10e6962b4a2315856baf519c036b90fd5722650a9e21a6cd7425a8db357",
+      "kind": "esos"
+    }
+  ],
+  "instances": [
+    {
+      "name": "AP_K1_IO_DDR_AXI_MONITOR",
+      "block": "k1_io::DdrAxiMonitor",
+      "address": 3221587200,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1-x.dtsi",
+        "line": 1818
+      }
+    },
+    {
+      "name": "AP_K1_IO_DDR_CONTROL_PERF",
+      "block": "k1_io::DdrControl",
+      "address": 3221225472,
+      "view": "ap",
+      "source": {
+        "path": "drivers/soc/spacemit/ddr-bw/spacemit_ddrbw.c",
+        "line": 1154
+      }
+    },
+    {
+      "name": "AP_K1_IO_GMAC0",
+      "block": "k1_io::Emac",
+      "address": 3402104832,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 53
+      }
+    },
+    {
+      "name": "AP_K1_IO_GMAC1",
+      "block": "k1_io::Emac",
+      "address": 3402108928,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 54
+      }
+    },
+    {
+      "name": "AP_K1_IO_GPIO",
+      "block": "k1_io::Gpio",
+      "address": 3556872192,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 82
+      }
+    },
+    {
+      "name": "AP_K1_IO_GPIO0",
+      "block": "k1_io::GpioBank",
+      "address": 3556872192,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 2576
+      }
+    },
+    {
+      "name": "AP_K1_IO_GPIO1",
+      "block": "k1_io::GpioBank",
+      "address": 3556872196,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 2577
+      }
+    },
+    {
+      "name": "AP_K1_IO_GPIO2",
+      "block": "k1_io::GpioBank",
+      "address": 3556872200,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 2578
+      }
+    },
+    {
+      "name": "AP_K1_IO_GPIO3",
+      "block": "k1_io::GpioBank",
+      "address": 3556872448,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 2579
+      }
+    },
+    {
+      "name": "AP_K1_IO_I2C0",
+      "block": "k1_io::I2c",
+      "address": 3556837376,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1089
+      }
+    },
+    {
+      "name": "AP_K1_IO_I2C1",
+      "block": "k1_io::I2c",
+      "address": 3556839424,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1090
+      }
+    },
+    {
+      "name": "AP_K1_IO_I2C2",
+      "block": "k1_io::I2c",
+      "address": 3556843520,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1091
+      }
+    },
+    {
+      "name": "AP_K1_IO_I2C4",
+      "block": "k1_io::I2c",
+      "address": 3556845568,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1093
+      }
+    },
+    {
+      "name": "AP_K1_IO_I2C5",
+      "block": "k1_io::I2c",
+      "address": 3556849664,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1094
+      }
+    },
+    {
+      "name": "AP_K1_IO_I2C6",
+      "block": "k1_io::I2c",
+      "address": 3556870144,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1095
+      }
+    },
+    {
+      "name": "AP_K1_IO_I2C7",
+      "block": "k1_io::I2c",
+      "address": 3556888576,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1096
+      }
+    },
+    {
+      "name": "AP_K1_IO_I2C8",
+      "block": "k1_io::I2c",
+      "address": 3556890624,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1097
+      }
+    },
+    {
+      "name": "AP_K1_IO_IR",
+      "block": "k1_io::IrRx",
+      "address": 3556867840,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 79
+      }
+    },
+    {
+      "name": "AP_K1_IO_ONEWIRE",
+      "block": "k1_io::OneWire",
+      "address": 3556841472,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 60
+      }
+    },
+    {
+      "name": "AP_K1_IO_PCIE_A_CONFIG",
+      "block": "k1_io::PcieConfig",
+      "address": 3559402444,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1-x.dtsi",
+        "line": 2269
+      }
+    },
+    {
+      "name": "AP_K1_IO_PCIE_A_PHY_AHB",
+      "block": "k1_io::PciePhyAhb",
+      "address": 3232890880,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1-x.dtsi",
+        "line": 2270
+      }
+    },
+    {
+      "name": "AP_K1_IO_PCIE_B_CONFIG",
+      "block": "k1_io::PcieConfig",
+      "address": 3559402452,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1-x.dtsi",
+        "line": 2318
+      }
+    },
+    {
+      "name": "AP_K1_IO_PCIE_B_PHY_AHB",
+      "block": "k1_io::PciePhyAhb",
+      "address": 3233939456,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1-x.dtsi",
+        "line": 2319
+      }
+    },
+    {
+      "name": "AP_K1_IO_PCIE_C_CONFIG",
+      "block": "k1_io::PcieConfig",
+      "address": 3559402460,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1-x.dtsi",
+        "line": 2367
+      }
+    },
+    {
+      "name": "AP_K1_IO_PCIE_C_PHY_AHB",
+      "block": "k1_io::PciePhyAhb",
+      "address": 3234988032,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1-x.dtsi",
+        "line": 2368
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM0",
+      "block": "k1_io::Pwm",
+      "address": 3556876288,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 84
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM1",
+      "block": "k1_io::Pwm",
+      "address": 3556877312,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 85
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM10",
+      "block": "k1_io::Pwm",
+      "address": 3556902912,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 98
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM11",
+      "block": "k1_io::Pwm",
+      "address": 3556903936,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 99
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM12",
+      "block": "k1_io::Pwm",
+      "address": 3556904960,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 100
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM13",
+      "block": "k1_io::Pwm",
+      "address": 3556905984,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 101
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM14",
+      "block": "k1_io::Pwm",
+      "address": 3556907008,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 102
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM15",
+      "block": "k1_io::Pwm",
+      "address": 3556908032,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 103
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM16",
+      "block": "k1_io::Pwm",
+      "address": 3556909056,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 104
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM17",
+      "block": "k1_io::Pwm",
+      "address": 3556910080,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 105
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM18",
+      "block": "k1_io::Pwm",
+      "address": 3556911104,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 106
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM19",
+      "block": "k1_io::Pwm",
+      "address": 3556912128,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 107
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM2",
+      "block": "k1_io::Pwm",
+      "address": 3556878336,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 86
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM3",
+      "block": "k1_io::Pwm",
+      "address": 3556879360,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 87
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM4",
+      "block": "k1_io::Pwm",
+      "address": 3556880384,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 88
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM5",
+      "block": "k1_io::Pwm",
+      "address": 3556881408,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 89
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM6",
+      "block": "k1_io::Pwm",
+      "address": 3556882432,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 90
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM7",
+      "block": "k1_io::Pwm",
+      "address": 3556883456,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 91
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM8",
+      "block": "k1_io::Pwm",
+      "address": 3556900864,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 96
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM9",
+      "block": "k1_io::Pwm",
+      "address": 3556901888,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 97
+      }
+    },
+    {
+      "name": "AP_K1_IO_PWM_CHANNELS",
+      "block": "k1_io::PwmArray",
+      "address": 3556876288,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 84
+      }
+    },
+    {
+      "name": "AP_K1_IO_QSPI",
+      "block": "k1_io::Qspi",
+      "address": 3558916096,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 127
+      }
+    },
+    {
+      "name": "AP_K1_IO_SD1",
+      "block": "k1_io::Sdh",
+      "address": 3559391232,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+        "line": 390
+      }
+    },
+    {
+      "name": "AP_K1_IO_SD2",
+      "block": "k1_io::Sdh",
+      "address": 3559393280,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+        "line": 391
+      }
+    },
+    {
+      "name": "AP_K1_IO_SD3",
+      "block": "k1_io::Sdh",
+      "address": 3559395328,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+        "line": 392
+      }
+    },
+    {
+      "name": "AP_K1_IO_SSP3",
+      "block": "k1_io::Ssp",
+      "address": 3556884480,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1736
+      }
+    },
+    {
+      "name": "AP_K1_IO_SSPA0",
+      "block": "k1_io::Ssp",
+      "address": 3556925440,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1737
+      }
+    },
+    {
+      "name": "AP_K1_IO_SSPA1",
+      "block": "k1_io::Ssp",
+      "address": 3556927488,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1738
+      }
+    },
+    {
+      "name": "AP_K1_IO_UART0",
+      "block": "k1_io::Uart",
+      "address": 3556864000,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 69
+      }
+    },
+    {
+      "name": "AP_K1_IO_UART2",
+      "block": "k1_io::Uart",
+      "address": 3556864256,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 70
+      }
+    },
+    {
+      "name": "AP_K1_IO_UART3",
+      "block": "k1_io::Uart",
+      "address": 3556864512,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 71
+      }
+    },
+    {
+      "name": "AP_K1_IO_UART4",
+      "block": "k1_io::Uart",
+      "address": 3556864768,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 72
+      }
+    },
+    {
+      "name": "AP_K1_IO_UART5",
+      "block": "k1_io::Uart",
+      "address": 3556865024,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 73
+      }
+    },
+    {
+      "name": "AP_K1_IO_UART6",
+      "block": "k1_io::Uart",
+      "address": 3556865280,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 74
+      }
+    },
+    {
+      "name": "AP_K1_IO_UART7",
+      "block": "k1_io::Uart",
+      "address": 3556865536,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 75
+      }
+    },
+    {
+      "name": "AP_K1_IO_UART8",
+      "block": "k1_io::Uart",
+      "address": 3556865792,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 76
+      }
+    },
+    {
+      "name": "AP_K1_IO_UART9",
+      "block": "k1_io::Uart",
+      "address": 3556866048,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 77
+      }
+    },
+    {
+      "name": "AP_K1_IO_USB2_0_CAPABILITY",
+      "block": "k1_io::Usb2Capability",
+      "address": 3230662912,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1-x.dtsi",
+        "line": 2035
+      }
+    },
+    {
+      "name": "AP_K1_IO_USB2_0_PHY",
+      "block": "k1_io::Usb2Phy",
+      "address": 3230924800,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1-x.dtsi",
+        "line": 2028
+      }
+    },
+    {
+      "name": "AP_K1_IO_USB2_1_CAPABILITY",
+      "block": "k1_io::Usb2Capability",
+      "address": 3231187200,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1-x.dtsi",
+        "line": 2095
+      }
+    },
+    {
+      "name": "AP_K1_IO_USB2_1_PHY",
+      "block": "k1_io::Usb2Phy",
+      "address": 3231449088,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1-x.dtsi",
+        "line": 2088
+      }
+    },
+    {
+      "name": "AP_K1_IO_USB3_GLUE",
+      "block": "k1_io::Usb3Glue",
+      "address": 3231776768,
+      "view": "ap",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+        "line": 134
+      }
+    },
+    {
+      "name": "AP_K1_IO_USB3_USB2_PHY",
+      "block": "k1_io::Usb2Phy",
+      "address": 3231907840,
+      "view": "ap",
+      "source": {
+        "path": "arch/riscv/boot/dts/spacemit/k1-x.dtsi",
+        "line": 2157
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_R_IR_RX",
+      "block": "k1_io::IrRx",
+      "address": 3230195712,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 200
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_I2C",
+      "block": "k1_io::I2c",
+      "address": 3230167040,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1088
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_PWM0",
+      "block": "k1_io::RcpuPwm",
+      "address": 3230171392,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 166
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_PWM1",
+      "block": "k1_io::RcpuPwm",
+      "address": 3230171648,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 175
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_PWM2",
+      "block": "k1_io::RcpuPwm",
+      "address": 3230171904,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 184
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_PWM3",
+      "block": "k1_io::RcpuPwm",
+      "address": 3230172160,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 193
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_PWM4",
+      "block": "k1_io::RcpuPwm",
+      "address": 3230172416,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 202
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_PWM5",
+      "block": "k1_io::RcpuPwm",
+      "address": 3230172672,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 211
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_PWM6",
+      "block": "k1_io::RcpuPwm",
+      "address": 3230172928,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 220
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_PWM7",
+      "block": "k1_io::RcpuPwm",
+      "address": 3230173184,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 229
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_PWM8",
+      "block": "k1_io::RcpuPwm",
+      "address": 3230173440,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 238
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_PWM9",
+      "block": "k1_io::RcpuPwm",
+      "address": 3230173696,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 247
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_PWM_CHANNELS",
+      "block": "k1_io::RcpuPwmArray",
+      "address": 3230171392,
+      "view": "rcpu",
+      "source": {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "line": 164
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_SSP0",
+      "block": "k1_io::Ssp",
+      "address": 3230158848,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1735
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_SSP1",
+      "block": "k1_io::Ssp",
+      "address": 3230162944,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 190
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_UART0",
+      "block": "k1_io::Uart",
+      "address": 3230142464,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 178
+      }
+    },
+    {
+      "name": "RCPU_K1_IO_SHUB_UART1",
+      "block": "k1_io::Uart",
+      "address": 3230191616,
+      "view": "rcpu",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 199
+      }
+    },
+    {
+      "name": "SECURE_K1_IO_GPIO",
+      "block": "k1_io::Gpio",
+      "address": 4032925696,
+      "view": "secure",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 161
+      }
+    },
+    {
+      "name": "SECURE_K1_IO_GPIO0",
+      "block": "k1_io::GpioBank",
+      "address": 4032925696,
+      "view": "secure",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 2580
+      }
+    },
+    {
+      "name": "SECURE_K1_IO_GPIO1",
+      "block": "k1_io::GpioBank",
+      "address": 4032925700,
+      "view": "secure",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 2581
+      }
+    },
+    {
+      "name": "SECURE_K1_IO_GPIO2",
+      "block": "k1_io::GpioBank",
+      "address": 4032925704,
+      "view": "secure",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 2582
+      }
+    },
+    {
+      "name": "SECURE_K1_IO_GPIO3",
+      "block": "k1_io::GpioBank",
+      "address": 4032925952,
+      "view": "secure",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 2583
+      }
+    },
+    {
+      "name": "SECURE_K1_IO_I2C3",
+      "block": "k1_io::I2c",
+      "address": 4032905216,
+      "view": "secure",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1092
+      }
+    },
+    {
+      "name": "SECURE_K1_IO_SSP2",
+      "block": "k1_io::Ssp",
+      "address": 4032901120,
+      "view": "secure",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+        "line": 1739
+      }
+    },
+    {
+      "name": "SECURE_K1_IO_UART1",
+      "block": "k1_io::Uart",
+      "address": 4032897024,
+      "view": "secure",
+      "source": {
+        "path": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+        "line": 154
+      }
+    }
+  ],
+  "aliases": {
+    "k1_io::Sdh": [
+      [
+        "sd_auto_cmd12_error_status",
+        "sd_auto_cmd12_error_status_write"
+      ],
+      [
+        "sd_buffer_data_port",
+        "sd_buffer_data_port_write"
+      ],
+      [
+        "sd_clock_ctrl",
+        "sd_clock_ctrl_write"
+      ],
+      [
+        "sd_host_ctrl",
+        "sd_host_ctrl_write"
+      ],
+      [
+        "sd_normal_int_status",
+        "sd_normal_int_status_write"
+      ],
+      [
+        "sd_transfer_mode_cmd",
+        "sd_transfer_mode_cmd_write"
+      ],
+      [
+        "sdhc_legacy_ctrl_reg",
+        "sdhc_legacy_ctrl_reg_write"
+      ],
+      [
+        "sdhc_mmc_ctrl_reg",
+        "sdhc_mmc_ctrl_reg_write"
+      ],
+      [
+        "sdhc_phy_lbctrl_reg",
+        "sdhc_phy_lbctrl_reg_write"
+      ]
+    ],
+    "k1_io::Usb3Glue": [
+      [
+        "p_addr_pumon0",
+        "p_addr_pumon0_write"
+      ],
+      [
+        "p_addr_pumon1",
+        "p_addr_pumon1_write"
+      ],
+      [
+        "p_addr_pumon4",
+        "p_addr_pumon4_write"
+      ],
+      [
+        "usb3_ctrl_clk_cfg_at_20",
+        "usb3_ctrl_clk_cfg_at_20_write"
+      ]
+    ],
+    "k1_io::Emac": [
+      [
+        "dma_configuration",
+        "dma_configuration_write"
+      ],
+      [
+        "dma_missed_frame_counter",
+        "dma_missed_frame_counter_write"
+      ],
+      [
+        "dma_status_and_irq",
+        "dma_status_and_irq_write"
+      ],
+      [
+        "dma_stop_flush_counter",
+        "dma_stop_flush_counter_write"
+      ],
+      [
+        "mac_flow_control_pause_frame_generate",
+        "mac_flow_control_pause_frame_generate_write"
+      ],
+      [
+        "mac_mdio_control",
+        "mac_mdio_control_write"
+      ],
+      [
+        "mac_receive_statctr_control",
+        "mac_receive_statctr_control_write"
+      ],
+      [
+        "mac_status_and_irq",
+        "mac_status_and_irq_write"
+      ],
+      [
+        "mac_transmit_statctr_control",
+        "mac_transmit_statctr_control_write"
+      ],
+      [
+        "r_1588_irq",
+        "r_1588_irq_write"
+      ],
+      [
+        "system_time_adjust_control_lower",
+        "system_time_adjust_control_lower_write"
+      ],
+      [
+        "system_time_adjust_control_upper",
+        "system_time_adjust_control_upper_write"
+      ]
+    ],
+    "k1_io::I2c": [
+      [
+        "icr",
+        "icr_write"
+      ],
+      [
+        "idbr",
+        "idbr_write"
+      ],
+      [
+        "isr",
+        "isr_write"
+      ],
+      [
+        "rfifo_rptr",
+        "rfifo_rptr_write"
+      ],
+      [
+        "rfifo_wptr",
+        "rfifo_wptr_write"
+      ],
+      [
+        "wfifo_rptr",
+        "wfifo_rptr_write"
+      ],
+      [
+        "wfifo_wptr",
+        "wfifo_wptr_write"
+      ]
+    ],
+    "k1_io::Ssp": [
+      [
+        "ssdatr",
+        "ssdatr_write"
+      ],
+      [
+        "ssfcr",
+        "ssfcr_write"
+      ],
+      [
+        "ssrwt",
+        "ssrwt_write"
+      ],
+      [
+        "sssr",
+        "sssr_write"
+      ]
+    ],
+    "k1_io::Uart": [
+      [
+        "auto_baud_control",
+        "auto_baud_control_write"
+      ],
+      [
+        "baud_newreg_enable",
+        "baud_newreg_enable_write"
+      ],
+      [
+        "divisor_latch_high_byte",
+        "interrupt_enable"
+      ],
+      [
+        "divisor_latch_low_byte",
+        "receive_buffer",
+        "transmit_holding"
+      ],
+      [
+        "fifo_control",
+        "interrupt_identification"
+      ],
+      [
+        "fifo_control_new",
+        "fifo_control_new_write"
+      ]
+    ],
+    "k1_io::GpioBank": [
+      [
+        "gpio_edr",
+        "gpio_edr_write"
+      ]
+    ],
+    "k1_io::OneWire": [
+      [
+        "command",
+        "command_write"
+      ],
+      [
+        "transmit_receive_buffer",
+        "transmit_receive_buffer_write"
+      ]
+    ],
+    "k1_io::IrRx": [
+      [
+        "int_flag",
+        "int_flag_write"
+      ]
+    ],
+    "k1_io::Gpio": [
+      [
+        "gpio_edr0",
+        "gpio_edr_write0"
+      ],
+      [
+        "gpio_edr1",
+        "gpio_edr_write1"
+      ],
+      [
+        "gpio_edr2",
+        "gpio_edr_write2"
+      ],
+      [
+        "gpio_edr3",
+        "gpio_edr_write3"
+      ]
+    ],
+    "k1_io::Qspi": [
+      [
+        "fr",
+        "fr_write"
+      ],
+      [
+        "mcr",
+        "mcr_write"
+      ],
+      [
+        "sptrclr",
+        "sptrclr_write"
+      ]
+    ],
+    "k1_io::PciePhyAhb": [
+      [
+        "intr_status1",
+        "intr_status1_write"
+      ],
+      [
+        "irqstatus_intx",
+        "irqstatus_intx_write"
+      ]
+    ],
+    "k1_io::Usb2Operational": [
+      [
+        "epcomplete",
+        "epcomplete_write"
+      ],
+      [
+        "epctrl0",
+        "epctrl0_write"
+      ],
+      [
+        "epctrl1",
+        "epctrl1_write"
+      ],
+      [
+        "epctrl10",
+        "epctrl10_write"
+      ],
+      [
+        "epctrl11",
+        "epctrl11_write"
+      ],
+      [
+        "epctrl12",
+        "epctrl12_write"
+      ],
+      [
+        "epctrl13",
+        "epctrl13_write"
+      ],
+      [
+        "epctrl14",
+        "epctrl14_write"
+      ],
+      [
+        "epctrl15",
+        "epctrl15_write"
+      ],
+      [
+        "epctrl2",
+        "epctrl2_write"
+      ],
+      [
+        "epctrl3",
+        "epctrl3_write"
+      ],
+      [
+        "epctrl4",
+        "epctrl4_write"
+      ],
+      [
+        "epctrl5",
+        "epctrl5_write"
+      ],
+      [
+        "epctrl6",
+        "epctrl6_write"
+      ],
+      [
+        "epctrl7",
+        "epctrl7_write"
+      ],
+      [
+        "epctrl8",
+        "epctrl8_write"
+      ],
+      [
+        "epctrl9",
+        "epctrl9_write"
+      ],
+      [
+        "epflush",
+        "epflush_write"
+      ],
+      [
+        "epprime",
+        "epprime_write"
+      ],
+      [
+        "epsetupstat",
+        "epsetupstat_write"
+      ],
+      [
+        "portsc0",
+        "portsc0_write"
+      ],
+      [
+        "portsc1",
+        "portsc1_write"
+      ],
+      [
+        "portsc2",
+        "portsc2_write"
+      ],
+      [
+        "portsc3",
+        "portsc3_write"
+      ],
+      [
+        "portsc4",
+        "portsc4_write"
+      ],
+      [
+        "portsc5",
+        "portsc5_write"
+      ],
+      [
+        "portsc6",
+        "portsc6_write"
+      ],
+      [
+        "portsc7",
+        "portsc7_write"
+      ],
+      [
+        "usbcmd",
+        "usbcmd_write"
+      ],
+      [
+        "usbsts",
+        "usbsts_write"
+      ]
+    ],
+    "k1_io::Usb2Phy": [
+      [
+        "reg01",
+        "reg01_write"
+      ],
+      [
+        "reg40",
+        "reg40_write"
+      ]
+    ]
+  },
+  "write_mask_registers": [
+    "k1_io::Emac.dma_configuration_write",
+    "k1_io::Emac.dma_missed_frame_counter_write",
+    "k1_io::Emac.dma_receive_poll_demand",
+    "k1_io::Emac.dma_status_and_irq_write",
+    "k1_io::Emac.dma_stop_flush_counter_write",
+    "k1_io::Emac.dma_transmit_poll_demand",
+    "k1_io::Emac.mac_flow_control_pause_frame_generate_write",
+    "k1_io::Emac.mac_mdio_control_write",
+    "k1_io::Emac.mac_receive_statctr_control_write",
+    "k1_io::Emac.mac_status_and_irq_write",
+    "k1_io::Emac.mac_transmit_statctr_control_write",
+    "k1_io::Emac.r_1588_irq_write",
+    "k1_io::Emac.system_time_adjust_control_lower_write",
+    "k1_io::Emac.system_time_adjust_control_upper_write",
+    "k1_io::Gpio.gpio_cdr",
+    "k1_io::Gpio.gpio_cferx",
+    "k1_io::Gpio.gpio_crerx",
+    "k1_io::Gpio.gpio_edr_write0",
+    "k1_io::Gpio.gpio_edr_write1",
+    "k1_io::Gpio.gpio_edr_write2",
+    "k1_io::Gpio.gpio_edr_write3",
+    "k1_io::Gpio.gpio_pcr",
+    "k1_io::Gpio.gpio_psr",
+    "k1_io::Gpio.gpio_sdr",
+    "k1_io::Gpio.gpio_sferx",
+    "k1_io::Gpio.gpio_srerx",
+    "k1_io::GpioBank.gpio_cdr",
+    "k1_io::GpioBank.gpio_cferx",
+    "k1_io::GpioBank.gpio_crerx",
+    "k1_io::GpioBank.gpio_edr_write",
+    "k1_io::GpioBank.gpio_pcr",
+    "k1_io::GpioBank.gpio_psr",
+    "k1_io::GpioBank.gpio_sdr",
+    "k1_io::GpioBank.gpio_sferx",
+    "k1_io::GpioBank.gpio_srerx",
+    "k1_io::I2c.icr_write",
+    "k1_io::I2c.idbr_write",
+    "k1_io::I2c.isr_write",
+    "k1_io::I2c.rfifo_rptr_write",
+    "k1_io::I2c.rfifo_wptr_write",
+    "k1_io::I2c.wfifo",
+    "k1_io::I2c.wfifo_rptr_write",
+    "k1_io::I2c.wfifo_wptr_write",
+    "k1_io::IrRx.int_flag_write",
+    "k1_io::OneWire.command_write",
+    "k1_io::OneWire.transmit_receive_buffer_write",
+    "k1_io::PciePhyAhb.intr_status1_write",
+    "k1_io::PciePhyAhb.irqstatus_intx_write",
+    "k1_io::PciePhyAhb.msi_recv_addr0",
+    "k1_io::PciePhyAhb.msix_mon_base0",
+    "k1_io::Qspi.bfgencr",
+    "k1_io::Qspi.buf0cr",
+    "k1_io::Qspi.buf0ind",
+    "k1_io::Qspi.buf1cr",
+    "k1_io::Qspi.buf1ind",
+    "k1_io::Qspi.buf2cr",
+    "k1_io::Qspi.buf2ind",
+    "k1_io::Qspi.buf3cr",
+    "k1_io::Qspi.fr_write",
+    "k1_io::Qspi.ipcr",
+    "k1_io::Qspi.lckcr",
+    "k1_io::Qspi.lut",
+    "k1_io::Qspi.lutkey",
+    "k1_io::Qspi.mcr_write",
+    "k1_io::Qspi.rbct",
+    "k1_io::Qspi.sfa1ad",
+    "k1_io::Qspi.sfa2ad",
+    "k1_io::Qspi.sfacr",
+    "k1_io::Qspi.sfar",
+    "k1_io::Qspi.sfb1ad",
+    "k1_io::Qspi.sfb2ad",
+    "k1_io::Qspi.smpr",
+    "k1_io::Qspi.soccr",
+    "k1_io::Qspi.sptrclr_write",
+    "k1_io::Qspi.tbct",
+    "k1_io::Qspi.tbdr",
+    "k1_io::Sdh.sd_auto_cmd12_error_status_write",
+    "k1_io::Sdh.sd_buffer_data_port_write",
+    "k1_io::Sdh.sd_clock_ctrl_write",
+    "k1_io::Sdh.sd_force_event_auto_cmd12_error",
+    "k1_io::Sdh.sd_host_ctrl_write",
+    "k1_io::Sdh.sd_max_current_3",
+    "k1_io::Sdh.sd_normal_int_status_write",
+    "k1_io::Sdh.sd_transfer_mode_cmd_write",
+    "k1_io::Sdh.sdhc_legacy_ctrl_reg_write",
+    "k1_io::Sdh.sdhc_mmc_ctrl_reg_write",
+    "k1_io::Sdh.sdhc_phy_lbctrl_reg_write",
+    "k1_io::Ssp.ssdatr_write",
+    "k1_io::Ssp.ssfcr_write",
+    "k1_io::Ssp.ssrwt_write",
+    "k1_io::Ssp.sssr_write",
+    "k1_io::Uart.auto_baud_control_write",
+    "k1_io::Uart.baud_newreg_enable_write",
+    "k1_io::Uart.fifo_control",
+    "k1_io::Uart.fifo_control_new_write",
+    "k1_io::Uart.transmit_holding",
+    "k1_io::Usb2Operational.epcomplete_write",
+    "k1_io::Usb2Operational.epctrl0_write",
+    "k1_io::Usb2Operational.epctrl10_write",
+    "k1_io::Usb2Operational.epctrl11_write",
+    "k1_io::Usb2Operational.epctrl12_write",
+    "k1_io::Usb2Operational.epctrl13_write",
+    "k1_io::Usb2Operational.epctrl14_write",
+    "k1_io::Usb2Operational.epctrl15_write",
+    "k1_io::Usb2Operational.epctrl1_write",
+    "k1_io::Usb2Operational.epctrl2_write",
+    "k1_io::Usb2Operational.epctrl3_write",
+    "k1_io::Usb2Operational.epctrl4_write",
+    "k1_io::Usb2Operational.epctrl5_write",
+    "k1_io::Usb2Operational.epctrl6_write",
+    "k1_io::Usb2Operational.epctrl7_write",
+    "k1_io::Usb2Operational.epctrl8_write",
+    "k1_io::Usb2Operational.epctrl9_write",
+    "k1_io::Usb2Operational.epflush_write",
+    "k1_io::Usb2Operational.epprime_write",
+    "k1_io::Usb2Operational.epsetupstat_write",
+    "k1_io::Usb2Operational.portsc0_write",
+    "k1_io::Usb2Operational.portsc1_write",
+    "k1_io::Usb2Operational.portsc2_write",
+    "k1_io::Usb2Operational.portsc3_write",
+    "k1_io::Usb2Operational.portsc4_write",
+    "k1_io::Usb2Operational.portsc5_write",
+    "k1_io::Usb2Operational.portsc6_write",
+    "k1_io::Usb2Operational.portsc7_write",
+    "k1_io::Usb2Operational.usbcmd_write",
+    "k1_io::Usb2Operational.usbsts_write",
+    "k1_io::Usb2Phy.reg01_write",
+    "k1_io::Usb2Phy.reg0d",
+    "k1_io::Usb2Phy.reg40_write",
+    "k1_io::Usb3Glue.p_addr_pumon0_write",
+    "k1_io::Usb3Glue.p_addr_pumon1_write",
+    "k1_io::Usb3Glue.p_addr_pumon4_write",
+    "k1_io::Usb3Glue.usb3_ctrl_clk_cfg_at_20_write"
+  ],
+  "tables": [
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 388,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Instance base-address metadata, not a register layout."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 397,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_sys_addr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 405,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_block_size_cnt"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 415,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_arg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 423,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_transfer_mode_cmd",
+        "k1_io::Sdh.sd_transfer_mode_cmd_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 443,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_resp_0"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 451,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_resp_1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 459,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_resp_2"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 467,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_resp_3"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 475,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_buffer_data_port",
+        "k1_io::Sdh.sd_buffer_data_port_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 482,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_present_state_1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 505,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_host_ctrl",
+        "k1_io::Sdh.sd_host_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 530,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_clock_ctrl",
+        "k1_io::Sdh.sd_clock_ctrl_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 549,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_normal_int_status",
+        "k1_io::Sdh.sd_normal_int_status_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 586,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_normal_int_status_en"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 624,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_normal_int_status_int_en"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 662,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_auto_cmd12_error_status",
+        "k1_io::Sdh.sd_auto_cmd12_error_status_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 684,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_capabilities_1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 708,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_capabilities_3"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 728,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_max_current_1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 738,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_max_current_3"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 745,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_force_event_auto_cmd12_error"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 774,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_adma_error_status"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 783,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.adma_system_address_1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 791,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_adma_sys_addr_3"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 799,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.preset_value_for_init"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 813,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.preset_value_for_hs"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 827,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.preset_value_for_sdr25"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 841,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.preset_value_for_sdr104"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 855,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.shared_bus_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 873,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sd_slot_int_status"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 884,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_vid_pid"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 893,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_op_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 909,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_op_ext_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 936,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_legacy_ctrl_reg",
+        "k1_io::Sdh.sdhc_legacy_ctrl_reg_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 954,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_legacy_ceata_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 966,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_mmc_ctrl_reg",
+        "k1_io::Sdh.sdhc_mmc_ctrl_reg_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 987,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_rx_cfg_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 999,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_tx_cfg_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1012,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_hwtune_cfg_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1022,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_hwtune_cfg2_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1034,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_roundtrip_timing_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1050,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_gpio_cfg_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1058,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_dline_ctrl_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1068,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_dline_cfg_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1080,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_phy_ctrl_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1094,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_phy_func_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1116,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_phy_dllcfg_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1134,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_phy_dllcfg1_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1144,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_phy_dllsts_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1155,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_phy_dllsts1_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1165,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_phy_padcfg_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1184,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_phy_padcfg1_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1192,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_phy_lbctrl_reg",
+        "k1_io::Sdh.sdhc_phy_lbctrl_reg_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1203,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_phy_lbfunc_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1220,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_phy_lbcnt_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1227,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.sdhc_phy_lbsts_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1241,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.cqe_cqbdctrl_reg0"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1250,
+      "status": "generated",
+      "registers": [
+        "k1_io::Sdh.cqe_cqbdctrl_reg1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 140,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb3_ctrl_clk_cfg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 152,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb3_ctrl_misc_cfg_0"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 163,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb3_ctrl_host_cfg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 171,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb3_ctrl_clk_cfg_at_c"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 186,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb3_ctrl_clk_cfg_at_20",
+        "k1_io::Usb3Glue.usb3_ctrl_clk_cfg_at_20_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 202,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.p_addr_pumon0",
+        "k1_io::Usb3Glue.p_addr_pumon0_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 210,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.p_addr_pumon1",
+        "k1_io::Usb3Glue.p_addr_pumon1_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 218,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.p_addr_pumon2"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 226,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.p_addr_pumon3"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 234,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.p_addr_pumon4",
+        "k1_io::Usb3Glue.p_addr_pumon4_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 248,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.p_addr_ro0"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 256,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.p_addr_ro1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 264,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.p_addr_ro2"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 272,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.p_addr_ro3"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 280,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.p_addr_ro4"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 288,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.p_addr_ro5"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 297,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb3_bw_calc_ctrl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 305,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb3_ctrl_misc_st"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 319,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb3_ctrl_host_st"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 328,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.ip_revision"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 337,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb_ctl"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 355,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb_vbus_reg"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 363,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb2_ctrl_status0"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 371,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb2_ctrl_status1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 379,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb2_ctrl_status2"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 387,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb2_ctrl_status3"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 395,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb2_ctrl_status4"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 403,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb2_ctrl_status5"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 411,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb2_ctrl_status6"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 419,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb2_ctrl_status7"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 427,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb2_ctrl_status8"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 435,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb3Glue.usb2_ctrl_status9"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 685,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_configuration",
+        "k1_io::Emac.dma_configuration_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 706,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 718,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_status_and_irq",
+        "k1_io::Emac.dma_status_and_irq_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 742,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_interrupt_enable"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 762,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_transmit_auto_poll_counter"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 773,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_transmit_poll_demand"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 783,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_receive_poll_demand"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 793,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_transmit_base_address"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 803,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_receive_base_address"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 813,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_missed_frame_counter",
+        "k1_io::Emac.dma_missed_frame_counter_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 824,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_stop_flush_counter",
+        "k1_io::Emac.dma_stop_flush_counter_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 835,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_receive_transfer_done_interrupt_mitigation_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 849,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_current_tx_descriptor_pointer"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 859,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_current_tx_buffer_pointer"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 869,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_current_rx_descriptor_pointer"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 879,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.dma_current_rx_buffer_pointer"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 889,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_global_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 906,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_transmit_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 922,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_receive_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 939,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_maximum_frame_size"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 952,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_transmit_jabber_size"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 966,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_receive_jabber_size"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 991,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_address_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1010,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_mdio_clock_division_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1026,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_address_1_high"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1043,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_address_1_med"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1060,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_address_1_low"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1077,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_address_2_high"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1094,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_address_2_med"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1111,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_address_2_low"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1128,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_address_3_high"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1145,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_address_3_med"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1162,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_address_3_low"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1179,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_address_4_high"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1196,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_address_4_med"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1213,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_address_4_low"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1234,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_multicast_hash_table_1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1254,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.description"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1274,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_multicast_hash_table_3"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1294,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_multicast_hash_table_4"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1308,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_flow_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1332,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_flow_control_pause_frame_generate",
+        "k1_io::Emac.mac_flow_control_pause_frame_generate_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1350,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_flow_control_source_address_high"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1368,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_flow_control_source_address_med"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1386,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_flow_control_source_address_low"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1404,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_flow_control_dst_address_high"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1422,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_flow_control_dst_address_med"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1440,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_flow_control_dst_address_low"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1454,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_flow_control_pause_time_value"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1465,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_flow_control_auto_gen_hi_pause_time_value"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1476,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_flow_control_auto_lo_pause_time_value"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1490,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_flow_control_auto_pause_frame_gen_hi_threshold"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1504,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_flow_control_auto_pause_frame_gen_lo_threshold"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1519,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_mdio_control",
+        "k1_io::Emac.mac_mdio_control_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1537,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_mdio_data"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1551,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_receive_statctr_control",
+        "k1_io::Emac.mac_receive_statctr_control_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1564,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_receive_statctr_data_high"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1575,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_receive_statctr_data_low"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1589,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_transmit_statctr_control",
+        "k1_io::Emac.mac_transmit_statctr_control_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1602,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_transmit_statctr_data_high"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1613,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_transmit_statctr_data_low"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1627,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_transmit_fifo_almostfull_threshold"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1641,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_transmit_packet_start_threshold"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1655,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_receive_packet_start_threshold"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1668,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_transmit_fifo_almostempty_threshold"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1681,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_transmit_fifo_space_available_hi_threshold"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1696,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_transmit_fifo_space_available_lo_threshold"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1707,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_receive_fifo_packet_available_threshold_1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1719,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_receive_fifo_packet_available_threshold_2"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1731,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_status_and_irq",
+        "k1_io::Emac.mac_status_and_irq_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1743,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_interrupt_enable"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1753,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_vlan_tpid_1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1762,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_vlan_tpid_2"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1771,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.mac_vlan_tpid_3"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1782,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.r_1588_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1796,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.increment_attributes"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1807,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.ptp_ethertype"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1818,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.ptp_message_id"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1829,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.ptp_udp_port"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1843,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.system_time_value_lower"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1856,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.system_time_value_upper"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1868,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.system_time_adjust_control_lower",
+        "k1_io::Emac.system_time_adjust_control_lower_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1880,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.system_time_adjust_control_upper",
+        "k1_io::Emac.system_time_adjust_control_upper_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1896,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.transmit_timestamp_lower"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1912,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.transmit_timestamp_upper"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1928,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.receive_timestamp_lower"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1944,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.receive_timestamp_upper"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1956,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.receive_ptp_packet_attribute_lower"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1969,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.receive_ptp_packet_attribute_middle"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1981,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.receive_ptp_packet_attribute_upper"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1993,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.r_1588_irq",
+        "k1_io::Emac.r_1588_irq_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2005,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.r_1588_interrupt_enable"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2017,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.avb_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2034,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.avb_transmit_sendslope"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2047,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.avb_transmit_idleslope"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2058,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.avb_rxpacket_filter1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2070,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.avb_rxpacket_mask1"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2080,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.avb_rxpacket_filter2"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2092,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.avb_rxpacket_mask2"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2102,
+      "status": "generated",
+      "registers": [
+        "k1_io::Emac.avb_hilimit"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2123,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "DMA memory descriptor bits, not MMIO registers."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2133,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "DMA memory descriptor bits, not MMIO registers."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2144,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "DMA memory descriptor bits, not MMIO registers."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2150,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "DMA memory descriptor bits, not MMIO registers."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2169,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "DMA memory descriptor bits, not MMIO registers."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2177,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "DMA memory descriptor bits, not MMIO registers."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2192,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "DMA memory descriptor bits, not MMIO registers."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2198,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "DMA memory descriptor bits, not MMIO registers."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1086,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Instance base-address metadata, not a register layout."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1105,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.icr",
+        "k1_io::I2c.icr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1154,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.isr",
+        "k1_io::I2c.isr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1188,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.isar"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1254,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.idbr",
+        "k1_io::I2c.idbr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1290,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.ilcr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1305,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.iwcr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1318,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.ircr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1335,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.ibmr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1351,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.wfifo"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1367,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.wfifo_wptr",
+        "k1_io::I2c.wfifo_wptr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1382,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.wfifo_rptr",
+        "k1_io::I2c.wfifo_rptr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1397,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.rfifo"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1413,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.rfifo_wptr",
+        "k1_io::I2c.rfifo_wptr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1428,
+      "status": "generated",
+      "registers": [
+        "k1_io::I2c.rfifo_rptr",
+        "k1_io::I2c.rfifo_rptr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1733,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Instance base-address metadata, not a register layout."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1747,
+      "status": "generated",
+      "registers": [
+        "k1_io::Ssp.sscr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1771,
+      "status": "generated",
+      "registers": [
+        "k1_io::Ssp.ssfcr",
+        "k1_io::Ssp.ssfcr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1793,
+      "status": "generated",
+      "registers": [
+        "k1_io::Ssp.ssinten"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1812,
+      "status": "generated",
+      "registers": [
+        "k1_io::Ssp.ssto"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1823,
+      "status": "generated",
+      "registers": [
+        "k1_io::Ssp.ssdatr",
+        "k1_io::Ssp.ssdatr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1833,
+      "status": "generated",
+      "registers": [
+        "k1_io::Ssp.sssr",
+        "k1_io::Ssp.sssr_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1859,
+      "status": "generated",
+      "registers": [
+        "k1_io::Ssp.sspsp"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1880,
+      "status": "generated",
+      "registers": [
+        "k1_io::Ssp.ssnwcr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1894,
+      "status": "generated",
+      "registers": [
+        "k1_io::Ssp.ssnws"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1906,
+      "status": "generated",
+      "registers": [
+        "k1_io::Ssp.ssrwt",
+        "k1_io::Ssp.ssrwt_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1921,
+      "status": "generated",
+      "registers": [
+        "k1_io::Ssp.ssrwtcc"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1931,
+      "status": "generated",
+      "registers": [
+        "k1_io::Ssp.ssrwtcv"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2227,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.receive_buffer"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2240,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.transmit_holding"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2251,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.divisor_latch_low_byte"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2260,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.divisor_latch_high_byte"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2281,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.interrupt_enable"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2297,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.interrupt_identification"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2318,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.fifo_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2335,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.line_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2352,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.modem_control"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2376,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.line_status"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2398,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.modem_status"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2416,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.scratchpad"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2427,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.infrared_selection"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2446,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.receive_fifo_occupancy"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2461,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.auto_baud_control",
+        "k1_io::Uart.auto_baud_control_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2475,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.auto_baud_count"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2484,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.full_baud_divisor"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2498,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.fifo_control_new",
+        "k1_io::Uart.fifo_control_new_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2515,
+      "status": "generated",
+      "registers": [
+        "k1_io::Uart.baud_newreg_enable",
+        "k1_io::Uart.baud_newreg_enable_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2574,
+      "status": "not_mmio",
+      "registers": [],
+      "note": "Instance base-address metadata, not a register layout."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2591,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gpio_plr",
+        "k1_io::Gpio.gpio_plr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2605,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gpio_pdr",
+        "k1_io::Gpio.gpio_pdr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2613,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gpio_psr",
+        "k1_io::Gpio.gpio_psr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2621,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gpio_pcr",
+        "k1_io::Gpio.gpio_pcr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2637,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gpio_rer",
+        "k1_io::Gpio.gpio_rer"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2647,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gpio_fer",
+        "k1_io::Gpio.gpio_fer"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2659,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gpio_edr",
+        "k1_io::GpioBank.gpio_edr_write",
+        "k1_io::Gpio.gpio_edr0",
+        "k1_io::Gpio.gpio_edr1",
+        "k1_io::Gpio.gpio_edr2",
+        "k1_io::Gpio.gpio_edr3",
+        "k1_io::Gpio.gpio_edr_write0",
+        "k1_io::Gpio.gpio_edr_write1",
+        "k1_io::Gpio.gpio_edr_write2",
+        "k1_io::Gpio.gpio_edr_write3"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2671,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gpio_sdr",
+        "k1_io::Gpio.gpio_sdr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2683,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gpio_cdr",
+        "k1_io::Gpio.gpio_cdr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2693,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gpio_srerx",
+        "k1_io::Gpio.gpio_srerx"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2703,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gpio_crerx",
+        "k1_io::Gpio.gpio_crerx"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2713,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gpio_sferx",
+        "k1_io::Gpio.gpio_sferx"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2723,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gpio_cferx",
+        "k1_io::Gpio.gpio_cferx"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2881,
+      "status": "generated",
+      "registers": [
+        "k1_io::OneWire.command",
+        "k1_io::OneWire.command_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2895,
+      "status": "generated",
+      "registers": [
+        "k1_io::OneWire.transmit_receive_buffer",
+        "k1_io::OneWire.transmit_receive_buffer_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2908,
+      "status": "generated",
+      "registers": [
+        "k1_io::OneWire.interrupt"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2926,
+      "status": "generated",
+      "registers": [
+        "k1_io::OneWire.interrupt_enable"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2944,
+      "status": "generated",
+      "registers": [
+        "k1_io::OneWire.clock_divisor"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2998,
+      "status": "generated",
+      "registers": [
+        "k1_io::IrRx.irc_en"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3007,
+      "status": "generated",
+      "registers": [
+        "k1_io::IrRx.clkdiv"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3016,
+      "status": "generated",
+      "registers": [
+        "k1_io::IrRx.noisehtr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3025,
+      "status": "generated",
+      "registers": [
+        "k1_io::IrRx.idle_state"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3034,
+      "status": "generated",
+      "registers": [
+        "k1_io::IrRx.fifo_out"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3043,
+      "status": "generated",
+      "registers": [
+        "k1_io::IrRx.fifo_sts"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3054,
+      "status": "generated",
+      "registers": [
+        "k1_io::IrRx.fifo_cmp"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3063,
+      "status": "generated",
+      "registers": [
+        "k1_io::IrRx.int_en"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3075,
+      "status": "generated",
+      "registers": [
+        "k1_io::IrRx.int_flag",
+        "k1_io::IrRx.int_flag_write"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3115,
+      "status": "generated",
+      "registers": [
+        "k1_io::Pwm.pwm_crx"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3131,
+      "status": "generated",
+      "registers": [
+        "k1_io::Pwm.pwm_dcr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3147,
+      "status": "generated",
+      "registers": [
+        "k1_io::Pwm.pwm_pcr"
+      ]
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3158,
+      "status": "generated",
+      "registers": [
+        "k1_io::Pwm.pwm_outcnt"
+      ]
+    },
+    {
+      "source": "drivers/spi/spi-k1x-qspi.c",
+      "line": 73,
+      "status": "generated",
+      "registers": [
+        "k1_io::Qspi.mcr",
+        "k1_io::Qspi.mcr_write",
+        "k1_io::Qspi.tcr",
+        "k1_io::Qspi.ipcr",
+        "k1_io::Qspi.flshcr",
+        "k1_io::Qspi.buf0cr",
+        "k1_io::Qspi.buf1cr",
+        "k1_io::Qspi.buf2cr",
+        "k1_io::Qspi.buf3cr",
+        "k1_io::Qspi.bfgencr",
+        "k1_io::Qspi.soccr",
+        "k1_io::Qspi.buf0ind",
+        "k1_io::Qspi.buf1ind",
+        "k1_io::Qspi.buf2ind",
+        "k1_io::Qspi.sfar",
+        "k1_io::Qspi.sfacr",
+        "k1_io::Qspi.smpr",
+        "k1_io::Qspi.rbsr",
+        "k1_io::Qspi.rbct",
+        "k1_io::Qspi.tbsr",
+        "k1_io::Qspi.tbdr",
+        "k1_io::Qspi.tbct",
+        "k1_io::Qspi.sr",
+        "k1_io::Qspi.fr",
+        "k1_io::Qspi.fr_write",
+        "k1_io::Qspi.rser",
+        "k1_io::Qspi.spndst",
+        "k1_io::Qspi.sptrclr",
+        "k1_io::Qspi.sptrclr_write",
+        "k1_io::Qspi.sfa1ad",
+        "k1_io::Qspi.sfa2ad",
+        "k1_io::Qspi.sfb1ad",
+        "k1_io::Qspi.sfb2ad",
+        "k1_io::Qspi.dlpr",
+        "k1_io::Qspi.lutkey",
+        "k1_io::Qspi.lckcr",
+        "k1_io::Qspi.rbdr",
+        "k1_io::Qspi.lut"
+      ],
+      "note": "Pinned C definitions beginning at drivers/spi/spi-k1x-qspi.c:73; tableless supplemental register layout."
+    },
+    {
+      "source": "bsp/spacemit/drivers/gpio/spacemit-gpio.c",
+      "line": 45,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gapmask",
+        "k1_io::Gpio.gapmask"
+      ],
+      "note": "Pinned C definitions beginning at bsp/spacemit/drivers/gpio/spacemit-gpio.c:45; tableless supplemental register layout."
+    },
+    {
+      "source": "bsp/spacemit/drivers/gpio/spacemit-gpio.c",
+      "line": 46,
+      "status": "generated",
+      "registers": [
+        "k1_io::GpioBank.gcpmask",
+        "k1_io::Gpio.gcpmask"
+      ],
+      "note": "Pinned C definitions beginning at bsp/spacemit/drivers/gpio/spacemit-gpio.c:46; tableless supplemental register layout."
+    },
+    {
+      "source": "bsp/spacemit/drivers/pwm/pwm-pxa.c",
+      "line": 13,
+      "status": "generated",
+      "registers": [
+        "k1_io::RcpuPwm.pwm_crx",
+        "k1_io::RcpuPwm.pwm_dcr",
+        "k1_io::RcpuPwm.pwm_pcr"
+      ],
+      "note": "Pinned C definitions beginning at bsp/spacemit/drivers/pwm/pwm-pxa.c:13; tableless supplemental register layout."
+    },
+    {
+      "source": "drivers/pci/controller/dwc/pcie-k1x.c",
+      "line": 81,
+      "status": "generated",
+      "registers": [
+        "k1_io::PcieConfig.device_cmd",
+        "k1_io::PcieConfig.ctrl_logic"
+      ],
+      "note": "Pinned C definitions beginning at drivers/pci/controller/dwc/pcie-k1x.c:81; tableless supplemental register layout."
+    },
+    {
+      "source": "drivers/pci/controller/dwc/pcie-k1x.c",
+      "line": 40,
+      "status": "generated",
+      "registers": [
+        "k1_io::PciePhyAhb.irq_en",
+        "k1_io::PciePhyAhb.link_sts",
+        "k1_io::PciePhyAhb.irqstatus_intx",
+        "k1_io::PciePhyAhb.irqstatus_intx_write",
+        "k1_io::PciePhyAhb.irqenable_set_intx",
+        "k1_io::PciePhyAhb.irqstatus_msi",
+        "k1_io::PciePhyAhb.irqenable_set_msi",
+        "k1_io::PciePhyAhb.intr_status1",
+        "k1_io::PciePhyAhb.intr_status1_write",
+        "k1_io::PciePhyAhb.intr_enable1",
+        "k1_io::PciePhyAhb.msi_recv_ctrl",
+        "k1_io::PciePhyAhb.msi_recv_addr0",
+        "k1_io::PciePhyAhb.msix_mon_mask",
+        "k1_io::PciePhyAhb.msix_mon_base0",
+        "k1_io::PciePhyAhb.mon_fifo_data0",
+        "k1_io::PciePhyAhb.mon_fifo_data1"
+      ],
+      "note": "Pinned C definitions beginning at drivers/pci/controller/dwc/pcie-k1x.c:40; tableless supplemental register layout."
+    },
+    {
+      "source": "drivers/pci/controller/dwc/pcie-k1x.c",
+      "line": 125,
+      "status": "source_gap",
+      "registers": [],
+      "note": "INTX_ASSERT/DEASSERT offsets 0x124/0x128 and ELBI EP offsets 0x18/0x28/0x2c have no unambiguous mapped base/access in the reviewed RC DTS. The config resource is eight bytes; do not attach these macros to a fictitious large config window or invent an ELBI base."
+    },
+    {
+      "source": "drivers/usb/gadget/udc/k1x_ci_udc.h",
+      "line": 138,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb2Capability.caplength_hciversion",
+        "k1_io::Usb2Capability.hcsparams",
+        "k1_io::Usb2Capability.hccparams",
+        "k1_io::Usb2Capability.dciversion",
+        "k1_io::Usb2Capability.dccparams"
+      ],
+      "note": "Pinned C definitions beginning at drivers/usb/gadget/udc/k1x_ci_udc.h:138; tableless supplemental register layout."
+    },
+    {
+      "source": "drivers/usb/gadget/udc/k1x_ci_udc.h",
+      "line": 147,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb2Operational.usbcmd",
+        "k1_io::Usb2Operational.usbcmd_write",
+        "k1_io::Usb2Operational.usbsts",
+        "k1_io::Usb2Operational.usbsts_write",
+        "k1_io::Usb2Operational.usbintr",
+        "k1_io::Usb2Operational.frindex",
+        "k1_io::Usb2Operational.deviceaddr",
+        "k1_io::Usb2Operational.eplistaddr",
+        "k1_io::Usb2Operational.ttctrl",
+        "k1_io::Usb2Operational.burstsize",
+        "k1_io::Usb2Operational.txfilltuning",
+        "k1_io::Usb2Operational.epnak",
+        "k1_io::Usb2Operational.epnaken",
+        "k1_io::Usb2Operational.configflag",
+        "k1_io::Usb2Operational.otgsc",
+        "k1_io::Usb2Operational.usbmode",
+        "k1_io::Usb2Operational.epsetupstat",
+        "k1_io::Usb2Operational.epsetupstat_write",
+        "k1_io::Usb2Operational.epprime",
+        "k1_io::Usb2Operational.epprime_write",
+        "k1_io::Usb2Operational.epflush",
+        "k1_io::Usb2Operational.epflush_write",
+        "k1_io::Usb2Operational.epstatus",
+        "k1_io::Usb2Operational.epcomplete",
+        "k1_io::Usb2Operational.epcomplete_write"
+      ],
+      "note": "Pinned C definitions beginning at drivers/usb/gadget/udc/k1x_ci_udc.h:147; tableless supplemental register layout."
+    },
+    {
+      "source": "drivers/usb/gadget/udc/k1x_ci_udc.h",
+      "line": 162,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb2Operational.portsc0",
+        "k1_io::Usb2Operational.portsc0_write",
+        "k1_io::Usb2Operational.portsc1",
+        "k1_io::Usb2Operational.portsc1_write",
+        "k1_io::Usb2Operational.portsc2",
+        "k1_io::Usb2Operational.portsc2_write",
+        "k1_io::Usb2Operational.portsc3",
+        "k1_io::Usb2Operational.portsc3_write",
+        "k1_io::Usb2Operational.portsc4",
+        "k1_io::Usb2Operational.portsc4_write",
+        "k1_io::Usb2Operational.portsc5",
+        "k1_io::Usb2Operational.portsc5_write",
+        "k1_io::Usb2Operational.portsc6",
+        "k1_io::Usb2Operational.portsc6_write",
+        "k1_io::Usb2Operational.portsc7",
+        "k1_io::Usb2Operational.portsc7_write"
+      ],
+      "note": "Pinned C definitions beginning at drivers/usb/gadget/udc/k1x_ci_udc.h:162; tableless supplemental register layout."
+    },
+    {
+      "source": "drivers/usb/gadget/udc/k1x_ci_udc.h",
+      "line": 170,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb2Operational.epctrl0",
+        "k1_io::Usb2Operational.epctrl0_write",
+        "k1_io::Usb2Operational.epctrl1",
+        "k1_io::Usb2Operational.epctrl1_write",
+        "k1_io::Usb2Operational.epctrl2",
+        "k1_io::Usb2Operational.epctrl2_write",
+        "k1_io::Usb2Operational.epctrl3",
+        "k1_io::Usb2Operational.epctrl3_write",
+        "k1_io::Usb2Operational.epctrl4",
+        "k1_io::Usb2Operational.epctrl4_write",
+        "k1_io::Usb2Operational.epctrl5",
+        "k1_io::Usb2Operational.epctrl5_write",
+        "k1_io::Usb2Operational.epctrl6",
+        "k1_io::Usb2Operational.epctrl6_write",
+        "k1_io::Usb2Operational.epctrl7",
+        "k1_io::Usb2Operational.epctrl7_write",
+        "k1_io::Usb2Operational.epctrl8",
+        "k1_io::Usb2Operational.epctrl8_write",
+        "k1_io::Usb2Operational.epctrl9",
+        "k1_io::Usb2Operational.epctrl9_write",
+        "k1_io::Usb2Operational.epctrl10",
+        "k1_io::Usb2Operational.epctrl10_write",
+        "k1_io::Usb2Operational.epctrl11",
+        "k1_io::Usb2Operational.epctrl11_write",
+        "k1_io::Usb2Operational.epctrl12",
+        "k1_io::Usb2Operational.epctrl12_write",
+        "k1_io::Usb2Operational.epctrl13",
+        "k1_io::Usb2Operational.epctrl13_write",
+        "k1_io::Usb2Operational.epctrl14",
+        "k1_io::Usb2Operational.epctrl14_write",
+        "k1_io::Usb2Operational.epctrl15",
+        "k1_io::Usb2Operational.epctrl15_write"
+      ],
+      "note": "Pinned C definitions beginning at drivers/usb/gadget/udc/k1x_ci_udc.h:170; tableless supplemental register layout."
+    },
+    {
+      "source": "drivers/usb/phy/phy-k1x-ci-usb2.h",
+      "line": 9,
+      "status": "generated",
+      "registers": [
+        "k1_io::Usb2Phy.reg01",
+        "k1_io::Usb2Phy.reg01_write",
+        "k1_io::Usb2Phy.reg04",
+        "k1_io::Usb2Phy.reg06",
+        "k1_io::Usb2Phy.reg08",
+        "k1_io::Usb2Phy.reg0d",
+        "k1_io::Usb2Phy.reg40",
+        "k1_io::Usb2Phy.reg40_write",
+        "k1_io::Usb2Phy.reg22",
+        "k1_io::Usb2Phy.reg26",
+        "k1_io::Usb2Phy.analog14_13"
+      ],
+      "note": "Pinned C definitions beginning at drivers/usb/phy/phy-k1x-ci-usb2.h:9; tableless supplemental register layout."
+    },
+    {
+      "source": "drivers/soc/spacemit/ddr-bw/spacemit_ddrbw.h",
+      "line": 24,
+      "status": "generated",
+      "registers": [
+        "k1_io::DdrControl.mc_control_0",
+        "k1_io::DdrControl.perf_conf",
+        "k1_io::DdrControl.perf_status",
+        "k1_io::DdrControl.perf_ctrl",
+        "k1_io::DdrControl.perf_counter",
+        "k1_io::DdrControl.isr",
+        "k1_io::DdrControl.ier",
+        "k1_io::DdrControl.err_info",
+        "k1_io::DdrControl.err_addr_low",
+        "k1_io::DdrControl.err_addr_high",
+        "k1_io::DdrControl.refctrl",
+        "k1_io::DdrControl.rftiming"
+      ],
+      "note": "Pinned C definitions beginning at drivers/soc/spacemit/ddr-bw/spacemit_ddrbw.h:24; tableless supplemental register layout."
+    },
+    {
+      "source": "drivers/soc/spacemit/ddr-bw/spacemit_ddrbw.h",
+      "line": 277,
+      "status": "generated",
+      "registers": [
+        "k1_io::DdrAxiMonitor.control",
+        "k1_io::DdrAxiMonitor.id_control",
+        "k1_io::DdrAxiMonitor.data",
+        "k1_io::DdrAxiMonitor.id_select"
+      ],
+      "note": "Pinned C definitions beginning at drivers/soc/spacemit/ddr-bw/spacemit_ddrbw.h:277; tableless supplemental register layout."
+    },
+    {
+      "source": "drivers/soc/spacemit/ddr-bw/spacemit_ddrbw.h",
+      "line": 42,
+      "status": "source_gap",
+      "registers": [],
+      "note": "DDRC_ERR_ID is defined as 0x15 (misaligned for readl) and unused; no corroborated offset exists. Do not invent 0x15c."
+    }
+  ],
+  "corrections": [
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 423,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:423"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 475,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:475"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 505,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:505"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 530,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:530"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 549,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:549"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 662,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:662"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 785,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:783"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 786,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:783"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 793,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:791"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 794,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:791"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 801,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:799"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 803,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:799"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 804,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:799"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 805,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:799"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 807,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:799"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 808,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:799"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 815,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:813"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 817,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:813"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 818,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:813"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 819,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:813"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 821,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:813"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 822,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:813"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 829,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:827"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 831,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:827"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 832,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:827"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 833,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:827"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 835,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:827"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 836,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:827"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 843,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:841"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 845,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:841"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 846,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:841"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 847,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:841"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 849,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:841"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 850,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:841"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 936,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:936"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 966,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:966"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 1192,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md:1192"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 171,
+      "decision": "Retain repeated source heading with offset-qualified name; do not invent a hardware label.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:171"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 186,
+      "decision": "Retain repeated source heading with offset-qualified name; do not invent a hardware label.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:186"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 186,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:186"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 202,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:202"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 210,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:210"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 234,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:234"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 689,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:685"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 695,
+      "decision": "Disambiguate repeated field labels by their documented low bit.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:685"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 685,
+      "decision": "Ignore reserved-range overlap with the explicitly named bits 17 through 20; retain named fields.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:688-693; Linux 31c449aeaad8c7759bc983ca0e26946e5b6746dc drivers/net/ethernet/spacemit/k1x-emac.h:155-162"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 685,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:685"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 718,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:718"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 813,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:813"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 824,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:824"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1297,
+      "decision": "Reset is absent or nonnumeric; no hardware reset value asserted.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:1297"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1294,
+      "decision": "Hash-table4 access column is empty; C writes all four hash words. Reset remains unasserted.",
+      "evidence": "Linux 31c449aeaad8c7759bc983ca0e26946e5b6746dc drivers/net/ethernet/spacemit/k1x-emac.h:110 and k1x-emac.c emac_mac_hash_table"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1332,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:1332"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1519,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:1519"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1551,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:1551"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1589,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:1589"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1613,
+      "decision": "Correct conflicting offset to 0x1bc from MAC_TX_STATCTR_DATA_LOW.",
+      "evidence": "Linux 31c449aeaad8c7759bc983ca0e26946e5b6746dc drivers/net/ethernet/spacemit/k1x-emac.h:126; K1 PDF V6.3 printed page 620 (PDF page 631) repeats the Markdown typo"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1731,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:1731"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1868,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:1868"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1880,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:1880"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 1993,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md:1993"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 2005,
+      "decision": "Correct conflicting offset to 0x364 from PTP_1588_IRQ_EN.",
+      "evidence": "Linux 31c449aeaad8c7759bc983ca0e26946e5b6746dc drivers/net/ethernet/spacemit/k1x-emac.h:421; K1 PDF V6.3 printed page 637 (PDF page 648) repeats the Markdown typo"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1105,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:1105"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1154,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:1154"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1254,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:1254"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1351,
+      "decision": "WFIFO transmit write view: table R conflicts with explicit PIO filling and C writes.",
+      "evidence": "ESOS e0b8d955bdc84957da3b7bba8c89e35ee0d27c2b bsp/spacemit/drivers/i2c/i2c-k1.c:528"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1354,
+      "decision": "WFIFO CONTROL mask is 0xf00 (bits 11:8), not the conflicting C WFIFO_CTRL_MSK 0x3e0.",
+      "evidence": "ESOS e0b8d955bdc84957da3b7bba8c89e35ee0d27c2b bsp/spacemit/drivers/i2c/i2c-k1.h:122-126 defines START/STOP/ACKNAK/TB at bits 8/9/10/11; Markdown range and PDF section 16.1.4.9 agree"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1367,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:1367"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1382,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:1382"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1413,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:1413"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1428,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:1428"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1771,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:1771"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1823,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:1823"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1833,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:1833"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 1906,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:1906"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2263,
+      "decision": "Reset is absent or nonnumeric; no hardware reset value asserted.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:2263"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2461,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:2461"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2498,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:2498"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2515,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:2515"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2615,
+      "decision": "GPIO_PSR PSn is a 32-bit set mask: prose specifies n=0..31 and native C writes 1 << (gpio & 31), contradicting the single Bits31 cell.",
+      "evidence": "ESOS e0b8d955bdc84957da3b7bba8c89e35ee0d27c2b bsp/spacemit/drivers/gpio/spacemit-gpio.c:35,109,251-263; K1 V6.3 PDF GPIO_PSR table repeats Bits31 (layout lines39522-39528)."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2659,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:2659"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2881,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:2881"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2895,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:2895"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3075,
+      "decision": "Separate read and direct-write views for documented commands, FIFO or mixed clear/config fields; no modify API.",
+      "evidence": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md:3075"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 2218,
+      "decision": "UART identity and addresses follow the chip address map: AP UART0 at D4017000, secure UART1 at F0612000; N308 UARTs remain distinct.",
+      "evidence": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md:73-84,177 and ESOS bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3103,
+      "decision": "AP PWM0..7 and PWM8..19 occupy two windows; the chapter continuous stride is incorrect across the gap.",
+      "evidence": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md:84-112; K1 PDF V6.3 printed page 764 (PDF page 775) repeats the continuous-stride error"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 264,
+      "decision": "Keep P_ADDR_RO2 access RW as explicitly tabled despite its RO spelling; the adjacent RO view does not establish a correction.",
+      "evidence": "K1 PDF V6.3 printed page 552 (PDF page 563), section 15.1.4.13 corroborates RW"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 16,
+      "decision": "DDR chapter has no controller/PHY register layout; only pinned C-defined control/performance registers are added. Training, scheduler and timing layouts remain unavailable.",
+      "evidence": "Canonical source location; reviewed chapter has no further numeric layout."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/10.Memory_&_Storage.md",
+      "line": 172,
+      "decision": "QSPI chapter has no register layout; pinned K1 Linux supplies the declared register set and two used LUT sequences. Unspecified LUT sequence count is not invented.",
+      "evidence": "Canonical source location; reviewed chapter has no further numeric layout."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 447,
+      "decision": "PCIe chapter has no register tables; pinned C supplies wrapper/config/PHY-AHB facts. Full DesignWare DBI/ATU/eDMA and analog PHY layout is not supplied by this chapter.",
+      "evidence": "Canonical source location; reviewed chapter has no further numeric layout."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/15.High-Speed_Interface_System.md",
+      "line": 131,
+      "decision": "USB chapter tables describe USB3 glue only. Pinned K1 C provides USB2 capability/operational/PHY layouts; the full USB3 DesignWare core layout is not documented here.",
+      "evidence": "Canonical source location; reviewed chapter has no further numeric layout."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+      "line": 204,
+      "decision": "Do not synthesize RCPU translations for AP/secure peripherals: the bridge aperture is not an individual peripheral mapping. Sensor-hub numeric instances use their separately documented addresses.",
+      "evidence": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md:169-204"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/6.Address_Mapping.md",
+      "line": 83,
+      "decision": "GPIO Edge has a base address but no register layout in the owned low-speed chapter or reviewed K1 GPIO C driver; do not substitute the main GPIO bank layout.",
+      "evidence": "Canonical source location; reviewed chapter has no further numeric layout."
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/7.Interrupt_Assignments.md",
+      "line": 175,
+      "decision": "SHUB I2C1 has interrupt 14 but no numeric MMIO base in the address map, low-speed base table or pinned K1 ESOS DTS. No second SHUB I2C instance address is invented.",
+      "evidence": "Canonical source location; reviewed chapter has no further numeric layout."
+    },
+    {
+      "source": "drivers/spi/spi-k1x-qspi.c",
+      "line": 73,
+      "decision": "TCR/FLSHCR/RBSR/SPNDST/DLPR are declared but have no access semantics in this driver; expose raw read-only views without guessing writes.",
+      "evidence": "Linux 31c449aeaad8c7759bc983ca0e26946e5b6746dc drivers/spi/spi-k1x-qspi.c:73-199"
+    },
+    {
+      "source": "drivers/spi/spi-k1x-qspi.c",
+      "line": 197,
+      "decision": "LUT array covers the two C-used sequences (0 and 1), four words per sequence; total hardware LUT sequence count is unspecified. RBDR has 128-byte buffer / four-byte words.",
+      "evidence": "Linux 31c449aeaad8c7759bc983ca0e26946e5b6746dc drivers/spi/spi-k1x-qspi.c:62,197-207,630-648"
+    },
+    {
+      "source": "k1/k1_docs/k1_usermanual/16.Low-Speed_Interface_System.md",
+      "line": 3103,
+      "decision": "RCPU PWM uses ten 0x100-spaced channels starting at C0888100, not the AP 0x400 stride; C supplies only three registers.",
+      "evidence": "ESOS e0b8d955bdc84957da3b7bba8c89e35ee0d27c2b bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi:164-253; bsp/spacemit/drivers/pwm/pwm-pxa.c:13-15"
+    },
+    {
+      "source": "drivers/pci/controller/dwc/pcie-k1x.c",
+      "line": 51,
+      "decision": "IRQENABLE_SET_* are read/write enables in actual C RMW and disable paths; do not infer W1S from SET spelling. MSI bit11 overlaps EDMA_INT11, so expose the unambiguous EDMA range only.",
+      "evidence": "Linux 31c449aeaad8c7759bc983ca0e26946e5b6746dc drivers/pci/controller/dwc/pcie-k1x.c:55-77,899-926"
+    },
+    {
+      "source": "drivers/usb/gadget/udc/k1x_ci_udc.h",
+      "line": 147,
+      "decision": "Operational block address is capability base + read CAPLENGTH, not a guessed constant. C struct arrays describe eight port slots and sixteen endpoint slots; implemented counts are runtime capability facts.",
+      "evidence": "Linux 31c449aeaad8c7759bc983ca0e26946e5b6746dc drivers/usb/gadget/udc/k1x_udc_core.c:2776-2780"
+    },
+    {
+      "source": "drivers/usb/gadget/udc/k1x_ci_udc.h",
+      "line": 148,
+      "decision": "Host-only/unused struct members have raw read-only views where this device driver lacks write semantics; port W1C/configuration is explicit-write only.",
+      "evidence": "Linux 31c449aeaad8c7759bc983ca0e26946e5b6746dc drivers/usb/gadget/udc/k1x_ci_udc.h:147-170; k1x_udc_core.c PORTSCX_W1C_BITS"
+    },
+    {
+      "source": "drivers/soc/spacemit/ddr-bw/spacemit_ddrbw.h",
+      "line": 291,
+      "decision": "ID selection array uses only C-written IDs 1..3 in each port. ID4 is allocated but skipped before enable, so unknown slots are not invented.",
+      "evidence": "Linux 31c449aeaad8c7759bc983ca0e26946e5b6746dc drivers/soc/spacemit/ddr-bw/spacemit_ddrbw.c:356-379"
+    },
+    {
+      "source": "drivers/soc/spacemit/ddr-bw/spacemit_ddrbw.h",
+      "line": 101,
+      "decision": "Eight declared performance counters retained; Linux allocates only seven. Declared unused DDR registers remain conservative raw read-only views without reset/access inventions.",
+      "evidence": "Linux 31c449aeaad8c7759bc983ca0e26946e5b6746dc drivers/soc/spacemit/ddr-bw/spacemit_ddrbw.h:47-48,86-101"
+    }
+  ]
+}
