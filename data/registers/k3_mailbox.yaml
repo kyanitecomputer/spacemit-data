@@ -1,0 +1,149 @@
+{
+  "block/k3_mailbox::Mailbox": {
+    "description": "ESOS RCPU four-channel/two-user instance only; not manual generic 16-channel block. FIFO reads pop messages.",
+    "items": [
+      {
+        "name": "version",
+        "byte_offset": 0,
+        "access": "Read",
+        "bit_size": 32
+      },
+      {
+        "name": "message",
+        "byte_offset": 64,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "description": "Read pops FIFO, write pushes token. Never modify. ESOS sends constant c, not application payload.",
+        "array": {
+          "len": 4,
+          "stride": 4
+        }
+      },
+      {
+        "name": "fifo_status",
+        "byte_offset": 128,
+        "access": "Read",
+        "bit_size": 32,
+        "fieldset": "k3_mailbox::regs::FifoStatus",
+        "array": {
+          "len": 4,
+          "stride": 4
+        }
+      },
+      {
+        "name": "msg_status",
+        "byte_offset": 192,
+        "access": "Read",
+        "bit_size": 32,
+        "fieldset": "k3_mailbox::regs::MsgStatus",
+        "array": {
+          "len": 4,
+          "stride": 4
+        }
+      },
+      {
+        "name": "irq",
+        "byte_offset": 256,
+        "block": "k3_mailbox::Irq",
+        "array": {
+          "len": 2,
+          "stride": 16
+        }
+      },
+      {
+        "name": "threshold",
+        "byte_offset": 384,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "description": "Four pairs of 4-bit new-message/not-full thresholds. Documented 0x180+0x10*user conflicts with ESOS C struct ABI (RV64 stride32): see provenance/corrections.yaml. Hardware-unverified; nonblocking HAL must not write thresholds. User role depends on rcpu_communicate, NOT hart ID.",
+        "array": {
+          "len": 2,
+          "stride": 16
+        }
+      }
+    ]
+  },
+  "block/k3_mailbox::Irq": {
+    "items": [
+      {
+        "name": "status",
+        "byte_offset": 0,
+        "access": "Read",
+        "bit_size": 32
+      },
+      {
+        "name": "status_clr",
+        "byte_offset": 4,
+        "access": "Write",
+        "bit_size": 32,
+        "description": "W1C mask; two bits per channel (new-message, not-full). Vendor reads/RMWs but generated API intentionally forbids that unsafe sequence."
+      },
+      {
+        "name": "enable_set",
+        "byte_offset": 8,
+        "access": "Write",
+        "bit_size": 32,
+        "description": "W1S enable mask. Readback via enable_status alias."
+      },
+      {
+        "name": "enable_status",
+        "byte_offset": 8,
+        "access": "Read",
+        "bit_size": 32,
+        "description": "Vendor reads enable_set to mask status; same address read view."
+      },
+      {
+        "name": "enable_clr",
+        "byte_offset": 12,
+        "access": "Write",
+        "bit_size": 32,
+        "description": "W1C enable mask; never RMW."
+      }
+    ]
+  },
+  "fieldset/k3_mailbox::regs::FifoStatus": {
+    "bit_size": 32,
+    "fields": [
+      {
+        "name": "is_full",
+        "bit_offset": 0,
+        "bit_size": 1
+      },
+      {
+        "name": "is_empty",
+        "bit_offset": 1,
+        "bit_size": 1
+      },
+      {
+        "name": "writefull",
+        "bit_offset": 28,
+        "bit_size": 1
+      },
+      {
+        "name": "readempty",
+        "bit_offset": 29,
+        "bit_size": 1
+      }
+    ]
+  },
+  "fieldset/k3_mailbox::regs::MsgStatus": {
+    "bit_size": 32,
+    "fields": [
+      {
+        "name": "num_msg",
+        "bit_offset": 0,
+        "bit_size": 4
+      },
+      {
+        "name": "writefull",
+        "bit_offset": 28,
+        "bit_size": 1
+      },
+      {
+        "name": "readempty",
+        "bit_offset": 29,
+        "bit_size": 1
+      }
+    ]
+  }
+}

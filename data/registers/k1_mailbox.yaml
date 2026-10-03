@@ -1,0 +1,34 @@
+{
+  "block/k1_mailbox::Mailbox": {
+    "description": "ESOS k1x_mailbox.h/c, four doorbell channels plus TX ACK bits 4..7. No payload bytes. DW/WDR not used by reviewed firmware, omitted.",
+    "items": [
+      {
+        "name": "ipc_isrw",
+        "byte_offset": 8,
+        "access": "Write",
+        "bit_size": 32,
+        "description": "W1S doorbell/ACK bit mask; never RMW."
+      },
+      {
+        "name": "ipc_icr",
+        "byte_offset": 12,
+        "access": "Write",
+        "bit_size": 32,
+        "description": "W1C pending bit mask; clear RX before writing ACK bit +4."
+      },
+      {
+        "name": "ipc_iir",
+        "byte_offset": 16,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "description": "Vendor writes zero before reading low-eight interrupt status bits; preserve that sequence. This is not a W1C register."
+      },
+      {
+        "name": "ipc_rdr",
+        "byte_offset": 20,
+        "access": "Read",
+        "bit_size": 32
+      }
+    ]
+  }
+}

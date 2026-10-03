@@ -1,0 +1,33 @@
+{
+  "feature": "k3-rcpu1",
+  "pointer_width": 64,
+  "hart_id": 1,
+  "registers": [
+    "pxa_uart",
+    "k3_mailbox",
+    "rt24_clint",
+    "rt24_plic",
+    "k3_boot"
+  ],
+  "constants": {
+    "UART0_BASE": 3230142464,
+    "UART1_BASE": 3230142976,
+    "UART2_BASE": 3230143232,
+    "UART3_BASE": 3230143488,
+    "UART4_BASE": 3230143744,
+    "MAILBOX3_BASE": 3402173440,
+    "MAILBOX4_BASE": 3402174464,
+    "MAILBOX5_BASE": 3402175488,
+    "MAILBOX6_BASE": 3402176512,
+    "MAILBOX7_BASE": 3228958720,
+    "BOOT_BASE": 3230138368,
+    "PLIC_BASE": 3892314112,
+    "CLINT_BASE": 3959422976,
+    "HART_BANK_STRIDE": 134217728,
+    "TIMER_HZ": 24000000,
+    "READY_OFFSET": 124,
+    "FIRMWARE_ADDRESS": 4303355904,
+    "RESOURCE_TABLE_ADDRESS": 4308582400
+  },
+  "provenance": "provenance/README.md"
+}

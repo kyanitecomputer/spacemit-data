@@ -1,0 +1,3 @@
+**/target/
+**/Cargo.lock
+!spacemit-data-gen/Cargo.lock

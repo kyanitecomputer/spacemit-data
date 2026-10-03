@@ -1,0 +1,12 @@
+[package]
+name = "spacemit-data-gen"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0 OR MIT"
+publish = false
+
+[dependencies]
+anyhow = "1"
+chiptool = { git = "https://github.com/kyanitecomputer/chiptool", rev = "4e232f0ac28f18f0901ae930dabf2b5b62e1a05f" }
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "=0.9.34-deprecated"

@@ -1,0 +1,31 @@
+{
+  "block/k3_boot::Boot": {
+    "description": "ESOS _register_defination.h and SPL k3-rproc.c boot-entry halves. Readiness writes opposite core LO=1 only after permitted initialization; no management-readiness claim.",
+    "items": [
+      {
+        "name": "core0_boot_entry_lo",
+        "byte_offset": 124,
+        "access": "ReadWrite",
+        "bit_size": 32
+      },
+      {
+        "name": "core0_boot_entry_hi",
+        "byte_offset": 128,
+        "access": "ReadWrite",
+        "bit_size": 32
+      },
+      {
+        "name": "core1_boot_entry_lo",
+        "byte_offset": 140,
+        "access": "ReadWrite",
+        "bit_size": 32
+      },
+      {
+        "name": "core1_boot_entry_hi",
+        "byte_offset": 144,
+        "access": "ReadWrite",
+        "bit_size": 32
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+# Original concise facts only, tied to fingerprints in sources.json.
+k3_mailbox_threshold:
+  source_header: bsp/spacemit/drivers/mailbox/k3_mailbox.h
+  header_sha256: >-
+    ebcdcfdf70b2969eff0a31d056f0bf7ac0c4d5eeac549067f27d5b2259f6c14d
+  source_manual: >-
+    en/key_stone/k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md
+  source_manual_lines: [46, 306, 313]
+  manual_formula: "0x180 + 0x10 * user"
+  selected_user_stride: 16
+  selected_user1_offset: 0x190
+  c_rv64_lp64d_user_stride: 32
+  c_rv64_lp64d_user1_offset: 0x1a0
+  c_rv32_ilp32f_user_stride: 20
+  c_rv32_ilp32f_user1_offset: 0x194
+  cause: >-
+    mbox_irqthresh_t is a struct of val followed by unsigned-long bitfields,
+    not a union; ABI padding changes mbox_thresh_t size.
+  policy: >-
+    Retain documented hardware formula, do not treat accidental C ABI layout
+    as hardware truth. Nonblocking HAL notifications must not configure
+    thresholds; future use requires deliberate board validation.
+  validation: >-
+    scripts/verify-source-layout.py compiles original pinned declarations
+    with Clang --target=riscv64 -march=rv64gc -mabi=lp64d and
+    --target=riscv32 -march=rv32imafc -mabi=ilp32f, checking sizeof and offsetof
+    via static assertions.
+  hardware_verified: false

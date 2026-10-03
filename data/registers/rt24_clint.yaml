@@ -1,0 +1,19 @@
+{
+  "block/rt24_clint::Clint": {
+    "description": "RT24 clint.h, native RV64 MMIO. Base must include mhartid << 27.",
+    "items": [
+      {
+        "name": "mtimecmp",
+        "byte_offset": 16384,
+        "access": "ReadWrite",
+        "bit_size": 64
+      },
+      {
+        "name": "mtime",
+        "byte_offset": 49144,
+        "access": "Read",
+        "bit_size": 64
+      }
+    ]
+  }
+}

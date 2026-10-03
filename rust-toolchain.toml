@@ -1,0 +1,4 @@
+[toolchain]
+channel = "1.98.1"
+components = ["rustfmt"]
+targets = ["riscv32imafc-unknown-none-elf", "riscv64gc-unknown-none-elf"]

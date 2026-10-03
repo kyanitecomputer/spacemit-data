@@ -1,0 +1,64 @@
+{
+  "block/n308_timer::Timer": {
+    "description": "NMSIS core_feature_timer.h hart0 local timer (not APB timer, not RT24 CLINT). RV32 split halves: read high/low/high; compare write low=MAX, high, low.",
+    "items": [
+      {
+        "name": "mtime_lo",
+        "byte_offset": 0,
+        "access": "ReadWrite",
+        "bit_size": 32
+      },
+      {
+        "name": "mtime_hi",
+        "byte_offset": 4,
+        "access": "ReadWrite",
+        "bit_size": 32
+      },
+      {
+        "name": "mtimecmp_lo",
+        "byte_offset": 8,
+        "access": "ReadWrite",
+        "bit_size": 32
+      },
+      {
+        "name": "mtimecmp_hi",
+        "byte_offset": 12,
+        "access": "ReadWrite",
+        "bit_size": 32
+      },
+      {
+        "name": "mtimectl",
+        "byte_offset": 4088,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "fieldset": "n308_timer::regs::Mtimectl"
+      },
+      {
+        "name": "msip",
+        "byte_offset": 4092,
+        "access": "ReadWrite",
+        "bit_size": 32
+      }
+    ]
+  },
+  "fieldset/n308_timer::regs::Mtimectl": {
+    "bit_size": 32,
+    "fields": [
+      {
+        "name": "timestop",
+        "bit_offset": 0,
+        "bit_size": 1
+      },
+      {
+        "name": "cmpclren",
+        "bit_offset": 1,
+        "bit_size": 1
+      },
+      {
+        "name": "clksrc",
+        "bit_offset": 2,
+        "bit_size": 1
+      }
+    ]
+  }
+}

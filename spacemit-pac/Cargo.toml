@@ -1,0 +1,13 @@
+[package]
+name = "spacemit-pac"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0 OR MIT"
+description = "Generated auxiliary-core register access for SpacemiT K1 and K3"
+publish = false
+
+[features]
+default = []
+k1-rcpu = []
+k3-rcpu0 = []
+k3-rcpu1 = []

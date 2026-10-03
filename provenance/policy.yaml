@@ -1,0 +1,32 @@
+{
+  "aliases": {
+    "pxa_uart::Uart": [
+      [
+        "dll",
+        "rbr",
+        "thr"
+      ],
+      [
+        "dlh",
+        "ier"
+      ],
+      [
+        "fcr",
+        "iir"
+      ]
+    ],
+    "k3_mailbox::Irq": [
+      [
+        "enable_set",
+        "enable_status"
+      ]
+    ]
+  },
+  "write_mask_registers": [
+    "k1_mailbox::Mailbox.ipc_isrw",
+    "k1_mailbox::Mailbox.ipc_icr",
+    "k3_mailbox::Irq.status_clr",
+    "k3_mailbox::Irq.enable_set",
+    "k3_mailbox::Irq.enable_clr"
+  ]
+}

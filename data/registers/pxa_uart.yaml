@@ -1,0 +1,132 @@
+{
+  "block/pxa_uart::Uart": {
+    "description": "PXA UART 32-bit-spaced alias views. ESOS pxa_uart_reg_t and pxa_uart.h; select DLAB correctly.",
+    "items": [
+      {
+        "name": "rbr",
+        "byte_offset": 0,
+        "access": "Read",
+        "bit_size": 32,
+        "description": "DLAB=0. Read pops RX data."
+      },
+      {
+        "name": "thr",
+        "byte_offset": 0,
+        "access": "Write",
+        "bit_size": 32,
+        "description": "DLAB=0. Write pushes TX data."
+      },
+      {
+        "name": "dll",
+        "byte_offset": 0,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "description": "DLAB=1. Divisor low; do not access while transmitter busy."
+      },
+      {
+        "name": "ier",
+        "byte_offset": 4,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "description": "DLAB=0."
+      },
+      {
+        "name": "dlh",
+        "byte_offset": 4,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "description": "DLAB=1. Divisor high; bits 9:8 unspecified by K3 table, not inferred."
+      },
+      {
+        "name": "iir",
+        "byte_offset": 8,
+        "access": "Read",
+        "bit_size": 32
+      },
+      {
+        "name": "fcr",
+        "byte_offset": 8,
+        "access": "Write",
+        "bit_size": 32,
+        "description": "Write-only FIFO control; reset bits are command writes, not RMW."
+      },
+      {
+        "name": "lcr",
+        "byte_offset": 12,
+        "access": "ReadWrite",
+        "bit_size": 32
+      },
+      {
+        "name": "mcr",
+        "byte_offset": 16,
+        "access": "ReadWrite",
+        "bit_size": 32
+      },
+      {
+        "name": "lsr",
+        "byte_offset": 20,
+        "access": "Read",
+        "bit_size": 32,
+        "fieldset": "pxa_uart::regs::Lsr",
+        "description": "Reading clears error indications. TDRQ bit5, not contradictory DW_LSR_THRE bit6 macro."
+      },
+      {
+        "name": "msr",
+        "byte_offset": 24,
+        "access": "Read",
+        "bit_size": 32
+      },
+      {
+        "name": "scr",
+        "byte_offset": 28,
+        "access": "ReadWrite",
+        "bit_size": 32
+      }
+    ]
+  },
+  "fieldset/pxa_uart::regs::Lsr": {
+    "bit_size": 32,
+    "fields": [
+      {
+        "name": "dr",
+        "bit_offset": 0,
+        "bit_size": 1
+      },
+      {
+        "name": "oe",
+        "bit_offset": 1,
+        "bit_size": 1
+      },
+      {
+        "name": "pe",
+        "bit_offset": 2,
+        "bit_size": 1
+      },
+      {
+        "name": "fe",
+        "bit_offset": 3,
+        "bit_size": 1
+      },
+      {
+        "name": "bi",
+        "bit_offset": 4,
+        "bit_size": 1
+      },
+      {
+        "name": "tdrq",
+        "bit_offset": 5,
+        "bit_size": 1
+      },
+      {
+        "name": "temt",
+        "bit_offset": 6,
+        "bit_size": 1
+      },
+      {
+        "name": "fifoe",
+        "bit_offset": 7,
+        "bit_size": 1
+      }
+    ]
+  }
+}

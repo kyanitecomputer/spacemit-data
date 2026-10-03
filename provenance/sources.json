@@ -1,0 +1,150 @@
+[
+  {
+    "url": "https://github.com/spacemit-com/esos",
+    "revision": "e0b8d955bdc84957da3b7bba8c89e35ee0d27c2b",
+    "cache_dir": "esos-full",
+    "files": [
+      {
+        "path": "esos_rt24.its",
+        "sha256": "dfc1043e8f74627771104fc6ec23d5601338a545e3b4adf99cba4e411887e912"
+      },
+      {
+        "path": "bsp/spacemit/platform/n308/k1-x/_register_defination.h",
+        "sha256": "d06ec42092fe07fbb6df18056ee493aaa0ccb454c80ad7325fd0259333dcd9e1"
+      },
+      {
+        "path": "bsp/spacemit/platform/n308/k1-x/dts/k1-x.dtsi",
+        "sha256": "c35dc10e6962b4a2315856baf519c036b90fd5722650a9e21a6cd7425a8db357"
+      },
+      {
+        "path": "bsp/spacemit/platform/n308/k1-x/gcc.ld",
+        "sha256": "2729ad29a6db41276891ba7f8fbe0f429b9cc6e44b5a003ecae8665bee1632ea"
+      },
+      {
+        "path": "bsp/spacemit/platform/rt24/k3.dtsi",
+        "sha256": "ac320a4c4179ecac9ac07aeaac60ecd4c1224ef5fa2fe3404b176a7692f1cf20"
+      },
+      {
+        "path": "bsp/spacemit/platform/rt24/os0_rcpu/_register_defination.h",
+        "sha256": "73a897385ea776dd2264028bdac630e2b3bbafabd686527ac11a7938d8f9f602"
+      },
+      {
+        "path": "bsp/spacemit/platform/rt24/os0_rcpu/gcc.ld",
+        "sha256": "5dd55216ca04568e345de88d26bab8dbb7ad14bc91eab7422dc6621aae74a5e5"
+      },
+      {
+        "path": "bsp/spacemit/platform/rt24/os1_rcpu/_register_defination.h",
+        "sha256": "3ea16a609d3505d297f673bf1ec4940e6821682a817dcb17e8f074a6d875be39"
+      },
+      {
+        "path": "bsp/spacemit/platform/rt24/os1_rcpu/gcc.ld",
+        "sha256": "1ab7028f9d6ecac3e6a853a6f825f146949b1b6ff08b924aa15b717afb9773c0"
+      },
+      {
+        "path": "bsp/spacemit/drivers/uart/pxa_uart.h",
+        "sha256": "32e2a0aa68432b7fb0336b5e01283e0d2c2e2cfaa4cd906f90223a14b888dd33"
+      },
+      {
+        "path": "bsp/spacemit/drivers/uart/pxa_uart.c",
+        "sha256": "a3634ad1fc4d7b5801972f1163471d09e39ceb8e856345b3b4c9b4a4f37ed644"
+      },
+      {
+        "path": "bsp/spacemit/drivers/mailbox/k1x_mailbox.h",
+        "sha256": "a64724114e951517423d52a21c92e533e9f7c9b202acbf18d46a71e0e4e8bb38"
+      },
+      {
+        "path": "bsp/spacemit/drivers/mailbox/k1x-mailbox.c",
+        "sha256": "fb9ce13c3f0945471d24ee1e6b9c568b8aa36969a6f1887d70ab536a8e35ccc1"
+      },
+      {
+        "path": "bsp/spacemit/drivers/mailbox/k3_mailbox.h",
+        "sha256": "ebcdcfdf70b2969eff0a31d056f0bf7ac0c4d5eeac549067f27d5b2259f6c14d"
+      },
+      {
+        "path": "bsp/spacemit/drivers/mailbox/k3-mailbox.c",
+        "sha256": "860b9306f62f064021dc400aa5f2cd5ea690a574012e1c96339ffb0853778cfb"
+      },
+      {
+        "path": "bsp/spacemit/drivers/rpmi/spacemit-rpmi.c",
+        "sha256": "41c63dc21ace226a321e38299c375fdff5802e4874557019d3bd0c7503f14e29"
+      },
+      {
+        "path": "libcpu/risc-v/spacemit/rt24/riscv-plic.h",
+        "sha256": "daa1f0f2eae185fb2314239e05e88228c2508a3cfc61faffc25f32808216bda9"
+      },
+      {
+        "path": "libcpu/risc-v/spacemit/rt24/clint.h",
+        "sha256": "29c7fce0442c3dc79d6f8f979404ce635c5f87d2f9baaac3ef7df3f7b377c593"
+      },
+      {
+        "path": "libcpu/risc-v/spacemit/rt24/riscv-interrupt.c",
+        "sha256": "72ee066f3cc747605be86da8e65bcfed805d4ecbf0ed90a40d3ba9b28f47cc11"
+      },
+      {
+        "path": "libcpu/risc-v/spacemit/rt24/spacemit_sdk_soc.h",
+        "sha256": "190f61d7f201e45eeff1ac486d0893912d17d42ba1f880aea9bedd6fdc4ddf31"
+      },
+      {
+        "path": "libcpu/risc-v/spacemit/n308/riscv-system-init.c",
+        "sha256": "e5e0a224ee0d01d42b23580af1489bb8dedf2ed8e844752c93a5d91deca91bca"
+      },
+      {
+        "path": "libcpu/risc-v/spacemit/n308/spacemit_sdk_soc.h",
+        "sha256": "2a6ceeb93a02ff4fc01cb76ab461f1f9ab7a34f3165ed6208285909a5e1866a1"
+      },
+      {
+        "path": "components/nmsis/core/include/core_feature_eclic.h",
+        "sha256": "a84841e4b126fe40a5cb42a0e1b43d9a6dda4ad277ec37bdfee46cf9be16e17a"
+      },
+      {
+        "path": "components/nmsis/core/include/core_feature_timer.h",
+        "sha256": "98c9e6ebe9843669bbb7e21cb2ff18a0eecbe79ec110f8b6b57fdcb007e3cf6e"
+      },
+      {
+        "path": "components/nmsis/core/include/riscv_encoding.h",
+        "sha256": "6e41656624e45871d1c3125c2e3a275337c9422ae87ff01666eaa58a7e778055"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/spacemit-com/uboot-2022.10",
+    "revision": "28805afe074715a0ede143d42999ea06bee58fbd",
+    "cache_dir": ".",
+    "files": [
+      {
+        "path": "k3-rproc.c",
+        "sha256": "434ffa7f0d2ded2681962d64d052bbd9f76551db7bf225bafdbb050c535eeb22"
+      },
+      {
+        "path": "spl-k3.c",
+        "sha256": "1486c6282d53da3c16291dcd5a13d988e13d55cfd8120a07413b0f325834236f"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/spacemit-com/linux-6.6",
+    "revision": "31c449aeaad8c7759bc983ca0e26946e5b6746dc",
+    "cache_dir": ".",
+    "files": [
+      {
+        "path": "k1x-rproc.c",
+        "sha256": "cff209bdda2671d9cc45bb1dbf8aa72ed8371d24ba280267d2203bdab814afd5"
+      }
+    ]
+  },
+  {
+    "url": "https://github.com/spacemit-com/docs-chip",
+    "revision": "99fc06777f48f8b2c2f901c2af8056b603645b6c",
+    "cache_dir": "docs",
+    "files": [
+      {
+        "path": "en/key_stone/k3/k3_docs/k3_usermanual/14_connectivity/uart.md",
+        "sha256": "bfb399decf93044caf40c2659537327b3f009142a8ec71b8ea28ca5ee46d392f"
+      },
+      {
+        "path": "en/key_stone/k3/k3_docs/k3_usermanual/16_peripherals/mailbox.md",
+        "sha256": "a272d3fe5ca2339672988949938698e675e4e50499d370bce2105344436d8d59"
+      }
+    ]
+  }
+]

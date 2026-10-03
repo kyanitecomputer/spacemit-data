@@ -1,0 +1,51 @@
+{
+  "block/rt24_plic::Plic": {
+    "description": "RT24 riscv-plic.h. Firmware window: sources 0..127 (0 reserved), four bitmap words; not silicon capacity. Base includes hart << 27.",
+    "items": [
+      {
+        "name": "priority",
+        "byte_offset": 0,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "array": {
+          "len": 128,
+          "stride": 4
+        }
+      },
+      {
+        "name": "pending",
+        "byte_offset": 4096,
+        "access": "Read",
+        "bit_size": 32,
+        "description": "Pending writes intentionally omitted: vendor clear helper lacks hart banking and is not trusted.",
+        "array": {
+          "len": 4,
+          "stride": 4
+        }
+      },
+      {
+        "name": "enable",
+        "byte_offset": 8192,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "array": {
+          "len": 4,
+          "stride": 4
+        }
+      },
+      {
+        "name": "threshold",
+        "byte_offset": 2097152,
+        "access": "ReadWrite",
+        "bit_size": 32
+      },
+      {
+        "name": "claim",
+        "byte_offset": 2097156,
+        "access": "ReadWrite",
+        "bit_size": 32,
+        "description": "Read claims one source; write completes it. NEVER modify/RMW this register."
+      }
+    ]
+  }
+}

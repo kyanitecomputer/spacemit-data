@@ -1,0 +1,27 @@
+{
+  "feature": "k1-rcpu",
+  "pointer_width": 32,
+  "hart_id": 0,
+  "registers": [
+    "pxa_uart",
+    "k1_mailbox",
+    "n308_eclic",
+    "n308_timer"
+  ],
+  "constants": {
+    "UART0_BASE": 3230142464,
+    "UART1_BASE": 3230191616,
+    "MAILBOX_BASE": 3230179328,
+    "TIMER_HZ": 131072,
+    "CSR_MCFG_INFO": 4034,
+    "CSR_MIRGB_INFO": 2039,
+    "IREGION_PRESENT_MASK": 65536,
+    "IREGION_ALIGNMENT": 1024,
+    "IREGION_ECLIC_OFFSET": 131072,
+    "IREGION_TIMER_OFFSET": 196608,
+    "FALLBACK_ECLIC_BASE": 201326592,
+    "FALLBACK_TIMER_BASE": 33554432,
+    "RESOURCE_TABLE_ADDRESS": 808435712
+  },
+  "provenance": "provenance/README.md"
+}

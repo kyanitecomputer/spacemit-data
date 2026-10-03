@@ -1,0 +1,112 @@
+{
+  "block/n308_eclic::Eclic": {
+    "description": "NMSIS core_feature_eclic.h machine-mode view. Base discovered from Nuclei CSRs. No fixed globals.",
+    "items": [
+      {
+        "name": "cfg",
+        "byte_offset": 0,
+        "access": "ReadWrite",
+        "bit_size": 8,
+        "fieldset": "n308_eclic::regs::Cfg"
+      },
+      {
+        "name": "info",
+        "byte_offset": 4,
+        "access": "Read",
+        "bit_size": 32,
+        "fieldset": "n308_eclic::regs::Info",
+        "description": "NUMINT from 13-bit C layout. Vendor NUM mask is only 12 bits; prefer layout, validate hardware."
+      },
+      {
+        "name": "mth",
+        "byte_offset": 11,
+        "access": "ReadWrite",
+        "bit_size": 8
+      },
+      {
+        "name": "irq",
+        "byte_offset": 4096,
+        "block": "n308_eclic::Irq",
+        "array": {
+          "len": 69,
+          "stride": 4
+        },
+        "description": "Firmware enum window 0..68, NOT discovered silicon capacity. Check INFO.numint before using any index; vendor __ECLIC_INTNUM=51 conflicts."
+      }
+    ]
+  },
+  "block/n308_eclic::Irq": {
+    "items": [
+      {
+        "name": "ip",
+        "byte_offset": 0,
+        "access": "ReadWrite",
+        "bit_size": 8
+      },
+      {
+        "name": "ie",
+        "byte_offset": 1,
+        "access": "ReadWrite",
+        "bit_size": 8
+      },
+      {
+        "name": "attr",
+        "byte_offset": 2,
+        "access": "ReadWrite",
+        "bit_size": 8,
+        "fieldset": "n308_eclic::regs::Attr"
+      },
+      {
+        "name": "ctl",
+        "byte_offset": 3,
+        "access": "ReadWrite",
+        "bit_size": 8
+      }
+    ]
+  },
+  "fieldset/n308_eclic::regs::Cfg": {
+    "bit_size": 8,
+    "fields": [
+      {
+        "name": "nlbits",
+        "bit_offset": 1,
+        "bit_size": 4
+      }
+    ]
+  },
+  "fieldset/n308_eclic::regs::Info": {
+    "bit_size": 32,
+    "fields": [
+      {
+        "name": "numint",
+        "bit_offset": 0,
+        "bit_size": 13
+      },
+      {
+        "name": "version",
+        "bit_offset": 13,
+        "bit_size": 8
+      },
+      {
+        "name": "intctlbits",
+        "bit_offset": 21,
+        "bit_size": 4
+      }
+    ]
+  },
+  "fieldset/n308_eclic::regs::Attr": {
+    "bit_size": 8,
+    "fields": [
+      {
+        "name": "shv",
+        "bit_offset": 0,
+        "bit_size": 1
+      },
+      {
+        "name": "trig",
+        "bit_offset": 1,
+        "bit_size": 2
+      }
+    ]
+  }
+}
