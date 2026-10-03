@@ -54281,6 +54281,876 @@ pub mod k3_memory {
         }
     }
 }
+pub mod k3_pinmux {
+    #[doc = "K3 native32 SDK MFPR words. No inferred reset or auxiliary translation. pad_145/pad_146 deliberately have no QSPI signal label."]
+    #[derive(Copy, Clone, Eq, PartialEq)]
+    pub struct Mfpr {
+        ptr: *mut u8,
+    }
+    unsafe impl Send for Mfpr {}
+    unsafe impl Sync for Mfpr {}
+    impl Mfpr {
+        #[inline(always)]
+        pub const unsafe fn from_ptr(ptr: *mut ()) -> Self {
+            Self { ptr: ptr as _ }
+        }
+        #[inline(always)]
+        pub const fn as_ptr(&self) -> *mut () {
+            self.ptr as _
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:13; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_00(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:14; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_01(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x04usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:15; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_02(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x08usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:16; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_03(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:17; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_04(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x10usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:18; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_05(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x14usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:19; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_06(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x18usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:20; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_07(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x1cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:21; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_08(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x20usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:22; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_09(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x24usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:23; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_10(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x28usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:24; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_11(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x2cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:25; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_12(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x30usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:26; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_13(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x34usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:27; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_14(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x38usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:28; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_15(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x3cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:29; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_16(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x40usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:30; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_17(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x44usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:31; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_18(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x48usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:32; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_19(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x4cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:33; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_20(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x50usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:34; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_21(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x54usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:35; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_22(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x58usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:36; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_23(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x5cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:37; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_24(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x60usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:38; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_25(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x64usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:39; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_26(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x68usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:40; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_27(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x6cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:41; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_28(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x70usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:42; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_29(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x74usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:43; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_30(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x78usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:44; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_31(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x7cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:45; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_32(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x80usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:46; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_33(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x84usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:47; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_34(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x88usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:48; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_35(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x8cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:49; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_36(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x90usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:50; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_37(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x94usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:51; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_38(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x98usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:52; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_39(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x9cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:53; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_40(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xa0usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:54; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_41(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xa4usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:55; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_42(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xa8usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:56; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_43(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xacusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:57; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_44(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xb0usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:58; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_45(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xb4usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:59; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_46(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xb8usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:60; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_47(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xbcusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:61; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_48(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xc0usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:62; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_49(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xc4usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:63; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_50(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xc8usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:64; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_51(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xccusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:65; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_52(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xd0usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:66; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_53(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xd4usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:67; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_54(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xd8usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:68; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_55(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xdcusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:69; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_56(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xe0usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:70; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_57(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xe4usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:71; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_58(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xe8usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:72; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_59(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xecusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:73; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_60(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xf0usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:74; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_61(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xf4usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:75; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_62(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xf8usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:76; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_63(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0xfcusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:77; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_64(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0100usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:78; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_65(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0104usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:79; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_66(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0108usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:80; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_67(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x010cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:81; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_68(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0110usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:82; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_69(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0114usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:83; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_70(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0118usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:84; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_71(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x011cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:85; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_72(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0120usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:86; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_73(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0124usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:87; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_74(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0128usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:88; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_75(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x012cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:89; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_76(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0130usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:90; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_77(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0134usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:91; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_78(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0138usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:92; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_79(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x013cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:93; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_80(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0140usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:94; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_81(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0144usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:95; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_82(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0148usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:96; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_83(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x014cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:97; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_84(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0150usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:98; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_85(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0154usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:99; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_86(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0158usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:100; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_87(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x015cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:101; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_88(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0160usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:102; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_89(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0164usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:103; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_90(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0168usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:104; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_91(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x016cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:105; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_92(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0170usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:106; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_93(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0174usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:107; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_94(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0178usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:108; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_95(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x017cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:109; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_96(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0180usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:110; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_97(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0184usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:111; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_98(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0188usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:112; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_99(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x018cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:113; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_100(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0190usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:114; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_101(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0194usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:115; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_102(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0198usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:116; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_103(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x019cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:117; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_104(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01a0usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:118; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_105(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01a4usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:119; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_106(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01a8usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:120; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_107(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01acusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:121; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_108(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01b0usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:122; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_109(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01b4usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:123; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_110(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01b8usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:124; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_111(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01bcusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:125; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_112(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01c0usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:126; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_113(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01c4usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:127; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_114(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01c8usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:128; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_115(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01ccusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:129; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_116(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01d0usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:130; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_117(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01d4usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:131; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_118(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01d8usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:132; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_119(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01dcusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:133; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_120(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01e0usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:134; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_121(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01e4usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:135; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_122(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01e8usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:136; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_123(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01ecusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:137; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_124(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01f0usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:138; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_125(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01f4usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:139; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_126(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01f8usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:140; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn gpio_127(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x01fcusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:142; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn pwr_scl(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0200usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:144; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn pwr_sda(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0204usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:146; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn vcxo_en(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0208usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:148; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn pmic_int_n(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0214usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:150; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn mmc1_dat3(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0218usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:152; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn mmc1_dat2(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x021cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:154; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn mmc1_dat1(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0220usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:156; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn mmc1_dat0(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0224usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:158; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn mmc1_cmd(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0228usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:160; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn mmc1_clk(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x022cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:162; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn qspi_dat0(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0230usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:164; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn qspi_dat1(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0234usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:166; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn qspi_dat2(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0238usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:168; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn qspi_dat3(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x023cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:170; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn qspi_cs0(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0240usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:172; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn pad_145(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0244usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:174; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn pad_146(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0248usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:176; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn pri_tdi(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x024cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:178; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn pri_tms(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0250usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:180; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn pri_tck(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0254usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:182; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn pri_tdo(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0258usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:184; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn pwr_ssp_sclk(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x025cusize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:186; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn pwr_ssp_frm(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0260usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:188; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn pwr_ssp_txd(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0264usize) as _) }
+        }
+        #[doc = "bsp/spacemit/platform/rt24/k3-pinctrl.h:190; mapping/ownership and per-pin applicability are board responsibilities."]
+        #[inline(always)]
+        pub const fn pwr_ssp_rxd(self) -> crate::common::Reg<regs::Pin, crate::common::RW> {
+            unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0268usize) as _) }
+        }
+    }
+    pub mod regs {
+        #[doc = "K3 SDK encoding subset. ST\\[9:8\\] overlaps DRIVE\\[12:9\\]: no Schmitt setter. Strong-pull/slew are excluded by SDK DT mask and left untouched."]
+        #[repr(transparent)]
+        #[derive(Copy, Clone, Eq, PartialEq)]
+        pub struct Pin(pub u32);
+        impl Pin {
+            #[must_use]
+            #[inline(always)]
+            pub const fn function(&self) -> u8 {
+                let val = (self.0 >> 0usize) & 0x07;
+                val as u8
+            }
+            #[inline(always)]
+            pub const fn set_function(&mut self, val: u8) {
+                self.0 = (self.0 & !(0x07 << 0usize)) | (((val as u32) & 0x07) << 0usize);
+            }
+            #[must_use]
+            #[inline(always)]
+            pub const fn edge_rise(&self) -> bool {
+                let val = (self.0 >> 4usize) & 0x01;
+                val != 0
+            }
+            #[inline(always)]
+            pub const fn set_edge_rise(&mut self, val: bool) {
+                self.0 = (self.0 & !(0x01 << 4usize)) | (((val as u32) & 0x01) << 4usize);
+            }
+            #[must_use]
+            #[inline(always)]
+            pub const fn edge_fall(&self) -> bool {
+                let val = (self.0 >> 5usize) & 0x01;
+                val != 0
+            }
+            #[inline(always)]
+            pub const fn set_edge_fall(&mut self, val: bool) {
+                self.0 = (self.0 & !(0x01 << 5usize)) | (((val as u32) & 0x01) << 5usize);
+            }
+            #[must_use]
+            #[inline(always)]
+            pub const fn edge_none(&self) -> bool {
+                let val = (self.0 >> 6usize) & 0x01;
+                val != 0
+            }
+            #[inline(always)]
+            pub const fn set_edge_none(&mut self, val: bool) {
+                self.0 = (self.0 & !(0x01 << 6usize)) | (((val as u32) & 0x01) << 6usize);
+            }
+            #[must_use]
+            #[inline(always)]
+            pub const fn drive(&self) -> u8 {
+                let val = (self.0 >> 9usize) & 0x0f;
+                val as u8
+            }
+            #[inline(always)]
+            pub const fn set_drive(&mut self, val: u8) {
+                self.0 = (self.0 & !(0x0f << 9usize)) | (((val as u32) & 0x0f) << 9usize);
+            }
+            #[must_use]
+            #[inline(always)]
+            pub const fn pull(&self) -> u8 {
+                let val = (self.0 >> 13usize) & 0x07;
+                val as u8
+            }
+            #[inline(always)]
+            pub const fn set_pull(&mut self, val: u8) {
+                self.0 = (self.0 & !(0x07 << 13usize)) | (((val as u32) & 0x07) << 13usize);
+            }
+        }
+        impl Default for Pin {
+            #[inline(always)]
+            fn default() -> Pin {
+                Pin(0)
+            }
+        }
+        impl core::fmt::Debug for Pin {
+            fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+                f.debug_struct("Pin")
+                    .field("function", &self.function())
+                    .field("edge_rise", &self.edge_rise())
+                    .field("edge_fall", &self.edge_fall())
+                    .field("edge_none", &self.edge_none())
+                    .field("drive", &self.drive())
+                    .field("pull", &self.pull())
+                    .finish()
+            }
+        }
+    }
+}
 pub mod k3_system {
     #[derive(Copy, Clone, Eq, PartialEq)]
     pub struct Apb2Clock {
@@ -100389,6 +101259,26 @@ pub mod soc {
         }
     }
 
+    impl Instance<super::k3_pinmux::Mfpr> {
+        /// Construct this block in its documented address view, without translation.
+        ///
+        /// # Safety
+        /// Caller must establish mapping, privilege, clocking and exclusive access
+        /// for this exact view and the entire block. Panics if the address does not
+        /// fit the target pointer width; metadata remains available on every target.
+        pub unsafe fn peripheral(&self) -> super::k3_pinmux::Mfpr {
+            let address =
+                usize::try_from(self.address).expect("MMIO address exceeds target pointer width");
+            assert!(
+                self.address
+                    .checked_add(619)
+                    .is_some_and(|end| usize::try_from(end).is_ok()),
+                "MMIO block exceeds target pointer width"
+            );
+            unsafe { super::k3_pinmux::Mfpr::from_ptr(address as *mut ()) }
+        }
+    }
+
     impl Instance<super::k3_system::Apb2Clock> {
         /// Construct this block in its documented address view, without translation.
         ///
@@ -101739,6 +102629,14 @@ pub mod soc {
             source_kind: super::SourceKind::Docs,
             source_path: "k3/k3_docs/k3_usermanual/09_memory_storage.md",
             source_line: 2040,
+            marker: core::marker::PhantomData,
+        };
+        pub const AP_K3_PINMUX: super::Instance<super::super::k3_pinmux::Mfpr> = super::Instance {
+            address: 0xd401e000,
+            view: super::AddressView::Ap,
+            source_kind: super::SourceKind::Esos,
+            source_path: "bsp/spacemit/platform/rt24/k3.dtsi",
+            source_line: 111,
             marker: core::marker::PhantomData,
         };
         pub const AP_K3_SYSTEM_APBCLOCK: super::Instance<super::super::k3_system::Apbclock> =

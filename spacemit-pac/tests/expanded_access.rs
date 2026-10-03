@@ -2,6 +2,44 @@
 //! Source-named RAM-backed probes; no hardware side effects are simulated.
 use spacemit_pac as pac;
 
+#[cfg(any(feature = "k3-rcpu0", feature = "k3-rcpu1"))]
+#[test]
+fn k3_pinmux_sparse_words_typed_fields_and_ap_view() {
+    let mut storage = [0u32; 0x26c / 4];
+    let mut instance = pac::soc::peripherals::AP_K3_PINMUX;
+    assert_eq!(instance.address, 0xd401e000);
+    assert_eq!(instance.view, pac::soc::AddressView::Ap);
+    assert_eq!(instance.source_kind, pac::soc::SourceKind::Esos);
+    instance.address = storage.as_mut_ptr() as u64;
+    let bank = unsafe { instance.peripheral() };
+    bank.gpio_00().write(|v| {
+        v.set_function(4);
+        v.set_drive(8);
+        v.set_pull(6);
+    });
+    assert_eq!(storage[0], 0xd004);
+    assert_eq!(
+        bank.gpio_127().as_ptr() as usize - bank.as_ptr() as usize,
+        0x1fc
+    );
+    assert_eq!(
+        bank.pad_145().as_ptr() as usize - bank.as_ptr() as usize,
+        0x244
+    );
+    assert_eq!(
+        bank.pad_146().as_ptr() as usize - bank.as_ptr() as usize,
+        0x248
+    );
+    assert_eq!(
+        bank.pwr_ssp_rxd().as_ptr() as usize - bank.as_ptr() as usize,
+        0x268
+    );
+    assert_eq!(storage[0x20c / 4], 0);
+    assert_eq!(storage[0x210 / 4], 0);
+    instance.address = u64::MAX;
+    assert!(std::panic::catch_unwind(|| unsafe { instance.peripheral() }).is_err());
+}
+
 #[cfg(feature = "k1-rcpu")]
 #[test]
 fn k1_pinmux_typed_ap_instance_preserves_sparse_pins_and_split_drive() {

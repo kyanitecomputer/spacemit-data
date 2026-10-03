@@ -1,0 +1,1267 @@
+{
+  "block/k3_pinmux::Mfpr": {
+    "description": "K3 native32 SDK MFPR words. No inferred reset or auxiliary translation. pad_145/pad_146 deliberately have no QSPI signal label.",
+    "items": [
+      {
+        "name": "gpio_00",
+        "byte_offset": 0,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:13; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_01",
+        "byte_offset": 4,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:14; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_02",
+        "byte_offset": 8,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:15; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_03",
+        "byte_offset": 12,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:16; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_04",
+        "byte_offset": 16,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:17; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_05",
+        "byte_offset": 20,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:18; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_06",
+        "byte_offset": 24,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:19; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_07",
+        "byte_offset": 28,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:20; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_08",
+        "byte_offset": 32,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:21; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_09",
+        "byte_offset": 36,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:22; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_10",
+        "byte_offset": 40,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:23; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_11",
+        "byte_offset": 44,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:24; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_12",
+        "byte_offset": 48,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:25; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_13",
+        "byte_offset": 52,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:26; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_14",
+        "byte_offset": 56,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:27; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_15",
+        "byte_offset": 60,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:28; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_16",
+        "byte_offset": 64,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:29; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_17",
+        "byte_offset": 68,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:30; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_18",
+        "byte_offset": 72,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:31; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_19",
+        "byte_offset": 76,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:32; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_20",
+        "byte_offset": 80,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:33; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_21",
+        "byte_offset": 84,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:34; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_22",
+        "byte_offset": 88,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:35; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_23",
+        "byte_offset": 92,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:36; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_24",
+        "byte_offset": 96,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:37; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_25",
+        "byte_offset": 100,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:38; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_26",
+        "byte_offset": 104,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:39; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_27",
+        "byte_offset": 108,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:40; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_28",
+        "byte_offset": 112,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:41; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_29",
+        "byte_offset": 116,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:42; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_30",
+        "byte_offset": 120,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:43; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_31",
+        "byte_offset": 124,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:44; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_32",
+        "byte_offset": 128,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:45; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_33",
+        "byte_offset": 132,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:46; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_34",
+        "byte_offset": 136,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:47; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_35",
+        "byte_offset": 140,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:48; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_36",
+        "byte_offset": 144,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:49; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_37",
+        "byte_offset": 148,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:50; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_38",
+        "byte_offset": 152,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:51; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_39",
+        "byte_offset": 156,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:52; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_40",
+        "byte_offset": 160,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:53; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_41",
+        "byte_offset": 164,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:54; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_42",
+        "byte_offset": 168,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:55; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_43",
+        "byte_offset": 172,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:56; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_44",
+        "byte_offset": 176,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:57; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_45",
+        "byte_offset": 180,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:58; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_46",
+        "byte_offset": 184,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:59; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_47",
+        "byte_offset": 188,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:60; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_48",
+        "byte_offset": 192,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:61; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_49",
+        "byte_offset": 196,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:62; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_50",
+        "byte_offset": 200,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:63; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_51",
+        "byte_offset": 204,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:64; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_52",
+        "byte_offset": 208,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:65; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_53",
+        "byte_offset": 212,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:66; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_54",
+        "byte_offset": 216,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:67; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_55",
+        "byte_offset": 220,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:68; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_56",
+        "byte_offset": 224,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:69; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_57",
+        "byte_offset": 228,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:70; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_58",
+        "byte_offset": 232,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:71; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_59",
+        "byte_offset": 236,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:72; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_60",
+        "byte_offset": 240,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:73; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_61",
+        "byte_offset": 244,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:74; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_62",
+        "byte_offset": 248,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:75; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_63",
+        "byte_offset": 252,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:76; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_64",
+        "byte_offset": 256,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:77; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_65",
+        "byte_offset": 260,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:78; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_66",
+        "byte_offset": 264,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:79; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_67",
+        "byte_offset": 268,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:80; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_68",
+        "byte_offset": 272,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:81; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_69",
+        "byte_offset": 276,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:82; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_70",
+        "byte_offset": 280,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:83; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_71",
+        "byte_offset": 284,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:84; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_72",
+        "byte_offset": 288,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:85; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_73",
+        "byte_offset": 292,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:86; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_74",
+        "byte_offset": 296,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:87; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_75",
+        "byte_offset": 300,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:88; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_76",
+        "byte_offset": 304,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:89; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_77",
+        "byte_offset": 308,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:90; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_78",
+        "byte_offset": 312,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:91; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_79",
+        "byte_offset": 316,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:92; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_80",
+        "byte_offset": 320,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:93; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_81",
+        "byte_offset": 324,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:94; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_82",
+        "byte_offset": 328,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:95; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_83",
+        "byte_offset": 332,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:96; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_84",
+        "byte_offset": 336,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:97; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_85",
+        "byte_offset": 340,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:98; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_86",
+        "byte_offset": 344,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:99; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_87",
+        "byte_offset": 348,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:100; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_88",
+        "byte_offset": 352,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:101; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_89",
+        "byte_offset": 356,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:102; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_90",
+        "byte_offset": 360,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:103; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_91",
+        "byte_offset": 364,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:104; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_92",
+        "byte_offset": 368,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:105; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_93",
+        "byte_offset": 372,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:106; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_94",
+        "byte_offset": 376,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:107; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_95",
+        "byte_offset": 380,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:108; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_96",
+        "byte_offset": 384,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:109; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_97",
+        "byte_offset": 388,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:110; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_98",
+        "byte_offset": 392,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:111; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_99",
+        "byte_offset": 396,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:112; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_100",
+        "byte_offset": 400,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:113; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_101",
+        "byte_offset": 404,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:114; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_102",
+        "byte_offset": 408,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:115; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_103",
+        "byte_offset": 412,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:116; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_104",
+        "byte_offset": 416,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:117; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_105",
+        "byte_offset": 420,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:118; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_106",
+        "byte_offset": 424,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:119; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_107",
+        "byte_offset": 428,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:120; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_108",
+        "byte_offset": 432,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:121; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_109",
+        "byte_offset": 436,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:122; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_110",
+        "byte_offset": 440,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:123; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_111",
+        "byte_offset": 444,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:124; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_112",
+        "byte_offset": 448,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:125; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_113",
+        "byte_offset": 452,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:126; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_114",
+        "byte_offset": 456,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:127; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_115",
+        "byte_offset": 460,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:128; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_116",
+        "byte_offset": 464,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:129; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_117",
+        "byte_offset": 468,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:130; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_118",
+        "byte_offset": 472,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:131; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_119",
+        "byte_offset": 476,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:132; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_120",
+        "byte_offset": 480,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:133; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_121",
+        "byte_offset": 484,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:134; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_122",
+        "byte_offset": 488,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:135; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_123",
+        "byte_offset": 492,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:136; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_124",
+        "byte_offset": 496,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:137; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_125",
+        "byte_offset": 500,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:138; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_126",
+        "byte_offset": 504,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:139; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "gpio_127",
+        "byte_offset": 508,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:140; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "pwr_scl",
+        "byte_offset": 512,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:142; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "pwr_sda",
+        "byte_offset": 516,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:144; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "vcxo_en",
+        "byte_offset": 520,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:146; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "pmic_int_n",
+        "byte_offset": 532,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:148; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "mmc1_dat3",
+        "byte_offset": 536,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:150; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "mmc1_dat2",
+        "byte_offset": 540,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:152; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "mmc1_dat1",
+        "byte_offset": 544,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:154; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "mmc1_dat0",
+        "byte_offset": 548,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:156; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "mmc1_cmd",
+        "byte_offset": 552,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:158; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "mmc1_clk",
+        "byte_offset": 556,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:160; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "qspi_dat0",
+        "byte_offset": 560,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:162; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "qspi_dat1",
+        "byte_offset": 564,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:164; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "qspi_dat2",
+        "byte_offset": 568,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:166; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "qspi_dat3",
+        "byte_offset": 572,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:168; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "qspi_cs0",
+        "byte_offset": 576,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:170; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "pad_145",
+        "byte_offset": 580,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:172; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "pad_146",
+        "byte_offset": 584,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:174; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "pri_tdi",
+        "byte_offset": 588,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:176; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "pri_tms",
+        "byte_offset": 592,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:178; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "pri_tck",
+        "byte_offset": 596,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:180; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "pri_tdo",
+        "byte_offset": 600,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:182; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "pwr_ssp_sclk",
+        "byte_offset": 604,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:184; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "pwr_ssp_frm",
+        "byte_offset": 608,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:186; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "pwr_ssp_txd",
+        "byte_offset": 612,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:188; mapping/ownership and per-pin applicability are board responsibilities."
+      },
+      {
+        "name": "pwr_ssp_rxd",
+        "byte_offset": 616,
+        "bit_size": 32,
+        "access": "ReadWrite",
+        "fieldset": "k3_pinmux::regs::Pin",
+        "description": "bsp/spacemit/platform/rt24/k3-pinctrl.h:190; mapping/ownership and per-pin applicability are board responsibilities."
+      }
+    ]
+  },
+  "fieldset/k3_pinmux::regs::Pin": {
+    "bit_size": 32,
+    "description": "K3 SDK encoding subset. ST[9:8] overlaps DRIVE[12:9]: no Schmitt setter. Strong-pull/slew are excluded by SDK DT mask and left untouched.",
+    "fields": [
+      {
+        "name": "function",
+        "bit_offset": 0,
+        "bit_size": 3
+      },
+      {
+        "name": "edge_rise",
+        "bit_offset": 4,
+        "bit_size": 1
+      },
+      {
+        "name": "edge_fall",
+        "bit_offset": 5,
+        "bit_size": 1
+      },
+      {
+        "name": "edge_none",
+        "bit_offset": 6,
+        "bit_size": 1
+      },
+      {
+        "name": "drive",
+        "bit_offset": 9,
+        "bit_size": 4
+      },
+      {
+        "name": "pull",
+        "bit_offset": 13,
+        "bit_size": 3
+      }
+    ]
+  }
+}

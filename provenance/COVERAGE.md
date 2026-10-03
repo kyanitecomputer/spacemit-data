@@ -17,13 +17,14 @@ addresses. Hardware testing is deferred, not a generation prerequisite.
 | `k3_io` | 27 | 320 | 2,741 | 1,177 | 111 | 154 / 6 | 46 |
 | `k3_image` | 2 | 47 | 325 | 107 | 1 | 398 / 0 | 11 |
 | `k3_memory` | 10 | 659 | 735 | 1,561 | 18 | 204 / 17 | 76 |
-| **Expanded total** | **153** | **6,444** | **13,491** | **13,491** | **498** | **1,821 / 1,860** | **458** |
+| `k3_pinmux` | 1 | 153 | 153 | 6 | 1 | 0 / 1 | 5 |
+| **Expanded total** | **154** | **6,597** | **13,644** | **13,497** | **499** | **1,821 / 1,861** | **463** |
 
 - A **register view** is one declared register item, before array expansion;
   RO/WO aliases and source-supported layout variants are separate views. Nested
   block items are not registers. The retained baseline adds 8 IR files, 10
-  blocks, 50 register views and 24 fields; expansion adds 10 IR files. Whole
-  repository definition totals are 18 files / 163 blocks / 6,494 views / 13,515
+  blocks, 50 register views and 24 fields; expansion adds 11 IR files. Whole
+  repository definition totals are 19 files / 164 blocks / 6,647 views / 13,521
   fields. The two K3 feature outputs reuse the same family data, not two chips.
 - **Direct indexed view elements** expand each register item's regular/sparse
   array, but do not multiply nested block reuse or instances. They include
@@ -32,17 +33,19 @@ addresses. Hardware testing is deferred, not a generation prerequisite.
   layouts and direction-specific fieldsets. They are not unique physical fields.
   K3 V2D's 47 compressed views/107 fields represent 386 source words/558 named
   fields after its four nested layers and arrays are placed. K1 MFPR's 129 named
-  words reuse 12 common field definitions. K1 media's 3,896 views include
+  words reuse 12 common field definitions. K3's 153 native32 MFPR words reuse
+  six SDK-backed field definitions; unresolved Schmitt/drive and QSPI labels
+  remain explicit rather than inheriting K1 encodings. K1 media's 3,896 views include
   uninstantiated portable GPU containers/variants alongside accessor-established
   views. A container's field width is not evidence of native MMIO width, and
   overlapping variants/aliases are not additional physical words.
-- **Instances** are source-backed address/view metadata: 367 AP, 93 RCPU, 38
+- **Instances** are source-backed address/view metadata: 368 AP, 93 RCPU, 38
   secure. They may reuse layouts or describe different views of a bank. No
   AP/secure-to-RCPU translation, ownership, runtime capability or global unique
   silicon-register count is asserted. Unbound layouts remain usable definitions.
 - **Records** are per-manifest table/C-definition dispositions. Shared IRQ tables
-  and C definitions may support multiple lanes. Across 3,681 records there are
-  3,402 generated, 149 duplicate, 82 not-MMIO and 48 source-gap dispositions.
+  and C definitions may support multiple lanes. Across 3,682 records there are
+  3,403 generated, 149 duplicate, 82 not-MMIO and 48 source-gap dispositions.
   This is not a register count. Five gap records repeat datasheet functional
   names/widths without offsets already discussed in the manual, not new gaps in
   a second silicon bank. Broad chapter/prose gaps belong in corrections, not
@@ -53,7 +56,7 @@ register-oriented helper candidates across the complete supplied corpus, plus
 44 genuine additional headers (IRQ/base/protocol and Register/Comment/MFPR
 summaries). The initial candidate number includes non-MMIO algorithm/CSR tables
 and repeated datasheet tables, not 1,771 distinct register definitions. The
-1,860 C records cover 1,859 distinct kind/path/hash/line identities. Exhaustive
+1,861 C records cover 1,860 distinct kind/path/hash/line identities. Exhaustive
 Markdown completeness is checked independently of C supplemental accounting.
 
 ## Covered source families
@@ -66,7 +69,7 @@ Markdown completeness is checked independently of C supplemental accounting.
   CCIC/CSI/ISP/CPP/JPEG. Public-manual register-bearing chapters 3 and 8–16
   are covered; chapters 6/7 supply address/IRQ metadata. Datasheet V2D/MFPR
   repetition is inventoried without treating it as extra MMIO.
-- **K3**: address/IRQ, CPU/PM/clock/reset/security, GPIO/DMA/HDMA/IOPMP/
+- **K3**: SDK pinmux numeric locations/encodings, address/IRQ, CPU/PM/clock/reset/security, GPIO/DMA/HDMA/IOPMP/
   spinlock/timer/watchdog/mailbox/PWM/JTAG capability facts; memory/storage/
   SDHCI/UFS/QSPI/DDR observed layouts; complete V2D V2 bank; DSI plus available
   DPU/DP C definitions; audio/ADMA/RI2S/SPI, IR/eSPI/I2C/UART/CAN/GMAC/PCIe/
@@ -76,8 +79,8 @@ Markdown completeness is checked independently of C supplemental accounting.
 
 ## Pins, identities and source checks
 
-The 207 manifest source entries represent **185 distinct kind/path/SHA256
-identities**: 45 docs, 37 ESOS, 83 Linux and 20 U-Boot. Repeated references
+The 210 manifest source entries represent **187 distinct kind/path/SHA256
+identities**: 45 docs, 39 ESOS, 83 Linux and 20 U-Boot. Repeated references
 are counted once here; conflicting file bytes at distinct Linux pins are never
 flattened into one alleged revision.
 
@@ -131,6 +134,18 @@ the current union contains 2,078. Mask/container types alone do not establish
 native width; conditional source paths do not prove K1 BVNC applicability,
 universal feature presence, reset values or side-effect semantics. The source
 tests check every one of the 23 observed widths and all retained XE_MEM spans.
+
+## K3 pinmux subset and conflicts
+
+The SDK's `platform/rt24/k3-pinctrl.h`, `k3.dtsi` and native32
+`drivers/pinctrl/pinctrl-single.c` supply153 sparse MFPR words. Source hashes
+are enforced by the importer and verifier; a native C numeric-macro oracle and
+an independent official-PDF address comparison cover all locations/encodings.
+The manual and SDK swap QSPI_CS1/QSPI_CLK at0x244/0x248, so generated accessors
+are neutral `pad_145`/`pad_146`. ST[9:8] overlaps DRIVE[12:9]; no independent
+Schmitt encoding is invented. The SDK DT mask excludes strong-pull/slew bits,
+and its0x250 aperture ends before the last word at0x268. No per-pin reset,
+wake applicability, electrical current or auxiliary translation is inferred.
 
 ## Precise remaining source limits
 

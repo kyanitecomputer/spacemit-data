@@ -51,7 +51,7 @@ prebuilt binary.
 
 ## Complete source coverage
 
-Eight expanded manifests cover every register-bearing table in the public K1/K3
+Nine expanded manifests cover every register-bearing table in the public K1/K3
 Markdown manuals, plus repeated K1 datasheet facts and pinned C supplements:
 CPU/system/security, clocks/reset/PMU, memory/storage, GPIO/pinmux, serial/audio,
 CAN/Ethernet/PCIe/USB, graphics/video/display/capture. Published numeric facts
@@ -59,12 +59,16 @@ are exposed even when hardware testing has not yet occurred. Unpublished maps,
 unknown counts/access semantics and conflicting locations remain explicit source
 limitations, not prerequisites for PAC generation.
 
-The expansion contains **153 block definitions, 6,444 register-view declarations,
-13,491 reused/compressed field definitions and 498 source-view instances**.
+The expansion contains **154 block definitions, 6,597 register-view declarations,
+13,497 reused/compressed field definitions and 499 source-view instances**.
 These are definition counts, **not unique silicon-register counts**: directional
 aliases, layout variants, arrays and shared banks must not be multiplied into a
 chip inventory. K3 V2D's 47 view declarations cover 386 source words/558 named
 fields; K1 pinmux's 129 named words share 12 common field definitions.
+K3 pinmux adds 153 SDK-backed native32 words with six unambiguous field
+encodings, independently corroborated against the official PDF locations.
+Schmitt/drive overlap, QSPI label conflicts and the too-small SDK DT aperture
+remain explicit corrections; no reset or whole-bank reachability is inferred.
 [Exact per-lane inventory and count definitions](provenance/COVERAGE.md) include
 all 1,771 register-oriented source tables, 44 genuine additional table headers,
 C definition records, source revisions and precise residual gaps.
@@ -100,7 +104,7 @@ allowed for tests. Featureless crate exposes no MMIO API.
 
 The original modules/constants above remain unchanged. Expanded modules use
 `k1_system`, `k1_io`, `k1_media`, `k1_pinmux`, `k3_system`, `k3_io`, `k3_image`
-and `k3_memory`. `soc::peripherals::*` exposes typed `soc::Instance<T>` metadata
+and `k3_memory`, plus `k3_pinmux`. `soc::peripherals::*` exposes typed `soc::Instance<T>` metadata
 with address, AP/RCPU/secure view, source kind/path/line and an unsafe
 `peripheral()` constructor. These constants do **not** claim AP or secure
 addresses are translated/reachable from RCPU, or that the consumer owns the
@@ -142,7 +146,7 @@ configuration requires deliberate board validation. This is hardware-unverified.
 ## Validation and boundaries
 
 `scripts/check.sh` runs 11 generator validation/determinism tests, 15 independent
-verifier tests, and (with supplied source caches) eight importer checks/113
+verifier tests, and (with supplied source caches) nine importer checks/117
 source tests including native C offset/bitfield oracles. It also runs actual
 host storage-backed access tests for aliases, widths, status decoding, masks,
 byte IRQ writes, array limits, counter high bits and opposite-core readiness
